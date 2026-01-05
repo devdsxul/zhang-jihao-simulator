@@ -3,7 +3,6 @@ import {
   GameState,
   Ending,
   EndingCondition,
-  EndingRarity,
   THRESHOLDS,
 } from "@/types/game";
 import { checkCondition, hasCriticalStat, hasDangerStat, hasBalancedMastery } from "./gameEngine";
@@ -77,9 +76,11 @@ export function checkTermination(state: GameState, allEndings: Ending[]): Termin
     };
   }
 
-  // 4. Check danger zone - find matching negative ending but don't terminate unless conditions met
+  // 4. Check danger zone - only after minimum turns played
+  // This prevents early termination when starting stats are low
+  const MIN_TURNS_FOR_DANGER_CHECK = 5;
   const dangerCheck = hasDangerStat(stats);
-  if (dangerCheck.danger) {
+  if (dangerCheck.danger && turnCount >= MIN_TURNS_FOR_DANGER_CHECK) {
     const negativeEndings = allEndings
       .filter(e => e.type === "negative")
       .sort((a, b) => b.priority - a.priority);
@@ -130,26 +131,9 @@ export function checkTermination(state: GameState, allEndings: Ending[]): Termin
     };
   }
 
-  // 8. Check for any matching ending conditions
-  const sortedEndings = [...allEndings].sort((a, b) => {
-    // Sort by rarity priority first (secret > legendary > rare > uncommon > common)
-    const rarityOrder: Record<EndingRarity, number> = {
-      secret: 5,
-      legendary: 4,
-      rare: 3,
-      uncommon: 2,
-      common: 1,
-    };
-    const rarityDiff = rarityOrder[b.rarity] - rarityOrder[a.rarity];
-    if (rarityDiff !== 0) return rarityDiff;
-    return b.priority - a.priority;
-  });
-
-  for (const ending of sortedEndings) {
-    if (checkAllConditions(stats, ending.conditions, flags)) {
-      return { shouldTerminate: true, reason: "flag_triggered", ending };
-    }
-  }
+  // 8. Regular condition-based endings are NOT checked every turn
+  // They are only used when game ends through other means (critical stat, low score, etc.)
+  // This prevents early game over when initial stats already match some ending conditions
 
   // No termination
   return { shouldTerminate: false };
