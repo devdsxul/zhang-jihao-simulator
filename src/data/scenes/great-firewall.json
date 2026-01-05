@@ -1,0 +1,3110 @@
+[
+  {
+    "id": "firewall-001",
+    "category": "great-firewall",
+    "text": "VPN突然连不上了，你有个重要的学术资料要从Google Scholar下载。",
+    "animation": "scrolling",
+    "choices": [
+      {
+        "id": "g1c1",
+        "text": "换一个节点试试",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          },
+          {
+            "stat": "academicStanding",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "g1c2",
+        "text": "放弃，用国内学术网站",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "academicStanding",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "g1c3",
+        "text": "问同学借他的VPN账号",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          },
+          {
+            "stat": "academicStanding",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "g1c4",
+        "text": "找淘宝买新的VPN",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -15
+          },
+          {
+            "stat": "wealth",
+            "change": -10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "firewall-002",
+    "category": "great-firewall",
+    "text": "你在Twitter上发了一条敏感内容，突然想起来没开匿名模式。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "g2c1",
+        "text": "立刻删除，祈祷没人看到",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -15
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "g2c2",
+        "text": "算了，应该没人在意",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -25
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "g2c3",
+        "text": "注销账号，重新来过",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "g2c4",
+        "text": "检查账号设置，加强隐私",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "firewall-003",
+    "category": "great-firewall",
+    "text": "学校网络中心发通知，说检测到有学生使用VPN，将进行排查。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "g3c1",
+        "text": "赶紧删除VPN软件",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 15
+          },
+          {
+            "stat": "academicStanding",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "g3c2",
+        "text": "无所谓，他们查不到我",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -20
+          }
+        ]
+      },
+      {
+        "id": "g3c3",
+        "text": "换用更隐蔽的翻墙方式",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          },
+          {
+            "stat": "wealth",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "g3c4",
+        "text": "暂时停用，观望一段时间",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "firewall-004",
+    "category": "great-firewall",
+    "text": "有人私信你，说可以提供稳定的机场服务，月付50块。",
+    "animation": "scrolling",
+    "choices": [
+      {
+        "id": "g4c1",
+        "text": "买一个试试",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -15
+          },
+          {
+            "stat": "wealth",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "g4c2",
+        "text": "不信任陌生人，拒绝",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "g4c3",
+        "text": "要求先试用再付费",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "g4c4",
+        "text": "自己搭建VPS翻墙",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          },
+          {
+            "stat": "wealth",
+            "change": -20
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "firewall-005",
+    "category": "great-firewall",
+    "text": "你在Telegram群里看到有人发六四相关内容，群里气氛突然紧张起来。",
+    "animation": "scrolling",
+    "choices": [
+      {
+        "id": "g5c1",
+        "text": "立刻退群，保护自己",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 15
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "g5c2",
+        "text": "假装没看到，继续潜水",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "g5c3",
+        "text": "好奇点进去看看",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -20
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "g5c4",
+        "text": "举报这个群",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "firewall-006",
+    "category": "great-firewall",
+    "text": "你的长期VPN服务商突然跑路了，网站打不开，客服失联，你刚刚续费的一年会员费打了水漂。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "f6c1",
+        "text": "自认倒霉，寻找新梯子",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -20
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "f6c2",
+        "text": "在网上大骂骗子",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f6c3",
+        "text": "试图通过支付平台申诉",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -15
+          },
+          {
+            "stat": "wealth",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "f6c4",
+        "text": "暂时断网，专心学习",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "firewall-007",
+    "category": "great-firewall",
+    "text": "试图访问Github下载代码，但速度只有几KB，项目截止日期迫在眉睫，心态逐渐爆炸。",
+    "animation": "scrolling",
+    "choices": [
+      {
+        "id": "f7c1",
+        "text": "寻找国内镜像站",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f7c2",
+        "text": "硬着头皮慢慢下",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -15
+          },
+          {
+            "stat": "academicStanding",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f7c3",
+        "text": "开启全局代理加速",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          },
+          {
+            "stat": "academicStanding",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "f7c4",
+        "text": "拜托国外朋友发给你",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "firewall-008",
+    "category": "great-firewall",
+    "text": "辅导员突然把你叫到办公室，桌上放着打印出来的你推特主页截图，气氛凝重。",
+    "animation": "arrested",
+    "choices": [
+      {
+        "id": "f8c1",
+        "text": "立刻认错，写检讨书",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -10
+          },
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "f8c2",
+        "text": "否认账号是自己的",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -20
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "f8c3",
+        "text": "沉默应对，拒绝回答",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -20
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -15
+          }
+        ]
+      },
+      {
+        "id": "f8c4",
+        "text": "辩解是用于学术研究",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          },
+          {
+            "stat": "academicStanding",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "firewall-009",
+    "category": "great-firewall",
+    "text": "微信群里有人转发了一张关于社会热点的模糊图片，你还没看清就被系统撤回并提示违规。",
+    "animation": "scrolling",
+    "choices": [
+      {
+        "id": "f9c1",
+        "text": "私聊朋友求原图",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f9c2",
+        "text": "不再追问，明哲保身",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f9c3",
+        "text": "在群里发问号",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f9c4",
+        "text": "去外网搜索相关关键词",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "firewall-010",
+    "category": "great-firewall",
+    "text": "手机突然接到户籍所在地派出所电话，询问你是否在使用推特，并报出了你的ID。",
+    "animation": "arrested",
+    "choices": [
+      {
+        "id": "f10c1",
+        "text": "承认并承诺注销",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": -15
+          }
+        ]
+      },
+      {
+        "id": "f10c2",
+        "text": "慌称手机号以前不是我的",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -25
+          }
+        ]
+      },
+      {
+        "id": "f10c3",
+        "text": "直接挂断电话",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -30
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f10c4",
+        "text": "询问对方警号和身份",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -15
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "firewall-011",
+    "category": "great-firewall",
+    "text": "你在浏览YouTube时，大数据突然给你推送了极具政治敏感性的纪录片，缩略图非常刺眼。",
+    "animation": "scrolling",
+    "choices": [
+      {
+        "id": "f11c1",
+        "text": "立刻点击“不感兴趣”",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f11c2",
+        "text": "忍不住好奇点进去看",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -15
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f11c3",
+        "text": "清空观看历史和Cookies",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "f11c4",
+        "text": "拔掉网线冷静一下",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "firewall-012",
+    "category": "great-firewall",
+    "text": "你的Steam账号因为跨区购买游戏被警告，同时社区功能因为网络原因无法加载。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "f12c1",
+        "text": "购买加速器会员",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f12c2",
+        "text": "尝试修改Hosts文件",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f12c3",
+        "text": "联系客服申诉",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "f12c4",
+        "text": "转战国内游戏平台",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -15
+          },
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "firewall-013",
+    "category": "great-firewall",
+    "text": "国庆期间，你发现所有的VPN节点全部飘红超时，而你正急需查阅外文文献。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "f13c1",
+        "text": "去图书馆查纸质书",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f13c2",
+        "text": "死磕连接，每五分钟试一次",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -15
+          }
+        ]
+      },
+      {
+        "id": "f13c3",
+        "text": "花高价买“专线”",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -30
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "f13c4",
+        "text": "彻底躺平，放假休息",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "firewall-014",
+    "category": "great-firewall",
+    "text": "你的微信号因为在群里发了一句吐槽的话被限制登录三天，无法使用微信支付。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "f14c1",
+        "text": "借室友现金度日",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f14c2",
+        "text": "使用支付宝代替",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f14c3",
+        "text": "申请解封，录制检讨视频",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -20
+          }
+        ]
+      },
+      {
+        "id": "f14c4",
+        "text": "注册小号备用",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          },
+          {
+            "stat": "wealth",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "firewall-015",
+    "category": "great-firewall",
+    "text": "你在地铁上刷推特，突然感觉到旁边人的目光一直停留在你的屏幕上。",
+    "animation": "scrolling",
+    "choices": [
+      {
+        "id": "f15c1",
+        "text": "立刻锁屏，装作听歌",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f15c2",
+        "text": "切换到微信界面",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f15c3",
+        "text": "调低屏幕亮度继续看",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f15c4",
+        "text": "瞪回去",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -15
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "firewall-016",
+    "category": "great-firewall",
+    "text": "因为使用公司/学校电脑翻墙，IT部门发邮件警告你违反了网络安全规定。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "f16c1",
+        "text": "回复邮件道歉",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f16c2",
+        "text": "假装没收到",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -15
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "f16c3",
+        "text": "找借口说是病毒导致",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f16c4",
+        "text": "立刻格式化电脑",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -10
+          },
+          {
+            "stat": "digitalSafety",
+            "change": 15
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "firewall-017",
+    "category": "great-firewall",
+    "text": "你关注的一个海外博主突然停止更新，评论区都在传他回国被请喝茶了。",
+    "animation": "scrolling",
+    "choices": [
+      {
+        "id": "f17c1",
+        "text": "取消关注，清理痕迹",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f17c2",
+        "text": "四处打听他的下落",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -20
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f17c3",
+        "text": "在其他平台搜索消息",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "f17c4",
+        "text": "感到恐惧，断网保平安",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          },
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "firewall-018",
+    "category": "great-firewall",
+    "text": "由于防火墙升级，你常用的编程依赖包一直下载失败，项目构建无限报错。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "f18c1",
+        "text": "手动下载离线包",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -15
+          },
+          {
+            "stat": "academicStanding",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f18c2",
+        "text": "配置复杂的代理规则",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          },
+          {
+            "stat": "academicStanding",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "f18c3",
+        "text": "换用国内镜像源",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f18c4",
+        "text": "砸键盘发泄",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "wealth",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "firewall-019",
+    "category": "great-firewall",
+    "text": "你在闲鱼上出售二手Switch游戏机，因为提到“破解”、“翻墙”字眼被封号。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "f19c1",
+        "text": "联系客服人工申诉",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "f19c2",
+        "text": "注册新号重新发布",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f19c3",
+        "text": "转战线下交易",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "f19c4",
+        "text": "放弃出售",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "firewall-020",
+    "category": "great-firewall",
+    "text": "你的父母看到新闻说翻墙违法，打电话严厉禁止你再使用任何加速器软件。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "f20c1",
+        "text": "表面答应，偷偷用",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f20c2",
+        "text": "试图向他们解释原理",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -15
+          }
+        ]
+      },
+      {
+        "id": "f20c3",
+        "text": "彻底卸载，听父母话",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "academicStanding",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "f20c4",
+        "text": "敷衍过去",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "firewall-021",
+    "category": "great-firewall",
+    "text": "ChatGPT账号突然被封禁，提示不支持该地区服务，你存了很多重要笔记在里面。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "f21c1",
+        "text": "申诉找回数据",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "f21c2",
+        "text": "重新注册，使用更干净的IP",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f21c3",
+        "text": "寻找国内替代品",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f21c4",
+        "text": "骂骂咧咧放弃",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "firewall-022",
+    "category": "great-firewall",
+    "text": "在机场过海关时，工作人员要求检查你的手机，你手机里装满了境外App。",
+    "animation": "arrested",
+    "choices": [
+      {
+        "id": "f22c1",
+        "text": "配合检查，内心慌张",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": -20
+          }
+        ]
+      },
+      {
+        "id": "f22c2",
+        "text": "提前准备了备用机",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "digitalSafety",
+            "change": 15
+          }
+        ]
+      },
+      {
+        "id": "f22c3",
+        "text": "试图拒绝，引用法律",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -30
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "f22c4",
+        "text": "假装手机没电关机",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -15
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "firewall-023",
+    "category": "great-firewall",
+    "text": "你收到一条短信，提示你的手机号涉嫌电信诈骗将被停机，需要去营业厅核验，其实是因为频繁接收境外验证码。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "f23c1",
+        "text": "去营业厅签署承诺书",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "f23c2",
+        "text": "打电话投诉运营商",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f23c3",
+        "text": "换个手机号注册外网",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f23c4",
+        "text": "以后只用邮箱注册",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "firewall-024",
+    "category": "great-firewall",
+    "text": "你的云盘资源因为含有“违规内容”被替换成了8秒教育视频，那是你存了很久的绝版电影。",
+    "animation": "scrolling",
+    "choices": [
+      {
+        "id": "f24c1",
+        "text": "寻找海外网盘资源",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f24c2",
+        "text": "购买正版光碟",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -20
+          },
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "f24c3",
+        "text": "在论坛求补档",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f24c4",
+        "text": "无奈接受，删除文件",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "firewall-025",
+    "category": "great-firewall",
+    "text": "你发现你的个人博客在国内无法访问了，Ping检测显示IP被墙。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "f25c1",
+        "text": "更换服务器IP",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f25c2",
+        "text": "备案并迁移回国内",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "f25c3",
+        "text": "使用CDN绕过",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f25c4",
+        "text": "放弃博客，转战公众号",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "firewall-026",
+    "category": "great-firewall",
+    "text": "舍友问你借VPN看Pornhub，你知道他嘴巴不严，可能会到处乱说。",
+    "animation": "scrolling",
+    "choices": [
+      {
+        "id": "f26c1",
+        "text": "严词拒绝",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f26c2",
+        "text": "借给他，叮嘱保密",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -20
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f26c3",
+        "text": "帮他下载好发给他",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f26c4",
+        "text": "谎称自己也没梯子",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "firewall-027",
+    "category": "great-firewall",
+    "text": "你在Ins上发了旅游照片，忘了关定位，结果被不仅被限流，还可能有暴露隐私风险。",
+    "animation": "scrolling",
+    "choices": [
+      {
+        "id": "f27c1",
+        "text": "立刻删除重发",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f27c2",
+        "text": "设置为私密账户",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f27c3",
+        "text": "不管它，继续发",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -15
+          }
+        ]
+      },
+      {
+        "id": "f27c4",
+        "text": "暂停更新一段时间",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "firewall-028",
+    "category": "great-firewall",
+    "text": "学校开展“网络安全宣传周”，强制所有学生安装“反诈中心”APP。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "f28c1",
+        "text": "安装，但只给最少权限",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          },
+          {
+            "stat": "academicStanding",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f28c2",
+        "text": "专门买个便宜安卓机装",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -15
+          },
+          {
+            "stat": "digitalSafety",
+            "change": 15
+          }
+        ]
+      },
+      {
+        "id": "f28c3",
+        "text": "截图伪造已安装",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f28c4",
+        "text": "以手机存储不足拒绝",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "firewall-029",
+    "category": "great-firewall",
+    "text": "你常用的字幕组网站因为版权和内容问题被关停，追剧变得异常困难。",
+    "animation": "scrolling",
+    "choices": [
+      {
+        "id": "f29c1",
+        "text": "啃生肉（无字幕）",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "f29c2",
+        "text": "加入PT小圈子",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f29c3",
+        "text": "等待国内阉割版",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -15
+          }
+        ]
+      },
+      {
+        "id": "f29c4",
+        "text": "寻找盗版资源站",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "firewall-030",
+    "category": "great-firewall",
+    "text": "因为在知乎上点赞了一个隐晦批评政策的回答，你的账号被禁言7天。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "f30c1",
+        "text": "换个平台玩",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f30c2",
+        "text": "申诉我是手滑",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "f30c3",
+        "text": "反思自己的行为",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f30c4",
+        "text": "注册小号继续浏览",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "firewall-031",
+    "category": "great-firewall",
+    "text": "你发现你的Github Copilot无法连接，显示所在地区受限，极大地影响了写代码效率。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "f31c1",
+        "text": "折腾全局代理",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          },
+          {
+            "stat": "academicStanding",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f31c2",
+        "text": "寻找开源替代品",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f31c3",
+        "text": "回到手写代码时代",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          },
+          {
+            "stat": "academicStanding",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "f31c4",
+        "text": "购买海外云桌面",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -20
+          },
+          {
+            "stat": "academicStanding",
+            "change": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "firewall-032",
+    "category": "great-firewall",
+    "text": "你在外网看到关于学校负面新闻的报道，而校内网上一片祥和，没有任何消息。",
+    "animation": "scrolling",
+    "choices": [
+      {
+        "id": "f32c1",
+        "text": "截图发到校内群",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -25
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f32c2",
+        "text": "私下和好友讨论",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f32c3",
+        "text": "装作不知道",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f32c4",
+        "text": "匿名在树洞发帖",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -15
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "firewall-033",
+    "category": "great-firewall",
+    "text": "你的Kindle商店中国区停止服务，之前买的书很多都还没下载。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "f33c1",
+        "text": "连夜下载备份",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f33c2",
+        "text": "注册美区账号",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          },
+          {
+            "stat": "wealth",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f33c3",
+        "text": "寻找电子书资源站",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "f33c4",
+        "text": "转投国产阅读器",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -15
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "firewall-034",
+    "category": "great-firewall",
+    "text": "你在Discord上加入了一个技术交流群，里面偶尔会有人讨论时政。",
+    "animation": "scrolling",
+    "choices": [
+      {
+        "id": "f34c1",
+        "text": "屏蔽时政频道",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f34c2",
+        "text": "积极参与讨论",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -20
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f34c3",
+        "text": "潜水只看技术",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f34c4",
+        "text": "退出该服务器",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "academicStanding",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "firewall-035",
+    "category": "great-firewall",
+    "text": "你的毕业论文引用了大量外文文献，查重系统提示“引用来源无法访问”，可能会被判定为抄袭。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "f35c1",
+        "text": "提供原文截图证明",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f35c2",
+        "text": "删除由于外链的引用",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -15
+          }
+        ]
+      },
+      {
+        "id": "f35c3",
+        "text": "寻找国内转载源",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f35c4",
+        "text": "跟导师解释情况",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "firewall-036",
+    "category": "great-firewall",
+    "text": "你使用的去广告插件被应用商店下架，浏览网页时满屏的弹窗广告让你抓狂。",
+    "animation": "scrolling",
+    "choices": [
+      {
+        "id": "f36c1",
+        "text": "手动安装开发者模式",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f36c2",
+        "text": "忍受广告",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -20
+          }
+        ]
+      },
+      {
+        "id": "f36c3",
+        "text": "使用DNS屏蔽",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f36c4",
+        "text": "付费购买会员去广告",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "firewall-037",
+    "category": "great-firewall",
+    "text": "你的苹果ID突然被锁定，提示账户存在安全风险，需要验证身份。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "f37c1",
+        "text": "联系苹果客服",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f37c2",
+        "text": "重新注册新ID",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "f37c3",
+        "text": "检查是否梯子没关",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f37c4",
+        "text": "怀疑被钓鱼，修改密码",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "firewall-038",
+    "category": "great-firewall",
+    "text": "你在B站发的科普视频因为画面中出现了半秒钟的“未过审地图”被退回。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "f38c1",
+        "text": "打码重传",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f38c2",
+        "text": "剪掉该片段",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f38c3",
+        "text": "申诉并解释",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "f38c4",
+        "text": "发到YouTube",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "firewall-039",
+    "category": "great-firewall",
+    "text": "你的邮箱收到一封全英文的钓鱼邮件，伪装成官方通知说你的账号涉嫌违规。",
+    "animation": "scrolling",
+    "choices": [
+      {
+        "id": "f39c1",
+        "text": "点击链接查看",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -30
+          },
+          {
+            "stat": "wealth",
+            "change": -20
+          }
+        ]
+      },
+      {
+        "id": "f39c2",
+        "text": "直接删除",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f39c3",
+        "text": "标记为垃圾邮件",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f39c4",
+        "text": "回复骂人",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "firewall-040",
+    "category": "great-firewall",
+    "text": "由于国际出口带宽拥堵，你在玩外服游戏时延迟高达300ms，根本无法操作。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "f40c1",
+        "text": "怒退游戏",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f40c2",
+        "text": "切换到半夜玩",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          },
+          {
+            "stat": "academicStanding",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f40c3",
+        "text": "购买更贵的加速器",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -15
+          }
+        ]
+      },
+      {
+        "id": "f40c4",
+        "text": "玩单机游戏",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "firewall-041",
+    "category": "great-firewall",
+    "text": "你发现你的名字和身份证号出现在了某个境外“社工库”查询结果中，裸奔了。",
+    "animation": "arrested",
+    "choices": [
+      {
+        "id": "f41c1",
+        "text": "极度恐慌，修改所有密码",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -20
+          },
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "f41c2",
+        "text": "自暴自弃，无所谓了",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "f41c3",
+        "text": "报警备案",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f41c4",
+        "text": "注销不必要的账号",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "firewall-042",
+    "category": "great-firewall",
+    "text": "你的导师让你去查一份国外智库的报告，但该网站被DNS污染，怎么都进不去。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "f42c1",
+        "text": "修改Hosts尝试",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          },
+          {
+            "stat": "academicStanding",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f42c2",
+        "text": "用Tor浏览器",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -20
+          },
+          {
+            "stat": "academicStanding",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "f42c3",
+        "text": "告诉导师查不到",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "f42c4",
+        "text": "找海外同学帮忙",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "firewall-043",
+    "category": "great-firewall",
+    "text": "你在朋友圈发了一张风景照，但因为背景里有模糊的标语，被朋友提醒赶紧删了。",
+    "animation": "scrolling",
+    "choices": [
+      {
+        "id": "f43c1",
+        "text": "立刻删除",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f43c2",
+        "text": "P图遮挡后重发",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f43c3",
+        "text": "设置仅自己可见",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f43c4",
+        "text": "觉得朋友大惊小怪",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "firewall-044",
+    "category": "great-firewall",
+    "text": "你的梯子忘关了，直接打开了国内银行App，导致账户被临时冻结风控。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "f44c1",
+        "text": "去柜台解冻",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "f44c2",
+        "text": "电话客服解释",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f44c3",
+        "text": "等待24小时自动解封",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f44c4",
+        "text": "以后设置分流规则",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "firewall-045",
+    "category": "great-firewall",
+    "text": "你在Youtube上学习编程教程，自动连播到了一个关于中国经济崩溃的视频，正好室友路过。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "f45c1",
+        "text": "手忙脚乱关网页",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f45c2",
+        "text": "淡定解释是自动推荐",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f45c3",
+        "text": "立刻点击不喜欢",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f45c4",
+        "text": "邀请室友一起看",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -30
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "firewall-046",
+    "category": "great-firewall",
+    "text": "你的百度网盘链接因为“含有违规文件”被取消分享，那是你整理了一个月的复习资料。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "f46c1",
+        "text": "压缩加密重传",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f46c2",
+        "text": "改用U盘拷贝",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f46c3",
+        "text": "尝试申诉",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "f46c4",
+        "text": "用QQ传输",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "firewall-047",
+    "category": "great-firewall",
+    "text": "你在国外论坛注册账号时，发现不支持+86手机号验证，而你没有国外手机号。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "f47c1",
+        "text": "使用接码平台",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -15
+          },
+          {
+            "stat": "wealth",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f47c2",
+        "text": "淘宝买GV号",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          },
+          {
+            "stat": "wealth",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "f47c3",
+        "text": "放弃注册",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f47c4",
+        "text": "找国外朋友帮忙",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "firewall-048",
+    "category": "great-firewall",
+    "text": "你因为在推特上与人争论，被对方挂了出来，并威胁要举报给你的学校。",
+    "animation": "arrested",
+    "choices": [
+      {
+        "id": "f48c1",
+        "text": "删号跑路",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": -15
+          }
+        ]
+      },
+      {
+        "id": "f48c2",
+        "text": "改名换头像装死",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f48c3",
+        "text": "继续硬刚",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -30
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "f48c4",
+        "text": "私信道歉求饶",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -20
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "firewall-049",
+    "category": "great-firewall",
+    "text": "学校通过校园网流量分析，发现你每天晚上固定时间有大流量加密数据传输。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "f49c1",
+        "text": "解释是在打游戏",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f49c2",
+        "text": "减少使用频率",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f49c3",
+        "text": "办校外宽带",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -15
+          },
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "f49c4",
+        "text": "说是系统更新",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "firewall-050",
+    "category": "great-firewall",
+    "text": "你的输入法突然联想出了一个敏感词汇，你担心输入法会上传用户词库。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "f50c1",
+        "text": "切换回系统自带输入法",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f50c2",
+        "text": "禁止输入法联网",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "f50c3",
+        "text": "清空个人词库",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f50c4",
+        "text": "无所谓，方便就行",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "firewall-051",
+    "category": "great-firewall",
+    "text": "你在浏览境外设计网站寻找灵感，图片加载极其缓慢，Deadline只剩两小时。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "f51c1",
+        "text": "截屏低清图凑合",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "f51c2",
+        "text": "疯狂刷新网页",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "f51c3",
+        "text": "找国内类似素材",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f51c4",
+        "text": "求助群友代下载",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "firewall-052",
+    "category": "great-firewall",
+    "text": "你的Telegram被强制拉入了一个全是中文博彩广告的群，手机叮叮响个不停。",
+    "animation": "scrolling",
+    "choices": [
+      {
+        "id": "f52c1",
+        "text": "设置隐私：禁止拉群",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f52c2",
+        "text": "不仅退群还举报",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f52c3",
+        "text": "直接卸载App",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "f52c4",
+        "text": "静音群组",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "firewall-053",
+    "category": "great-firewall",
+    "text": "你听说最近查得严，好几个同学的微信号因为“传播负能量”被封了。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "f53c1",
+        "text": "清理朋友圈",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f53c2",
+        "text": "设置三天可见",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f53c3",
+        "text": "停止发朋友圈",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f53c4",
+        "text": "从不乱说话，不怕",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "firewall-054",
+    "category": "great-firewall",
+    "text": "你的翻墙软件在更新时被杀毒软件报毒，并自动隔离了文件。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "f54c1",
+        "text": "添加信任白名单",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -15
+          }
+        ]
+      },
+      {
+        "id": "f54c2",
+        "text": "卸载杀毒软件",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -20
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f54c3",
+        "text": "寻找无毒版本",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f54c4",
+        "text": "不敢用了",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "firewall-055",
+    "category": "great-firewall",
+    "text": "你收到了一张去派出所的“传唤证”，理由是你在网上的言论涉嫌寻衅滋事。",
+    "animation": "arrested",
+    "choices": [
+      {
+        "id": "f55c1",
+        "text": "联系律师",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -30
+          },
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "f55c2",
+        "text": "乖乖去配合调查",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": -20
+          }
+        ]
+      },
+      {
+        "id": "f55c3",
+        "text": "通知父母",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -25
+          }
+        ]
+      },
+      {
+        "id": "f55c4",
+        "text": "发推特求助",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -50
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      }
+    ]
+  }
+]

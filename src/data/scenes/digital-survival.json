@@ -1,0 +1,3522 @@
+[
+  {
+    "id": "digital-001",
+    "category": "digital-survival",
+    "text": "你的微信号又被封了，这已经是第四个了。很多朋友的联系方式都没了。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "d1c1",
+        "text": "申诉解封，按官方流程走",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "d1c2",
+        "text": "用家人身份证注册新号",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -15
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "d1c3",
+        "text": "买一个实名过的号",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -20
+          },
+          {
+            "stat": "wealth",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "d1c4",
+        "text": "算了，以后少用微信",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 15
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "digital-002",
+    "category": "digital-survival",
+    "text": "有人联系你说可以帮你解封微信号，只要200块和登录信息。",
+    "animation": "scrolling",
+    "choices": [
+      {
+        "id": "d2c1",
+        "text": "相信他，给钱给信息",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -25
+          },
+          {
+            "stat": "wealth",
+            "change": -15
+          }
+        ]
+      },
+      {
+        "id": "d2c2",
+        "text": "拒绝，这明显是骗子",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "d2c3",
+        "text": "先给一半钱试试",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -15
+          },
+          {
+            "stat": "wealth",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "d2c4",
+        "text": "要求先解封再付钱",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "digital-003",
+    "category": "digital-survival",
+    "text": "室友问你借支付宝过一笔流水，说帮朋友刷单，给你50块好处费。",
+    "animation": "talking",
+    "choices": [
+      {
+        "id": "d3c1",
+        "text": "拒绝，这可能是洗钱",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 15
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "d3c2",
+        "text": "帮忙，反正就过一下",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -25
+          },
+          {
+            "stat": "wealth",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "d3c3",
+        "text": "要求更多好处费",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -20
+          },
+          {
+            "stat": "wealth",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "d3c4",
+        "text": "问清楚具体情况再决定",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "digital-004",
+    "category": "digital-survival",
+    "text": "接到一个电话说你涉嫌洗钱，要配合调查，否则会被拘留。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "d4c1",
+        "text": "挂掉电话，这是诈骗",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 15
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "d4c2",
+        "text": "按对方说的操作",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -30
+          },
+          {
+            "stat": "wealth",
+            "change": -20
+          }
+        ]
+      },
+      {
+        "id": "d4c3",
+        "text": "先记录对方信息再举报",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "d4c4",
+        "text": "慌了，打电话问家人",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          },
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "digital-005",
+    "category": "digital-survival",
+    "text": "有个网友说可以带你做兼职，只要把银行卡借给他用几天，给你500块。",
+    "animation": "scrolling",
+    "choices": [
+      {
+        "id": "d5c1",
+        "text": "拒绝，这是跑分要坐牢的",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 20
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "d5c2",
+        "text": "想起自己之前被抓过，吓出冷汗",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 15
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "d5c3",
+        "text": "考虑一下，毕竟缺钱",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -15
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "d5c4",
+        "text": "举报这个人",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 15
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "digital-006",
+    "category": "digital-survival",
+    "text": "你的微信突然弹出“限制登录”提示，显示因涉嫌违规被封号。你刚加了辅导员的微信还没通过验证，这下麻烦大了。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "d6c1",
+        "text": "慌忙申诉，胡乱填写理由",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "d6c2",
+        "text": "借室友手机联系辅导员解释",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "d6c3",
+        "text": "去网上找“强力解封”黑科技",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -20
+          },
+          {
+            "stat": "wealth",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "d6c4",
+        "text": "冷静下来，仔细阅读封号原因",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "digital-007",
+    "category": "digital-survival",
+    "text": "一个很久没联系的高中同学突然发消息，说他微信被限额了，想转给你500块钱，让你微信转回给他，还截图了转账记录。",
+    "animation": "scrolling",
+    "choices": [
+      {
+        "id": "d7c1",
+        "text": "二话不说，直接转给他",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -15
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "d7c2",
+        "text": "让他语音说话确认身份",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "d7c3",
+        "text": "说自己也没钱，拒绝",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          },
+          {
+            "stat": "wealth",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "d7c4",
+        "text": "查看截图PS痕迹",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 15
+          },
+          {
+            "stat": "sanity",
+            "change": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "digital-008",
+    "category": "digital-survival",
+    "text": "你在网吧上网，旁边的人说可以用你的身份证实名注册几个游戏账号，一个给50块钱，反正对你没影响。",
+    "animation": "talking",
+    "choices": [
+      {
+        "id": "d8c1",
+        "text": "同意，白捡的钱干嘛不要",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -20
+          },
+          {
+            "stat": "wealth",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "d8c2",
+        "text": "拒绝，实名信息不能乱给",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "d8c3",
+        "text": "讨价还价，要求一百一个",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -20
+          },
+          {
+            "stat": "wealth",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "d8c4",
+        "text": "假装答应，趁机换机子溜走",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "digital-009",
+    "category": "digital-survival",
+    "text": "手机收到一条“校务处”发来的短信，说你的奖学金发放失败，需要点击链接补充银行卡信息。",
+    "animation": "scrolling",
+    "choices": [
+      {
+        "id": "d9c1",
+        "text": "立刻点击链接填写信息",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -30
+          },
+          {
+            "stat": "wealth",
+            "change": -20
+          }
+        ]
+      },
+      {
+        "id": "d9c2",
+        "text": "打电话给真正的辅导员核实",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "academicStanding",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "d9c3",
+        "text": "无视短信，直接删除",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "d9c4",
+        "text": "回复短信骂骗子",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "digital-010",
+    "category": "digital-survival",
+    "text": "你在二手交易平台上卖旧书，买家发来一个二维码，说无法付款需要你扫码签署“卖家保障协议”才能到账。",
+    "animation": "scrolling",
+    "choices": [
+      {
+        "id": "d10c1",
+        "text": "扫码操作，想快点把书卖了",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -20
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -25
+          }
+        ]
+      },
+      {
+        "id": "d10c2",
+        "text": "坚持只在平台内交易",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "wealth",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "d10c3",
+        "text": "向平台举报该用户",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 15
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "d10c4",
+        "text": "不想卖了，感觉太麻烦",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "digital-011",
+    "category": "digital-survival",
+    "text": "有人在群里发兼职广告：“纯打字录入，日结200，只需要有手机和银行卡”。你最近正好缺钱。",
+    "animation": "talking",
+    "choices": [
+      {
+        "id": "d11c1",
+        "text": "私聊报名，开始“工作”",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -25
+          },
+          {
+            "stat": "wealth",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "d11c2",
+        "text": "上网搜这个兼职是否靠谱",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "d11c3",
+        "text": "直接忽略，天上不会掉馅饼",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "d11c4",
+        "text": "劝群友也不要信",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 15
+          },
+          {
+            "stat": "academicStanding",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "digital-012",
+    "category": "digital-survival",
+    "text": "你的Steam账号突然收到大量异地登录尝试的邮件，紧接着绑定的邮箱也被改了密码。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "d12c1",
+        "text": "联系客服申诉找回",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "d12c2",
+        "text": "放弃账号，重新注册",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -20
+          },
+          {
+            "stat": "sanity",
+            "change": -15
+          }
+        ]
+      },
+      {
+        "id": "d12c3",
+        "text": "疯狂尝试老密码登录",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -20
+          },
+          {
+            "stat": "digitalSafety",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "d12c4",
+        "text": "找懂技术的朋友帮忙",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "digital-013",
+    "category": "digital-survival",
+    "text": "朋友拉你进一个“福利群”，群主说只要把微信租给他发广告，一天给100块，保证不封号。",
+    "animation": "scrolling",
+    "choices": [
+      {
+        "id": "d13c1",
+        "text": "出租一天试试水",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -15
+          },
+          {
+            "stat": "wealth",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "d13c2",
+        "text": "坚决不租，号比钱重要",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "d13c3",
+        "text": "把小号租给他",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          },
+          {
+            "stat": "wealth",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "d13c4",
+        "text": "退群保平安",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 15
+          },
+          {
+            "stat": "sanity",
+            "change": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "digital-014",
+    "category": "digital-survival",
+    "text": "你在网上下载了一个破解版游戏，安装时杀毒软件疯狂报警，提示有木马病毒。",
+    "animation": "scrolling",
+    "choices": [
+      {
+        "id": "d14c1",
+        "text": "关闭杀毒软件继续安装",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -30
+          },
+          {
+            "stat": "wealth",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "d14c2",
+        "text": "立刻删除安装包并杀毒",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "d14c3",
+        "text": "去网吧玩正版",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "d14c4",
+        "text": "找个虚拟机运行试试",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          },
+          {
+            "stat": "academicStanding",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "digital-015",
+    "category": "digital-survival",
+    "text": "有人加你QQ，自称是“公检法”人员，发来了你的身份证照片和“通缉令”，说你涉及重大案件。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "d15c1",
+        "text": "吓得腿软，全盘托出",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -40
+          },
+          {
+            "stat": "wealth",
+            "change": -30
+          }
+        ]
+      },
+      {
+        "id": "d15c2",
+        "text": "要求对方出示警官证视频",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "d15c3",
+        "text": "直接挂断，去派出所核实",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 20
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "d15c4",
+        "text": "嘲讽对方骗术太低级",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          },
+          {
+            "stat": "digitalSafety",
+            "change": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "digital-016",
+    "category": "digital-survival",
+    "text": "你在食堂吃饭，发现手机突然没了信号，接着收到银行扣款短信，可能是遭遇了“伪基站”或者补卡攻击。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "d16c1",
+        "text": "立刻借电话挂失银行卡",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 15
+          },
+          {
+            "stat": "wealth",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "d16c2",
+        "text": "重启手机试图恢复信号",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -20
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "d16c3",
+        "text": "跑去营业厅查询情况",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "d16c4",
+        "text": "以为手机坏了，没当回事",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -40
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -20
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "digital-017",
+    "category": "digital-survival",
+    "text": "一个自称是“淘宝客服”的人打电话说你买的衣服甲醛超标，要给你三倍赔偿，让你开通理赔通道。",
+    "animation": "talking",
+    "choices": [
+      {
+        "id": "d17c1",
+        "text": "配合操作，想要赔偿金",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -20
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -15
+          }
+        ]
+      },
+      {
+        "id": "d17c2",
+        "text": "去淘宝APP里问官方客服",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "wealth",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "d17c3",
+        "text": "直接挂断电话",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "d17c4",
+        "text": "假装配合，逗骗子玩",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "digital-018",
+    "category": "digital-survival",
+    "text": "你收到一封邮件，标题是“期末考试试题偷跑版”，附件是一个压缩包。",
+    "animation": "scrolling",
+    "choices": [
+      {
+        "id": "d18c1",
+        "text": "好奇下载并解压",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -20
+          },
+          {
+            "stat": "academicStanding",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "d18c2",
+        "text": "举报该邮件",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "academicStanding",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "d18c3",
+        "text": "无视邮件，认真复习",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "d18c4",
+        "text": "转发给室友看热闹",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "digital-019",
+    "category": "digital-survival",
+    "text": "你的微信号被举报“频繁骚扰他人”，限制了加好友和群聊功能，需要好友辅助验证才能解开。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "d19c1",
+        "text": "在朋友圈求好友帮忙",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "d19c2",
+        "text": "花钱找网上的“辅助团队”",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -15
+          },
+          {
+            "stat": "wealth",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "d19c3",
+        "text": "等待自动解封（如果可以）",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          },
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "d19c4",
+        "text": "注册新号，放弃旧号",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "digital-020",
+    "category": "digital-survival",
+    "text": "你在浏览网页时，弹窗提示“恭喜你被选中为幸运用户，送最新款iPhone”，只需支付运费。",
+    "animation": "scrolling",
+    "choices": [
+      {
+        "id": "d20c1",
+        "text": "支付运费，期待手机",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "d20c2",
+        "text": "关闭页面，明显是假",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "d20c3",
+        "text": "查看网页源码找漏洞",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "academicStanding",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "d20c4",
+        "text": "截图发群里吐槽",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "digital-021",
+    "category": "digital-survival",
+    "text": "有人在校园墙上说能改教务系统成绩，一科500，保密且安全。",
+    "animation": "scrolling",
+    "choices": [
+      {
+        "id": "d21c1",
+        "text": "心动，联系对方改分",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -50
+          },
+          {
+            "stat": "wealth",
+            "change": -20
+          }
+        ]
+      },
+      {
+        "id": "d21c2",
+        "text": "举报给学校网管中心",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 10
+          },
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "d21c3",
+        "text": "劝阻想改分的同学",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "d21c4",
+        "text": "当笑话看，继续复习",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "digital-022",
+    "category": "digital-survival",
+    "text": "你的手机丢了，虽然补了卡，但微信在新设备登录需要旧设备验证或者好友验证，你联系不上好友。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "d22c1",
+        "text": "找某宝商家暴力破解",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -30
+          },
+          {
+            "stat": "wealth",
+            "change": -20
+          }
+        ]
+      },
+      {
+        "id": "d22c2",
+        "text": "坚持通过申诉找回",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "d22c3",
+        "text": "借朋友手机登录发验证",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "d22c4",
+        "text": "重新注册，重新加人",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -15
+          },
+          {
+            "stat": "wealth",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "digital-023",
+    "category": "digital-survival",
+    "text": "一个很久没用的APP突然提示你有一笔高额贷款逾期，要上征信，你根本没贷过款。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "d23c1",
+        "text": "联系官方客服核实",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "d23c2",
+        "text": "按短信链接去还款",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -30
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -20
+          }
+        ]
+      },
+      {
+        "id": "d23c3",
+        "text": "报警处理",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 15
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "d23c4",
+        "text": "无视它，觉得是诈骗短信",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          },
+          {
+            "stat": "wealth",
+            "change": -10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "digital-024",
+    "category": "digital-survival",
+    "text": "你在网吧登录了自己的百度网盘，走的时候好像忘记退出了。",
+    "animation": "running",
+    "choices": [
+      {
+        "id": "d24c1",
+        "text": "立刻跑回网吧去退",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "d24c2",
+        "text": "手机上修改网盘密码",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 15
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "d24c3",
+        "text": "觉得没啥重要东西，算了",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -20
+          },
+          {
+            "stat": "sanity",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "d24c4",
+        "text": "远程下线设备",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 20
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "digital-025",
+    "category": "digital-survival",
+    "text": "你的微信号被拉入一个“炒股交流群”，群里大师推荐的股票天天涨停。",
+    "animation": "scrolling",
+    "choices": [
+      {
+        "id": "d25c1",
+        "text": "跟着大师买一点试试",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -25
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "d25c2",
+        "text": "潜水观察，不说话",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 0
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "d25c3",
+        "text": "退群并举报",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "d25c4",
+        "text": "在群里发防诈骗链接",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "digital-026",
+    "category": "digital-survival",
+    "text": "你在咸鱼上卖号，对方说已经付款，但由于你未开通“大额交易通道”，资金被冻结，需交保证金。",
+    "animation": "scrolling",
+    "choices": [
+      {
+        "id": "d26c1",
+        "text": "交保证金解冻",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -20
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -15
+          }
+        ]
+      },
+      {
+        "id": "d26c2",
+        "text": "联系咸鱼官方客服",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "wealth",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "d26c3",
+        "text": "直接拉黑对方",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 15
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "d26c4",
+        "text": "骂对方是骗子",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "digital-027",
+    "category": "digital-survival",
+    "text": "你收到短信“房东：换号码了，请把房租打到这个新卡上”，正好这几天该交房租了。",
+    "animation": "scrolling",
+    "choices": [
+      {
+        "id": "d27c1",
+        "text": "直接转账到新卡",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -30
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "d27c2",
+        "text": "打电话给房东确认",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 15
+          },
+          {
+            "stat": "wealth",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "d27c3",
+        "text": "微信问房东",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "wealth",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "d27c4",
+        "text": "回复短信调戏骗子",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "digital-028",
+    "category": "digital-survival",
+    "text": "有人要高价收购你的微信号，说是做微商需要老号，价格很诱人，够你一个月生活费。",
+    "animation": "talking",
+    "choices": [
+      {
+        "id": "d28c1",
+        "text": "卖了，重新注册一个",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -25
+          },
+          {
+            "stat": "wealth",
+            "change": 20
+          }
+        ]
+      },
+      {
+        "id": "d28c2",
+        "text": "不卖，风险太大",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "d28c3",
+        "text": "把不常用的小号卖了",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -15
+          },
+          {
+            "stat": "wealth",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "d28c4",
+        "text": "询问对方具体用途",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "digital-029",
+    "category": "digital-survival",
+    "text": "你在色情网站浏览时，突然弹窗说你的IP已被锁定，浏览记录已保存，不交罚款就发给通讯录好友。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "d29c1",
+        "text": "吓坏了，立刻转账",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -20
+          },
+          {
+            "stat": "sanity",
+            "change": -20
+          }
+        ]
+      },
+      {
+        "id": "d29c2",
+        "text": "清理浏览器缓存，关机",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "d29c3",
+        "text": "知道是诈骗弹窗，无视",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "d29c4",
+        "text": "以后再也不上这种网了",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 15
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "digital-030",
+    "category": "digital-survival",
+    "text": "你的支付宝蚂蚁信用分突然下降了很多，查看发现关联了一个陌生人的账号违约了。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "d30c1",
+        "text": "联系客服申诉解绑",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "d30c2",
+        "text": "不管它，反正不用花呗",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "d30c3",
+        "text": "回忆是否借身份证给别人",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          },
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "d30c4",
+        "text": "注销支付宝重新注册",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "digital-031",
+    "category": "digital-survival",
+    "text": "路边有人扫码送大鹅玩偶，只需要下载个APP并实名认证一下。",
+    "animation": "talking",
+    "choices": [
+      {
+        "id": "d31c1",
+        "text": "为了玩偶，操作一下",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -20
+          },
+          {
+            "stat": "wealth",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "d31c2",
+        "text": "拒绝，信息安全重要",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "d31c3",
+        "text": "问能不能直接买玩偶",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "d31c4",
+        "text": "看别人操作，自己不弄",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 0
+          },
+          {
+            "stat": "sanity",
+            "change": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "digital-032",
+    "category": "digital-survival",
+    "text": "你的电脑中了勒索病毒，所有论文和资料都被加密，对方要求支付比特币才能解密。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "d32c1",
+        "text": "支付赎金，资料太重要",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -30
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "d32c2",
+        "text": "格式化重装，资料不要了",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -20
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "d32c3",
+        "text": "找技术大神尝试破解",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          },
+          {
+            "stat": "wealth",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "d32c4",
+        "text": "以后养成备份习惯",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 20
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "digital-033",
+    "category": "digital-survival",
+    "text": "有人在群里发红包，你抢了一个，结果提示要转发到5个群才能领取，并且还自动下载了一个插件。",
+    "animation": "scrolling",
+    "choices": [
+      {
+        "id": "d33c1",
+        "text": "为了钱转发",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -15
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "d33c2",
+        "text": "立刻卸载插件杀毒",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "d33c3",
+        "text": "不管插件，继续玩手机",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -25
+          },
+          {
+            "stat": "wealth",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "d33c4",
+        "text": "警告群主发病毒",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "digital-034",
+    "category": "digital-survival",
+    "text": "你接到“社保局”电话，说你的社保卡涉嫌骗保，被冻结了，需要把资金转到安全账户核查。",
+    "animation": "talking",
+    "choices": [
+      {
+        "id": "d34c1",
+        "text": "转账，怕社保出问题",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -30
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "d34c2",
+        "text": "我是学生哪来的社保",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "d34c3",
+        "text": "去学校相关部门咨询",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          },
+          {
+            "stat": "academicStanding",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "d34c4",
+        "text": "挂断拉黑",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "digital-035",
+    "category": "digital-survival",
+    "text": "你的iCloud账户收到验证码请求，地理位置显示在国外。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "d35c1",
+        "text": "点击拒绝，修改密码",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 15
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "d35c2",
+        "text": "以为是系统错误，不管",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -15
+          },
+          {
+            "stat": "wealth",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "d35c3",
+        "text": "开启双重验证",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 20
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "d35c4",
+        "text": "清空云端照片",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          },
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "digital-036",
+    "category": "digital-survival",
+    "text": "你在网上认识的“女朋友”突然让你下载一个专用的聊天软件，说那里聊天更私密。",
+    "animation": "talking",
+    "choices": [
+      {
+        "id": "d36c1",
+        "text": "下载安装，听她的",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -20
+          },
+          {
+            "stat": "wealth",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "d36c2",
+        "text": "坚持在微信聊",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "d36c3",
+        "text": "怀疑是“杀猪盘”",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 15
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "d36c4",
+        "text": "视频验证对方身份",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "digital-037",
+    "category": "digital-survival",
+    "text": "你的手机日历突然出现大量赌博网站的广告邀请，删都删不完。",
+    "animation": "scrolling",
+    "choices": [
+      {
+        "id": "d37c1",
+        "text": "点进去看看",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -25
+          },
+          {
+            "stat": "wealth",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "d37c2",
+        "text": "关闭日历同步功能",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 15
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "d37c3",
+        "text": "手动一条条删除",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          },
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "d37c4",
+        "text": "换个手机",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -20
+          },
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "digital-038",
+    "category": "digital-survival",
+    "text": "你在二手平台买的手机到了，开机发现里面有很多奇怪的内置软件无法卸载。",
+    "animation": "scrolling",
+    "choices": [
+      {
+        "id": "d38c1",
+        "text": "凑合用，反正便宜",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -20
+          },
+          {
+            "stat": "wealth",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "d38c2",
+        "text": "刷机重装系统",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "academicStanding",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "d38c3",
+        "text": "退货退款",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "d38c4",
+        "text": "扔了不敢用",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -15
+          },
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "digital-039",
+    "category": "digital-survival",
+    "text": "你的微信号因为在多个群里转发了同一条拼多多的砍价链接，被系统判定为营销号封禁3天。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "d39c1",
+        "text": "忍3天，不用微信",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          },
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "d39c2",
+        "text": "疯狂申诉说自己是真人",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -15
+          },
+          {
+            "stat": "digitalSafety",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "d39c3",
+        "text": "换个小号继续砍",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "d39c4",
+        "text": "发誓再也不帮人砍价",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "digital-040",
+    "category": "digital-survival",
+    "text": "有个兼职群说招“APP试玩员”，下载指定APP体验3分钟给3块钱。",
+    "animation": "scrolling",
+    "choices": [
+      {
+        "id": "d40c1",
+        "text": "做几个简单的赚点钱",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "d40c2",
+        "text": "下载多了手机变卡",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "d40c3",
+        "text": "怀疑会泄露隐私，不做",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "d40c4",
+        "text": "用备用机做",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "digital-041",
+    "category": "digital-survival",
+    "text": "你的朋友发来一个“测测你的前世是谁”的链接，需要输入姓名和生日。",
+    "animation": "scrolling",
+    "choices": [
+      {
+        "id": "d41c1",
+        "text": "输入真实信息测试",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "d41c2",
+        "text": "乱填信息玩玩",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 0
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "d41c3",
+        "text": "告诉朋友这是收集隐私",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "d41c4",
+        "text": "不点，无聊",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "digital-042",
+    "category": "digital-survival",
+    "text": "你在公共厕所看到“扫码领纸”，扫了之后关注了一个公众号，还弹出一堆广告。",
+    "animation": "scrolling",
+    "choices": [
+      {
+        "id": "d42c1",
+        "text": "领完纸立刻取关",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 0
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "d42c2",
+        "text": "不领了，用自己的",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          },
+          {
+            "stat": "wealth",
+            "change": -1
+          }
+        ]
+      },
+      {
+        "id": "d42c3",
+        "text": "留着关注，懒得删",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "d42c4",
+        "text": "举报该公众号",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "digital-043",
+    "category": "digital-survival",
+    "text": "你在网上搜题，搜到一个“内部题库”APP，安装时提示需要开启“辅助功能”权限。",
+    "animation": "scrolling",
+    "choices": [
+      {
+        "id": "d43c1",
+        "text": "开启权限，为了题库",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -25
+          },
+          {
+            "stat": "academicStanding",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "d43c2",
+        "text": "拒绝权限，卸载APP",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "academicStanding",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "d43c3",
+        "text": "去正规网站找题",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          },
+          {
+            "stat": "academicStanding",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "d43c4",
+        "text": "用沙箱环境运行",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "academicStanding",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "digital-044",
+    "category": "digital-survival",
+    "text": "你的微信突然不能收发图片，提示功能受限，可能是因为你在某个群里发了敏感图。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "d44c1",
+        "text": "反思自己发了什么",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "d44c2",
+        "text": "转战QQ聊天",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 0
+          },
+          {
+            "stat": "sanity",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "d44c3",
+        "text": "联系客服询问解禁时间",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 0
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "d44c4",
+        "text": "不仅没改，还去别的群发",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -20
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "digital-045",
+    "category": "digital-survival",
+    "text": "有人加你微信，头像是个美女，朋友圈全是豪车和旅游照，主动跟你打招呼。",
+    "animation": "scrolling",
+    "choices": [
+      {
+        "id": "d45c1",
+        "text": "热情回应，以为桃花运",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "d45c2",
+        "text": "冷漠对待，观察意图",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "d45c3",
+        "text": "直接删好友",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "d45c4",
+        "text": "问她是不是卖茶叶的",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "digital-046",
+    "category": "digital-survival",
+    "text": "你收到短信说你订的航班取消了，拨打短信里的客服电话可以退改签并获得补偿。",
+    "animation": "talking",
+    "choices": [
+      {
+        "id": "d46c1",
+        "text": "打短信里的电话",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -20
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -15
+          }
+        ]
+      },
+      {
+        "id": "d46c2",
+        "text": "去航空公司官网查询",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 15
+          },
+          {
+            "stat": "wealth",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "d46c3",
+        "text": "我不坐飞机，无视",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "d46c4",
+        "text": "转发给反诈中心",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "digital-047",
+    "category": "digital-survival",
+    "text": "你在用公共WiFi时，手机弹出提示“当前网络不安全，建议断开”。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "d47c1",
+        "text": "断开WiFi，用流量",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "wealth",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "d47c2",
+        "text": "继续用，省流量",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -15
+          },
+          {
+            "stat": "wealth",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "d47c3",
+        "text": "挂个VPN继续用",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          },
+          {
+            "stat": "wealth",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "d47c4",
+        "text": "不玩手机了",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "digital-048",
+    "category": "digital-survival",
+    "text": "你的游戏账号被盗了，找回后发现装备都被洗空了，还被用挂机脚本刷了一天。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "d48c1",
+        "text": "心态崩了，弃坑",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          },
+          {
+            "stat": "wealth",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "d48c2",
+        "text": "找客服恢复数据",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          },
+          {
+            "stat": "wealth",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "d48c3",
+        "text": "绑定手机令牌",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 15
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "d48c4",
+        "text": "充钱买回装备",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -20
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "digital-049",
+    "category": "digital-survival",
+    "text": "有人在网上售卖“手机定位软件”，说输入号码就能知道对方位置，你想试试定位室友。",
+    "animation": "scrolling",
+    "choices": [
+      {
+        "id": "d49c1",
+        "text": "付钱购买",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -15
+          }
+        ]
+      },
+      {
+        "id": "d49c2",
+        "text": "知道是违法的，不买",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "d49c3",
+        "text": "怀疑是骗子，举报",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "d49c4",
+        "text": "搜免费版（全是病毒）",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -20
+          },
+          {
+            "stat": "wealth",
+            "change": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "digital-050",
+    "category": "digital-survival",
+    "text": "你的微信收到一条“清粉请见谅”的消息，下面还附带一个清理僵尸粉的链接。",
+    "animation": "scrolling",
+    "choices": [
+      {
+        "id": "d50c1",
+        "text": "点链接也清一下粉",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -15
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "d50c2",
+        "text": "把发消息的人删了",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "d50c3",
+        "text": "无视消息",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 0
+          },
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "d50c4",
+        "text": "告诉他这是流氓软件",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "digital-051",
+    "category": "digital-survival",
+    "text": "你在求职网站投简历，收到面试通知，要求先加QQ群进行“岗前培训”，还要交培训费。",
+    "animation": "talking",
+    "choices": [
+      {
+        "id": "d51c1",
+        "text": "交钱培训，求职心切",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -15
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "d51c2",
+        "text": "网上搜该公司评价",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "d51c3",
+        "text": "直接拒绝，找正规公司",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "d51c4",
+        "text": "进群看看都在说什么",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "digital-052",
+    "category": "digital-survival",
+    "text": "你的手机收到验证码，紧接着有人打电话说填错号码了，问你要刚才的验证码。",
+    "animation": "talking",
+    "choices": [
+      {
+        "id": "d52c1",
+        "text": "好心告诉他",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -30
+          },
+          {
+            "stat": "wealth",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "d52c2",
+        "text": "坚决不给",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 15
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "d52c3",
+        "text": "问他是什么平台的验证码",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "d52c4",
+        "text": "挂断拉黑",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "digital-053",
+    "category": "digital-survival",
+    "text": "你在网上下载复习资料，解压需要密码，旁边有个文本文档写着“加微信获取解压密码”。",
+    "animation": "scrolling",
+    "choices": [
+      {
+        "id": "d53c1",
+        "text": "加微信要密码",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "d53c2",
+        "text": "删了，找别的资料",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          },
+          {
+            "stat": "academicStanding",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "d53c3",
+        "text": "尝试暴力破解密码",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "d53c4",
+        "text": "骂上传者",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "digital-054",
+    "category": "digital-survival",
+    "text": "你的校园卡余额突然变多了500块，去查流水发现是“系统误充”或者陌生人充的。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "d54c1",
+        "text": "赶紧花掉，不退",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "d54c2",
+        "text": "去校园卡中心报告",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "wealth",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "d54c3",
+        "text": "等待失主联系",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "d54c4",
+        "text": "发个寻物启事",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "digital-055",
+    "category": "digital-survival",
+    "text": "你以前注册的一个论坛被黑了，数据库泄露，你所有账号都用的同一个密码。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "d55c1",
+        "text": "连夜修改所有重要密码",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 20
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "d55c2",
+        "text": "懒得改，赌运气",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -30
+          },
+          {
+            "stat": "wealth",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "d55c3",
+        "text": "只改支付宝微信的",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "d55c4",
+        "text": "用密码管理软件生成新密码",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 25
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  }
+]

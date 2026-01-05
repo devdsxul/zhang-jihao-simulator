@@ -1,0 +1,3538 @@
+[
+  {
+    "id": "academic-001",
+    "category": "academic-struggles",
+    "text": "期末考试周到了，你的高数挂科概率高达80%。室友都在图书馆复习，你却还在刷手机。",
+    "animation": "studying",
+    "choices": [
+      {
+        "id": "a1c1",
+        "text": "赶紧去图书馆复习",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "a1c2",
+        "text": "继续刷手机，考试靠运气",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -15
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "a1c3",
+        "text": "找学霸室友借笔记抄",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "a1c4",
+        "text": "直接放弃这门课，下学期重修",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -10
+          },
+          {
+            "stat": "wealth",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "academic-002",
+    "category": "academic-struggles",
+    "text": "辅导员发消息叫你去办公室谈话，说你的学分绩点太低了，可能影响毕业。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "a2c1",
+        "text": "老实去谈话，承诺好好学习",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "a2c2",
+        "text": "装没看到消息，能拖就拖",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "a2c3",
+        "text": "找借口说生病了，下周再去",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -3
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "a2c4",
+        "text": "主动制定学习计划带去给辅导员看",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 15
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "academic-003",
+    "category": "academic-struggles",
+    "text": "论文查重率高达65%，导师让你明天之前改好，否则不让答辩。",
+    "animation": "studying",
+    "choices": [
+      {
+        "id": "a3c1",
+        "text": "通宵改论文，一句句重写",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 15
+          },
+          {
+            "stat": "sanity",
+            "change": -15
+          }
+        ]
+      },
+      {
+        "id": "a3c2",
+        "text": "用降重软件自动处理",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "a3c3",
+        "text": "找淘宝代写降重服务",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 10
+          },
+          {
+            "stat": "wealth",
+            "change": -15
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -15
+          }
+        ]
+      },
+      {
+        "id": "a3c4",
+        "text": "求导师宽限几天",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "academic-004",
+    "category": "academic-struggles",
+    "text": "上课点名，但你根本没去，班长偷偷给你发消息问要不要帮你答到。",
+    "animation": "scrolling",
+    "choices": [
+      {
+        "id": "a4c1",
+        "text": "感谢班长，让他帮忙答到",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "a4c2",
+        "text": "拒绝，诚实面对旷课后果",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "a4c3",
+        "text": "马上打车去教室，希望来得及",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 8
+          },
+          {
+            "stat": "wealth",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "a4c4",
+        "text": "给老师发消息说自己病了",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -3
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "academic-005",
+    "category": "academic-struggles",
+    "text": "补考通知下来了，你有三门课要补考，时间都安排在同一周。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "a5c1",
+        "text": "制定详细复习计划，各个击破",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 12
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "a5c2",
+        "text": "只复习最容易过的那门",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 3
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "a5c3",
+        "text": "找学长买往年试题",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 8
+          },
+          {
+            "stat": "wealth",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "a5c4",
+        "text": "躺平接受，大不了重修",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -15
+          },
+          {
+            "stat": "wealth",
+            "change": -10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "academic-006",
+    "category": "academic-struggles",
+    "text": "你的专业课期中作业需要用全英文展示，而你的口语水平还停留在小学阶段。明天就要上台演讲了。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "a6c1",
+        "text": "通宵背诵稿子，死记硬背",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "a6c2",
+        "text": "用翻译软件生成语音，上台对口型",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "a6c3",
+        "text": "临时抱佛脚，找英语好的同学突击辅导",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "wealth",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "a6c4",
+        "text": "直接请病假，逃避演讲",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "academic-007",
+    "category": "academic-struggles",
+    "text": "图书馆占座大战开始了，早上六点门口就排起了长龙。你昨晚打游戏到凌晨三点。",
+    "animation": "scrolling",
+    "choices": [
+      {
+        "id": "a7c1",
+        "text": "硬着头皮早起去排队",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "a7c2",
+        "text": "睡到自然醒，去教室找空位",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 0
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "a7c3",
+        "text": "花钱找黄牛买个座位",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "wealth",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "a7c4",
+        "text": "就在宿舍复习，相信自己的定力",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "academic-008",
+    "category": "academic-struggles",
+    "text": "你选修了一门很难的“水课”，结果老师是个杀手，第一节课就点名批评玩手机的同学，你正好被抓个正着。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "a8c1",
+        "text": "诚恳道歉，保证以后认真听讲",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "a8c2",
+        "text": "辩解说在查资料",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "a8c3",
+        "text": "低头装死，假装没听见",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "a8c4",
+        "text": "课后主动找老师擦黑板",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "academic-009",
+    "category": "academic-struggles",
+    "text": "毕业论文导师突然失联了，发邮件不回，电话打不通，而初稿截止日期就在后天。",
+    "animation": "scrolling",
+    "choices": [
+      {
+        "id": "a9c1",
+        "text": "焦虑地等待，什么也不做",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "a9c2",
+        "text": "直接去导师办公室堵门",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "a9c3",
+        "text": "联系同门的师兄师姐询问情况",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "a9c4",
+        "text": "先按自己的想法写，不管导师意见",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 0
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "academic-010",
+    "category": "academic-struggles",
+    "text": "你的绩点排名出来了，离保研线只差0.01分。你发现有门课的分数似乎算错了。",
+    "animation": "studying",
+    "choices": [
+      {
+        "id": "a10c1",
+        "text": "立刻去找教务处复核分数",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "a10c2",
+        "text": "算了，命里无时莫强求",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "a10c3",
+        "text": "找任课老师求情加分",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "wealth",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "a10c4",
+        "text": "怀疑有人暗箱操作，发帖曝光",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -10
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -15
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "academic-011",
+    "category": "academic-struggles",
+    "text": "英语四级考试还有一周，你连单词书的第一页“abandon”都没背完。",
+    "animation": "scrolling",
+    "choices": [
+      {
+        "id": "a11c1",
+        "text": "疯狂刷真题，题海战术",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "a11c2",
+        "text": "转发锦鲤，祈求考试蒙的全对",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "a11c3",
+        "text": "找人买所谓的“考前押题”",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -5
+          },
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "a11c4",
+        "text": "裸考，明年再战",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "academic-012",
+    "category": "academic-struggles",
+    "text": "小组作业，组员全是“摆烂怪”，截止日期临近，PPT还是一片空白。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "a12c1",
+        "text": "独自一人扛下所有，通宵做完",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 15
+          },
+          {
+            "stat": "sanity",
+            "change": -20
+          }
+        ]
+      },
+      {
+        "id": "a12c2",
+        "text": "在群里疯狂艾特组员，逼他们干活",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "a12c3",
+        "text": "向老师举报组员不作为",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 10
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "a12c4",
+        "text": "大家一起摆烂，随便交个垃圾",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -15
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "academic-013",
+    "category": "academic-struggles",
+    "text": "你在考场上突然发现计算器没电了，而这门考试全是复杂的计算题。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "a13c1",
+        "text": "举手向监考老师求助",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "a13c2",
+        "text": "硬着头皮手算",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "a13c3",
+        "text": "偷看旁边同学的答案",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -20
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "a13c4",
+        "text": "直接交卷，放弃治疗",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -15
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "academic-014",
+    "category": "academic-struggles",
+    "text": "你的实验数据被误删了，没有备份，而明天就要交实验报告。",
+    "animation": "scrolling",
+    "choices": [
+      {
+        "id": "a14c1",
+        "text": "通宵重做实验",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": -15
+          }
+        ]
+      },
+      {
+        "id": "a14c2",
+        "text": "编造一套看似合理的数据",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "a14c3",
+        "text": "找借口请假，拖延几天",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "a14c4",
+        "text": "借同学的数据改一改",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 0
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "academic-015",
+    "category": "academic-struggles",
+    "text": "学校突然通知要进行宿舍卫生大检查，你的书桌乱得像垃圾堆，还藏着违规电器。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "a15c1",
+        "text": "立刻开始大扫除，藏好电器",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "a15c2",
+        "text": "把东西随便往柜子里一塞",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 0
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "a15c3",
+        "text": "锁门装作不在宿舍",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "a15c4",
+        "text": "贿赂来检查的学生会干事",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "wealth",
+            "change": -10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "academic-016",
+    "category": "academic-struggles",
+    "text": "你选的网课忘记刷进度了，今晚12点截止，还有50个视频没看。",
+    "animation": "scrolling",
+    "choices": [
+      {
+        "id": "a16c1",
+        "text": "开倍速疯狂刷课",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "a16c2",
+        "text": "找代刷挂课",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "wealth",
+            "change": -5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "a16c3",
+        "text": "用脚本自动播放",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -15
+          }
+        ]
+      },
+      {
+        "id": "a16c4",
+        "text": "放弃这门网课，下学期再说",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "academic-017",
+    "category": "academic-struggles",
+    "text": "你的奖学金申请材料少盖了一个章，负责盖章的老师出差了，明天是截止日期。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "a17c1",
+        "text": "打电话联系老师，请求电子签",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "a17c2",
+        "text": "伪造一个章盖上去",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -20
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -20
+          }
+        ]
+      },
+      {
+        "id": "a17c3",
+        "text": "先交上去，说明情况",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "a17c4",
+        "text": "放弃奖学金申请",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -10
+          },
+          {
+            "stat": "wealth",
+            "change": -20
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "academic-018",
+    "category": "academic-struggles",
+    "text": "你在课堂上睡觉，醒来发现老师正盯着你，全班都在看你。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "a18c1",
+        "text": "淡定地擦口水，假装在思考",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "a18c2",
+        "text": "立刻道歉，站起来听课",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "a18c3",
+        "text": "低头看书，回避目光",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "a18c4",
+        "text": "直接收拾书包走人",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -15
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "academic-019",
+    "category": "academic-struggles",
+    "text": "你的校园卡丢了，里面还有刚充的500块钱，而且明天考试进考场要用。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "a19c1",
+        "text": "立刻去挂失补办",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 0
+          },
+          {
+            "stat": "wealth",
+            "change": -20
+          }
+        ]
+      },
+      {
+        "id": "a19c2",
+        "text": "到处寻找，发朋友圈寻物",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "a19c3",
+        "text": "借同学的卡混进考场",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -10
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "a19c4",
+        "text": "不管了，先去吃饭（借钱）",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -5
+          },
+          {
+            "stat": "wealth",
+            "change": -10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "academic-020",
+    "category": "academic-struggles",
+    "text": "你报名的考研辅导班跑路了，学费没退，复习资料也没发。",
+    "animation": "scrolling",
+    "choices": [
+      {
+        "id": "a20c1",
+        "text": "组织受害者维权",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "a20c2",
+        "text": "自认倒霉，自己买书复习",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "wealth",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "a20c3",
+        "text": "在网上曝光该机构",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 0
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "a20c4",
+        "text": "心态崩了，不想考研了",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "academic-021",
+    "category": "academic-struggles",
+    "text": "你的电脑突然蓝屏，正在写的期末大作业还没保存。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "a21c1",
+        "text": "尝试修复电脑，祈祷数据还在",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "a21c2",
+        "text": "花重金找数据恢复专家",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "wealth",
+            "change": -30
+          }
+        ]
+      },
+      {
+        "id": "a21c3",
+        "text": "心态炸裂，砸键盘",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -5
+          },
+          {
+            "stat": "wealth",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "a21c4",
+        "text": "借室友电脑重写，凭记忆恢复",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": -15
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "academic-022",
+    "category": "academic-struggles",
+    "text": "体育课要考1000米，你平时缺乏锻炼，跑两步就喘。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "a22c1",
+        "text": "提前一周开始突击训练",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "a22c2",
+        "text": "找借口说身体不适申请缓考",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 0
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "a22c3",
+        "text": "找人替跑",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -20
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -20
+          }
+        ]
+      },
+      {
+        "id": "a22c4",
+        "text": "硬跑，跑死拉倒",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -15
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "academic-023",
+    "category": "academic-struggles",
+    "text": "你被拉进了一个全是学霸的卷王群，里面整天讨论GPA和科研。",
+    "animation": "scrolling",
+    "choices": [
+      {
+        "id": "a23c1",
+        "text": "默默潜水，收集学习资料",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "a23c2",
+        "text": "感到焦虑，退群保平安",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "a23c3",
+        "text": "加入讨论，假装自己也是大佬",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "a23c4",
+        "text": "屏蔽群消息，眼不见为净",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 0
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "academic-024",
+    "category": "academic-struggles",
+    "text": "你的选修课学分不够，必须再选一门，但只剩下“周六早上八点的量子物理”有课余量。",
+    "animation": "scrolling",
+    "choices": [
+      {
+        "id": "a24c1",
+        "text": "硬着头皮选，为了毕业",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "a24c2",
+        "text": "找教务处求情开个后门",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "a24c3",
+        "text": "延期毕业一年",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -20
+          },
+          {
+            "stat": "wealth",
+            "change": -20
+          }
+        ]
+      },
+      {
+        "id": "a24c4",
+        "text": "跨校选修网课",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "wealth",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "academic-025",
+    "category": "academic-struggles",
+    "text": "你在图书馆占的座位被别人拿走了，对方还死不承认。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "a25c1",
+        "text": "据理力争，大吵一架",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "a25c2",
+        "text": "忍气吞声，换个地方",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 0
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "a25c3",
+        "text": "找管理员调解",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "a25c4",
+        "text": "把他的书扔到地上",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "academic-026",
+    "category": "academic-struggles",
+    "text": "期末复习周，隔壁宿舍每晚打游戏大喊大叫，吵得你无法学习。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "a26c1",
+        "text": "上门交涉，要求安静",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "a26c2",
+        "text": "买个降噪耳机",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "wealth",
+            "change": -20
+          }
+        ]
+      },
+      {
+        "id": "a26c3",
+        "text": "向宿管阿姨投诉",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "a26c4",
+        "text": "加入他们一起玩",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -15
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "academic-027",
+    "category": "academic-struggles",
+    "text": "你的专业被教育部亮了红牌，就业率极低，转专业申请又被驳回。",
+    "animation": "scrolling",
+    "choices": [
+      {
+        "id": "a27c1",
+        "text": "努力学习，争取做行业顶尖",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 15
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "a27c2",
+        "text": "自学其他专业技能，准备转行",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "a27c3",
+        "text": "摆烂，混个文凭算了",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "a27c4",
+        "text": "考公，宇宙的尽头是编制",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "academic-028",
+    "category": "academic-struggles",
+    "text": "你的校园网账号欠费了，没网没法查资料写作业，生活费也所剩无几。",
+    "animation": "scrolling",
+    "choices": [
+      {
+        "id": "a28c1",
+        "text": "去蹭图书馆的免费WIFI",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "a28c2",
+        "text": "找室友借热点",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "a28c3",
+        "text": "吃土也要充网费",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "wealth",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "a28c4",
+        "text": "正好断网闭关修炼",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "academic-029",
+    "category": "academic-struggles",
+    "text": "你在考试周得了重感冒，头晕眼花，根本看不进书。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "a29c1",
+        "text": "带病坚持复习",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -15
+          }
+        ]
+      },
+      {
+        "id": "a29c2",
+        "text": "去医院打点滴，求速效药",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 0
+          },
+          {
+            "stat": "wealth",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "a29c3",
+        "text": "申请缓考",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 0
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "a29c4",
+        "text": "睡觉休息，身体要紧",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "academic-030",
+    "category": "academic-struggles",
+    "text": "你的二手教材被发现少了几十页关键内容，正是考试重点。",
+    "animation": "studying",
+    "choices": [
+      {
+        "id": "a30c1",
+        "text": "找同学借书复印",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "wealth",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "a30c2",
+        "text": "去图书馆借阅",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "a30c3",
+        "text": "网上找电子版",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "a30c4",
+        "text": "只复习剩下的部分",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "academic-031",
+    "category": "academic-struggles",
+    "text": "你的导师给你安排了一个不可能完成的任务，作为期末考核的一部分。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "a31c1",
+        "text": "拼命尝试，不睡觉也要做",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": -20
+          }
+        ]
+      },
+      {
+        "id": "a31c2",
+        "text": "和导师沟通，请求降低难度",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "a31c3",
+        "text": "敷衍了事，做多少算多少",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "a31c4",
+        "text": "找外援帮忙",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "wealth",
+            "change": -15
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "academic-032",
+    "category": "academic-struggles",
+    "text": "你在学校论坛上看到有人挂你的照片，说你是“占座狗”，但你其实只离开了一会儿。",
+    "animation": "scrolling",
+    "choices": [
+      {
+        "id": "a32c1",
+        "text": "发帖澄清，并在评论区对线",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 0
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -15
+          }
+        ]
+      },
+      {
+        "id": "a32c2",
+        "text": "无视网络喷子，清者自清",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 0
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "a32c3",
+        "text": "联系管理员删帖",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 0
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "a32c4",
+        "text": "以后再也不占座了",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "academic-033",
+    "category": "academic-struggles",
+    "text": "你的英语听力耳机在考试前坏了，只剩半个小时就要开考。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "a33c1",
+        "text": "冲去学校超市买个新的",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 0
+          },
+          {
+            "stat": "wealth",
+            "change": -20
+          }
+        ]
+      },
+      {
+        "id": "a33c2",
+        "text": "借备用耳机（如果有的话）",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 0
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "a33c3",
+        "text": "看能不能外放（不可能）",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -20
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "a33c4",
+        "text": "盲听，靠运气",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -15
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "academic-034",
+    "category": "academic-struggles",
+    "text": "你的课表上两门课冲突了，一门是必修，一门是你非常想上的选修。",
+    "animation": "scrolling",
+    "choices": [
+      {
+        "id": "a34c1",
+        "text": "退掉选修，保必修",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "a34c2",
+        "text": "两边跑，逃课一半",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "a34c3",
+        "text": "申请免听必修课",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "a34c4",
+        "text": "找人代课",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -5
+          },
+          {
+            "stat": "wealth",
+            "change": -10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "academic-035",
+    "category": "academic-struggles",
+    "text": "你把期末考试的时间记错了，现在离考试开始还有10分钟，你在宿舍刚醒。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "a35c1",
+        "text": "飞奔去考场，不管仪容仪表",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "a35c2",
+        "text": "打车去，希望能赶上",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -5
+          },
+          {
+            "stat": "wealth",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "a35c3",
+        "text": "放弃考试，准备补考",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -20
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "a35c4",
+        "text": "谎称宿舍门坏了被锁里面",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -10
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "academic-036",
+    "category": "academic-struggles",
+    "text": "你的实验报告被查重系统判定抄袭，因为你引用了太多自己的上一篇报告。",
+    "animation": "studying",
+    "choices": [
+      {
+        "id": "a36c1",
+        "text": "向老师申诉，解释情况",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "a36c2",
+        "text": "重新写一篇全新的",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": -15
+          }
+        ]
+      },
+      {
+        "id": "a36c3",
+        "text": "认怂，接受扣分",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "a36c4",
+        "text": "找人修改降重",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "wealth",
+            "change": -10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "academic-037",
+    "category": "academic-struggles",
+    "text": "你的助学金评定需要班级投票，你平时比较内向，和同学不熟。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "a37c1",
+        "text": "硬着头皮去拉票",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 0
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "a37c2",
+        "text": "放弃助学金，打工赚钱",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -5
+          },
+          {
+            "stat": "wealth",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "a37c3",
+        "text": "请全班喝奶茶",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 0
+          },
+          {
+            "stat": "wealth",
+            "change": -20
+          }
+        ]
+      },
+      {
+        "id": "a37c4",
+        "text": "找辅导员反映制度不合理",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "academic-038",
+    "category": "academic-struggles",
+    "text": "你在图书馆借的书弄丢了，这本书已经绝版，赔偿金是原价的10倍。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "a38c1",
+        "text": "照价赔偿，心在滴血",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 0
+          },
+          {
+            "stat": "wealth",
+            "change": -30
+          }
+        ]
+      },
+      {
+        "id": "a38c2",
+        "text": "在网上买本二手的抵数",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 0
+          },
+          {
+            "stat": "wealth",
+            "change": -15
+          }
+        ]
+      },
+      {
+        "id": "a38c3",
+        "text": "谎称书被偷了",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -10
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "a38c4",
+        "text": "每天去图书馆找，也许在角落",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 0
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "academic-039",
+    "category": "academic-struggles",
+    "text": "你的电脑中了勒索病毒，所有学习资料都被加密，黑客要价0.5个比特币。",
+    "animation": "scrolling",
+    "choices": [
+      {
+        "id": "a39c1",
+        "text": "格式化电脑，资料不要了",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -15
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "a39c2",
+        "text": "找计算机系的大神帮忙",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "a39c3",
+        "text": "真的给钱（如果你有的话）",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "wealth",
+            "change": -50
+          }
+        ]
+      },
+      {
+        "id": "a39c4",
+        "text": "报警处理",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 0
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "academic-040",
+    "category": "academic-struggles",
+    "text": "你参加的社团活动太多，严重影响了学习，期中考试三门不及格。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "a40c1",
+        "text": "退出所有社团，专心学习",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 15
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "a40c2",
+        "text": "减少社团活动，平衡时间",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "a40c3",
+        "text": "继续社团，学习随缘",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "a40c4",
+        "text": "找部长申请挂名不干活",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 0
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "academic-041",
+    "category": "academic-struggles",
+    "text": "你的室友每晚都要和对象打电话到半夜，声音很大，你根本睡不着，第二天早八还要上课。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "a41c1",
+        "text": "直接抗议，要求挂电话",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 0
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "a41c2",
+        "text": "戴耳塞睡觉",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 0
+          },
+          {
+            "stat": "wealth",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "a41c3",
+        "text": "搬出去租房住",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "wealth",
+            "change": -30
+          }
+        ]
+      },
+      {
+        "id": "a41c4",
+        "text": "在论坛吐槽室友",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 0
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "academic-042",
+    "category": "academic-struggles",
+    "text": "学校要求强制参加一个毫无意义的讲座，还要刷脸签到。",
+    "animation": "scrolling",
+    "choices": [
+      {
+        "id": "a42c1",
+        "text": "带上书去讲座现场复习",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "a42c2",
+        "text": "签完到就偷偷溜走",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 0
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "a42c3",
+        "text": "找同学拿照片代签（如果能行）",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "a42c4",
+        "text": "老实听讲座，玩手机",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "academic-043",
+    "category": "academic-struggles",
+    "text": "你的实验课搭档是个极其不靠谱的人，经常迟到早退，实验操作也总是出错。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "a43c1",
+        "text": "向老师申请换搭档",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "a43c2",
+        "text": "自己多干点，带带他",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": -15
+          }
+        ]
+      },
+      {
+        "id": "a43c3",
+        "text": "严厉批评他，要求改正",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "a43c4",
+        "text": "摆烂，大家一起挂",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -15
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "academic-044",
+    "category": "academic-struggles",
+    "text": "你的一门课期末考核是拍视频，你完全不会剪辑软件。",
+    "animation": "scrolling",
+    "choices": [
+      {
+        "id": "a44c1",
+        "text": "现学现卖，熬夜剪辑",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": -15
+          }
+        ]
+      },
+      {
+        "id": "a44c2",
+        "text": "找会剪辑的朋友帮忙",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "wealth",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "a44c3",
+        "text": "用手机简单拼接，敷衍了事",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "a44c4",
+        "text": "网上付费找人做",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "wealth",
+            "change": -20
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "academic-045",
+    "category": "academic-struggles",
+    "text": "辅导员通知你，你的综合测评没加满，可能拿不到奖学金，需要参加志愿活动补分。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "a45c1",
+        "text": "立刻报名参加志愿活动",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "a45c2",
+        "text": "找能加分的活动挂名",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 0
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "a45c3",
+        "text": "算了，不要奖学金了",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -5
+          },
+          {
+            "stat": "wealth",
+            "change": -15
+          }
+        ]
+      },
+      {
+        "id": "a45c4",
+        "text": "仔细核对综测细则，看有无遗漏",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "academic-046",
+    "category": "academic-struggles",
+    "text": "你在考试时因为太紧张，把答题卡涂串行了，还有15分钟收卷。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "a46c1",
+        "text": "深呼吸，用橡皮擦干净重涂",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "a46c2",
+        "text": "慌乱中随便改改",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "a46c3",
+        "text": "向监考老师申请换答题卡",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 0
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "a46c4",
+        "text": "放弃修改，听天由命",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -20
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "academic-047",
+    "category": "academic-struggles",
+    "text": "你的父母突然袭击来学校看你，而你正在宿舍通宵打游戏，桌上全是外卖盒。",
+    "animation": "scrolling",
+    "choices": [
+      {
+        "id": "a47c1",
+        "text": "光速收拾宿舍，装作刚起床",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 0
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "a47c2",
+        "text": "坦白从宽，接受教育",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -5
+          },
+          {
+            "stat": "wealth",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "a47c3",
+        "text": "借口去图书馆了，躲出去",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 0
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "a47c4",
+        "text": "把室友推出去挡枪",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 0
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "academic-048",
+    "category": "academic-struggles",
+    "text": "你选的一门课教材太贵了，正版要好几百块。",
+    "animation": "scrolling",
+    "choices": [
+      {
+        "id": "a48c1",
+        "text": "咬牙买正版",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "wealth",
+            "change": -20
+          }
+        ]
+      },
+      {
+        "id": "a48c2",
+        "text": "买影印版/盗版",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "wealth",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "a48c3",
+        "text": "和同学合买一本",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "wealth",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "a48c4",
+        "text": "不买书，上课借着看",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -5
+          },
+          {
+            "stat": "wealth",
+            "change": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "academic-049",
+    "category": "academic-struggles",
+    "text": "你把U盘插在打印店电脑上打印资料，回来发现U盘里的文件全变成了快捷方式（中毒了）。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "a49c1",
+        "text": "尝试用杀毒软件修复",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "a49c2",
+        "text": "格式化U盘，文件不要了",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "a49c3",
+        "text": "找懂电脑的同学求救",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "a49c4",
+        "text": "以后只用网盘打印",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 0
+          },
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "academic-050",
+    "category": "academic-struggles",
+    "text": "学校教务系统崩溃了，你还没选上体育课，选课系统马上就要关闭。",
+    "animation": "scrolling",
+    "choices": [
+      {
+        "id": "a50c1",
+        "text": "疯狂刷新网页",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 0
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "a50c2",
+        "text": "去教务处现场排队处理",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "a50c3",
+        "text": "拜托网速快的朋友帮忙",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "a50c4",
+        "text": "听天由命，下学期再选",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "academic-051",
+    "category": "academic-struggles",
+    "text": "你的校园卡照片太丑了，每次刷卡都被人笑话，你想换照片。",
+    "animation": "scrolling",
+    "choices": [
+      {
+        "id": "a51c1",
+        "text": "花钱去补办一张新的",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 0
+          },
+          {
+            "stat": "wealth",
+            "change": -20
+          }
+        ]
+      },
+      {
+        "id": "a51c2",
+        "text": "贴个贴纸挡住",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 0
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "a51c3",
+        "text": "忍着，反正毕业就不用了",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 0
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "a51c4",
+        "text": "P一张美照去申请更换",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 0
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "academic-052",
+    "category": "academic-struggles",
+    "text": "你收到短信说你获得了国家奖学金，需要点击链接确认（其实是诈骗）。",
+    "animation": "scrolling",
+    "choices": [
+      {
+        "id": "a52c1",
+        "text": "点进去看看，万一是真的",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -20
+          }
+        ]
+      },
+      {
+        "id": "a52c2",
+        "text": "一眼假，直接删除",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 0
+          },
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "a52c3",
+        "text": "向辅导员核实",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 0
+          },
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "a52c4",
+        "text": "反手举报诈骗短信",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 0
+          },
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "academic-053",
+    "category": "academic-struggles",
+    "text": "你暗恋的学霸女神/男神约你去图书馆自习，但你其实根本看不进书。",
+    "animation": "studying",
+    "choices": [
+      {
+        "id": "a53c1",
+        "text": "去！装也要装作爱学习",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "a53c2",
+        "text": "拒绝，不想在她/他面前丢人",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 0
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "a53c3",
+        "text": "去了之后一直在玩手机",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "a53c4",
+        "text": "借机请教问题，拉近关系",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "academic-054",
+    "category": "academic-struggles",
+    "text": "期末考试最后一门，你提前交卷了，走出考场才发现背面还有一页题。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "a54c1",
+        "text": "当场崩溃，大哭一场",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -15
+          },
+          {
+            "stat": "sanity",
+            "change": -15
+          }
+        ]
+      },
+      {
+        "id": "a54c2",
+        "text": "试图回去找老师（没用的）",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -15
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "a54c3",
+        "text": "自我安慰，反正也不会做",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -15
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "a54c4",
+        "text": "准备补考吧",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "academic-055",
+    "category": "academic-struggles",
+    "text": "你的毕业实习单位是个坑，每天让你打杂拿外卖，学不到东西，学校还要盖章。",
+    "animation": "scrolling",
+    "choices": [
+      {
+        "id": "a55c1",
+        "text": "为了盖章，忍辱负重",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -15
+          }
+        ]
+      },
+      {
+        "id": "a55c2",
+        "text": "直接离职，重新找实习",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 0
+          },
+          {
+            "stat": "wealth",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "a55c3",
+        "text": "找关系盖个章混过去",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "a55c4",
+        "text": "和老板谈谈，要求接触核心业务",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  }
+]

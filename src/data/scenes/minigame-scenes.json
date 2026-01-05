@@ -1,0 +1,131 @@
+[
+  {
+    "id": "minigame_billiards_challenge",
+    "category": "billiards-progression",
+    "text": "你来到老地方——天津塘沽的\"九球天后\"台球厅。一个戴金链子的大哥拍着桌子说：\"听说你是这儿的常客？来，赌一把，500块，你敢不敢？\"周围人都在看着你。",
+    "animation": "billiards",
+    "minigame": {
+      "type": "billiards",
+      "difficulty": 1
+    },
+    "choices": [
+      {
+        "id": "accept_bet",
+        "text": "来就来！（进入台球小游戏）",
+        "triggerMinigame": true,
+        "effects": []
+      },
+      {
+        "id": "decline_bet",
+        "text": "算了，今天手感不好",
+        "effects": [
+          { "stat": "sanity", "change": -5 },
+          { "stat": "billiardsSkill", "change": -3 }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "minigame_money_run",
+    "category": "financial-temptations",
+    "text": "微信上一个\"老朋友\"突然联系你：\"兄弟，有个快钱的机会，帮我过一下账，抽成10%，绝对安全。\"你的银行卡余额只剩下312块，下个月房租还没着落...",
+    "animation": "scrolling",
+    "minigame": {
+      "type": "moneyrun",
+      "difficulty": 1
+    },
+    "choices": [
+      {
+        "id": "accept_run",
+        "text": "干了！穷怕了！（进入跑分小游戏）",
+        "triggerMinigame": true,
+        "effects": []
+      },
+      {
+        "id": "decline_run",
+        "text": "不干，这是犯法的",
+        "effects": [
+          { "stat": "digitalSafety", "change": 10 },
+          { "stat": "sanity", "change": -3 }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "minigame_keyboard_warrior",
+    "category": "football-fandom",
+    "text": "凌晨3点，巴萨2-3输给皇马。你的手机疯狂震动——虎扑、微博、贴吧全都炸了。黑子们开始疯狂攻击梅西，你作为资深梅吹，怎么能忍？",
+    "animation": "scrolling",
+    "minigame": {
+      "type": "campnou",
+      "difficulty": 1
+    },
+    "choices": [
+      {
+        "id": "fight_haters",
+        "text": "打开VPN，冲！（进入键盘侠小游戏）",
+        "triggerMinigame": true,
+        "effects": []
+      },
+      {
+        "id": "sleep_instead",
+        "text": "算了，明天还要上课，睡了",
+        "effects": [
+          { "stat": "academicStanding", "change": 3 },
+          { "stat": "sanity", "change": -8 }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "minigame_billiards_tournament",
+    "category": "billiards-progression",
+    "text": "有人组织了一场地下八球比赛，奖金池5000块。你的台球技术在这片区域小有名气，但对手都是各路高手。报名费500，你参加吗？",
+    "animation": "billiards",
+    "minigame": {
+      "type": "billiards",
+      "difficulty": 2
+    },
+    "choices": [
+      {
+        "id": "join_tournament",
+        "text": "报名！冲击冠军！（进入高难度台球小游戏）",
+        "triggerMinigame": true,
+        "effects": []
+      },
+      {
+        "id": "skip_tournament",
+        "text": "500块报名费太贵了",
+        "effects": [
+          { "stat": "wealth", "change": 0 }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "minigame_messi_worldcup",
+    "category": "football-fandom",
+    "text": "2022年12月18日，阿根廷vs法国世界杯决赛。你在宿舍用三个手机同时登录微博、虎扑、推特，准备迎接历史性时刻。不管结果如何，今晚必须战斗到底！",
+    "animation": "celebrating",
+    "minigame": {
+      "type": "campnou",
+      "difficulty": 2
+    },
+    "choices": [
+      {
+        "id": "full_power",
+        "text": "今晚不睡！梅西封神之战！（进入键盘侠小游戏）",
+        "triggerMinigame": true,
+        "effects": []
+      },
+      {
+        "id": "watch_quietly",
+        "text": "安静看球，不参与网络骂战",
+        "effects": [
+          { "stat": "sanity", "change": 15 },
+          { "stat": "academicStanding", "change": 5 }
+        ]
+      }
+    ]
+  }
+]

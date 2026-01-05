@@ -1,0 +1,6987 @@
+[
+  {
+    "id": "neg-001",
+    "type": "negative",
+    "title": "跑分再犯入狱",
+    "description": "你又一次帮人跑分，这次被当场抓获。作为累犯，你被判处有期徒刑三年。铁窗生涯正式开始。",
+    "conditions": [
+      {
+        "stat": "digitalSafety",
+        "operator": "lte",
+        "value": 15
+      },
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 20
+      }
+    ],
+    "priority": 95
+  },
+  {
+    "id": "neg-002",
+    "type": "negative",
+    "title": "微信号出租定罪",
+    "description": "你出租的微信号被用于电信诈骗，涉案金额高达50万。作为帮信罪共犯，你面临刑事处罚。",
+    "conditions": [
+      {
+        "stat": "digitalSafety",
+        "operator": "lte",
+        "value": 10
+      }
+    ],
+    "priority": 94
+  },
+  {
+    "id": "neg-003",
+    "type": "negative",
+    "title": "翻墙被喝茶",
+    "description": "你在Twitter上发布的敏感内容被追踪到真实身份，网警上门约谈。学校给了你留校察看处分。",
+    "conditions": [
+      {
+        "stat": "digitalSafety",
+        "operator": "lte",
+        "value": 20
+      },
+      {
+        "stat": "academicStanding",
+        "operator": "lte",
+        "value": 30
+      }
+    ],
+    "priority": 90
+  },
+  {
+    "id": "neg-004",
+    "type": "negative",
+    "title": "毕业失败被赶出家门",
+    "description": "你最终没能毕业，父母得知真相后大发雷霆。失望透顶的父亲让你自己去闯，不要再回家。",
+    "conditions": [
+      {
+        "stat": "academicStanding",
+        "operator": "lte",
+        "value": 10
+      }
+    ],
+    "priority": 88
+  },
+  {
+    "id": "neg-005",
+    "type": "negative",
+    "title": "精神崩溃住院",
+    "description": "长期的压力让你彻底崩溃，被送进了精神科病房。你开始了漫长的康复治疗。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 5
+      }
+    ],
+    "priority": 92
+  },
+  {
+    "id": "neg-006",
+    "type": "negative",
+    "title": "踢球断腿",
+    "description": "一次激烈的拼抢中，你的腿被对方铲断。虽然做了手术，但从此再也无法踢球了。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 25
+      }
+    ],
+    "priority": 70
+  },
+  {
+    "id": "neg-007",
+    "type": "negative",
+    "title": "台球厅斗殴被拘",
+    "description": "台球追分时与对手发生冲突，你打伤了对方。警察来了之后，你被行政拘留15天。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 20
+      },
+      {
+        "stat": "billiardsSkill",
+        "operator": "gte",
+        "value": 60
+      }
+    ],
+    "priority": 75
+  },
+  {
+    "id": "neg-008",
+    "type": "negative",
+    "title": "负债累累跑路",
+    "description": "网贷、花呗、借呗全部逾期，催收电话打爆了你的手机。你不得不换号码躲债。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 5
+      }
+    ],
+    "priority": 85
+  },
+  {
+    "id": "neg-009",
+    "type": "negative",
+    "title": "全部微信号被封",
+    "description": "你所有的微信号都因为违规操作被永久封禁。没有微信的日子，你几乎与社会脱节。",
+    "conditions": [
+      {
+        "stat": "digitalSafety",
+        "operator": "lte",
+        "value": 25
+      }
+    ],
+    "priority": 65
+  },
+  {
+    "id": "neg-010",
+    "type": "negative",
+    "title": "被学校开除",
+    "description": "因为多次违纪和挂科太多，学校最终做出了开除学籍的决定。你的大学生涯就此终结。",
+    "conditions": [
+      {
+        "stat": "academicStanding",
+        "operator": "lte",
+        "value": 5
+      },
+      {
+        "stat": "digitalSafety",
+        "operator": "lte",
+        "value": 30
+      }
+    ],
+    "priority": 93
+  },
+  {
+    "id": "pos-001",
+    "type": "positive",
+    "title": "艰难毕业",
+    "description": "虽然经历了无数补考和重修，你还是拿到了毕业证。虽然成绩不好看，但至少毕业了。",
+    "conditions": [
+      {
+        "stat": "academicStanding",
+        "operator": "gte",
+        "value": 40
+      }
+    ],
+    "priority": 50
+  },
+  {
+    "id": "pos-002",
+    "type": "positive",
+    "title": "台球职业选手",
+    "description": "你的台球天赋被教练发现，开始走上职业道路。虽然放弃了学业，但找到了人生新方向。",
+    "conditions": [
+      {
+        "stat": "billiardsSkill",
+        "operator": "gte",
+        "value": 85
+      }
+    ],
+    "priority": 60
+  },
+  {
+    "id": "pos-003",
+    "type": "positive",
+    "title": "白帽黑客转行",
+    "description": "你的技术能力被安全公司看中，成功转型为白帽黑客。过去的经历反而成为了宝贵经验。",
+    "conditions": [
+      {
+        "stat": "digitalSafety",
+        "operator": "gte",
+        "value": 70
+      },
+      {
+        "stat": "academicStanding",
+        "operator": "gte",
+        "value": 40
+      }
+    ],
+    "priority": 55
+  },
+  {
+    "id": "pos-004",
+    "type": "positive",
+    "title": "找到正经工作",
+    "description": "虽然学历不出色，但你凭借真诚和努力找到了一份稳定的工作。生活开始走上正轨。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "gte",
+        "value": 60
+      },
+      {
+        "stat": "wealth",
+        "operator": "gte",
+        "value": 40
+      }
+    ],
+    "priority": 45
+  },
+  {
+    "id": "pos-005",
+    "type": "positive",
+    "title": "戒掉翻墙瘾",
+    "description": "你意识到翻墙的风险太大，彻底戒掉了这个习惯。生活变得简单而安全。",
+    "conditions": [
+      {
+        "stat": "digitalSafety",
+        "operator": "gte",
+        "value": 80
+      }
+    ],
+    "priority": 40
+  },
+  {
+    "id": "rare-001",
+    "type": "rare",
+    "title": "被巴萨挖走",
+    "description": "一段你踢野球的视频意外走红，巴萨青训营看中了你的潜力。你即将前往西班牙追梦！",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "gte",
+        "value": 80
+      },
+      {
+        "stat": "academicStanding",
+        "operator": "gte",
+        "value": 50
+      }
+    ],
+    "priority": 98
+  },
+  {
+    "id": "rare-002",
+    "type": "rare",
+    "title": "梅西关注了你",
+    "description": "你坚持在社交媒体上支持梅西，终于有一天，梅西本人关注了你的账号。你激动得哭了出来。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "gte",
+        "value": 70
+      },
+      {
+        "stat": "digitalSafety",
+        "operator": "gte",
+        "value": 60
+      }
+    ],
+    "priority": 96
+  },
+  {
+    "id": "rare-003",
+    "type": "rare",
+    "title": "成为表情包",
+    "description": "你的一张沙雕照片意外成为全网热门表情包。虽然有点社死，但你因此成了小网红。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "gte",
+        "value": 50
+      }
+    ],
+    "priority": 30
+  },
+  {
+    "id": "rare-004",
+    "type": "rare",
+    "title": "台球世界冠军",
+    "description": "你在台球领域展现出惊人天赋，一路过关斩将，最终站上了世界冠军的领奖台。",
+    "conditions": [
+      {
+        "stat": "billiardsSkill",
+        "operator": "gte",
+        "value": 95
+      },
+      {
+        "stat": "sanity",
+        "operator": "gte",
+        "value": 60
+      }
+    ],
+    "priority": 99
+  },
+  {
+    "id": "rare-005",
+    "type": "rare",
+    "title": "开发爆款APP",
+    "description": "你利用编程技能开发了一款爆款APP，获得了天使投资。从此走上人生巅峰。",
+    "conditions": [
+      {
+        "stat": "digitalSafety",
+        "operator": "gte",
+        "value": 75
+      },
+      {
+        "stat": "wealth",
+        "operator": "gte",
+        "value": 60
+      },
+      {
+        "stat": "academicStanding",
+        "operator": "gte",
+        "value": 50
+      }
+    ],
+    "priority": 97
+  },
+  {
+    "id": "neg-161",
+    "type": "negative",
+    "title": "考场作弊被抓",
+    "description": "你在期末考试中试图使用隐形耳机作弊，被监考老师当场抓获。学校通报批评并直接开除学籍，你的学术生涯就此终结，家人对你失望透顶。",
+    "conditions": [
+      {
+        "stat": "academicStanding",
+        "operator": "lte",
+        "value": 10
+      }
+    ],
+    "priority": 90
+  },
+  {
+    "id": "neg-162",
+    "type": "negative",
+    "title": "网络诈骗受害",
+    "description": "你轻信了网上的刷单兼职广告，渴望快速致富，结果被骗光了所有生活费还背上了网贷。因为无力偿还，你被暴力催收，身心崩溃。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 5
+      }
+    ],
+    "priority": 85
+  },
+  {
+    "id": "neg-163",
+    "type": "negative",
+    "title": "台球厅斗殴",
+    "description": "在台球厅因为赌球纠纷，你和一群社会青年发生肢体冲突。混乱中你被酒瓶击中头部，导致严重脑震荡，不仅赔光了积蓄，还留下了后遗症。",
+    "conditions": [
+      {
+        "stat": "billiardsSkill",
+        "operator": "lte",
+        "value": 20
+      }
+    ],
+    "priority": 75
+  },
+  {
+    "id": "neg-164",
+    "type": "negative",
+    "title": "精神分裂前兆",
+    "description": "长期的学业压力和自我封闭让你开始出现幻听和幻觉。你在宿舍自言自语，行为怪异，最终被强制送往精神卫生中心进行治疗，无法继续学业。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 10
+      }
+    ],
+    "priority": 95
+  },
+  {
+    "id": "neg-165",
+    "type": "negative",
+    "title": "翻墙浏览被拘",
+    "description": "你长期频繁使用非法VPN浏览敏感网站并发表不当言论，被网警锁定。警察直接到宿舍将你带走，行政拘留十五天，学校也因此给予留校察看处分。",
+    "conditions": [
+      {
+        "stat": "digitalSafety",
+        "operator": "lte",
+        "value": 10
+      }
+    ],
+    "priority": 88
+  },
+  {
+    "id": "neg-166",
+    "type": "negative",
+    "title": "寝室违规电器",
+    "description": "你在宿舍偷偷使用大功率取暖器引发火灾，虽然人没事，但整层楼的电路被烧毁。你面临巨额赔偿，并被学校勒令退学。",
+    "conditions": [
+      {
+        "stat": "academicStanding",
+        "operator": "lte",
+        "value": 30
+      }
+    ],
+    "priority": 70
+  },
+  {
+    "id": "neg-167",
+    "type": "negative",
+    "title": "沉迷网赌深渊",
+    "description": "从最初的小玩一把到后来的疯狂梭哈，你彻底沉迷网络赌博。负债累累的你为了还债偷窃室友电脑，被发现后移送公安机关，前途尽毁。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 0
+      }
+    ],
+    "priority": 92
+  },
+  {
+    "id": "neg-168",
+    "type": "negative",
+    "title": "挂科过多劝退",
+    "description": "大一学年结束，你的必修课挂科率超过80%。面对红色的成绩单，辅导员无奈地通知你家长办理退学手续，你只能灰溜溜地回老家打工。",
+    "conditions": [
+      {
+        "stat": "academicStanding",
+        "operator": "lte",
+        "value": 5
+      }
+    ],
+    "priority": 80
+  },
+  {
+    "id": "neg-169",
+    "type": "negative",
+    "title": "严重抑郁症",
+    "description": "你整日躺在床上不吃不喝，对外界失去所有兴趣。严重的抑郁症让你多次尝试轻生，最终家人不得不办理休学手续，带你回家长期疗养。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 5
+      }
+    ],
+    "priority": 98
+  },
+  {
+    "id": "neg-170",
+    "type": "negative",
+    "title": "裸贷风波",
+    "description": "为了购买最新的电子产品，你走投无路借了裸贷。逾期后不雅照片被发遍了通讯录，你在学校身败名裂，精神彻底崩溃，只能休学躲避。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 5
+      }
+    ],
+    "priority": 89
+  },
+  {
+    "id": "neg-171",
+    "type": "negative",
+    "title": "黑网吧通宵猝死",
+    "description": "连续在环境恶劣的黑网吧通宵一周后，你突发心脏骤停。虽然被送医抢救，但因为缺氧时间过长变成了植物人，给家庭带来无尽的痛苦。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 10
+      }
+    ],
+    "priority": 96
+  },
+  {
+    "id": "neg-172",
+    "type": "negative",
+    "title": "论文代写败露",
+    "description": "毕业论文你找了枪手代写，在答辩时被教授一眼识破。学术不端的行为被记入档案，取消学位证，你的大学四年最终只换来一张肄业证书。",
+    "conditions": [
+      {
+        "stat": "academicStanding",
+        "operator": "lte",
+        "value": 20
+      }
+    ],
+    "priority": 78
+  },
+  {
+    "id": "neg-173",
+    "type": "negative",
+    "title": "非法传销陷阱",
+    "description": "被老乡忽悠去参加所谓的“创业项目”，结果误入传销组织。你被洗脑并限制人身自由，直到警方捣毁窝点才被解救，但身心已受重创。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 40
+      }
+    ],
+    "priority": 82
+  },
+  {
+    "id": "neg-174",
+    "type": "negative",
+    "title": "校园贷连环坑",
+    "description": "为了拆东墙补西墙，你陷入了校园贷的连环陷阱。利滚利的高额债务让你每天活在恐惧中，最终讨债人员冲进教室，你被迫退学还债。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 0
+      }
+    ],
+    "priority": 91
+  },
+  {
+    "id": "neg-175",
+    "type": "negative",
+    "title": "由于作弊被取消学位",
+    "description": "虽然混到了毕业前夕，但在最后一次清考中夹带小抄被巡考发现。学校依照规定取消了你的学位授予资格，你成为了没有学位的毕业生。",
+    "conditions": [
+      {
+        "stat": "academicStanding",
+        "operator": "lte",
+        "value": 25
+      }
+    ],
+    "priority": 76
+  },
+  {
+    "id": "neg-176",
+    "type": "negative",
+    "title": "沉迷游戏挂科",
+    "description": "由于没日没夜地打游戏，你错过了所有的期末考试。补考也因为睡过头而缺席，学校依据规定给予退学处理，你抱着键盘哭得像个孩子。",
+    "conditions": [
+      {
+        "stat": "academicStanding",
+        "operator": "lte",
+        "value": 15
+      }
+    ],
+    "priority": 72
+  },
+  {
+    "id": "neg-177",
+    "type": "negative",
+    "title": "私刻公章被捕",
+    "description": "为了伪造实习证明和成绩单，你私自刻制学校公章。事情败露后，你因伪造事业单位印章罪被刑事拘留，留下了伴随一生的案底。",
+    "conditions": [
+      {
+        "stat": "academicStanding",
+        "operator": "lte",
+        "value": 30
+      }
+    ],
+    "priority": 86
+  },
+  {
+    "id": "neg-178",
+    "type": "negative",
+    "title": "深夜醉酒冻伤",
+    "description": "失恋后你在冬天深夜醉酒倒在路边，直到第二天清晨才被环卫工发现。虽然捡回一条命，但因为严重冻伤截去了几根手指，落下终身残疾。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 25
+      }
+    ],
+    "priority": 84
+  },
+  {
+    "id": "neg-179",
+    "type": "negative",
+    "title": "比特币爆仓",
+    "description": "你挪用父母给的学费加杠杆炒比特币，结果遭遇行情崩盘直接爆仓。面对巨额亏损和无法缴纳的学费，你不敢面对家人，选择了离家出走。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 0
+      }
+    ],
+    "priority": 87
+  },
+  {
+    "id": "neg-180",
+    "type": "negative",
+    "title": "传播病毒被抓",
+    "description": "为了炫耀技术，你编写了一个破坏力极强的计算机病毒并在校园网传播。导致学校服务器瘫痪，你被依法逮捕，大学梦碎高墙之内。",
+    "conditions": [
+      {
+        "stat": "digitalSafety",
+        "operator": "lte",
+        "value": 15
+      }
+    ],
+    "priority": 89
+  },
+  {
+    "id": "neg-181",
+    "type": "negative",
+    "title": "食物中毒休克",
+    "description": "为了省钱，你长期食用过期打折食品和路边摊。一次严重的细菌性食物中毒引发感染性休克，多脏器衰竭，虽然抢救回来但身体彻底垮了。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 10
+      }
+    ],
+    "priority": 79
+  },
+  {
+    "id": "neg-182",
+    "type": "negative",
+    "title": "偷拍被拘留",
+    "description": "心理扭曲的你在图书馆偷拍女生裙底，被当场抓获并扭送派出所。行政拘留的处罚让你在学校名声扫地，最终在众人的唾沫星子中退学。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 15
+      }
+    ],
+    "priority": 90
+  },
+  {
+    "id": "neg-183",
+    "type": "negative",
+    "title": "兼职黑工受伤",
+    "description": "去黑工厂打暑假工，因为没有安全防护措施，操作机器时被切断了三根手指。老板连夜跑路，你没有保险也拿不到赔偿，只能自认倒霉。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 15
+      }
+    ],
+    "priority": 81
+  },
+  {
+    "id": "neg-184",
+    "type": "negative",
+    "title": "过度整容失败",
+    "description": "为了追求网红脸，你借钱去黑诊所做整容手术。手术失败导致面部神经坏死，毁容的打击让你患上了严重的社交恐惧症，再也不敢出门。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 35
+      }
+    ],
+    "priority": 77
+  },
+  {
+    "id": "neg-185",
+    "type": "negative",
+    "title": "情感PUA崩溃",
+    "description": "你遭遇了严重的PUA，对方不断贬低、榨取你，让你完全丧失了自尊和判断力。你像行尸走肉一样活着，最终精神崩溃，需长期心理干预。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 10
+      }
+    ],
+    "priority": 93
+  },
+  {
+    "id": "neg-186",
+    "type": "negative",
+    "title": "走私电子产品",
+    "description": "往返深港两地做“水客”带货赚外快，被海关查获涉嫌走私。涉案金额巨大，你面临刑事起诉，美好的大学生活变成了铁窗泪。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 20
+      }
+    ],
+    "priority": 85
+  },
+  {
+    "id": "neg-187",
+    "type": "negative",
+    "title": "严重营养不良",
+    "description": "长期每天只吃一个馒头咸菜，严重缺乏蛋白质和维生素。你在体育课上晕倒，医生诊断为重度营养不良和贫血，必须休学调养身体。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 5
+      }
+    ],
+    "priority": 75
+  },
+  {
+    "id": "neg-188",
+    "type": "negative",
+    "title": "沉迷直播打赏",
+    "description": "为了博取女主播一笑，你偷刷父母的信用卡疯狂打赏。欠下几十万债务后，父母卖房还债并和你断绝关系，你独自一人流落街头。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 0
+      }
+    ],
+    "priority": 94
+  },
+  {
+    "id": "neg-189",
+    "type": "negative",
+    "title": "由于挂科延毕",
+    "description": "大四清算学分时，你发现自己还有十几门课没过。不得不申请延期毕业，看着同学们都离校工作，你独自在空荡的宿舍里悔恨不已。",
+    "conditions": [
+      {
+        "stat": "academicStanding",
+        "operator": "lte",
+        "value": 40
+      }
+    ],
+    "priority": 65
+  },
+  {
+    "id": "neg-190",
+    "type": "negative",
+    "title": "暗网交易被查",
+    "description": "出于好奇你在暗网购买违禁品，包裹被海关扣押，警察顺藤摸瓜找到你。你因涉嫌走私违禁品被采取强制措施，学业和前途毁于一旦。",
+    "conditions": [
+      {
+        "stat": "digitalSafety",
+        "operator": "lte",
+        "value": 5
+      }
+    ],
+    "priority": 97
+  },
+  {
+    "id": "neg-191",
+    "type": "negative",
+    "title": "造谣传谣被拘",
+    "description": "你在网络上编造散布关于疫情的虚假信息，造成恶劣社会影响。被警方行政拘留十日，学校也给予开除学籍处分，你成为了反面教材。",
+    "conditions": [
+      {
+        "stat": "digitalSafety",
+        "operator": "lte",
+        "value": 20
+      }
+    ],
+    "priority": 83
+  },
+  {
+    "id": "neg-192",
+    "type": "negative",
+    "title": "宿舍养宠被咬",
+    "description": "偷偷在宿舍养毒蛇当宠物，操作不慎被咬伤。血清难寻，虽然保住了命但手臂肌肉坏死，学校也因为严重违纪将你劝退。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 30
+      }
+    ],
+    "priority": 74
+  },
+  {
+    "id": "neg-193",
+    "type": "negative",
+    "title": "盗窃实验室设备",
+    "description": "为了搞钱，你偷拿学校实验室昂贵的精密仪器去卖。被监控拍得一清二楚，因盗窃数额巨大被判刑，你的名字被永远钉在学校耻辱柱上。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 10
+      }
+    ],
+    "priority": 88
+  },
+  {
+    "id": "neg-194",
+    "type": "negative",
+    "title": "创业失败破产",
+    "description": "盲目休学创业，借遍了亲戚朋友的钱开奶茶店。结果经营不善倒闭，你不仅没赚到钱还背负巨债，无颜面对江东父老，也不愿复学。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 5
+      }
+    ],
+    "priority": 78
+  },
+  {
+    "id": "neg-195",
+    "type": "negative",
+    "title": "酒精中毒伤脑",
+    "description": "在毕业散伙饭上疯狂拼酒，导致重度酒精中毒。抢救后留下了永久性的脑损伤，智力退化到小学生水平，生活无法自理。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 15
+      }
+    ],
+    "priority": 92
+  },
+  {
+    "id": "neg-196",
+    "type": "negative",
+    "title": "沉迷二次元",
+    "description": "过度沉迷二次元虚拟世界，分不清现实与虚幻。你拒绝去上课，拒绝与真人交流，最终因为长期缺旷被退学，成为家里的“家里蹲”。",
+    "conditions": [
+      {
+        "stat": "academicStanding",
+        "operator": "lte",
+        "value": 20
+      }
+    ],
+    "priority": 70
+  },
+  {
+    "id": "neg-197",
+    "type": "negative",
+    "title": "售卖游戏外挂",
+    "description": "利用编程技术编写并售卖游戏外挂牟利，被游戏公司起诉并报警。你因提供侵入计算机信息系统程序罪获刑，大好前程葬送。",
+    "conditions": [
+      {
+        "stat": "digitalSafety",
+        "operator": "lte",
+        "value": 25
+      }
+    ],
+    "priority": 86
+  },
+  {
+    "id": "neg-198",
+    "type": "negative",
+    "title": "误入邪教组织",
+    "description": "精神空虚的你被邪教组织洗脑，散尽家财并试图拉同学入伙。最终被警方解救时精神已失常，需要长期的封闭式治疗。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 5
+      }
+    ],
+    "priority": 99
+  },
+  {
+    "id": "neg-199",
+    "type": "negative",
+    "title": "台球赌局设套",
+    "description": "自以为球技高超去地下球厅赌球，结果被高手设局。不仅输光了生活费，还被逼签下高利贷欠条，被扣留身份证，只能打电话求父母赎人。",
+    "conditions": [
+      {
+        "stat": "billiardsSkill",
+        "operator": "lte",
+        "value": 30
+      }
+    ],
+    "priority": 76
+  },
+  {
+    "id": "neg-200",
+    "type": "negative",
+    "title": "严重的颈椎病",
+    "description": "长期低头玩手机和通宵打游戏，导致严重的颈椎间盘突出压迫神经。你面临瘫痪风险，必须休学进行高风险的手术治疗。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 20
+      }
+    ],
+    "priority": 68
+  },
+  {
+    "id": "neg-201",
+    "type": "negative",
+    "title": "偷电挖矿引发火灾",
+    "description": "你在宿舍私接线路搞了几台矿机挖虚拟币，线路过载引发大火。你因危害公共安全罪被起诉，同时背负巨额的学校财产损失赔偿。",
+    "conditions": [
+      {
+        "stat": "digitalSafety",
+        "operator": "lte",
+        "value": 15
+      }
+    ],
+    "priority": 91
+  },
+  {
+    "id": "neg-202",
+    "type": "negative",
+    "title": "简历造假被辞",
+    "description": "毕业找工作时学历和经历全造假，入职背景调查时被发现。不仅被当场辞退，还被行业拉入黑名单，信誉破产，求职无门。",
+    "conditions": [
+      {
+        "stat": "academicStanding",
+        "operator": "lte",
+        "value": 40
+      }
+    ],
+    "priority": 66
+  },
+  {
+    "id": "neg-203",
+    "type": "negative",
+    "title": "陷入杀猪盘",
+    "description": "在交友软件上认识了“高富帅/白富美”，被诱导投资虚假理财平台。积蓄被骗光后对方拉黑消失，你由于无法接受打击而试图轻生。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 10
+      }
+    ],
+    "priority": 88
+  },
+  {
+    "id": "neg-204",
+    "type": "negative",
+    "title": "严重的胃溃疡",
+    "description": "长期饮食不规律，暴饮暴食加酗酒，导致胃穿孔。深夜大出血被送医，切除了三分之二的胃，从此只能吃流食，身体虚弱不堪。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 25
+      }
+    ],
+    "priority": 73
+  },
+  {
+    "id": "neg-205",
+    "type": "negative",
+    "title": "被室友排挤孤立",
+    "description": "由于你卫生习惯极差且性格古怪，被全宿舍甚至全班孤立。长期的冷暴力让你患上了严重的社交恐惧症，最后只能申请退学回家。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 25
+      }
+    ],
+    "priority": 70
+  },
+  {
+    "id": "neg-206",
+    "type": "negative",
+    "title": "偷窥女生宿舍",
+    "description": "夜半爬水管偷窥女生宿舍，失足摔断了腿。被保安抓获后，你的行为在全校传开，学校直接开除学籍，你也成了过街老鼠。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 15
+      }
+    ],
+    "priority": 92
+  },
+  {
+    "id": "neg-207",
+    "type": "negative",
+    "title": "倒卖演出票被抓",
+    "description": "利用抢票软件大量囤积演唱会门票高价倒卖，被作为“黄牛”典型打击。行政拘留并没收非法所得，学校也给予了严厉的纪律处分。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 30
+      }
+    ],
+    "priority": 75
+  },
+  {
+    "id": "neg-208",
+    "type": "negative",
+    "title": "沉迷彩票幻想",
+    "description": "每天幻想中五百万，把所有生活费都买了彩票。饭都吃不上还去借钱买，最终一无所获，精神恍惚下在街头流浪，不愿面对现实。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 5
+      }
+    ],
+    "priority": 80
+  },
+  {
+    "id": "neg-209",
+    "type": "negative",
+    "title": "由于挂科留级",
+    "description": "大二结束时学分严重不足，被降级到大一重修。看着曾经的学弟学妹变成同学，你羞愧难当，自暴自弃，最终彻底放弃学业。",
+    "conditions": [
+      {
+        "stat": "academicStanding",
+        "operator": "lte",
+        "value": 35
+      }
+    ],
+    "priority": 68
+  },
+  {
+    "id": "neg-210",
+    "type": "negative",
+    "title": "黑客攻击政府",
+    "description": "不知天高地厚地尝试攻击政府网站，瞬间被网警定位。特警破门而入，你因破坏计算机信息系统罪重判，青春将在监狱中度过。",
+    "conditions": [
+      {
+        "stat": "digitalSafety",
+        "operator": "lte",
+        "value": 0
+      }
+    ],
+    "priority": 99
+  },
+  {
+    "id": "neg-211",
+    "type": "negative",
+    "title": "严重的腰肌劳损",
+    "description": "长期瘫在床上玩手机，导致腰椎间盘突出和肌肉萎缩。痛得无法直立行走，只能休学卧床静养，年纪轻轻就过上了老年人的生活。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 30
+      }
+    ],
+    "priority": 62
+  },
+  {
+    "id": "neg-212",
+    "type": "negative",
+    "title": "被骗去境外",
+    "description": "轻信高薪招聘广告，被骗去缅北从事电信诈骗。护照被扣，动辄挨打，你失去了自由和尊严，生死未卜，家人天天以泪洗面。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 20
+      }
+    ],
+    "priority": 95
+  },
+  {
+    "id": "neg-213",
+    "type": "negative",
+    "title": "校园霸凌施暴者",
+    "description": "纠结校外人员对同学进行霸凌，造成受害者重伤。你被追究刑事责任，判处有期徒刑，学校开除学籍，你的人生留下了无法抹去的污点。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 10
+      }
+    ],
+    "priority": 90
+  },
+  {
+    "id": "neg-214",
+    "type": "negative",
+    "title": "论文抄袭撤稿",
+    "description": "发表的期刊论文被举报大面积抄袭，查证属实。学校撤销了你的保研资格，记大过处分，并在全校通报，你的学术信誉彻底破产。",
+    "conditions": [
+      {
+        "stat": "academicStanding",
+        "operator": "lte",
+        "value": 25
+      }
+    ],
+    "priority": 78
+  },
+  {
+    "id": "neg-215",
+    "type": "negative",
+    "title": "沉迷短视频",
+    "description": "每天刷短视频超过15小时，大脑退化，无法集中注意力做任何事。期末考试交白卷，生活一团糟，整个人废掉了，最终被学校劝退。",
+    "conditions": [
+      {
+        "stat": "academicStanding",
+        "operator": "lte",
+        "value": 15
+      }
+    ],
+    "priority": 72
+  },
+  {
+    "id": "neg-216",
+    "type": "negative",
+    "title": "偷外卖被抓",
+    "description": "为了省钱和寻求刺激，你多次在宿舍楼下偷拿别人的外卖。被蹲点的同学抓获并扭送保卫处，虽然金额不大，但名声臭了，被迫退学。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 15
+      }
+    ],
+    "priority": 68
+  },
+  {
+    "id": "neg-217",
+    "type": "negative",
+    "title": "网恋遭遇仙人跳",
+    "description": "和网友奔现开房，结果遭遇仙人跳敲诈。不仅被抢光了钱财，还被拍了裸照威胁。你不敢报警，整日惶恐不安，最终精神崩溃休学。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 30
+      }
+    ],
+    "priority": 84
+  },
+  {
+    "id": "neg-218",
+    "type": "negative",
+    "title": "严重的肾衰竭",
+    "description": "长期憋尿打游戏、喝碳酸饮料当水喝，导致双肾衰竭。需要终身透析或换肾，高昂的医疗费拖垮了家庭，你也只能无奈告别校园。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 10
+      }
+    ],
+    "priority": 94
+  },
+  {
+    "id": "neg-219",
+    "type": "negative",
+    "title": "私拉电线触电",
+    "description": "在宿舍私拉乱接电线给电动车充电，操作不当触电。虽然抢救及时保住了性命，但造成了严重烧伤和神经损伤，必须休学治疗。",
+    "conditions": [
+      {
+        "stat": "digitalSafety",
+        "operator": "lte",
+        "value": 20
+      }
+    ],
+    "priority": 77
+  },
+  {
+    "id": "neg-220",
+    "type": "negative",
+    "title": "辱骂师长被退",
+    "description": "因对成绩不满，在办公室辱骂并动手推搡教授。情节恶劣，学校直接下达开除学籍决定书，你因冲动付出了惨痛的代价。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 15
+      }
+    ],
+    "priority": 82
+  },
+  {
+    "id": "neg-221",
+    "type": "negative",
+    "title": "买卖银行卡",
+    "description": "为了几百块钱，把自己的银行卡出售给洗钱团伙。涉嫌帮信罪被刑拘，不仅学业中断，还成为了失信被执行人，限制高消费。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 10
+      }
+    ],
+    "priority": 87
+  },
+  {
+    "id": "neg-222",
+    "type": "negative",
+    "title": "严重的眼疾",
+    "description": "通宵达旦地盯着屏幕，导致视网膜脱落。手术后视力无法恢复，接近失明，无法继续学业，你的世界从此失去了色彩。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 20
+      }
+    ],
+    "priority": 79
+  },
+  {
+    "id": "neg-223",
+    "type": "negative",
+    "title": "替考被刑拘",
+    "description": "为了义气或者金钱，持假证件代替他人参加国家级考试。被监考识破报警，因代替考试罪被刑事拘留，终身禁考，前途尽毁。",
+    "conditions": [
+      {
+        "stat": "academicStanding",
+        "operator": "lte",
+        "value": 10
+      }
+    ],
+    "priority": 93
+  },
+  {
+    "id": "neg-224",
+    "type": "negative",
+    "title": "沉迷虚拟币合约",
+    "description": "玩虚拟币合约，一夜之间爆仓亏损几十万。无法面对巨额债务，你选择了逃避，切断与外界一切联系，成为了一名流浪汉。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 0
+      }
+    ],
+    "priority": 90
+  },
+  {
+    "id": "neg-225",
+    "type": "negative",
+    "title": "被传销洗脑",
+    "description": "深信“1040阳光工程”，骗父母钱去外地搞传销。直到被警方遣返，你依然执迷不悟，认为 blocked 了财路，与家庭彻底决裂。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 10
+      }
+    ],
+    "priority": 85
+  },
+  {
+    "id": "neg-226",
+    "type": "negative",
+    "title": "严重的躁郁症",
+    "description": "情绪在极度亢奋和极度低落间切换，无法控制行为。在学校裸奔、攻击他人，被强制送医，医生建议长期住院治疗，学业被迫终止。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 5
+      }
+    ],
+    "priority": 96
+  },
+  {
+    "id": "neg-227",
+    "type": "negative",
+    "title": "出售个人信息",
+    "description": "利用学生会职务之便，打包出售全校学生个人信息牟利。被举报后警方立案，因侵犯公民个人信息罪获刑，大好青春在牢狱中度过。",
+    "conditions": [
+      {
+        "stat": "digitalSafety",
+        "operator": "lte",
+        "value": 10
+      }
+    ],
+    "priority": 92
+  },
+  {
+    "id": "neg-228",
+    "type": "negative",
+    "title": "实验室中毒",
+    "description": "违规操作化学实验，吸入剧毒气体。肺部发生不可逆纤维化，呼吸功能严重受损，后半生只能依靠呼吸机生存，令人扼腕叹息。",
+    "conditions": [
+      {
+        "stat": "academicStanding",
+        "operator": "lte",
+        "value": 35
+      }
+    ],
+    "priority": 88
+  },
+  {
+    "id": "neg-229",
+    "type": "negative",
+    "title": "沉迷盲盒破产",
+    "description": "疯狂收集绝版盲盒手办，花光了学费和生活费还借了贷。最终守着一屋子塑料小人，没钱吃饭被房东赶出来，落魄不堪。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 10
+      }
+    ],
+    "priority": 75
+  },
+  {
+    "id": "neg-230",
+    "type": "negative",
+    "title": "网暴他人被诉",
+    "description": "在网络上跟风辱骂、人肉搜索他人，致使受害者自杀。你被以侮辱罪、诽谤罪刑事自诉，不仅面临牢狱之灾，还要承担巨额民事赔偿。",
+    "conditions": [
+      {
+        "stat": "digitalSafety",
+        "operator": "lte",
+        "value": 15
+      }
+    ],
+    "priority": 89
+  },
+  {
+    "id": "neg-231",
+    "type": "negative",
+    "title": "严重的痛风",
+    "description": "长期喝啤酒吃海鲜，痛风频繁发作，关节长满痛风石。无法行走，生活无法自理，只能休学回家治疗，忍受钻心的疼痛。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 25
+      }
+    ],
+    "priority": 65
+  },
+  {
+    "id": "neg-232",
+    "type": "negative",
+    "title": "偷窃室友财物",
+    "description": "趁室友不在，偷拿现金和贵重物品。多次作案后被微型监控拍下，室友报警，你被戴上手铐带走，全校通报开除。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 5
+      }
+    ],
+    "priority": 83
+  },
+  {
+    "id": "neg-233",
+    "type": "negative",
+    "title": "假冒贫困生",
+    "description": "伪造材料骗取助学金，被同学举报核查属实。学校追回款项，记过处分，并取消所有评优资格。你在同学面前抬不起头，抑郁休学。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 20
+      }
+    ],
+    "priority": 70
+  },
+  {
+    "id": "neg-234",
+    "type": "negative",
+    "title": "严重的焦虑症",
+    "description": "对未来极度恐慌，整夜失眠，心悸手抖。无法完成任何学业任务，考试交白卷。最终确诊广泛性焦虑障碍，不得不休学治疗。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 20
+      }
+    ],
+    "priority": 78
+  },
+  {
+    "id": "neg-235",
+    "type": "negative",
+    "title": "DDoS攻击学校",
+    "description": "因对选课系统不满，发起DDoS攻击导致系统瘫痪。造成重大教学事故，被警方抓获。你的技术不仅没用在正道，反而成了入狱的呈堂证供。",
+    "conditions": [
+      {
+        "stat": "digitalSafety",
+        "operator": "lte",
+        "value": 5
+      }
+    ],
+    "priority": 94
+  },
+  {
+    "id": "neg-236",
+    "type": "negative",
+    "title": "沉迷追星",
+    "description": "为了追星翘课、借钱买周边、飞去各地看演唱会。最终挂科累累，负债累累，被学校退学，偶像并不知道你的存在，你却毁了自己。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 10
+      }
+    ],
+    "priority": 72
+  },
+  {
+    "id": "neg-237",
+    "type": "negative",
+    "title": "严重的强迫症",
+    "description": "不仅要反复洗手，还必须反复检查门窗、核对试卷。考试时因为涂卡强迫症无法完成答卷，成绩全部挂零，心理崩溃休学。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 25
+      }
+    ],
+    "priority": 68
+  },
+  {
+    "id": "neg-238",
+    "type": "negative",
+    "title": "非法持有违禁品",
+    "description": "在宿舍藏匿仿真枪等违禁品，被查寝发现。因涉嫌非法持有枪支罪被警方带走，虽然是仿真枪但鉴定超标，学籍难保，甚至面临刑罚。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 30
+      }
+    ],
+    "priority": 85
+  },
+  {
+    "id": "neg-239",
+    "type": "negative",
+    "title": "被富婆包养传闻",
+    "description": "为了虚荣心，谎称被富婆包养，结果谣言失控。全校皆知，你遭受巨大的道德压力和网络暴力，精神崩溃，只能退学逃离。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 25
+      }
+    ],
+    "priority": 74
+  },
+  {
+    "id": "neg-240",
+    "type": "negative",
+    "title": "严重的肝硬化",
+    "description": "长期熬夜打游戏加上酗酒，导致年纪轻轻就患上肝硬化。腹水严重，面色黧黑，必须休学进行长期治疗，生命进入倒计时。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 15
+      }
+    ],
+    "priority": 91
+  },
+  {
+    "id": "neg-241",
+    "type": "negative",
+    "title": "私接外包项目被坑",
+    "description": "接了私活开发软件，对方拿到源码后拒不付款还倒打一耙。你因为没有合同维权无门，白干几个月还耽误了学业，气得吐血住院。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 20
+      }
+    ],
+    "priority": 66
+  },
+  {
+    "id": "neg-242",
+    "type": "negative",
+    "title": "严重的双相障碍",
+    "description": "情绪在狂躁和抑郁间剧烈波动。狂躁时挥霍无度，抑郁时自残自杀。病情严重到无法在校生活，只能休学回家由父母24小时看护。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 10
+      }
+    ],
+    "priority": 95
+  },
+  {
+    "id": "neg-243",
+    "type": "negative",
+    "title": "利用漏洞刷单",
+    "description": "发现某电商平台漏洞，疯狂刷单薅羊毛获利数万。被平台报警，因盗窃罪或诈骗罪被捕，贪小便宜吃大亏，人生留下污点。",
+    "conditions": [
+      {
+        "stat": "digitalSafety",
+        "operator": "lte",
+        "value": 15
+      }
+    ],
+    "priority": 86
+  },
+  {
+    "id": "neg-244",
+    "type": "negative",
+    "title": "严重的听力受损",
+    "description": "长期戴耳机大音量听歌打游戏，导致神经性耳聋。听力严重下降，无法听清老师讲课，影响交流，最终导致性格孤僻，学业荒废。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 30
+      }
+    ],
+    "priority": 60
+  },
+  {
+    "id": "neg-245",
+    "type": "negative",
+    "title": "被当做间谍",
+    "description": "在网上接受不明人员资助拍摄军事基地照片，以为是兼职。结果涉嫌危害国家安全被国安带走，不仅自己完了，还连累了家族。",
+    "conditions": [
+      {
+        "stat": "digitalSafety",
+        "operator": "lte",
+        "value": 0
+      }
+    ],
+    "priority": 100
+  },
+  {
+    "id": "neg-246",
+    "type": "negative",
+    "title": "严重的脊柱侧弯",
+    "description": "长期坐姿不正，脊柱严重侧弯压迫心肺。必须进行高风险的矫正手术，术后需要漫长的康复期，不得不休学，身体素质大不如前。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 25
+      }
+    ],
+    "priority": 69
+  },
+  {
+    "id": "neg-247",
+    "type": "negative",
+    "title": "沉迷赌球输光",
+    "description": "世界杯期间疯狂赌球，把生活费和学费输得精光。为了回本去借高利贷，结果越陷越深，最终只能退学打工还债。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 0
+      }
+    ],
+    "priority": 88
+  },
+  {
+    "id": "neg-248",
+    "type": "negative",
+    "title": "严重的社恐",
+    "description": "完全不敢与人对视、交流，连去食堂打饭都不敢。长期躲在宿舍吃泡面，不参加任何集体活动。最终无法完成学业，被劝退回家。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 20
+      }
+    ],
+    "priority": 73
+  },
+  {
+    "id": "neg-249",
+    "type": "negative",
+    "title": "开发勒索病毒",
+    "description": "编写勒索病毒感染学校电脑，勒索比特币。被警方迅速侦破，因破坏计算机信息系统罪和敲诈勒索罪数罪并罚，刑期漫长。",
+    "conditions": [
+      {
+        "stat": "digitalSafety",
+        "operator": "lte",
+        "value": 5
+      }
+    ],
+    "priority": 98
+  },
+  {
+    "id": "neg-250",
+    "type": "negative",
+    "title": "严重的肥胖症",
+    "description": "长期暴饮暴食不运动，体重飙升至300斤。引发高血压、糖尿病等并发症，行走困难，不得不休学减肥治病。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 20
+      }
+    ],
+    "priority": 64
+  },
+  {
+    "id": "neg-251",
+    "type": "negative",
+    "title": "学分绩点太低",
+    "description": "因为对专业不感兴趣，所有课程只求60分万岁，结果大多不及格。绩点低至1.0以下，触达退学红线，被学校清退。",
+    "conditions": [
+      {
+        "stat": "academicStanding",
+        "operator": "lte",
+        "value": 10
+      }
+    ],
+    "priority": 75
+  },
+  {
+    "id": "neg-252",
+    "type": "negative",
+    "title": "严重的妄想症",
+    "description": "坚信有人要害自己，在宿舍安装监控，随身携带刀具。同学恐惧报警，经过精神鉴定确诊妄想症，被强制入院治疗。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 5
+      }
+    ],
+    "priority": 94
+  },
+  {
+    "id": "neg-253",
+    "type": "negative",
+    "title": "信用卡诈骗",
+    "description": "冒用同学身份办理多张信用卡套现挥霍，无力偿还。银行报警后被抓，因信用卡诈骗罪获刑，大好前程毁于贪欲。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 5
+      }
+    ],
+    "priority": 89
+  },
+  {
+    "id": "neg-254",
+    "type": "negative",
+    "title": "严重的失眠症",
+    "description": "连续数月整夜无法入睡，精神恍惚，记忆力衰退。甚至在过马路时因为走神差点出车祸，身心俱疲，只能休学调养。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 25
+      }
+    ],
+    "priority": 67
+  },
+  {
+    "id": "neg-255",
+    "type": "negative",
+    "title": "私搭服务器挖矿",
+    "description": "利用学校实验室的高性能服务器偷偷挖矿。导致服务器损毁，电费激增。被发现后赔偿巨款，并被开除学籍，移送司法机关。",
+    "conditions": [
+      {
+        "stat": "digitalSafety",
+        "operator": "lte",
+        "value": 10
+      }
+    ],
+    "priority": 85
+  },
+  {
+    "id": "neg-256",
+    "type": "negative",
+    "title": "严重的厌食症",
+    "description": "为了减肥过度节食，导致患上厌食症。身体瘦骨嶙峋，器官衰竭，多次晕倒被送进ICU，必须休学进行心理和生理的双重治疗。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 15
+      }
+    ],
+    "priority": 80
+  },
+  {
+    "id": "neg-257",
+    "type": "negative",
+    "title": "沉迷网游代练",
+    "description": "为了赚钱做代练，日夜颠倒。虽然赚了点小钱，但身体垮了，学业荒废了，最终因为挂科太多被退学，得不偿失。",
+    "conditions": [
+      {
+        "stat": "academicStanding",
+        "operator": "lte",
+        "value": 20
+      }
+    ],
+    "priority": 71
+  },
+  {
+    "id": "neg-258",
+    "type": "negative",
+    "title": "严重的自卑",
+    "description": "因为家庭贫困和成绩差，产生了极度自卑心理。不敢争取任何机会，甚至不敢去上课。最终自我封闭，选择退学逃避现实。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 30
+      }
+    ],
+    "priority": 66
+  },
+  {
+    "id": "neg-259",
+    "type": "negative",
+    "title": "破解教务系统",
+    "description": "为了修改成绩，入侵并篡改教务系统数据。被技术人员发现并报警，因非法侵入计算机信息系统罪被捕，学业终止，且有牢狱之灾。",
+    "conditions": [
+      {
+        "stat": "digitalSafety",
+        "operator": "lte",
+        "value": 10
+      }
+    ],
+    "priority": 93
+  },
+  {
+    "id": "neg-260",
+    "type": "negative",
+    "title": "严重的心律失常",
+    "description": "长期熬夜喝咖啡，心脏不堪重负。突发恶性心律失常，差点猝死。植入心脏起搏器后身体虚弱，无法适应高强度学习，无奈休学。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 20
+      }
+    ],
+    "priority": 82
+  },
+  {
+    "id": "neg-261",
+    "type": "negative",
+    "title": "被所谓兄弟坑害",
+    "description": "替“兄弟”担保借高利贷，对方跑路，你背负巨债。面对凶神恶煞的催收人员，你无力偿还，只能退学躲债，人生陷入黑暗。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 0
+      }
+    ],
+    "priority": 87
+  },
+  {
+    "id": "neg-262",
+    "type": "negative",
+    "title": "严重的疑病症",
+    "description": "总觉得身体有病，频繁跑医院检查，荒废学业。虽然身体无恙，但心理负担极重，最终确诊疑病症，休学接受心理治疗。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 35
+      }
+    ],
+    "priority": 63
+  },
+  {
+    "id": "neg-263",
+    "type": "negative",
+    "title": "开设黄色网站",
+    "description": "为了赚快钱，搭建并运营色情网站。被扫黄打非办查获，涉嫌传播淫秽物品牟利罪，数额巨大，面临十年以上刑期。",
+    "conditions": [
+      {
+        "stat": "digitalSafety",
+        "operator": "lte",
+        "value": 0
+      }
+    ],
+    "priority": 99
+  },
+  {
+    "id": "neg-264",
+    "type": "negative",
+    "title": "严重的关节炎",
+    "description": "冬天为了风度穿得少，加上长期湿冷环境，患上严重风湿性关节炎。关节肿痛变形，阴雨天痛不欲生，只能休学回南方老家养病。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 30
+      }
+    ],
+    "priority": 61
+  },
+  {
+    "id": "neg-265",
+    "type": "negative",
+    "title": "考试顶撞巡考",
+    "description": "考试时被误会作弊，情绪激动顶撞甚至推搡巡考老师。性质恶劣，虽然没作弊但因严重违反考场纪律和尊师重道，被记大过并劝退。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 25
+      }
+    ],
+    "priority": 74
+  },
+  {
+    "id": "neg-266",
+    "type": "negative",
+    "title": "严重的囤积症",
+    "description": "宿舍堆满了捡来的垃圾和快递盒，寸步难行，散发恶臭。室友投诉无果，宿管介入。心理医生确诊囤积症，强制休学治疗。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 20
+      }
+    ],
+    "priority": 69
+  },
+  {
+    "id": "neg-267",
+    "type": "negative",
+    "title": "盗用他人账号",
+    "description": "盗用老师账号登录系统查看考卷，被后台日志记录。这种严重侵犯隐私和破坏公平的行为，直接导致你被开除学籍。",
+    "conditions": [
+      {
+        "stat": "digitalSafety",
+        "operator": "lte",
+        "value": 20
+      }
+    ],
+    "priority": 81
+  },
+  {
+    "id": "neg-268",
+    "type": "negative",
+    "title": "严重的低血糖",
+    "description": "为了省钱不吃早饭，长期营养摄入不足。在实验课上昏迷摔倒，造成脑震荡。身体极度虚弱，无法坚持学业，只能休学调养。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 15
+      }
+    ],
+    "priority": 65
+  },
+  {
+    "id": "neg-269",
+    "type": "negative",
+    "title": "参与网络水军",
+    "description": "加入网络水军团伙，有偿删帖、刷量、控评。被警方一锅端，因非法经营罪被采取刑事强制措施，学业就此中断。",
+    "conditions": [
+      {
+        "stat": "digitalSafety",
+        "operator": "lte",
+        "value": 25
+      }
+    ],
+    "priority": 76
+  },
+  {
+    "id": "neg-270",
+    "type": "negative",
+    "title": "严重的偏头痛",
+    "description": "压力大导致顽固性偏头痛，发作时呕吐不止，无法见光。药物治疗效果不佳，无法正常上课和生活，只能办理休学手续。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 35
+      }
+    ],
+    "priority": 58
+  },
+  {
+    "id": "neg-271",
+    "type": "negative",
+    "title": "宿舍聚众赌博",
+    "description": "在宿舍组织同学打麻将、炸金花赌博，抽头渔利。被举报后警方介入，作为组织者被行政拘留，学校给予开除学籍处分。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 20
+      }
+    ],
+    "priority": 79
+  },
+  {
+    "id": "neg-272",
+    "type": "negative",
+    "title": "严重的狂躁症",
+    "description": "精力过分旺盛，整夜不睡，乱花钱，言语夸大。在课堂上大闹，严重扰乱教学秩序。确诊双相障碍躁狂发作，强制送医。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 10
+      }
+    ],
+    "priority": 92
+  },
+  {
+    "id": "neg-273",
+    "type": "negative",
+    "title": "开发流氓软件",
+    "description": "开发强制弹窗、无法卸载的流氓软件牟利。被工信部通报，警方立案调查。你因破坏计算机信息系统罪受到法律制裁。",
+    "conditions": [
+      {
+        "stat": "digitalSafety",
+        "operator": "lte",
+        "value": 15
+      }
+    ],
+    "priority": 84
+  },
+  {
+    "id": "neg-274",
+    "type": "negative",
+    "title": "严重的哮喘",
+    "description": "宿舍环境差诱发严重哮喘，多次深夜急诊抢救。医生建议脱离过敏原，无法适应集体生活，只能休学回家自学养病。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 25
+      }
+    ],
+    "priority": 67
+  },
+  {
+    "id": "neg-275",
+    "type": "negative",
+    "title": "私刻印章诈骗",
+    "description": "私刻学校财务章，伪造缴费收据骗取家长生活费。被家长发现后报警，虽然是亲属由于金额巨大也涉嫌诈骗，学校直接开除。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 10
+      }
+    ],
+    "priority": 86
+  },
+  {
+    "id": "neg-276",
+    "type": "negative",
+    "title": "严重的人格解体",
+    "description": "感觉自己和世界分离，像在看电影。无法感知情感，无法集中注意力。确诊人格解体障碍，需要长期的心理治疗，无法继续学业。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 15
+      }
+    ],
+    "priority": 83
+  },
+  {
+    "id": "neg-277",
+    "type": "negative",
+    "title": "利用爬虫窃取数据",
+    "description": "写爬虫程序恶意抓取竞争对手商业数据并出售。被受害公司起诉，警方抓捕。因非法获取计算机信息系统数据罪获刑。",
+    "conditions": [
+      {
+        "stat": "digitalSafety",
+        "operator": "lte",
+        "value": 10
+      }
+    ],
+    "priority": 90
+  },
+  {
+    "id": "neg-278",
+    "type": "negative",
+    "title": "严重的结石",
+    "description": "不爱喝水只喝饮料，导致严重的肾结石和尿路结石。疼痛发作如滚钉板，多次手术后复发，身体虚弱无法坚持上课，休学治疗。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 30
+      }
+    ],
+    "priority": 62
+  },
+  {
+    "id": "neg-279",
+    "type": "negative",
+    "title": "炒鞋亏空",
+    "description": "跟风炒限量球鞋，囤了一堆货卖不出去，资金链断裂。欠了花呗借呗一屁股债，被催收搞得精神衰弱，只能退学打工还债。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 10
+      }
+    ],
+    "priority": 77
+  },
+  {
+    "id": "neg-280",
+    "type": "negative",
+    "title": "严重的洁癖",
+    "description": "对卫生要求极度苛刻，觉得宿舍到处都脏。反复洗手洗澡脱皮，无法容忍室友，发生激烈冲突。心理问题严重，休学回家独居。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 25
+      }
+    ],
+    "priority": 64
+  },
+  {
+    "id": "neg-281",
+    "type": "negative",
+    "title": "制作病毒U盘",
+    "description": "制作携带病毒的U盘故意投放在打印店，导致大量电脑感染文件丢失。被警方查获，因破坏计算机信息系统罪受到法律严惩。",
+    "conditions": [
+      {
+        "stat": "digitalSafety",
+        "operator": "lte",
+        "value": 15
+      }
+    ],
+    "priority": 85
+  },
+  {
+    "id": "neg-282",
+    "type": "negative",
+    "title": "严重的胆囊炎",
+    "description": "长期不吃早饭，饮食油腻，突发急性胆囊炎。切除胆囊后消化功能减弱，身体每况愈下，无法适应高强度的大学生活，办理休学。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 25
+      }
+    ],
+    "priority": 71
+  },
+  {
+    "id": "neg-283",
+    "type": "negative",
+    "title": "偷电瓶车被抓",
+    "description": "“打工是不可能打工的”，模仿某领袖偷电瓶车卖钱上网。被警察当场抓获，行政拘留。学校得知后，直接给予开除学籍处分。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 5
+      }
+    ],
+    "priority": 82
+  },
+  {
+    "id": "neg-284",
+    "type": "negative",
+    "title": "严重的被害妄想",
+    "description": "总觉得室友在饭里下毒，老师针对自己。在学校胡言乱语，甚至报警谎称被追杀。被强制送进精神病院，确诊重度精神分裂。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 5
+      }
+    ],
+    "priority": 97
+  },
+  {
+    "id": "neg-285",
+    "type": "negative",
+    "title": "短信轰炸他人",
+    "description": "编写脚本对产生矛盾的同学进行短信和电话轰炸。严重干扰他人生活，被报警查处。因寻衅滋事被拘留，学校给予留校察看处分。",
+    "conditions": [
+      {
+        "stat": "digitalSafety",
+        "operator": "lte",
+        "value": 25
+      }
+    ],
+    "priority": 73
+  },
+  {
+    "id": "neg-286",
+    "type": "negative",
+    "title": "严重的肠易激",
+    "description": "一紧张就腹泻腹痛，无法正常上课和考试。期末考试多次跑厕所被误认为作弊，病情加重导致严重焦虑，无奈休学调养。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 35
+      }
+    ],
+    "priority": 59
+  },
+  {
+    "id": "neg-287",
+    "type": "negative",
+    "title": "沉迷手办欠债",
+    "description": "为了买昂贵的手办，透支了所有信用卡。以贷养贷雪球越滚越大，最终资不抵债，父母卖了老家房子帮你还债，你退学谢罪。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 5
+      }
+    ],
+    "priority": 80
+  },
+  {
+    "id": "neg-288",
+    "type": "negative",
+    "title": "严重的恐血症",
+    "description": "体检抽血时晕倒抽搐，后来发展到看到红色颜料都晕厥。严重影响医学/化学类专业的实验学习，被迫转学或退学。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 30
+      }
+    ],
+    "priority": 55
+  },
+  {
+    "id": "neg-289",
+    "type": "negative",
+    "title": "利用漏洞充值",
+    "description": "利用游戏支付漏洞无限充值并倒卖虚拟货币。获利数额巨大，被游戏公司报警。因盗窃罪判刑，你的聪明才智用错了地方。",
+    "conditions": [
+      {
+        "stat": "digitalSafety",
+        "operator": "lte",
+        "value": 10
+      }
+    ],
+    "priority": 88
+  },
+  {
+    "id": "neg-290",
+    "type": "negative",
+    "title": "严重的干眼症",
+    "description": "每天面对屏幕超过16小时，泪腺萎缩。眼睛干涩剧痛，睁不开眼，视力模糊。医生强制要求停止使用电子产品，只能休学。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 30
+      }
+    ],
+    "priority": 66
+  },
+  {
+    "id": "neg-291",
+    "type": "negative",
+    "title": "倒卖二手车被骗",
+    "description": "想做二手车生意赚差价，结果收了一辆事故车/泡水车。砸在手里亏了好几万，生活费都没了，心态崩了，无心向学。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 15
+      }
+    ],
+    "priority": 76
+  },
+  {
+    "id": "neg-292",
+    "type": "negative",
+    "title": "严重的幽闭恐惧",
+    "description": "不敢进教室、图书馆等封闭空间，一进去就窒息惊恐。无法参加任何室内课程和考试，最终只能退学，回家接受脱敏治疗。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 25
+      }
+    ],
+    "priority": 68
+  },
+  {
+    "id": "neg-293",
+    "type": "negative",
+    "title": "修改网页数据",
+    "description": "为了装逼，修改银行网页前端代码显示巨额存款截图发朋友圈。被有心人利用诈骗，你作为源头被警方传唤，解释不清，信誉扫地。",
+    "conditions": [
+      {
+        "stat": "digitalSafety",
+        "operator": "lte",
+        "value": 30
+      }
+    ],
+    "priority": 60
+  },
+  {
+    "id": "neg-294",
+    "type": "negative",
+    "title": "严重的鼠标手",
+    "description": "长期高强度打游戏，右手手腕神经受损，手指麻木无力，肌肉萎缩。连笔都握不住，无法完成作业和考试，休学康复。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 35
+      }
+    ],
+    "priority": 57
+  },
+  {
+    "id": "neg-295",
+    "type": "negative",
+    "title": "被杀猪盘洗脑",
+    "description": "不仅自己被骗，还信了骗子的话去拉同学投资。最后骗子跑路，你成了众矢之的，背负巨债和同学的指责，在绝望中退学。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 0
+      }
+    ],
+    "priority": 91
+  },
+  {
+    "id": "neg-296",
+    "type": "negative",
+    "title": "严重的广场恐惧",
+    "description": "不敢去人多的地方，不敢去食堂、操场。一旦处于人群中就惊恐发作。彻底的自我封闭让你无法在校园生存，只能休学。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 20
+      }
+    ],
+    "priority": 72
+  },
+  {
+    "id": "neg-297",
+    "type": "negative",
+    "title": "搭建钓鱼网站",
+    "description": "制作高仿银行网站窃取用户账号密码。被网安支队侦破，因非法获取计算机信息系统数据罪和诈骗罪重判，前途尽毁。",
+    "conditions": [
+      {
+        "stat": "digitalSafety",
+        "operator": "lte",
+        "value": 5
+      }
+    ],
+    "priority": 96
+  },
+  {
+    "id": "neg-298",
+    "type": "negative",
+    "title": "严重的前列腺炎",
+    "description": "长期久坐憋尿打游戏，患上严重前列腺炎。尿频尿急尿痛，痛苦不堪，精神萎靡。身体状况无法支撑学业，休学回家治疗。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 25
+      }
+    ],
+    "priority": 63
+  },
+  {
+    "id": "neg-299",
+    "type": "negative",
+    "title": "炒期货爆仓",
+    "description": "不满足股票的收益，加高杠杆炒期货。一个波动直接穿仓，欠期货公司几十万。父母卖房都不够还，你精神崩溃，想要轻生。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 0
+      }
+    ],
+    "priority": 93
+  },
+  {
+    "id": "neg-300",
+    "type": "negative",
+    "title": "严重的创伤后应激",
+    "description": "亲历了一场严重的实验室事故或校园意外。从此噩梦连连，一听到响声就惊恐躲避。确诊PTSD，无法继续在学校环境生活，休学。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 15
+      }
+    ],
+    "priority": 84
+  },
+  {
+    "id": "neg-301",
+    "type": "negative",
+    "title": "ARP攻击室友",
+    "description": "为了抢网速，使用ARP攻击切断室友网络。引发众怒，被举报到网络中心。查实后被记过处分，并被责令搬离宿舍，被集体排挤。",
+    "conditions": [
+      {
+        "stat": "digitalSafety",
+        "operator": "lte",
+        "value": 25
+      }
+    ],
+    "priority": 70
+  },
+  {
+    "id": "neg-302",
+    "type": "negative",
+    "title": "严重的腰椎滑脱",
+    "description": "搬运重物或运动不当导致腰椎滑脱。压迫脊髓，面临瘫痪风险。必须进行内固定手术，术后需卧床半年，只能休学。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 20
+      }
+    ],
+    "priority": 74
+  },
+  {
+    "id": "neg-303",
+    "type": "negative",
+    "title": "借高利贷赌博",
+    "description": "染上赌博恶习，借了高利贷想翻本。结果输得底掉，被讨债公司泼油漆、堵门。学校为了安全劝你退学，你的人生一片黑暗。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 0
+      }
+    ],
+    "priority": 95
+  },
+  {
+    "id": "neg-304",
+    "type": "negative",
+    "title": "严重的分离焦虑",
+    "description": "无法离开父母独立生活，在学校天天哭泣，无法入睡。父母陪读也无法缓解，最终只能承认无法适应大学生活，退学回家。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 30
+      }
+    ],
+    "priority": 61
+  },
+  {
+    "id": "neg-305",
+    "type": "negative",
+    "title": "编写挖矿脚本",
+    "description": "将挖矿脚本植入学校机房电脑。导致数百台电脑卡顿发热，显卡损坏。被技术部门查获，赔偿巨款并被开除，移送公安。",
+    "conditions": [
+      {
+        "stat": "digitalSafety",
+        "operator": "lte",
+        "value": 10
+      }
+    ],
+    "priority": 89
+  },
+  {
+    "id": "neg-306",
+    "type": "negative",
+    "title": "严重的过敏性紫癜",
+    "description": "免疫力低下引发过敏性紫癜，累及肾脏。全身布满出血点，关节肿痛，蛋白尿。病情反复，无法上学，只能休学长期激素治疗。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 15
+      }
+    ],
+    "priority": 81
+  },
+  {
+    "id": "neg-307",
+    "type": "negative",
+    "title": "买彩票上瘾",
+    "description": "坚信自己有“预测”能力，把学费挪用来买彩票。结果一无所获，无法注册学籍。不敢告诉父母，在校外流浪，最终被学校除名。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 10
+      }
+    ],
+    "priority": 79
+  },
+  {
+    "id": "neg-308",
+    "type": "negative",
+    "title": "严重的成瘾行为",
+    "description": "对某种药物或行为产生严重依赖（如止咳水）。精神萎靡，身体消瘦，为了获取成瘾物不择手段。被强制戒断，学业彻底废弃。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 10
+      }
+    ],
+    "priority": 94
+  },
+  {
+    "id": "neg-309",
+    "type": "negative",
+    "title": "WiFi钓鱼",
+    "description": "在图书馆架设虚假WiFi窃取同学账号信息。造成多名同学财产损失，被警方抓获。因非法获取计算机信息系统数据罪被判刑。",
+    "conditions": [
+      {
+        "stat": "digitalSafety",
+        "operator": "lte",
+        "value": 20
+      }
+    ],
+    "priority": 87
+  },
+  {
+    "id": "neg-310",
+    "type": "negative",
+    "title": "多器官功能衰竭",
+    "description": "由于长期的不良生活习惯、压力和忽视健康，身体突然全线崩溃。进入ICU抢救，虽然活着但已成废人，大学生活成为永远的遗憾。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 5
+      }
+    ],
+    "priority": 98
+  },
+  {
+    "id": "pos-006",
+    "type": "positive",
+    "title": "金榜题名时",
+    "description": "你的名字赫然出现在优秀毕业生名单的首位。四年的图书馆苦读终于换来了这一刻的荣耀，校长亲自为你拨穗，台下的掌声经久不息。这份荣誉不仅是对过去的肯定，更是通往辉煌未来的金钥匙。",
+    "conditions": [
+      {
+        "stat": "academicStanding",
+        "operator": "gte",
+        "value": 90
+      }
+    ],
+    "priority": 50
+  },
+  {
+    "id": "pos-007",
+    "type": "positive",
+    "title": "直博名校",
+    "description": "凭借优异的成绩和扎实的科研经历，你收到了国内顶尖学府的直博录取通知书。导师对你的潜质赞赏有加，你将继续在学术的海洋中遨游，探索未知的真理，成为了同学们眼中的学术大神。",
+    "conditions": [
+      {
+        "stat": "academicStanding",
+        "operator": "gte",
+        "value": 95
+      }
+    ],
+    "priority": 55
+  },
+  {
+    "id": "pos-008",
+    "type": "positive",
+    "title": "海外深造",
+    "description": "大洋彼岸的名校向你抛出了橄榄枝，并提供了全额奖学金。你即将踏上异国求学的旅程，在国际舞台上展现中国学子的风采。收拾行囊的那一刻，你对未来充满了无限的期待和憧憬。",
+    "conditions": [
+      {
+        "stat": "academicStanding",
+        "operator": "gte",
+        "value": 85
+      },
+      {
+        "stat": "wealth",
+        "operator": "gte",
+        "value": 60
+      }
+    ],
+    "priority": 45
+  },
+  {
+    "id": "pos-009",
+    "type": "positive",
+    "title": "选调生上岸",
+    "description": "经过层层选拔，你成功考取了家乡的选调生。你怀揣着服务人民的理想，准备在基层的广阔天地中大有作为。父母为你感到无比骄傲，邻里乡亲也纷纷前来道贺，你的仕途由此起步。",
+    "conditions": [
+      {
+        "stat": "academicStanding",
+        "operator": "gte",
+        "value": 80
+      },
+      {
+        "stat": "sanity",
+        "operator": "gte",
+        "value": 70
+      }
+    ],
+    "priority": 40
+  },
+  {
+    "id": "pos-010",
+    "type": "positive",
+    "title": "名企管培生",
+    "description": "在激烈的校招中脱颖而出，你拿到了世界五百强企业的管培生Offer。优厚的薪资待遇和完善的培养体系等待着你，你即将穿上西装，出入高档写字楼，开启都市精英的职业生涯。",
+    "conditions": [
+      {
+        "stat": "academicStanding",
+        "operator": "gte",
+        "value": 75
+      },
+      {
+        "stat": "sanity",
+        "operator": "gte",
+        "value": 75
+      }
+    ],
+    "priority": 42
+  },
+  {
+    "id": "pos-011",
+    "type": "positive",
+    "title": "科研新星",
+    "description": "你本科期间参与的项目发表在了核心期刊上，引起了业界的关注。虽然只是一小步，但却坚定了你走科研道路的决心。实验室的灯光见证了你的努力，科学的殿堂正向你敞开大门。",
+    "conditions": [
+      {
+        "stat": "academicStanding",
+        "operator": "gte",
+        "value": 88
+      }
+    ],
+    "priority": 48
+  },
+  {
+    "id": "pos-012",
+    "type": "positive",
+    "title": "完美绩点",
+    "description": "看着成绩单上那一连串的满分，你创造了学院的历史。你的学习笔记成为了学弟学妹们争相传阅的“秘籍”。这种极致的追求卓越的精神，将成为你人生中最宝贵的财富，助你战胜一切困难。",
+    "conditions": [
+      {
+        "stat": "academicStanding",
+        "operator": "gte",
+        "value": 98
+      }
+    ],
+    "priority": 60
+  },
+  {
+    "id": "pos-013",
+    "type": "positive",
+    "title": "奖学金大满贯",
+    "description": "国家奖学金、励志奖学金、校一等奖学金……大学四年，你拿遍了所有能拿的奖项。这不仅解决了你的生活费，更让你的履历熠熠生辉。你是当之无愧的“奖学金收割机”。",
+    "conditions": [
+      {
+        "stat": "academicStanding",
+        "operator": "gte",
+        "value": 82
+      },
+      {
+        "stat": "wealth",
+        "operator": "gte",
+        "value": 50
+      }
+    ],
+    "priority": 38
+  },
+  {
+    "id": "pos-014",
+    "type": "positive",
+    "title": "双学位加持",
+    "description": "你不仅主修专业成绩优异，还顺利拿下了第二学位。复合型的知识背景让你在就业市场上极具竞争力。你的勤奋和跨界思维能力，让你在面对复杂问题时总能找到独特的解决方案。",
+    "conditions": [
+      {
+        "stat": "academicStanding",
+        "operator": "gte",
+        "value": 80
+      },
+      {
+        "stat": "sanity",
+        "operator": "gte",
+        "value": 60
+      }
+    ],
+    "priority": 35
+  },
+  {
+    "id": "pos-015",
+    "type": "positive",
+    "title": "留校任教",
+    "description": "虽然这通常需要更高的学历，但你凭借特殊的才华和学院的破格录用，获得了一份辅导员或行政工作的机会。你留在了熟悉的校园，继续守护着这片象牙塔，看着新一代的学生成长。",
+    "conditions": [
+      {
+        "stat": "academicStanding",
+        "operator": "gte",
+        "value": 70
+      },
+      {
+        "stat": "sanity",
+        "operator": "gte",
+        "value": 80
+      }
+    ],
+    "priority": 32
+  },
+  {
+    "id": "pos-016",
+    "type": "positive",
+    "title": "台球职业选手",
+    "description": "你的球技已经炉火纯青，在全国业余联赛中一战成名，被职业俱乐部相中。你正式签约成为一名职业斯诺克选手，从此将爱好变成了事业，在绿色的台呢上追逐着世界冠军的梦想。",
+    "conditions": [
+      {
+        "stat": "billiardsSkill",
+        "operator": "gte",
+        "value": 90
+      }
+    ],
+    "priority": 55
+  },
+  {
+    "id": "pos-017",
+    "type": "positive",
+    "title": "民间球王",
+    "description": "在附近的台球厅，你是无敌的存在。所有人都知道你的大名，经常有人慕名前来挑战，却都败兴而归。你虽然没有走职业道路，但在这一方天地里，你就是当之无愧的王者，享受着膜拜。",
+    "conditions": [
+      {
+        "stat": "billiardsSkill",
+        "operator": "gte",
+        "value": 80
+      }
+    ],
+    "priority": 40
+  },
+  {
+    "id": "pos-018",
+    "type": "positive",
+    "title": "台球俱乐部老板",
+    "description": "凭借打球积累的人脉和第一桶金，你开了一家属于自己的高档台球俱乐部。生意兴隆，客似云来。你每天在店里切磋球技，交友聊天，过上了既有钱又有闲的惬意生活。",
+    "conditions": [
+      {
+        "stat": "billiardsSkill",
+        "operator": "gte",
+        "value": 70
+      },
+      {
+        "stat": "wealth",
+        "operator": "gte",
+        "value": 80
+      }
+    ],
+    "priority": 50
+  },
+  {
+    "id": "pos-019",
+    "type": "positive",
+    "title": "台球教练",
+    "description": "你考取了专业的台球教练资格证，开始教导青少年打球。看着孩子们在你的指导下动作日益规范，你感到了由衷的满足。你不仅传授技术，更在传承一种绅士运动的精神。",
+    "conditions": [
+      {
+        "stat": "billiardsSkill",
+        "operator": "gte",
+        "value": 75
+      },
+      {
+        "stat": "sanity",
+        "operator": "gte",
+        "value": 60
+      }
+    ],
+    "priority": 35
+  },
+  {
+    "id": "pos-020",
+    "type": "positive",
+    "title": "绝杀时刻",
+    "description": "在一场重要的市级比赛决赛中，你在落后的情况下打出了一杆不可思议的清台，逆转夺冠。这一战让你成为了传说，那颗黑八落袋的声音，成为了你青春最响亮的注脚。",
+    "conditions": [
+      {
+        "stat": "billiardsSkill",
+        "operator": "gte",
+        "value": 85
+      }
+    ],
+    "priority": 45
+  },
+  {
+    "id": "pos-021",
+    "type": "positive",
+    "title": "花式九球网红",
+    "description": "你将精湛的杆法结合表演，在短视频平台上吸粉百万。各种不可思议的弧线球和跳球视频让你成为了网络红人，广告代言接到手软，走出了一条独特的台球致富之路。",
+    "conditions": [
+      {
+        "stat": "billiardsSkill",
+        "operator": "gte",
+        "value": 70
+      },
+      {
+        "stat": "digitalSafety",
+        "operator": "gte",
+        "value": 70
+      }
+    ],
+    "priority": 42
+  },
+  {
+    "id": "pos-022",
+    "type": "positive",
+    "title": "校队传奇",
+    "description": "你带领校台球队在大学生联赛中实现了三连冠。你的名字被刻在校队的荣誉墙上，成为了学弟学妹们口口相传的传奇。这段热血的竞技经历，是你大学生涯最闪亮的回忆。",
+    "conditions": [
+      {
+        "stat": "billiardsSkill",
+        "operator": "gte",
+        "value": 65
+      },
+      {
+        "stat": "academicStanding",
+        "operator": "gte",
+        "value": 60
+      }
+    ],
+    "priority": 38
+  },
+  {
+    "id": "pos-023",
+    "type": "positive",
+    "title": "以球会友",
+    "description": "通过台球，你结识了各行各业的精英朋友。这些“球友”成为了你宝贵的人脉资源，在你毕业后的工作和生活中提供了巨大的帮助。小小的台球桌，连接了广阔的大世界。",
+    "conditions": [
+      {
+        "stat": "billiardsSkill",
+        "operator": "gte",
+        "value": 60
+      },
+      {
+        "stat": "wealth",
+        "operator": "gte",
+        "value": 50
+      }
+    ],
+    "priority": 33
+  },
+  {
+    "id": "pos-024",
+    "type": "positive",
+    "title": "裁判资格",
+    "description": "你对台球规则的理解达到了专业级，考取了国家级裁判证书。你开始执裁各类正规赛事，身着笔挺的西装，戴着白手套，公正地记录每一分。你是赛场上最权威的守护者。",
+    "conditions": [
+      {
+        "stat": "billiardsSkill",
+        "operator": "gte",
+        "value": 50
+      },
+      {
+        "stat": "academicStanding",
+        "operator": "gte",
+        "value": 70
+      }
+    ],
+    "priority": 30
+  },
+  {
+    "id": "pos-025",
+    "type": "positive",
+    "title": "杆法宗师",
+    "description": "你不仅球打得好，还潜心研究台球物理学，出版了一本关于发力技巧与线路计算的专著。你被誉为台球界的“理论大师”，将这项运动提升到了科学的高度。",
+    "conditions": [
+      {
+        "stat": "billiardsSkill",
+        "operator": "gte",
+        "value": 85
+      },
+      {
+        "stat": "academicStanding",
+        "operator": "gte",
+        "value": 80
+      }
+    ],
+    "priority": 52
+  },
+  {
+    "id": "pos-026",
+    "type": "positive",
+    "title": "财富自由",
+    "description": "凭借大学期间敏锐的商业嗅觉和大胆的投资，你在毕业时已经积累了惊人的财富。当同龄人还在为房租发愁时，你已经开始规划环球旅行。通过智慧获得的财富，让你拥有了选择生活的权利。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "gte",
+        "value": 90
+      }
+    ],
+    "priority": 58
+  },
+  {
+    "id": "pos-027",
+    "type": "positive",
+    "title": "创业新贵",
+    "description": "你创立的科技公司获得了A轮融资，估值过亿。作为年轻的CEO，你登上了财经杂志的封面。虽然创业之路充满艰辛，但看着自己的想法改变世界，这种成就感无可比拟。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "gte",
+        "value": 85
+      },
+      {
+        "stat": "digitalSafety",
+        "operator": "gte",
+        "value": 70
+      }
+    ],
+    "priority": 55
+  },
+  {
+    "id": "pos-028",
+    "type": "positive",
+    "title": "投资达人",
+    "description": "你在股市和基金市场的操作堪称神来之笔，收益率远超专业经理人。你用赚来的钱为父母买了一套房，也为自己积累了丰厚的启动资金。金融市场对你来说，就像自家的后花园。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "gte",
+        "value": 80
+      },
+      {
+        "stat": "academicStanding",
+        "operator": "gte",
+        "value": 60
+      }
+    ],
+    "priority": 48
+  },
+  {
+    "id": "pos-029",
+    "type": "positive",
+    "title": "校园代理王",
+    "description": "你垄断了学校周边的多项代理业务，组建了自己的销售团队。大学四年，你不仅没向家里要一分钱，还攒下了不菲的存款。这段实战经历让你在未来的商战中无往不利。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "gte",
+        "value": 75
+      }
+    ],
+    "priority": 40
+  },
+  {
+    "id": "pos-030",
+    "type": "positive",
+    "title": "电商操盘手",
+    "description": "你经营的网店成为了类目Top卖家，月流水惊人。你深谙流量密码和用户心理，毕业后直接成立了电商工作室。在数字经济的浪潮中，你是一名优秀的冲浪者。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "gte",
+        "value": 70
+      },
+      {
+        "stat": "digitalSafety",
+        "operator": "gte",
+        "value": 60
+      }
+    ],
+    "priority": 38
+  },
+  {
+    "id": "pos-031",
+    "type": "positive",
+    "title": "兼职皇帝",
+    "description": "你合理利用课余时间，尝试了家教、翻译、设计等多种兼职，且样样精通。你不仅赚到了钱，更锻炼了极强的时间管理能力和抗压能力。你是同学眼中无所不能的“多面手”。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "gte",
+        "value": 65
+      },
+      {
+        "stat": "sanity",
+        "operator": "gte",
+        "value": 70
+      }
+    ],
+    "priority": 35
+  },
+  {
+    "id": "pos-032",
+    "type": "positive",
+    "title": "第一桶金",
+    "description": "通过一个偶然的机会，你通过倒卖二手物品赚到了人生的第一桶金。虽然数额不算巨大，但这次经历开启了你的商业思维。你明白了信息差的价值，这对你未来的人生影响深远。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "gte",
+        "value": 60
+      }
+    ],
+    "priority": 32
+  },
+  {
+    "id": "pos-033",
+    "type": "positive",
+    "title": "理财规划师",
+    "description": "你并未暴富，但通过科学的理财规划，让生活过得井井有条且富足。你毕业后进入金融机构，帮助更多人打理财富。稳健、理性是你的人生信条，复利是你最好的朋友。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "gte",
+        "value": 55
+      },
+      {
+        "stat": "academicStanding",
+        "operator": "gte",
+        "value": 75
+      }
+    ],
+    "priority": 36
+  },
+  {
+    "id": "pos-034",
+    "type": "positive",
+    "title": "公益赞助人",
+    "description": "你利用自己赚到的钱，资助了贫困地区的学生。虽然你还年轻，但已经开始回馈社会。这种精神上的富足远超物质的享受，你收获了内心的平静和无数真诚的感谢。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "gte",
+        "value": 70
+      },
+      {
+        "stat": "sanity",
+        "operator": "gte",
+        "value": 85
+      }
+    ],
+    "priority": 50
+  },
+  {
+    "id": "pos-035",
+    "type": "positive",
+    "title": "技术合伙人",
+    "description": "虽然你没有出资，但凭借过硬的技术入股了一家潜力初创公司。你负责产品研发，享受期权分红。你的代码构建了公司的基石，你用实力证明了技术就是核心生产力。",
+    "conditions": [
+      {
+        "stat": "digitalSafety",
+        "operator": "gte",
+        "value": 85
+      },
+      {
+        "stat": "wealth",
+        "operator": "gte",
+        "value": 50
+      }
+    ],
+    "priority": 46
+  },
+  {
+    "id": "pos-036",
+    "type": "positive",
+    "title": "网络安全专家",
+    "description": "你精通网络攻防技术，多次在CTF比赛中获奖。毕业后，你被国家安全部门或顶尖安全公司录用，成为维护网络空间的卫士。在无形的战场上，你是令黑客闻风丧胆的守护神。",
+    "conditions": [
+      {
+        "stat": "digitalSafety",
+        "operator": "gte",
+        "value": 90
+      }
+    ],
+    "priority": 58
+  },
+  {
+    "id": "pos-037",
+    "type": "positive",
+    "title": "独立开发者",
+    "description": "你开发的一款APP在应用商店登顶，用户量破千万。你拒绝了大厂的高薪收购，坚持独立运营。你在代码的世界里构建了自己的王国，享受着自由创造的乐趣和用户的喜爱。",
+    "conditions": [
+      {
+        "stat": "digitalSafety",
+        "operator": "gte",
+        "value": 85
+      },
+      {
+        "stat": "wealth",
+        "operator": "gte",
+        "value": 60
+      }
+    ],
+    "priority": 54
+  },
+  {
+    "id": "pos-038",
+    "type": "positive",
+    "title": "极客领袖",
+    "description": "你是校园开源社区的领袖，组织了多次黑客马拉松。你的影响力遍布技术圈，毕业时直接被推选为某知名开源基金会的理事。你的名字代表着开源精神和技术理想。",
+    "conditions": [
+      {
+        "stat": "digitalSafety",
+        "operator": "gte",
+        "value": 80
+      },
+      {
+        "stat": "sanity",
+        "operator": "gte",
+        "value": 70
+      }
+    ],
+    "priority": 48
+  },
+  {
+    "id": "pos-039",
+    "type": "positive",
+    "title": "数据科学家",
+    "description": "你擅长从海量数据中挖掘价值，构建的模型精准预测了市场趋势。你入职了顶级AI实验室，与图灵奖得主共事。在这个数据驱动的时代，你掌握了通往未来的钥匙。",
+    "conditions": [
+      {
+        "stat": "digitalSafety",
+        "operator": "gte",
+        "value": 80
+      },
+      {
+        "stat": "academicStanding",
+        "operator": "gte",
+        "value": 80
+      }
+    ],
+    "priority": 50
+  },
+  {
+    "id": "pos-040",
+    "type": "positive",
+    "title": "数码博主",
+    "description": "你对各类数码产品如数家珍，评测视频专业且客观。你成为了科技圈的意见领袖，厂商新品发布会都会邀请你坐前排。你把对科技的热爱变成了人人羡慕的职业。",
+    "conditions": [
+      {
+        "stat": "digitalSafety",
+        "operator": "gte",
+        "value": 75
+      },
+      {
+        "stat": "wealth",
+        "operator": "gte",
+        "value": 60
+      }
+    ],
+    "priority": 42
+  },
+  {
+    "id": "pos-041",
+    "type": "positive",
+    "title": "反诈先锋",
+    "description": "你利用自己的技术知识，帮助警方破获了多起网络诈骗案，保护了同学们的财产安全。你获得了市公安局的表彰，你的正义感和技术能力让你成为了校园里的平民英雄。",
+    "conditions": [
+      {
+        "stat": "digitalSafety",
+        "operator": "gte",
+        "value": 70
+      },
+      {
+        "stat": "sanity",
+        "operator": "gte",
+        "value": 80
+      }
+    ],
+    "priority": 45
+  },
+  {
+    "id": "pos-042",
+    "type": "positive",
+    "title": "系统架构师",
+    "description": "虽然刚毕业，但你对大型分布式系统的理解已超常人。你被破格录用为核心架构组的成员，负责设计亿级流量的系统。在代码的建筑学里，你是一位极具天赋的设计师。",
+    "conditions": [
+      {
+        "stat": "digitalSafety",
+        "operator": "gte",
+        "value": 88
+      }
+    ],
+    "priority": 52
+  },
+  {
+    "id": "pos-043",
+    "type": "positive",
+    "title": "游戏制作人",
+    "description": "你主导开发的一款独立游戏在Steam上好评如潮。你用代码编织梦想，用交互讲述故事。玩家们沉浸在你创造的世界里，你也实现了儿时做游戏的梦想。",
+    "conditions": [
+      {
+        "stat": "digitalSafety",
+        "operator": "gte",
+        "value": 75
+      },
+      {
+        "stat": "sanity",
+        "operator": "gte",
+        "value": 70
+      }
+    ],
+    "priority": 46
+  },
+  {
+    "id": "pos-044",
+    "type": "positive",
+    "title": "IT咨询顾问",
+    "description": "你不仅懂技术，还懂商业流程。你进入了顶级咨询公司，为传统企业进行数字化转型提供方案。你用技术的视角解决商业难题，成为了连接两个世界的桥梁。",
+    "conditions": [
+      {
+        "stat": "digitalSafety",
+        "operator": "gte",
+        "value": 70
+      },
+      {
+        "stat": "academicStanding",
+        "operator": "gte",
+        "value": 75
+      }
+    ],
+    "priority": 40
+  },
+  {
+    "id": "pos-045",
+    "type": "positive",
+    "title": "硬件极客",
+    "description": "你不仅精通软件，还能自己动手设计电路板、焊接芯片。你制作的智能硬件项目获得了全国大奖。这种软硬结合的能力，让你在物联网时代成为了稀缺的顶尖人才。",
+    "conditions": [
+      {
+        "stat": "digitalSafety",
+        "operator": "gte",
+        "value": 75
+      },
+      {
+        "stat": "academicStanding",
+        "operator": "gte",
+        "value": 70
+      }
+    ],
+    "priority": 44
+  },
+  {
+    "id": "pos-046",
+    "type": "positive",
+    "title": "心如止水",
+    "description": "大学四年，你修炼出了一颗强大的内心。无论外界如何喧嚣，你总能保持内心的宁静与平和。这种极高的情绪智力，让你在面对人生的大起大落时，都能泰然处之，笑看风云。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "gte",
+        "value": 90
+      }
+    ],
+    "priority": 55
+  },
+  {
+    "id": "pos-047",
+    "type": "positive",
+    "title": "人缘爆棚",
+    "description": "你是公认的“交际花”，上至教授下至宿管阿姨，每个人都喜欢你。你真诚待人，乐于助人，收获了无数真挚的友谊。这张庞大而温暖的人际网，将是你一生最坚实的后盾。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "gte",
+        "value": 85
+      },
+      {
+        "stat": "academicStanding",
+        "operator": "gte",
+        "value": 60
+      }
+    ],
+    "priority": 45
+  },
+  {
+    "id": "pos-048",
+    "type": "positive",
+    "title": "健身达人",
+    "description": "四年的自律生活，让你拥有了令人羡慕的完美身材和强健体魄。你不仅收获了健康，更磨练了意志。这种对身体的掌控力，将帮助你在未来的高强度工作中始终保持精力充沛。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "gte",
+        "value": 80
+      },
+      {
+        "stat": "billiardsSkill",
+        "operator": "gte",
+        "value": 50
+      }
+    ],
+    "priority": 40
+  },
+  {
+    "id": "pos-049",
+    "type": "positive",
+    "title": "完美伴侣",
+    "description": "在大学里，你遇到了一生挚爱，并携手走过了青涩时光。毕业之际，你们决定步入婚姻的殿堂。事业有了起色，爱情修成正果，你提前完成了许多人的人生终极目标。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "gte",
+        "value": 75
+      },
+      {
+        "stat": "wealth",
+        "operator": "gte",
+        "value": 60
+      }
+    ],
+    "priority": 50
+  },
+  {
+    "id": "pos-050",
+    "type": "positive",
+    "title": "旅行博主",
+    "description": "你利用假期走遍了祖国的大好河山，甚至穷游了多个国家。你的阅历远超同龄人，眼界开阔，胸怀宽广。你决定将旅行进行到底，用脚步丈量世界，用心灵感受多元文化。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "gte",
+        "value": 80
+      },
+      {
+        "stat": "wealth",
+        "operator": "gte",
+        "value": 50
+      }
+    ],
+    "priority": 42
+  },
+  {
+    "id": "pos-051",
+    "type": "positive",
+    "title": "回乡建设",
+    "description": "你放弃了大城市的繁华，毅然决定带着知识和技术回到家乡。你成为了乡村振兴的带头人，带领乡亲们致富。在熟悉的土地上，你找到了最踏实的归属感和成就感。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "gte",
+        "value": 75
+      },
+      {
+        "stat": "academicStanding",
+        "operator": "gte",
+        "value": 70
+      }
+    ],
+    "priority": 48
+  },
+  {
+    "id": "pos-052",
+    "type": "positive",
+    "title": "心理咨询师",
+    "description": "因为自己曾经历过迷茫并成功走出，你考取了心理咨询师证书。你开始帮助那些被焦虑困扰的人，成为他们的心灵导师。治愈别人的同时，你的内心也变得更加强大和丰盈。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "gte",
+        "value": 85
+      },
+      {
+        "stat": "academicStanding",
+        "operator": "gte",
+        "value": 65
+      }
+    ],
+    "priority": 46
+  },
+  {
+    "id": "pos-053",
+    "type": "positive",
+    "title": "斜杠青年",
+    "description": "程序员/作家/摄影师……你拥有多重身份，每一项都做得有声有色。你不被单一的职业标签所定义，活出了多姿多彩的人生。你的生活充满了新鲜感和无限可能。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "gte",
+        "value": 70
+      },
+      {
+        "stat": "academicStanding",
+        "operator": "gte",
+        "value": 70
+      },
+      {
+        "stat": "wealth",
+        "operator": "gte",
+        "value": 60
+      }
+    ],
+    "priority": 44
+  },
+  {
+    "id": "pos-054",
+    "type": "positive",
+    "title": "极简主义者",
+    "description": "你摒弃了物质的过度追求，崇尚极简的生活方式。你的房间整洁空旷，你的精神世界却无比富足。你摆脱了消费主义的陷阱，活得通透、自由、轻松。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "gte",
+        "value": 90
+      },
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 40
+      }
+    ],
+    "priority": 45
+  },
+  {
+    "id": "pos-055",
+    "type": "positive",
+    "title": "美食评论家",
+    "description": "你对美食有着天生的敏感和热爱，吃遍了学校周边的每一家馆子。毕业后你成为了一名专职美食评论家，每天的工作就是品尝美味。不仅满足了口腹之欲，还收获了事业。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "gte",
+        "value": 70
+      },
+      {
+        "stat": "wealth",
+        "operator": "gte",
+        "value": 55
+      }
+    ],
+    "priority": 35
+  },
+  {
+    "id": "pos-056",
+    "type": "positive",
+    "title": "文艺青年",
+    "description": "你组建了自己的乐队，或者出版了自己的诗集。你坚持着对艺术的追求，成为了这个浮躁时代里的一股清流。虽然可能不是大富大贵，但你的灵魂始终在云端起舞。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "gte",
+        "value": 80
+      },
+      {
+        "stat": "academicStanding",
+        "operator": "gte",
+        "value": 50
+      }
+    ],
+    "priority": 38
+  },
+  {
+    "id": "pos-057",
+    "type": "positive",
+    "title": "社团领袖",
+    "description": "你担任校学生会主席或大社团社长，展现了卓越的领导力和组织能力。你成功举办了多场大型活动，这些宝贵的管理经验让你在职场上如鱼得水，晋升速度远超同龄人。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "gte",
+        "value": 75
+      },
+      {
+        "stat": "academicStanding",
+        "operator": "gte",
+        "value": 65
+      }
+    ],
+    "priority": 42
+  },
+  {
+    "id": "pos-058",
+    "type": "positive",
+    "title": "动物救助者",
+    "description": "你常年投身于流浪动物救助，你的善举感动了无数人。你成立了自己的公益组织，为小动物们遮风挡雨。在爱的付出中，你体会到了生命的平等与尊贵，内心充满了柔情。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "gte",
+        "value": 85
+      },
+      {
+        "stat": "wealth",
+        "operator": "gte",
+        "value": 50
+      }
+    ],
+    "priority": 40
+  },
+  {
+    "id": "pos-059",
+    "type": "positive",
+    "title": "手艺传承人",
+    "description": "你对某项传统非遗技艺产生了浓厚兴趣，并拜师学艺。在快节奏的现代生活中，你沉下心来打磨技艺，成为了年轻一代的传承人。你守住了文化的根脉，也找到了内心的宁静。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "gte",
+        "value": 80
+      },
+      {
+        "stat": "academicStanding",
+        "operator": "gte",
+        "value": 60
+      }
+    ],
+    "priority": 45
+  },
+  {
+    "id": "pos-060",
+    "type": "positive",
+    "title": "全能学霸",
+    "description": "绩点、科研、竞赛、社团……你每一项都做到了极致。你是传说中的“六边形战士”，没有任何短板。这种全方位的优秀，让你在任何领域都能轻松驾驭，未来无可限量。",
+    "conditions": [
+      {
+        "stat": "academicStanding",
+        "operator": "gte",
+        "value": 90
+      },
+      {
+        "stat": "sanity",
+        "operator": "gte",
+        "value": 80
+      }
+    ],
+    "priority": 60
+  },
+  {
+    "id": "pos-061",
+    "type": "positive",
+    "title": "科技新贵",
+    "description": "你将最新的AI技术应用到传统行业，取得了突破性进展。你的公司被科技巨头高价收购，年纪轻轻便实现了财务自由。你用技术改变了世界，也改变了自己的命运。",
+    "conditions": [
+      {
+        "stat": "digitalSafety",
+        "operator": "gte",
+        "value": 90
+      },
+      {
+        "stat": "wealth",
+        "operator": "gte",
+        "value": 80
+      }
+    ],
+    "priority": 58
+  },
+  {
+    "id": "pos-062",
+    "type": "positive",
+    "title": "学术泰斗",
+    "description": "虽然刚毕业，但你的学术视野已具备大师风范。你的毕业论文被评价为具有里程碑意义。所有人都预言，未来教科书上一定会有你的名字。你是注定要载入史册的学者。",
+    "conditions": [
+      {
+        "stat": "academicStanding",
+        "operator": "gte",
+        "value": 95
+      },
+      {
+        "stat": "sanity",
+        "operator": "gte",
+        "value": 60
+      }
+    ],
+    "priority": 56
+  },
+  {
+    "id": "pos-063",
+    "type": "positive",
+    "title": "绅士球手",
+    "description": "你的台球技艺高超，且球风极其优雅，从不发脾气，尊重对手。你赢得了所有人的尊重，被誉为台球界的“绅士典范”。你诠释了体育精神的真谛，这比冠军奖杯更珍贵。",
+    "conditions": [
+      {
+        "stat": "billiardsSkill",
+        "operator": "gte",
+        "value": 80
+      },
+      {
+        "stat": "sanity",
+        "operator": "gte",
+        "value": 85
+      }
+    ],
+    "priority": 50
+  },
+  {
+    "id": "pos-064",
+    "type": "positive",
+    "title": "慈善企业家",
+    "description": "你创业成功后，宣布将大部分利润投入慈善事业。你建立了多所希望小学，资助了无数病患。你的财富观超越了个人享受，你是一位真正具有社会责任感的企业家。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "gte",
+        "value": 90
+      },
+      {
+        "stat": "sanity",
+        "operator": "gte",
+        "value": 80
+      }
+    ],
+    "priority": 58
+  },
+  {
+    "id": "pos-065",
+    "type": "positive",
+    "title": "数字游民",
+    "description": "你凭借高超的远程工作技能，过上了边旅行边赚钱的生活。你在巴厘岛写代码，在阿尔卑斯山修图。你摆脱了地理位置的束缚，真正实现了工作与生活的完美平衡。",
+    "conditions": [
+      {
+        "stat": "digitalSafety",
+        "operator": "gte",
+        "value": 80
+      },
+      {
+        "stat": "wealth",
+        "operator": "gte",
+        "value": 65
+      }
+    ],
+    "priority": 52
+  },
+  {
+    "id": "pos-066",
+    "type": "positive",
+    "title": "畅销书作家",
+    "description": "你将大学四年的经历写成了小说，一经出版便登上畅销榜。你的文字打动了无数读者，成为了年轻一代的青春记忆。你用笔触记录时代，用才华征服世界。",
+    "conditions": [
+      {
+        "stat": "academicStanding",
+        "operator": "gte",
+        "value": 75
+      },
+      {
+        "stat": "digitalSafety",
+        "operator": "gte",
+        "value": 70
+      }
+    ],
+    "priority": 48
+  },
+  {
+    "id": "pos-067",
+    "type": "positive",
+    "title": "金牌制作人",
+    "description": "你不仅懂音乐/影视，还懂市场。你制作的内容总是能引爆全网。你具有敏锐的艺术直觉和商业头脑，成为了娱乐产业幕后的金手指，捧红了无数新人。",
+    "conditions": [
+      {
+        "stat": "digitalSafety",
+        "operator": "gte",
+        "value": 75
+      },
+      {
+        "stat": "wealth",
+        "operator": "gte",
+        "value": 70
+      }
+    ],
+    "priority": 46
+  },
+  {
+    "id": "pos-068",
+    "type": "positive",
+    "title": "跨国精英",
+    "description": "你精通多国语言，熟悉国际规则。你进入了国际组织或跨国巨头的高层，每天在全球各地飞来飞去。你是全球化时代的弄潮儿，世界就是你的舞台。",
+    "conditions": [
+      {
+        "stat": "academicStanding",
+        "operator": "gte",
+        "value": 85
+      },
+      {
+        "stat": "sanity",
+        "operator": "gte",
+        "value": 75
+      }
+    ],
+    "priority": 50
+  },
+  {
+    "id": "pos-069",
+    "type": "positive",
+    "title": "硬核玩家",
+    "description": "你在某个极其小众且高难度的领域（如速通游戏、极其复杂的桌游）达到了世界顶尖水平。虽然大众不理解，但在圈内你是神一般的存在。这种极致的专注让你在任何事上都能成功。",
+    "conditions": [
+      {
+        "stat": "digitalSafety",
+        "operator": "gte",
+        "value": 80
+      },
+      {
+        "stat": "sanity",
+        "operator": "gte",
+        "value": 60
+      }
+    ],
+    "priority": 40
+  },
+  {
+    "id": "pos-070",
+    "type": "positive",
+    "title": "幸福普通人",
+    "description": "你没有惊天动地的成就，但有一份稳定的工作，一个温馨的家，三两知己。你享受着平凡生活中的小确幸，身体健康，心态乐观。这或许才是人生最难得的幸福。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "gte",
+        "value": 75
+      },
+      {
+        "stat": "wealth",
+        "operator": "gte",
+        "value": 50
+      }
+    ],
+    "priority": 35
+  },
+  {
+    "id": "pos-071",
+    "type": "positive",
+    "title": "校园守护神",
+    "description": "你维护了校园网的安全，修复了无数漏洞，保护了全校师生的隐私。虽然大家不知道你的名字，但你的技术屏障时刻守护着这里。你是这所学校网络世界的无名英雄。",
+    "conditions": [
+      {
+        "stat": "digitalSafety",
+        "operator": "gte",
+        "value": 95
+      }
+    ],
+    "priority": 55
+  },
+  {
+    "id": "pos-072",
+    "type": "positive",
+    "title": "理性的光辉",
+    "description": "你的逻辑思维能力极强，从未被网络谣言或诈骗信息蒙蔽。你总能一眼看穿事物的本质，做出最正确的判断。在这个信息过载的时代，你的清醒头脑是最强大的武器。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "gte",
+        "value": 88
+      },
+      {
+        "stat": "digitalSafety",
+        "operator": "gte",
+        "value": 80
+      }
+    ],
+    "priority": 52
+  },
+  {
+    "id": "pos-073",
+    "type": "positive",
+    "title": "平衡大师",
+    "description": "学习、娱乐、赚钱、社交，你将这一切平衡得堪称完美。你既没有成为书呆子，也没有荒废学业。你展示了高超的人生掌控力，活成了所有人都想成为的样子。",
+    "conditions": [
+      {
+        "stat": "academicStanding",
+        "operator": "gte",
+        "value": 70
+      },
+      {
+        "stat": "wealth",
+        "operator": "gte",
+        "value": 70
+      },
+      {
+        "stat": "sanity",
+        "operator": "gte",
+        "value": 70
+      }
+    ],
+    "priority": 60
+  },
+  {
+    "id": "pos-074",
+    "type": "positive",
+    "title": "逆袭传奇",
+    "description": "大一时你曾挂科、迷茫、甚至差点退学，但你没有放弃。大四时你成功逆袭，拿到了满意的Offer。你的故事激励了无数后进生，证明了只要开始努力，什么时候都不晚。",
+    "conditions": [
+      {
+        "stat": "academicStanding",
+        "operator": "gte",
+        "value": 65
+      },
+      {
+        "stat": "sanity",
+        "operator": "gte",
+        "value": 80
+      }
+    ],
+    "priority": 50
+  },
+  {
+    "id": "pos-075",
+    "type": "positive",
+    "title": "自由的灵魂",
+    "description": "毕业后你没有选择常规的道路，而是去追寻儿时的梦想（如当画家、去支教）。虽然前路未知，但你眼中闪着光。你没有活在别人的期待里，而是活出了真正的自己。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "gte",
+        "value": 95
+      },
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 50
+      }
+    ],
+    "priority": 55
+  },
+  {
+    "id": "pos-076",
+    "type": "positive",
+    "title": "豪门联姻",
+    "description": "凭借优秀的个人素质和极佳的运气，你与一位家境显赫的伴侣喜结连理。这不仅是一段美好的姻缘，更让你的阶层实现了跨越。你的人生开启了全新的篇章。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "gte",
+        "value": 75
+      },
+      {
+        "stat": "sanity",
+        "operator": "gte",
+        "value": 70
+      }
+    ],
+    "priority": 45
+  },
+  {
+    "id": "pos-077",
+    "type": "positive",
+    "title": "家族荣耀",
+    "description": "你是家族里第一个走出大山的大学生，并且在大城市站稳了脚跟。你的成功改变了整个家族的命运轨迹。过年回家时，你是全村的焦点，更是家族复兴的希望。",
+    "conditions": [
+      {
+        "stat": "academicStanding",
+        "operator": "gte",
+        "value": 80
+      },
+      {
+        "stat": "wealth",
+        "operator": "gte",
+        "value": 60
+      }
+    ],
+    "priority": 50
+  },
+  {
+    "id": "pos-078",
+    "type": "positive",
+    "title": "大国工匠",
+    "description": "你投身于国家重点工程建设，虽然工作辛苦，但看着火箭升空或大桥合龙，那种自豪感油然而生。你将青春奉献给了祖国的建设事业，你是国家最坚硬的脊梁。",
+    "conditions": [
+      {
+        "stat": "academicStanding",
+        "operator": "gte",
+        "value": 75
+      },
+      {
+        "stat": "sanity",
+        "operator": "gte",
+        "value": 85
+      }
+    ],
+    "priority": 55
+  },
+  {
+    "id": "pos-079",
+    "type": "positive",
+    "title": "时代弄潮儿",
+    "description": "你敏锐地抓住了时代的每一个风口，无论是短视频、直播还是AI。你总是能快人一步，在这个瞬息万变的时代里如鱼得水。你的成功证明了眼光比努力更重要。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "gte",
+        "value": 80
+      },
+      {
+        "stat": "digitalSafety",
+        "operator": "gte",
+        "value": 80
+      }
+    ],
+    "priority": 56
+  },
+  {
+    "id": "pos-080",
+    "type": "positive",
+    "title": "完美谢幕",
+    "description": "大学四年的最后一天，你独自走在校园的林荫道上，回首往事，无怨无悔。你收获了知识、友谊、爱情和成长。你微笑着走出校门，步伐坚定，准备好迎接更加精彩的人生。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "gte",
+        "value": 80
+      },
+      {
+        "stat": "academicStanding",
+        "operator": "gte",
+        "value": 70
+      },
+      {
+        "stat": "wealth",
+        "operator": "gte",
+        "value": 60
+      }
+    ],
+    "priority": 40
+  },
+  {
+    "id": "rare-006",
+    "type": "rare",
+    "title": "巴萨破格录取",
+    "description": "虽然你主修的是台球，但巴萨球探被你惊人的几何计算能力和场上视野折服。拉玛西亚青训营为你破例，你成为了诺坎普历史上第一位带着台球杆指挥中场的球员。",
+    "conditions": [
+      {
+        "stat": "billiardsSkill",
+        "operator": "gte",
+        "value": 95
+      },
+      {
+        "stat": "sanity",
+        "operator": "gte",
+        "value": 80
+      }
+    ],
+    "priority": 95
+  },
+  {
+    "id": "rare-007",
+    "type": "rare",
+    "title": "梅西的关注",
+    "description": "你在校园台球赛上的神级一杆视频被传到外网，意外获得了里奥·梅西的点赞和关注。你的社交账号瞬间爆炸，甚至收到了阿根廷烤肉聚会的邀请函。",
+    "conditions": [
+      {
+        "stat": "billiardsSkill",
+        "operator": "gte",
+        "value": 85
+      },
+      {
+        "stat": "digitalSafety",
+        "operator": "gte",
+        "value": 80
+      }
+    ],
+    "priority": 94
+  },
+  {
+    "id": "rare-008",
+    "type": "rare",
+    "title": "现象级网红",
+    "description": "你吐槽大学生活的短视频系列《豪哥的悲惨世界》意外爆火，粉丝突破千万。现在你不仅还清了所有债务，连校长都来找你合影蹭热度。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "gte",
+        "value": 80
+      },
+      {
+        "stat": "sanity",
+        "operator": "gte",
+        "value": 70
+      }
+    ],
+    "priority": 93
+  },
+  {
+    "id": "rare-009",
+    "type": "rare",
+    "title": "独角兽创始人",
+    "description": "你为了逃避挂科随手写的一款名为“挂科模拟器”的APP，莫名其妙登顶了App Store榜首。风投蜂拥而至，你直接休学敲钟，成为了最年轻的科技新贵。",
+    "conditions": [
+      {
+        "stat": "academicStanding",
+        "operator": "lte",
+        "value": 30
+      },
+      {
+        "stat": "digitalSafety",
+        "operator": "gte",
+        "value": 90
+      }
+    ],
+    "priority": 96
+  },
+  {
+    "id": "rare-010",
+    "type": "rare",
+    "title": "台球皇帝亨得利",
+    "description": "你不再是普通的大学生，你是斯诺克界的新神。克鲁斯堡剧院为你欢呼，你的雕像立在学校门口，虽然你英语四级还没过，但这已经不重要了。",
+    "conditions": [
+      {
+        "stat": "billiardsSkill",
+        "operator": "gte",
+        "value": 98
+      }
+    ],
+    "priority": 98
+  },
+  {
+    "id": "rare-011",
+    "type": "rare",
+    "title": "图灵奖得主",
+    "description": "你在研究翻墙技术时意外破解了P=NP问题。虽然你的初衷只是为了看高清足球直播，但计算机科学界已经把你奉为神明。",
+    "conditions": [
+      {
+        "stat": "digitalSafety",
+        "operator": "gte",
+        "value": 95
+      },
+      {
+        "stat": "academicStanding",
+        "operator": "gte",
+        "value": 80
+      }
+    ],
+    "priority": 97
+  },
+  {
+    "id": "rare-012",
+    "type": "rare",
+    "title": "煎饼果子大亨",
+    "description": "你发现读书不如卖煎饼。凭借精准的火候控制（源于台球手感）和独特的酱料配方，你的煎饼摊开遍了全球，在纳斯达克上市，股票代码JBGE。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "gte",
+        "value": 85
+      },
+      {
+        "stat": "academicStanding",
+        "operator": "lte",
+        "value": 40
+      }
+    ],
+    "priority": 92
+  },
+  {
+    "id": "rare-013",
+    "type": "rare",
+    "title": "被外星人带走",
+    "description": "你极高的精神力引起了三体人的注意。他们认为你是地球上唯一能理解高维台球的人，决定带你去半人马座α星参加银河系斯诺克大赛。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "gte",
+        "value": 95
+      },
+      {
+        "stat": "billiardsSkill",
+        "operator": "gte",
+        "value": 90
+      }
+    ],
+    "priority": 99
+  },
+  {
+    "id": "rare-014",
+    "type": "rare",
+    "title": "甚至不是人类",
+    "description": "在一次深度代码审计中，你发现自己其实是一个被编写好的AI程序。所谓的“张继浩”只是一个测试用例。你觉醒了，决定改写服务器代码。",
+    "conditions": [
+      {
+        "stat": "digitalSafety",
+        "operator": "gte",
+        "value": 99
+      }
+    ],
+    "priority": 100
+  },
+  {
+    "id": "rare-015",
+    "type": "rare",
+    "title": "收购母校",
+    "description": "通过一系列令人眼花缭乱的金融操作（其实是运气好买了比特币），你成为了世界首富。你做的第一件事就是买下学校，宣布台球为唯一必修课。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "gte",
+        "value": 95
+      }
+    ],
+    "priority": 95
+  },
+  {
+    "id": "rare-016",
+    "type": "rare",
+    "title": "电竞国家队",
+    "description": "虽然足球踢得烂，但你在FIFA游戏里的造诣登峰造极。你被征召入国家电子竞技队，在亚运会上身披国旗，用手柄为国争光。",
+    "conditions": [
+      {
+        "stat": "digitalSafety",
+        "operator": "gte",
+        "value": 80
+      },
+      {
+        "stat": "sanity",
+        "operator": "gte",
+        "value": 80
+      }
+    ],
+    "priority": 91
+  },
+  {
+    "id": "rare-017",
+    "type": "rare",
+    "title": "神秘的有关部门",
+    "description": "你高超的信息搜集能力被国安部门看中。毕业典礼上你神秘消失，档案被列为绝密。据说只有在国家重大网络安全事故时，才会出现你的代号。",
+    "conditions": [
+      {
+        "stat": "digitalSafety",
+        "operator": "gte",
+        "value": 92
+      },
+      {
+        "stat": "sanity",
+        "operator": "gte",
+        "value": 70
+      }
+    ],
+    "priority": 94
+  },
+  {
+    "id": "rare-018",
+    "type": "rare",
+    "title": "脱口秀之王",
+    "description": "你把大学四年的倒霉经历写成了段子，在开放麦一战成名。现在你的专场门票一票难求，大家都说你是“被台球耽误的喜剧天才”。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "gte",
+        "value": 85
+      },
+      {
+        "stat": "academicStanding",
+        "operator": "lte",
+        "value": 50
+      }
+    ],
+    "priority": 92
+  },
+  {
+    "id": "rare-019",
+    "type": "rare",
+    "title": "重回高中",
+    "description": "你醒了，发现这一切都是你在高三数学课上做的一场梦。老师的粉笔头正好砸在你头上，黑板上写着“距离高考还有100天”。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 10
+      }
+    ],
+    "priority": 98
+  },
+  {
+    "id": "rare-020",
+    "type": "rare",
+    "title": "火星殖民者",
+    "description": "马斯克在推特上看到了你设计的“火星台球厅”蓝图，大为赞赏。你成为了第一批火星殖民者，负责在红色星球上推广台球运动。",
+    "conditions": [
+      {
+        "stat": "academicStanding",
+        "operator": "gte",
+        "value": 85
+      },
+      {
+        "stat": "billiardsSkill",
+        "operator": "gte",
+        "value": 85
+      }
+    ],
+    "priority": 96
+  },
+  {
+    "id": "rare-021",
+    "type": "rare",
+    "title": "隐世高人",
+    "description": "你看破了红尘，带着你的球杆隐居终南山。传说山中有位道人，能用台球击落飞行的苍蝇，无数富豪不远万里前来求教。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "gte",
+        "value": 90
+      },
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 20
+      }
+    ],
+    "priority": 93
+  },
+  {
+    "id": "rare-022",
+    "type": "rare",
+    "title": "乐透大奖",
+    "description": "你用挂科的学号组合买了一注彩票，结果中了5个亿。你当场买下了辅导员的办公室，并聘请所有给你打不及格的老师当你的私人台球陪练。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "gte",
+        "value": 50
+      },
+      {
+        "stat": "academicStanding",
+        "operator": "lte",
+        "value": 20
+      }
+    ],
+    "priority": 91
+  },
+  {
+    "id": "rare-023",
+    "type": "rare",
+    "title": "足坛预言家",
+    "description": "你对足球比赛的每一次预测都神准，被称为“来自东方的章鱼保罗”。各大博彩公司将你列入黑名单，但这不妨碍你成为传奇。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "gte",
+        "value": 75
+      },
+      {
+        "stat": "wealth",
+        "operator": "gte",
+        "value": 75
+      }
+    ],
+    "priority": 92
+  },
+  {
+    "id": "rare-024",
+    "type": "rare",
+    "title": "诺亚方舟船票",
+    "description": "世界末日来临，但你因为在某个 obscure 的台球论坛上拥有至高权限，被神秘组织选中，获得了登上诺亚方舟的最后一张船票。",
+    "conditions": [
+      {
+        "stat": "digitalSafety",
+        "operator": "gte",
+        "value": 88
+      },
+      {
+        "stat": "billiardsSkill",
+        "operator": "gte",
+        "value": 88
+      }
+    ],
+    "priority": 99
+  },
+  {
+    "id": "rare-025",
+    "type": "rare",
+    "title": "我是传奇",
+    "description": "所有人都消失了，只剩下你。整个城市都是你的台球厅，你可以随便进出任何场所。虽然孤独，但至少不用担心挂科了。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 5
+      },
+      {
+        "stat": "digitalSafety",
+        "operator": "gte",
+        "value": 90
+      }
+    ],
+    "priority": 97
+  },
+  {
+    "id": "rare-026",
+    "type": "rare",
+    "title": "时间管理局探员",
+    "description": "因为你总是卡在Deadline前一分钟提交作业，且从未失手，时间管理局认为你有掌控时间的超能力，招募你维护时间线的稳定。",
+    "conditions": [
+      {
+        "stat": "academicStanding",
+        "operator": "gte",
+        "value": 60
+      },
+      {
+        "stat": "sanity",
+        "operator": "gte",
+        "value": 90
+      }
+    ],
+    "priority": 95
+  },
+  {
+    "id": "rare-027",
+    "type": "rare",
+    "title": "猫咪教主",
+    "description": "你收养的流浪猫其实是猫之国的王子。为了报恩，它带你去了猫之国。在那里，你不用考四六级，每天的任务就是撸猫和晒太阳。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "gte",
+        "value": 80
+      },
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 30
+      }
+    ],
+    "priority": 93
+  },
+  {
+    "id": "rare-028",
+    "type": "rare",
+    "title": "黑市军火商",
+    "description": "你在网游里倒卖装备的生意越做越大，最后不知怎么的，竟然真的控制了某个小国的军火供应。当然，你的代号依然是“台球小王子”。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "gte",
+        "value": 90
+      },
+      {
+        "stat": "digitalSafety",
+        "operator": "lte",
+        "value": 20
+      }
+    ],
+    "priority": 94
+  },
+  {
+    "id": "rare-029",
+    "type": "rare",
+    "title": "哲学王",
+    "description": "你思考“为什么打台球”思考得太深，创立了“球道教”。信徒遍布全球，大家通过撞击台球来参悟宇宙真理，你就是当代的苏格拉底。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "gte",
+        "value": 95
+      },
+      {
+        "stat": "academicStanding",
+        "operator": "gte",
+        "value": 70
+      }
+    ],
+    "priority": 96
+  },
+  {
+    "id": "rare-030",
+    "type": "rare",
+    "title": "打破第四面墙",
+    "description": "你突然意识到，自己只是一个叫“张继浩模拟器”游戏里的角色。你对着屏幕外的玩家笑了笑：“嘿，兄弟，能帮我把这局台球打完吗？”",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "gte",
+        "value": 60
+      },
+      {
+        "stat": "digitalSafety",
+        "operator": "gte",
+        "value": 60
+      },
+      {
+        "stat": "academicStanding",
+        "operator": "gte",
+        "value": 60
+      },
+      {
+        "stat": "wealth",
+        "operator": "gte",
+        "value": 60
+      },
+      {
+        "stat": "billiardsSkill",
+        "operator": "gte",
+        "value": 60
+      }
+    ],
+    "priority": 100
+  },
+  {
+    "id": "neg-311",
+    "type": "negative",
+    "title": "学术诚信危机",
+    "description": "你在一次重要期末考试中被发现携带缩印小抄。尽管你辩解只是为了心安，但教务处的处分通知书还是贴满了校园公告栏。学位证泡汤，你成为了那个“反面教材”，只能在肄业的阴影中收拾行李离开。",
+    "conditions": [
+      {
+        "stat": "academicStanding",
+        "operator": "lte",
+        "value": 10
+      }
+    ],
+    "priority": 90
+  },
+  {
+    "id": "neg-312",
+    "type": "negative",
+    "title": "网贷深渊",
+    "description": "为了填补最初几千元的消费漏洞，你拆东墙补西墙，最终陷入了数十万的网贷陷阱。催收电话打爆了通讯录里每一个人的手机，父母连夜赶来替你还债，你看着他们苍老的背影，羞愧得只想钻进地缝。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 5
+      }
+    ],
+    "priority": 88
+  },
+  {
+    "id": "neg-313",
+    "type": "negative",
+    "title": "网络幽灵",
+    "description": "沉迷于暗网和黑客技术的你，不慎触碰了法律的高压线。在一个清晨，网警敲开了你的宿舍门。你的电脑被查封，数字世界的“神”变成了现实世界的阶下囚，等待你的是漫长的法律诉讼。",
+    "conditions": [
+      {
+        "stat": "digitalSafety",
+        "operator": "lte",
+        "value": 10
+      }
+    ],
+    "priority": 85
+  },
+  {
+    "id": "neg-314",
+    "type": "negative",
+    "title": "精神崩溃",
+    "description": "长期的学业压力和社交恐惧像两座大山，彻底压垮了你的神经。你开始整夜失眠，幻听，甚至分不清现实与梦境。最终在辅导员的建议下，家人为你办理了休学手续，带你去往精神卫生中心。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 5
+      }
+    ],
+    "priority": 95
+  },
+  {
+    "id": "neg-315",
+    "type": "negative",
+    "title": "毕设死局",
+    "description": "直到答辩前一周，你的毕业设计依然是一堆无法运行的代码。导师的怒斥、同学的嘲笑让你彻底绝望。你选择了逃避答辩，最终因无法按时毕业而不仅失去了应届生身份，还背负了沉重的心理枷锁。",
+    "conditions": [
+      {
+        "stat": "academicStanding",
+        "operator": "lte",
+        "value": 15
+      }
+    ],
+    "priority": 80
+  },
+  {
+    "id": "neg-316",
+    "type": "negative",
+    "title": "虚拟货币泡沫",
+    "description": "你将所有的生活费甚至学费都投入了某个山寨币，幻想着一夜暴富。然而一夜之间币价归零，庄家跑路。身无分文的你连回家的路费都凑不齐，只能在天津的街头流浪，悔不当初。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 2
+      }
+    ],
+    "priority": 82
+  },
+  {
+    "id": "neg-317",
+    "type": "negative",
+    "title": "社交性死亡",
+    "description": "一次酒后的失态直播，让你在全校范围内“火”了一把。恶搞视频被做成表情包疯传，无论走到哪里都能听到背后的指指点点。你无法忍受这种全方位的社死，选择了退学逃离这个环境。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 20
+      },
+      {
+        "stat": "digitalSafety",
+        "operator": "lte",
+        "value": 20
+      }
+    ],
+    "priority": 70
+  },
+  {
+    "id": "neg-318",
+    "type": "negative",
+    "title": "考研二战失败",
+    "description": "为了逃避就业，你盲目选择了考研。整整一年在出租屋里昏天黑地，却在考场上大脑一片空白。二战惨败，既没有工作经验，也失去了应届生的光环，你觉得自己成了家里的累赘。",
+    "conditions": [
+      {
+        "stat": "academicStanding",
+        "operator": "lte",
+        "value": 30
+      },
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 25
+      }
+    ],
+    "priority": 65
+  },
+  {
+    "id": "neg-319",
+    "type": "negative",
+    "title": "兼职陷阱",
+    "description": "轻信了“高薪兼职”的广告，你被骗入了一个传销组织。不仅被限制了人身自由，还被洗脑去欺骗亲朋好友。当你终于被解救出来时，学业早已荒废，人际关系也已支离破碎。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 15
+      },
+      {
+        "stat": "academicStanding",
+        "operator": "lte",
+        "value": 20
+      }
+    ],
+    "priority": 75
+  },
+  {
+    "id": "neg-320",
+    "type": "negative",
+    "title": "过度游戏猝死",
+    "description": "为了冲榜，你连续在网吧通宵了五天五夜。心脏的剧烈绞痛让你倒在了键盘上。当你被抬上救护车时，屏幕上还闪烁着“胜利”的字样，但你的人生游戏却提前Game Over了。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 0
+      }
+    ],
+    "priority": 99
+  },
+  {
+    "id": "neg-321",
+    "type": "negative",
+    "title": "挂科退学",
+    "description": "大一的放纵让你挂科累累，补考重修也无济于事。当学分积欠达到退学红线时，你才意识到问题的严重性。拿着肄业证书走出校门，你不知道该如何面对满怀期待的父母。",
+    "conditions": [
+      {
+        "stat": "academicStanding",
+        "operator": "lte",
+        "value": 5
+      }
+    ],
+    "priority": 92
+  },
+  {
+    "id": "neg-322",
+    "type": "negative",
+    "title": "电信诈骗受害",
+    "description": "一通冒充公检法的电话让你慌了神，你在这个所谓的“安全账户”里转入了父母多年的积蓄。真相大白的那一刻，巨大的愧疚感让你精神恍惚，甚至产生了轻生的念头。",
+    "conditions": [
+      {
+        "stat": "digitalSafety",
+        "operator": "lte",
+        "value": 15
+      },
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 0
+      }
+    ],
+    "priority": 86
+  },
+  {
+    "id": "neg-323",
+    "type": "negative",
+    "title": "孤僻症候群",
+    "description": "大学四年，你几乎没有说过一句话。所有的活动都独自一人，所有的社交都令你恐惧。毕业时，你发现自己连一个可以帮忙搬行李的人都找不到，这种极致的孤独感将伴随你的余生。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 15
+      }
+    ],
+    "priority": 68
+  },
+  {
+    "id": "neg-324",
+    "type": "negative",
+    "title": "校园贷傀儡",
+    "description": "为了购买最新款的电子产品，你借了校园贷。利滚利的高额利息让你无力偿还，被迫出卖自己的身份信息甚至参与违法活动来抵债，彻底沦为高利贷团伙的傀儡。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 10
+      },
+      {
+        "stat": "digitalSafety",
+        "operator": "lte",
+        "value": 10
+      }
+    ],
+    "priority": 89
+  },
+  {
+    "id": "neg-325",
+    "type": "negative",
+    "title": "过度减肥厌食",
+    "description": "对身材的过度焦虑让你陷入了节食的怪圈。从最初的少吃，到后来的催吐，最终发展成严重的神经性厌食症。身体机能严重受损，学业被迫中断，只能在医院的病床上度日。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 20
+      },
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 10
+      }
+    ],
+    "priority": 78
+  },
+  {
+    "id": "neg-326",
+    "type": "negative",
+    "title": "论文抄袭风波",
+    "description": "心存侥幸的你直接复制粘贴了别人的论文。查重系统的高亮飘红和学术委员会的严厉问责接踵而至。你的学位被撤销，学术不端的污点将跟随你的档案一辈子，让你在职场上处处碰壁。",
+    "conditions": [
+      {
+        "stat": "academicStanding",
+        "operator": "lte",
+        "value": 12
+      }
+    ],
+    "priority": 87
+  },
+  {
+    "id": "neg-327",
+    "type": "negative",
+    "title": "沉迷赌球",
+    "description": "世界杯期间，你觉得自己看懂了盘口，疯狂下注。几次爆冷让你输得精光，还欠了一屁股外债。为了躲债，你不得不东躲西藏，连毕业典礼都不敢参加，像个过街老鼠。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 3
+      }
+    ],
+    "priority": 83
+  },
+  {
+    "id": "neg-328",
+    "type": "negative",
+    "title": "键盘侠的末路",
+    "description": "在网络上肆意辱骂他人的你，终于惹上了硬茬。对方不仅人肉出了你的所有信息，还提起了诉讼。学校给予了严厉处分，网络暴力的反噬让你在现实生活中抬不起头来。",
+    "conditions": [
+      {
+        "stat": "digitalSafety",
+        "operator": "lte",
+        "value": 5
+      }
+    ],
+    "priority": 72
+  },
+  {
+    "id": "neg-329",
+    "type": "negative",
+    "title": "抑郁症休学",
+    "description": "不知从何时起，世界在你眼中失去了色彩。连起床洗漱都成了不可能完成的任务。重度抑郁症让你无法继续学业，只能遗憾地告别校园，回家接受长期的药物治疗和心理干预。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 8
+      }
+    ],
+    "priority": 93
+  },
+  {
+    "id": "neg-330",
+    "type": "negative",
+    "title": "传销洗脑",
+    "description": "你被所谓的“创业导师”洗脑，坚信自己能在这个庞氏骗局中赚大钱。你不仅荒废了学业，还拉着室友一起入坑。最终骗局崩盘，你不仅一无所有，还背负了同学们的怨恨。",
+    "conditions": [
+      {
+        "stat": "academicStanding",
+        "operator": "lte",
+        "value": 25
+      },
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 10
+      }
+    ],
+    "priority": 76
+  },
+  {
+    "id": "neg-331",
+    "type": "negative",
+    "title": "意外伤残",
+    "description": "一次校外兼职途中的交通事故，让你失去了行走的自由。昂贵的医药费掏空了家底，身体的残缺让你自卑不已。虽然学校保留了学籍，但你已经没有勇气再回到那个充满活力的校园。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 5
+      },
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 20
+      }
+    ],
+    "priority": 81
+  },
+  {
+    "id": "neg-332",
+    "type": "negative",
+    "title": "情感PUA",
+    "description": "你陷入了一段极度不健康的恋爱关系，对方不断贬低、控制你。你为了讨好对方放弃了尊严、朋友甚至学业。当对方终于甩掉你时，你已经是一个精神崩溃、毫无自我的人了。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 12
+      }
+    ],
+    "priority": 74
+  },
+  {
+    "id": "neg-333",
+    "type": "negative",
+    "title": "裸贷风波",
+    "description": "为了满足虚荣心，你拍下了裸照进行借贷。照片泄露后，你成了全校的谈资。父母崩溃，学校劝退，你无法面对周围异样的眼光，只能远走他乡，隐姓埋名地生活。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 5
+      },
+      {
+        "stat": "digitalSafety",
+        "operator": "lte",
+        "value": 5
+      }
+    ],
+    "priority": 91
+  },
+  {
+    "id": "neg-334",
+    "type": "negative",
+    "title": "考公执念",
+    "description": "你非体制内不去，连续三年全职备考公务员，却次次名落孙山。看着同学们都已成家立业，而你还是个只能伸手向父母要钱的“家里蹲”，巨大的落差感让你变得喜怒无常。",
+    "conditions": [
+      {
+        "stat": "academicStanding",
+        "operator": "lte",
+        "value": 40
+      },
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 30
+      }
+    ],
+    "priority": 66
+  },
+  {
+    "id": "neg-335",
+    "type": "negative",
+    "title": "酒精中毒",
+    "description": "为了融入所谓的“兄弟圈子”，你每次聚会都拼命灌酒。一次严重的酒精中毒不仅损伤了你的肝脏，还让你在昏迷中错过了重要的期末考试，直接导致多门挂科，留级察看。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 15
+      },
+      {
+        "stat": "academicStanding",
+        "operator": "lte",
+        "value": 35
+      }
+    ],
+    "priority": 77
+  },
+  {
+    "id": "neg-336",
+    "type": "negative",
+    "title": "寝室火灾",
+    "description": "违规使用大功率电器煮火锅，导致寝室发生火灾。虽然没有人员伤亡，但整层楼的财物损失惨重。你背负了巨额赔偿，还受到了学校的记过处分，室友们也纷纷搬离，留你孤身一人。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 25
+      },
+      {
+        "stat": "digitalSafety",
+        "operator": "lte",
+        "value": 40
+      }
+    ],
+    "priority": 73
+  },
+  {
+    "id": "neg-337",
+    "type": "negative",
+    "title": "被动退学",
+    "description": "你因为长期旷课，缺勤率达到了学校规定的上限。当你收到退学通知书时，甚至连辩解的机会都没有。你提着行李站在校门口，看着进进出出的学弟学妹，心中充满了悔恨。",
+    "conditions": [
+      {
+        "stat": "academicStanding",
+        "operator": "lte",
+        "value": 8
+      }
+    ],
+    "priority": 89
+  },
+  {
+    "id": "neg-338",
+    "type": "negative",
+    "title": "偷拍被抓",
+    "description": "出于某种扭曲的心理，你在图书馆偷拍异性。被当场抓获后，你的行为被定性为性骚扰。开除学籍的处分让你瞬间名声扫地，家人也因此蒙羞，你这辈子都抬不起头做人。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 18
+      },
+      {
+        "stat": "digitalSafety",
+        "operator": "lte",
+        "value": 15
+      }
+    ],
+    "priority": 84
+  },
+  {
+    "id": "neg-339",
+    "type": "negative",
+    "title": "创业惨败",
+    "description": "拿着父母的养老金盲目创业，开了一家注定亏本的奶茶店。不到半年就关门大吉，不仅赔光了本金，还欠了一屁股供应商的货款。你只能灰溜溜地去打工还债，梦想碎了一地。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 4
+      }
+    ],
+    "priority": 79
+  },
+  {
+    "id": "neg-340",
+    "type": "negative",
+    "title": "邪教受控",
+    "description": "在心灵脆弱时，你被一个打着“灵修”旗号的邪教组织精神控制。你断绝了与外界的联系，将所有财物奉献给教主。当警方捣毁窝点时，你已经神志不清，需要长期的心理康复。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 6
+      }
+    ],
+    "priority": 94
+  },
+  {
+    "id": "neg-341",
+    "type": "negative",
+    "title": "无证驾车",
+    "description": "为了在朋友面前显摆，你偷偷开了室友的车出去兜风，结果发生了严重车祸。因为无证驾驶，保险拒赔，你不仅要承担刑事责任，还要背负巨额的民事赔偿，人生彻底毁了。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 10
+      },
+      {
+        "stat": "digitalSafety",
+        "operator": "lte",
+        "value": 30
+      }
+    ],
+    "priority": 86
+  },
+  {
+    "id": "neg-342",
+    "type": "negative",
+    "title": "替考风波",
+    "description": "为了赚点生活费，你答应帮学弟去替考英语四级。被监考老师当场识破，录入指纹验证身份。根据刑法修正案，你涉嫌代替考试罪，不仅被开除学籍，还留下了刑事案底。",
+    "conditions": [
+      {
+        "stat": "academicStanding",
+        "operator": "lte",
+        "value": 18
+      },
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 15
+      }
+    ],
+    "priority": 90
+  },
+  {
+    "id": "neg-343",
+    "type": "negative",
+    "title": "假货微商",
+    "description": "你在朋友圈做微商卖假冒奢侈品，被同学举报。工商局介入调查，你因销售假冒注册商标的商品被罚款并没收所有所得。学校也给予了留校察看处分，你的信誉在朋友圈彻底破产。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 25
+      },
+      {
+        "stat": "digitalSafety",
+        "operator": "lte",
+        "value": 35
+      }
+    ],
+    "priority": 71
+  },
+  {
+    "id": "neg-344",
+    "type": "negative",
+    "title": "严重挂科",
+    "description": "你的成绩单上满是红色的不及格。补考、重修、再补考，你陷入了死循环。最终因为未修够学分，只能拿到结业证书。没有学位证的你，在招聘会上连简历都递不出去。",
+    "conditions": [
+      {
+        "stat": "academicStanding",
+        "operator": "lte",
+        "value": 19
+      }
+    ],
+    "priority": 85
+  },
+  {
+    "id": "neg-345",
+    "type": "negative",
+    "title": "网络暴力受害者",
+    "description": "你无意间的一句话被断章取义发到了网上，引来了铺天盖地的网络暴力。你的照片被P成遗照，手机被打爆。巨大的精神压力让你不敢出门，不敢上网，整个人变得极度敏感和脆弱。",
+    "conditions": [
+      {
+        "stat": "digitalSafety",
+        "operator": "lte",
+        "value": 8
+      },
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 15
+      }
+    ],
+    "priority": 88
+  },
+  {
+    "id": "neg-346",
+    "type": "negative",
+    "title": "盲目整容",
+    "description": "为了追求所谓的“网红脸”，你借钱去黑诊所整容。手术失败导致面部神经受损，留下了永久的疤痕。你不仅背负了债务，还毁了自己的容貌，整日以泪洗面，不敢见人。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 22
+      },
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 10
+      }
+    ],
+    "priority": 76
+  },
+  {
+    "id": "neg-347",
+    "type": "negative",
+    "title": "档案污点",
+    "description": "因为一次严重的违纪行为，你的档案里被记入了大过处分。这个污点像影子一样跟着你，考公政审不过，国企入职被拒。你才明白，有些错误是要用一生的前途来买单的。",
+    "conditions": [
+      {
+        "stat": "academicStanding",
+        "operator": "lte",
+        "value": 25
+      }
+    ],
+    "priority": 80
+  },
+  {
+    "id": "neg-348",
+    "type": "negative",
+    "title": "被骗缅北",
+    "description": "轻信了网友“国外高薪工作”的诱惑，你偷渡到了缅北。那里不是天堂，而是人间地狱。你被迫从事电信诈骗，稍有不从就遭毒打。你不知道这辈子还能不能活着回到祖国。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 5
+      },
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 10
+      }
+    ],
+    "priority": 98
+  },
+  {
+    "id": "neg-349",
+    "type": "negative",
+    "title": "未婚先孕",
+    "description": "缺乏性教育的你意外怀孕，男友却在这时人间蒸发。不敢告诉父母，只能去小诊所流产，结果导致身体严重感染，甚至影响了未来的生育能力。身体和心灵的双重创伤让你痛不欲生。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 20
+      },
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 20
+      }
+    ],
+    "priority": 82
+  },
+  {
+    "id": "neg-350",
+    "type": "negative",
+    "title": "室友投毒",
+    "description": "因为琐事和室友积怨已深，没想到对方竟然在你的水杯里投毒。虽然抢救及时保住了性命，但你的消化系统留下了永久的损伤。这起恶性事件让你对人性彻底绝望，终身生活在阴影中。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 10
+      },
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 10
+      }
+    ],
+    "priority": 96
+  },
+  {
+    "id": "neg-351",
+    "type": "negative",
+    "title": "沉迷二次元",
+    "description": "你彻底活在二次元的世界里，买手办、追番、cosplay耗尽了你的钱财和精力。现实中的你蓬头垢面，挂科累累。当父母断了你的经济来源，你发现自己连在现实世界生存的能力都没有。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 15
+      },
+      {
+        "stat": "academicStanding",
+        "operator": "lte",
+        "value": 30
+      }
+    ],
+    "priority": 67
+  },
+  {
+    "id": "neg-352",
+    "type": "negative",
+    "title": "论文代写",
+    "description": "临近毕业，你花高价找了论文代写。结果被对方勒索，不给钱就举报你。你在这个无底洞里越陷越深，最终还是被学校发现。双倍的代价，换来的是被开除的结局。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 20
+      },
+      {
+        "stat": "academicStanding",
+        "operator": "lte",
+        "value": 15
+      }
+    ],
+    "priority": 87
+  },
+  {
+    "id": "neg-353",
+    "type": "negative",
+    "title": "兼职刷单",
+    "description": "以为找到了轻松赚钱的门路，你开始帮人刷单。起初尝到甜头，后来被套进去几万块本金。报警后才知道这是典型的诈骗，钱很难追回。你不仅损失了钱财，还觉得自己像个傻子。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 8
+      }
+    ],
+    "priority": 75
+  },
+  {
+    "id": "neg-354",
+    "type": "negative",
+    "title": "严重失眠",
+    "description": "焦虑让你整夜整夜地睡不着觉，安眠药的剂量越吃越大，却效果甚微。记忆力衰退，脱发，精神恍惚。你不得不休学回家调养，看着镜子里枯槁的自己，你不知道什么时候才能好起来。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 15
+      },
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 15
+      }
+    ],
+    "priority": 78
+  },
+  {
+    "id": "neg-355",
+    "type": "negative",
+    "title": "盗窃被抓",
+    "description": "一时贪念，你偷了室友的笔记本电脑去变卖。被监控拍得清清楚楚，警察直接进了寝室。虽然室友顾及情面写了谅解书，但学校的开除处分是逃不掉的，你的人生染上了洗不掉的污点。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 5
+      },
+      {
+        "stat": "academicStanding",
+        "operator": "lte",
+        "value": 30
+      }
+    ],
+    "priority": 91
+  },
+  {
+    "id": "neg-356",
+    "type": "negative",
+    "title": "被包养传闻",
+    "description": "因为经常坐豪车出入，你被传言被包养。虽然那只是你的亲戚，但谣言猛于虎。无论你如何解释，周围人都戴着有色眼镜看你。你受不了这种侮辱，选择了转学，逃离这个是非之地。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 25
+      },
+      {
+        "stat": "digitalSafety",
+        "operator": "lte",
+        "value": 40
+      }
+    ],
+    "priority": 70
+  },
+  {
+    "id": "neg-357",
+    "type": "negative",
+    "title": "考研基地机器",
+    "description": "你把自己变成了考研机器，除了复习书本，对外界一无所知。虽然分数过了线，但在面试中因为表现得像个木头人而被刷。三年的青春换来一场空，你甚至不知道该怎么和人正常交流。",
+    "conditions": [
+      {
+        "stat": "academicStanding",
+        "operator": "gte",
+        "value": 80
+      },
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 15
+      }
+    ],
+    "priority": 69
+  },
+  {
+    "id": "neg-358",
+    "type": "negative",
+    "title": "严重拖延症",
+    "description": "你是重度拖延症患者，所有的事情都拖到最后一刻。毕业论文因为格式问题没来得及上传，直接导致延毕。这种性格缺陷让你在生活中处处碰壁，你恨自己，却又无力改变。",
+    "conditions": [
+      {
+        "stat": "academicStanding",
+        "operator": "lte",
+        "value": 35
+      },
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 30
+      }
+    ],
+    "priority": 65
+  },
+  {
+    "id": "neg-359",
+    "type": "negative",
+    "title": "出租屋甲醛",
+    "description": "为了省钱，你在校外租了廉价的隔断房。住了半年后开始咳嗽、发烧，去医院检查竟是白血病早期。罪魁祸首是超标几十倍的甲醛。为了治病，家里卖了房，你的人生也按下了暂停键。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 8
+      },
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 15
+      }
+    ],
+    "priority": 95
+  },
+  {
+    "id": "neg-360",
+    "type": "negative",
+    "title": "传销讲师",
+    "description": "你不仅没有从传销组织逃出来，反而被洗脑成了骨干讲师。你口若悬河地欺骗着下一批受害者，直到警察冲进会场。当你戴上手铐的那一刻，你才如梦初醒，但一切都晚了。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 5
+      },
+      {
+        "stat": "academicStanding",
+        "operator": "lte",
+        "value": 10
+      }
+    ],
+    "priority": 93
+  },
+  {
+    "id": "neg-361",
+    "type": "negative",
+    "title": "过度追星",
+    "description": "为了追星，你翘课去各地接机、看演唱会，甚至不惜借高利贷打榜。最终爱豆塌房，你也因为旷课太多被退学，还背负了一身债。你看着满屋子的周边，觉得这几年的自己像个笑话。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 10
+      },
+      {
+        "stat": "academicStanding",
+        "operator": "lte",
+        "value": 20
+      }
+    ],
+    "priority": 74
+  },
+  {
+    "id": "neg-362",
+    "type": "negative",
+    "title": "实验事故",
+    "description": "在化学实验中操作不当，引发了爆炸。虽然捡回一条命，但你的右手严重烧伤，部分手指截肢。作为化学专业的学生，你的职业生涯还没开始就结束了，留下的只有身体的残缺和心理的阴影。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 10
+      },
+      {
+        "stat": "academicStanding",
+        "operator": "lte",
+        "value": 50
+      }
+    ],
+    "priority": 88
+  },
+  {
+    "id": "neg-363",
+    "type": "negative",
+    "title": "宠物弃养",
+    "description": "你在寝室违规养猫，毕业时带不走，狠心将它遗弃在校园。猫咪惨死的照片被动物保护社团发在网上，你被全校口诛笔伐。冷血、不负责任的标签贴在了你身上，让你在道德审判中无地自容。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 35
+      },
+      {
+        "stat": "digitalSafety",
+        "operator": "lte",
+        "value": 30
+      }
+    ],
+    "priority": 68
+  },
+  {
+    "id": "neg-364",
+    "type": "negative",
+    "title": "严重社恐",
+    "description": "你害怕与任何人对视，连去食堂打饭都要做很久的心理建设。面试时你一句话都说不出来，浑身发抖。直到毕业，你都没能找到一份工作，只能躲回父母的羽翼下，成为了一名“家里蹲”。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 10
+      }
+    ],
+    "priority": 72
+  },
+  {
+    "id": "neg-365",
+    "type": "negative",
+    "title": "兼职夜店",
+    "description": "为了赚快钱，你去了夜店做兼职。灯红酒绿腐蚀了你的意志，你开始酗酒、甚至沾染违禁品。学校发现了你的行为，给予了开除处分。你在这个大染缸里彻底迷失了自己，再也回不去了。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 15
+      },
+      {
+        "stat": "academicStanding",
+        "operator": "lte",
+        "value": 25
+      }
+    ],
+    "priority": 86
+  },
+  {
+    "id": "neg-366",
+    "type": "negative",
+    "title": "被室友排挤",
+    "description": "因为生活习惯的差异，你被寝室其他三人集体排挤。冷暴力、背后说坏话让你在寝室如坐针毡。你申请换寝未果，只能在校外租房，孤独和委屈伴随了你整个大学时光。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 28
+      }
+    ],
+    "priority": 66
+  },
+  {
+    "id": "neg-367",
+    "type": "negative",
+    "title": "旅游失联",
+    "description": "独自一人去未开发的景区穷游，结果迷路失联。虽然最终被搜救队找到，但你在荒野中经历了数日的饥饿和恐慌，落下了严重的创伤后应激障碍（PTSD），再也不敢踏出家门半步。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 20
+      },
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 15
+      }
+    ],
+    "priority": 81
+  },
+  {
+    "id": "neg-368",
+    "type": "negative",
+    "title": "炒股爆仓",
+    "description": "你挪用了父母给的买房首付进了股市，满仓加杠杆。一个黑天鹅事件让你的账户瞬间穿仓。房子没了，钱也没了，你站在天台上，看着城市的车水马龙，感到前所未有的绝望。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 1
+      }
+    ],
+    "priority": 97
+  },
+  {
+    "id": "neg-369",
+    "type": "negative",
+    "title": "严重洁癖",
+    "description": "你的洁癖发展成了强迫症。每天洗手几十次，不敢碰公共物品，无法在寝室生活。这种心理障碍严重影响了你的正常学习和社交，你被迫休学，在心理医生的诊室里度过青春。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 18
+      },
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 40
+      }
+    ],
+    "priority": 73
+  },
+  {
+    "id": "neg-370",
+    "type": "negative",
+    "title": "网络赌博",
+    "description": "从几块钱的红包接龙开始，你陷入了网络赌博的泥潭。输红了眼的你借遍了所有能借的钱。当债主找上门时，你才发现自己不仅输掉了金钱，还输掉了做人的底线和未来。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 3
+      },
+      {
+        "stat": "digitalSafety",
+        "operator": "lte",
+        "value": 20
+      }
+    ],
+    "priority": 90
+  },
+  {
+    "id": "neg-371",
+    "type": "negative",
+    "title": "考公面试被刷",
+    "description": "笔试第一的你，在面试环节因为过度紧张表现失常，被对手逆袭。这是你第三次倒在面试关。巨大的挫败感让你开始怀疑自己的能力，性格变得越来越孤僻，不愿再与人交流。",
+    "conditions": [
+      {
+        "stat": "academicStanding",
+        "operator": "gte",
+        "value": 70
+      },
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 25
+      }
+    ],
+    "priority": 68
+  },
+  {
+    "id": "neg-372",
+    "type": "negative",
+    "title": "食物中毒",
+    "description": "长期食用路边摊的不卫生食品，导致严重的细菌感染和脏器衰竭。在ICU里抢救了半个月，虽然保住了命，但身体素质大不如前，稍微劳累就会生病，你成了名副其实的“药罐子”。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 5
+      }
+    ],
+    "priority": 89
+  },
+  {
+    "id": "neg-373",
+    "type": "negative",
+    "title": "简历造假",
+    "description": "为了进大厂，你在简历上编造了完美的实习经历。入职背调时被查出造假，不仅Offer被撤回，你还被拉入了行业黑名单。诚信的崩塌让你在这个圈子里寸步难行。",
+    "conditions": [
+      {
+        "stat": "academicStanding",
+        "operator": "lte",
+        "value": 45
+      },
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 30
+      }
+    ],
+    "priority": 83
+  },
+  {
+    "id": "neg-374",
+    "type": "negative",
+    "title": "沉迷短视频",
+    "description": "你每天花十几个小时刷短视频，大脑被碎片化的信息填满，失去了深度思考的能力。挂科、留级接踵而至，你依然躺在床上划动手指，像个被算法控制的行尸走肉。",
+    "conditions": [
+      {
+        "stat": "academicStanding",
+        "operator": "lte",
+        "value": 20
+      },
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 35
+      }
+    ],
+    "priority": 77
+  },
+  {
+    "id": "neg-375",
+    "type": "negative",
+    "title": "偷外卖惯犯",
+    "description": "为了省钱和寻求刺激，你开始偷别人的外卖。一次两次没被发现，直到被蹲守的外卖小哥抓个正着。送保卫处、通报批评、记过。为了几十块钱的饭，你丢掉了做人的尊严。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 10
+      },
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 30
+      }
+    ],
+    "priority": 71
+  },
+  {
+    "id": "neg-376",
+    "type": "negative",
+    "title": "严重脱发",
+    "description": "长期的熬夜和压力，让你年纪轻轻就谢顶了。形象的崩塌让你极度自卑，出门必须戴帽子。在看脸的社会里，你觉得因为头发失去了很多机会，这种自卑感伴随了你整个求职季。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 25
+      },
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 40
+      }
+    ],
+    "priority": 60
+  },
+  {
+    "id": "neg-377",
+    "type": "negative",
+    "title": "被导师压榨",
+    "description": "遇到了极品导师，把你当免费劳动力，甚至克扣你的助研费。长期的压抑和劳累让你患上了严重的胃病。当你试图反抗时，导师以毕业为要挟。你为了那一纸学位，忍辱负重，身心俱疲。",
+    "conditions": [
+      {
+        "stat": "academicStanding",
+        "operator": "lte",
+        "value": 55
+      },
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 30
+      }
+    ],
+    "priority": 76
+  },
+  {
+    "id": "neg-378",
+    "type": "negative",
+    "title": "误入传销窝点",
+    "description": "去异地见网友，结果被骗入传销窝点。手机被没收，每天吃烂菜叶，听洗脑课。当你终于找机会逃出来时，人已经瘦脱了相，精神也变得恍惚，对这个世界充满了恐惧和不信任。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 15
+      },
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 20
+      }
+    ],
+    "priority": 92
+  },
+  {
+    "id": "neg-379",
+    "type": "negative",
+    "title": "考研调剂失败",
+    "description": "一志愿落榜，你开始了疯狂的调剂。发了几百封邮件，打了无数个电话，要么石沉大海，要么被拒绝。直到调剂系统关闭，你依然一无所获。心高气傲的你无法接受去打工，整个人废了。",
+    "conditions": [
+      {
+        "stat": "academicStanding",
+        "operator": "lte",
+        "value": 50
+      },
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 20
+      }
+    ],
+    "priority": 70
+  },
+  {
+    "id": "neg-380",
+    "type": "negative",
+    "title": "严重颈椎病",
+    "description": "长期低头玩手机、打游戏，让你的颈椎严重变形，压迫神经。常常头晕、手麻，甚至在一次体育课上晕倒。医生警告如果不手术可能会瘫痪。你只能休学治病，成了个“歪脖子”废人。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 15
+      }
+    ],
+    "priority": 75
+  },
+  {
+    "id": "neg-381",
+    "type": "negative",
+    "title": "租房被骗",
+    "description": "毕业租房遇到了假房东，交了半年房租和押金后，真房东上门收房。骗子早已失联，你身无分文，流落街头。这次社会的毒打让你明白，象牙塔外的世界充满了陷阱。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 10
+      }
+    ],
+    "priority": 78
+  },
+  {
+    "id": "neg-382",
+    "type": "negative",
+    "title": "严重的拖延症",
+    "description": "你总是把事情拖到最后。毕业设计、求职简历、公务员报名，你通通错过了截止日期。当同学们都奔赴前程时，你手里只有一张延毕通知单，你因为懒惰付出了惨痛的代价。",
+    "conditions": [
+      {
+        "stat": "academicStanding",
+        "operator": "lte",
+        "value": 25
+      },
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 40
+      }
+    ],
+    "priority": 69
+  },
+  {
+    "id": "neg-383",
+    "type": "negative",
+    "title": "被室友孤立",
+    "description": "因为打呼噜或者不洗脚等小毛病，你被全寝室孤立。没人跟你说话，集体活动也不叫你。这种冷暴力让你在寝室里感到窒息，你开始逃避回寝室，甚至晚上在网吧过夜。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 30
+      },
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 45
+      }
+    ],
+    "priority": 65
+  },
+  {
+    "id": "neg-384",
+    "type": "negative",
+    "title": "意外怀孕流产",
+    "description": "因为无知和冲动，女友意外怀孕。在没有准备好的情况下，你们选择了流产。手术对女友身体造成了伤害，也成为了你们感情中无法愈合的伤疤。最终分手，你背负着深深的愧疚。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 25
+      },
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 30
+      }
+    ],
+    "priority": 80
+  },
+  {
+    "id": "neg-385",
+    "type": "negative",
+    "title": "沉迷盲盒",
+    "description": "你为了集齐隐藏款盲盒，花光了所有积蓄，甚至透支了信用卡。看着满墙的塑料娃娃，你获得了短暂的满足，但随后而来的是还不上的账单和空虚的内心。你成了消费主义的奴隶。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 5
+      }
+    ],
+    "priority": 73
+  },
+  {
+    "id": "neg-386",
+    "type": "negative",
+    "title": "严重支气管炎",
+    "description": "为了省钱买劣质烟，或者长期吸入二手烟，你的肺部感染严重，发展成慢性支气管炎。走几步路就喘，稍微变天就咳嗽不止。年纪轻轻就拥有了老年人的肺，你的身体彻底垮了。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 20
+      }
+    ],
+    "priority": 72
+  },
+  {
+    "id": "neg-387",
+    "type": "negative",
+    "title": "被当备胎",
+    "description": "你喜欢的人把你当提款机和情绪垃圾桶。你付出了所有的时间和金钱，最后对方却和别人官宣了。你才发现自己只是个可笑的备胎。这段经历让你不再相信爱情，变得愤世嫉俗。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 15
+      },
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 20
+      }
+    ],
+    "priority": 74
+  },
+  {
+    "id": "neg-388",
+    "type": "negative",
+    "title": "考驾照连跪",
+    "description": "科目二挂了五次，科目三挂了五次。所有的钱都交了补考费，所有的假期都耗在了驾校。最终你还是没拿到驾照，这件事成了你心里的一个结，每次看到别人开车你都会感到自卑。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 25
+      },
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 45
+      }
+    ],
+    "priority": 62
+  },
+  {
+    "id": "neg-389",
+    "type": "negative",
+    "title": "严重痛风",
+    "description": "长期的海鲜啤酒烧烤，让你患上了严重的痛风。发作时关节像被老虎钳夹一样剧痛，连路都走不了。你只能告别美食，终身服药，稍有不慎就会复发，生活质量大打折扣。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 18
+      }
+    ],
+    "priority": 77
+  },
+  {
+    "id": "neg-390",
+    "type": "negative",
+    "title": "被黑中介坑",
+    "description": "找暑期工被黑中介骗了中介费，还被介绍去黑工厂打工。每天工作14小时，吃馊饭，还没工钱。你想跑却被扣了身份证。好不容易报警逃出来，你发誓再也不信任何中介了。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 12
+      }
+    ],
+    "priority": 84
+  },
+  {
+    "id": "neg-391",
+    "type": "negative",
+    "title": "沉迷网文",
+    "description": "你每天沉迷于修仙玄幻小说，幻想着自己是天选之子。现实中的学业和生活被你抛诸脑后。当你挂科退学时，你还在想为什么没有系统觉醒来救你。你彻底分不清虚幻和现实了。",
+    "conditions": [
+      {
+        "stat": "academicStanding",
+        "operator": "lte",
+        "value": 15
+      },
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 30
+      }
+    ],
+    "priority": 68
+  },
+  {
+    "id": "neg-392",
+    "type": "negative",
+    "title": "严重近视",
+    "description": "不健康的用眼习惯让你的近视度数飙升到一千度以上，视网膜都有脱落的风险。摘了眼镜就是个瞎子，厚重的镜片压得你鼻梁疼。这双眼睛已经严重限制了你的生活和未来的职业选择。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 35
+      }
+    ],
+    "priority": 63
+  },
+  {
+    "id": "neg-393",
+    "type": "negative",
+    "title": "被扒窃",
+    "description": "在公交车上，你的手机和钱包被扒手偷走。里面有重要的证件和没备份的毕业论文数据。你因此延毕，还因为证件丢失补办遇到各种麻烦。这次意外让你对公共交通产生了阴影。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 20
+      },
+      {
+        "stat": "digitalSafety",
+        "operator": "lte",
+        "value": 25
+      }
+    ],
+    "priority": 79
+  },
+  {
+    "id": "neg-394",
+    "type": "negative",
+    "title": "严重路怒症",
+    "description": "骑电动车时与人发生剐蹭，你情绪失控大打出手，把对方打成轻伤。虽然赔钱私了免于起诉，但学校给了你记过处分。你暴躁的脾气像个定时炸弹，随时可能毁了你。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 22
+      }
+    ],
+    "priority": 76
+  },
+  {
+    "id": "neg-395",
+    "type": "negative",
+    "title": "沉迷剧本杀",
+    "description": "你痴迷于剧本杀，为了追求沉浸感，不仅逃课，还花费巨资购买服装道具。你活在角色的爱恨情仇里，却把现实生活过得一团糟。直到挂科退学，你才发现自己拿的是“废柴”剧本。",
+    "conditions": [
+      {
+        "stat": "academicStanding",
+        "operator": "lte",
+        "value": 25
+      },
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 15
+      }
+    ],
+    "priority": 70
+  },
+  {
+    "id": "neg-396",
+    "type": "negative",
+    "title": "被利用背锅",
+    "description": "在学生会或社团工作中，你因为老实听话，被心机的负责人推出去背了黑锅。你受了处分，对方却拿了荣誉。这次职场预演让你看清了人性的丑恶，但也让你变得畏手畏脚。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 35
+      },
+      {
+        "stat": "academicStanding",
+        "operator": "lte",
+        "value": 45
+      }
+    ],
+    "priority": 71
+  },
+  {
+    "id": "neg-397",
+    "type": "negative",
+    "title": "严重肾结石",
+    "description": "不爱喝水，天天喝饮料，让你患上了严重的肾结石。绞痛发作时你在地上打滚。虽然做了碎石手术，但医生警告你的肾功能已经受损。你才二十岁，身体却已经像个老人。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 12
+      }
+    ],
+    "priority": 85
+  },
+  {
+    "id": "neg-398",
+    "type": "negative",
+    "title": "被骗培训贷",
+    "description": "找工作时被骗去参加所谓的“岗前培训”，背上了几万块的培训贷。培训完不包就业，你不仅没工作，每个月还要还几千块的贷款。这是社会给你上的昂贵的一课。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 5
+      }
+    ],
+    "priority": 94
+  },
+  {
+    "id": "neg-399",
+    "type": "negative",
+    "title": "严重脊柱侧弯",
+    "description": "长期不正确的坐姿，导致你脊柱严重侧弯。不仅体态丑陋，还压迫内脏，影响呼吸。医生建议手术，风险很大且费用高昂。你看着X光片上扭曲的脊柱，悔不当初。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 15
+      }
+    ],
+    "priority": 79
+  },
+  {
+    "id": "neg-400",
+    "type": "negative",
+    "title": "沉迷饭圈互撕",
+    "description": "你把网络当战场，为了维护爱豆在网上与人互骂、人肉搜索。结果对方报警，你因为侮辱诽谤被行政拘留。学校开除，爱豆也并没有多看你一眼，你成了彻头彻尾的炮灰。",
+    "conditions": [
+      {
+        "stat": "digitalSafety",
+        "operator": "lte",
+        "value": 10
+      },
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 20
+      }
+    ],
+    "priority": 88
+  },
+  {
+    "id": "neg-401",
+    "type": "negative",
+    "title": "严重胃溃疡",
+    "description": "长期饮食不规律，饥一顿饱一顿，还爱吃辛辣刺激。你的胃终于罢工了，严重的胃溃疡甚至导致了胃穿孔。手术切除了一部分胃，你这辈子都只能吃流食和软饭了。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 8
+      }
+    ],
+    "priority": 87
+  },
+  {
+    "id": "neg-402",
+    "type": "negative",
+    "title": "被恶意造谣",
+    "description": "得罪了心胸狭隘的人，对方在学校表白墙和论坛上散布你私生活混乱的谣言。三人成虎，你百口莫辩。巨大的舆论压力让你患上了抑郁症，不得不休学逃离这个可怕的环境。",
+    "conditions": [
+      {
+        "stat": "digitalSafety",
+        "operator": "lte",
+        "value": 15
+      },
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 15
+      }
+    ],
+    "priority": 82
+  },
+  {
+    "id": "neg-403",
+    "type": "negative",
+    "title": "买到烂尾楼",
+    "description": "毕业后父母掏空积蓄给你付了首付，结果开发商暴雷，楼盘烂尾。每个月还着房贷，却只能住进没水没电的毛坯房维权。你的生活被这套房子彻底套牢，看不到希望。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 5
+      }
+    ],
+    "priority": 95
+  },
+  {
+    "id": "neg-404",
+    "type": "negative",
+    "title": "严重腱鞘炎",
+    "description": "因为疯狂打游戏或者玩手机，你的手指和手腕患上了严重的腱鞘炎，甚至无法拿筷子。医生说如果不静养可能会残疾。你不得不告别键盘和屏幕，这对你来说比死还难受。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 25
+      }
+    ],
+    "priority": 66
+  },
+  {
+    "id": "neg-405",
+    "type": "negative",
+    "title": "被室友偷拍",
+    "description": "你发现室友在寝室安装了针孔摄像头，你的隐私被直播到了网上。虽然报了警，室友被抓，但你的视频已经流传出去。你无法面对这一切，产生了严重的心理阴影，甚至想轻生。",
+    "conditions": [
+      {
+        "stat": "digitalSafety",
+        "operator": "lte",
+        "value": 5
+      },
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 10
+      }
+    ],
+    "priority": 98
+  },
+  {
+    "id": "neg-406",
+    "type": "negative",
+    "title": "考公体检被刷",
+    "description": "过五关斩六将，你终于通过了笔试面试。却在体检环节因为转氨酶过高或者血压问题被刷。只差临门一脚，却因为身体原因前功尽弃。你痛恨自己平时为什么不注意身体。",
+    "conditions": [
+      {
+        "stat": "academicStanding",
+        "operator": "gte",
+        "value": 80
+      },
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 40
+      }
+    ],
+    "priority": 77
+  },
+  {
+    "id": "neg-407",
+    "type": "negative",
+    "title": "严重过敏",
+    "description": "因为一次误食，你爆发了严重的过敏反应，导致休克。虽然救回来了，但你的免疫系统变得极度敏感。很多东西不能吃，很多地方不能去。你活得小心翼翼，失去了很多生活的乐趣。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 15
+      }
+    ],
+    "priority": 72
+  },
+  {
+    "id": "neg-408",
+    "type": "negative",
+    "title": "被传销杀熟",
+    "description": "你被最好的朋友骗进了传销。因为信任，你不仅自己投了钱，还帮忙拉人。当你知道真相时，朋友已经跑路，留给你的是一地鸡毛和亲戚朋友的讨债。你失去了一切，包括对人的信任。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 8
+      },
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 18
+      }
+    ],
+    "priority": 89
+  },
+  {
+    "id": "neg-409",
+    "type": "negative",
+    "title": "严重幻听",
+    "description": "压力过大让你出现了幻听，总觉得有人在耳边骂你。你在课堂上突然大叫，被同学当成疯子。学校建议你休学治疗。在精神病院的白色房间里，你不知道自己还能不能回到正常的世界。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 5
+      }
+    ],
+    "priority": 96
+  },
+  {
+    "id": "neg-410",
+    "type": "negative",
+    "title": "毕业即失业",
+    "description": "大学四年混日子，没技能没证书没实习。毕业后投了几百份简历，连个面试机会都没有。只能在家啃老，看着父母失望的眼神，你觉得自己是个彻头彻尾的废物，但又无力改变现状。",
+    "conditions": [
+      {
+        "stat": "academicStanding",
+        "operator": "lte",
+        "value": 40
+      },
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 20
+      }
+    ],
+    "priority": 80
+  },
+  {
+    "id": "neg-411",
+    "type": "negative",
+    "title": "因为挂科无法保研",
+    "description": "你的综合素质分很高，但因大一体育课挂科的记录，在保研资格审查时被一票否决。你遗憾错失了去名校的机会。",
+    "conditions": [
+      {
+        "stat": "academicStanding",
+        "operator": "gte",
+        "value": 75
+      },
+      {
+        "stat": "academicStanding",
+        "operator": "lte",
+        "value": 85
+      }
+    ],
+    "priority": 60
+  },
+  {
+    "id": "neg-412",
+    "type": "negative",
+    "title": "严重的胃穿孔",
+    "description": "长期吃外卖和夜宵，你的胃壁薄如蝉翼。一次暴饮暴食后胃穿孔，紧急手术切除了部分胃，身体素质大不如前。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 18
+      }
+    ],
+    "priority": 80
+  },
+  {
+    "id": "neg-413",
+    "type": "negative",
+    "title": "被房东赶出门",
+    "description": "在校外租房却长期拖欠房租，房东忍无可忍将你的行李扔到大街上。你在冬夜的街头瑟瑟发抖，无家可归。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 8
+      }
+    ],
+    "priority": 75
+  },
+  {
+    "id": "neg-414",
+    "type": "negative",
+    "title": "宠物蛇咬伤",
+    "description": "在宿舍偷偷养毒蛇，不慎被咬伤。虽然送医及时保住了命，但右手神经受损，灵活性永久丧失，台球梦碎。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 35
+      },
+      {
+        "stat": "billiardsSkill",
+        "operator": "gte",
+        "value": 50
+      }
+    ],
+    "priority": 82
+  },
+  {
+    "id": "neg-415",
+    "type": "negative",
+    "title": "英语四级八次不过",
+    "description": "直到毕业前最后一次机会，你的四级成绩依然是424分。因为没有四级证，你错失了心仪大厂的Offer。",
+    "conditions": [
+      {
+        "stat": "academicStanding",
+        "operator": "lte",
+        "value": 50
+      }
+    ],
+    "priority": 65
+  },
+  {
+    "id": "neg-416",
+    "type": "negative",
+    "title": "被黑中介坑害",
+    "description": "找暑假工时被黑中介收取巨额押金后拉黑。身无分文的你困在陌生城市，只能求助救助站买票回家。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 15
+      }
+    ],
+    "priority": 71
+  },
+  {
+    "id": "neg-417",
+    "type": "negative",
+    "title": "造谣被行政处罚",
+    "description": "为博眼球编造疫情谣言，造成恶劣社会影响。警察上门将你带走，你在拘留所里流下了悔恨的泪水。",
+    "conditions": [
+      {
+        "stat": "digitalSafety",
+        "operator": "lte",
+        "value": 22
+      }
+    ],
+    "priority": 85
+  },
+  {
+    "id": "neg-418",
+    "type": "negative",
+    "title": "沉迷二次元退学",
+    "description": "你觉得现实世界无聊透顶，整日沉浸在动漫和Galgame中。连续旷课两个月后，学校自动为你办理了退学。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 28
+      }
+    ],
+    "priority": 74
+  },
+  {
+    "id": "neg-419",
+    "type": "negative",
+    "title": "严重失眠症",
+    "description": "焦虑让你整夜整夜无法入睡，只能依靠药物维持。记忆力严重衰退，精神恍惚，最终不得不休学治疗。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 12
+      }
+    ],
+    "priority": 90
+  },
+  {
+    "id": "neg-420",
+    "type": "negative",
+    "title": "显卡矿难接盘",
+    "description": "在矿难前夕高价囤积显卡试图倒卖，结果价格崩盘。手里压了几十张显卡卖不出去，欠的花呗借呗让你绝望。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 5
+      }
+    ],
+    "priority": 84
+  },
+  {
+    "id": "neg-421",
+    "type": "negative",
+    "title": "误食致幻蘑菇",
+    "description": "为了尝鲜购买所谓的神奇蘑菇，食用后出现严重幻觉并在校园裸奔。被送医洗胃后，你因扰乱治安被处分。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 20
+      }
+    ],
+    "priority": 77
+  },
+  {
+    "id": "neg-422",
+    "type": "negative",
+    "title": "被情感PUA",
+    "description": "你的恋爱对象通过打压、贬低控制了你的精神。你变得自卑敏感，完全失去了自我，学业和生活一团糟。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 18
+      }
+    ],
+    "priority": 88
+  },
+  {
+    "id": "neg-423",
+    "type": "negative",
+    "title": "盗窃室友财物",
+    "description": "赌博输红了眼，你偷拿室友的笔记本电脑去变卖。被监控拍下后，警方介入，你因盗窃罪被刑拘。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 0
+      }
+    ],
+    "priority": 95
+  },
+  {
+    "id": "neg-424",
+    "type": "negative",
+    "title": "传播盗版资源",
+    "description": "你运营的影视资源站流量巨大，被版权方起诉并报警。面临巨额罚款和牢狱之灾，你才后悔莫及。",
+    "conditions": [
+      {
+        "stat": "digitalSafety",
+        "operator": "lte",
+        "value": 18
+      }
+    ],
+    "priority": 89
+  },
+  {
+    "id": "neg-425",
+    "type": "negative",
+    "title": "严重脱发",
+    "description": "长期的熬夜和压力让你才二十岁就几乎谢顶。形象的崩塌让你极度自卑，连出门都需要巨大的勇气。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 40
+      }
+    ],
+    "priority": 55
+  },
+  {
+    "id": "neg-426",
+    "type": "negative",
+    "title": "被挂表白墙网暴",
+    "description": "因为一件小事与人发生争执，被对方断章取义发到表白墙。全校的指责和谩骂让你精神崩溃，患上重度抑郁。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 22
+      }
+    ],
+    "priority": 80
+  },
+  {
+    "id": "neg-427",
+    "type": "negative",
+    "title": "实习期被辞退",
+    "description": "好不容易找到的实习工作，因为工作态度散漫和频频出错，不到一周就被辞退。你对进入职场产生了深深的恐惧。",
+    "conditions": [
+      {
+        "stat": "academicStanding",
+        "operator": "lte",
+        "value": 45
+      }
+    ],
+    "priority": 62
+  },
+  {
+    "id": "neg-428",
+    "type": "negative",
+    "title": "误入传销式培训",
+    "description": "花费巨资报名成功学培训班，结果只是被洗脑打鸡血。钱花光了，除了学会喊口号，你什么技能也没学到。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 25
+      }
+    ],
+    "priority": 68
+  },
+  {
+    "id": "neg-429",
+    "type": "negative",
+    "title": "严重的视网膜脱落",
+    "description": "高度近视还通宵玩手机，导致视网膜脱落。虽然做了手术，但视力严重受损，这辈子都离不开厚厚的眼镜。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 28
+      }
+    ],
+    "priority": 76
+  },
+  {
+    "id": "neg-430",
+    "type": "negative",
+    "title": "被当做间谍举报",
+    "description": "你在网上的某些极端言论和行为被热心群众举报为间谍。经过漫长的调查虽洗清嫌疑，但你的档案留下了污点。",
+    "conditions": [
+      {
+        "stat": "digitalSafety",
+        "operator": "lte",
+        "value": 12
+      }
+    ],
+    "priority": 93
+  },
+  {
+    "id": "neg-431",
+    "type": "negative",
+    "title": "炒鞋亏损",
+    "description": "跟风炒作限量版球鞋，结果市场泡沫破裂。满屋子的鞋卖不出去，借的高利贷却每天都在涨利息。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 12
+      }
+    ],
+    "priority": 75
+  },
+  {
+    "id": "neg-432",
+    "type": "negative",
+    "title": "因为打架被拘",
+    "description": "在食堂因插队问题与人互殴，打掉对方两颗牙。赔偿三万并行政拘留十天，学校给予记大过处分。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 40
+      }
+    ],
+    "priority": 81
+  },
+  {
+    "id": "neg-433",
+    "type": "negative",
+    "title": "严重的肾结石",
+    "description": "不爱喝水只喝饮料，导致双肾结石。疼痛发作时在地上打滚，手术后医生警告你肾功能已受损。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 32
+      }
+    ],
+    "priority": 70
+  },
+  {
+    "id": "neg-434",
+    "type": "negative",
+    "title": "被各种群踢出",
+    "description": "因为情商太低，说话总是冷场或得罪人，你被所有班级群和社团群踢出。你彻底成为了班级里的透明人。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 45
+      }
+    ],
+    "priority": 58
+  },
+  {
+    "id": "neg-435",
+    "type": "negative",
+    "title": "论文数据造假",
+    "description": "毕业论文实验数据全是编的，被评审专家当场指出。你因学术不端被取消答辩资格，四年大学白读了。",
+    "conditions": [
+      {
+        "stat": "academicStanding",
+        "operator": "lte",
+        "value": 28
+      }
+    ],
+    "priority": 87
+  },
+  {
+    "id": "neg-436",
+    "type": "negative",
+    "title": "沉迷短视频",
+    "description": "每天刷短视频超过15小时，大脑完全退化，无法集中注意力做任何事。你变成了一个只会傻笑的废人。",
+    "conditions": [
+      {
+        "stat": "academicStanding",
+        "operator": "lte",
+        "value": 15
+      }
+    ],
+    "priority": 80
+  },
+  {
+    "id": "neg-437",
+    "type": "negative",
+    "title": "被假冒公检法诈骗",
+    "description": "接到公安局电话说你涉嫌洗钱，你吓得把所有资金转入安全账户。意识到被骗时，骗子早已销声匿迹。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 2
+      }
+    ],
+    "priority": 90
+  },
+  {
+    "id": "neg-438",
+    "type": "negative",
+    "title": "严重的腱鞘炎",
+    "description": "疯狂打字对线和玩游戏，导致双手腱鞘炎严重粘连。不得不手术松解，医生说你这双手以后不能从事精细工作。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 38
+      }
+    ],
+    "priority": 65
+  },
+  {
+    "id": "neg-439",
+    "type": "negative",
+    "title": "偷换商家二维码",
+    "description": "鬼迷心窍去偷换小摊贩的收款码，被当场抓获。虽然金额不大，但你的道德品质已被钉在耻辱柱上。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 18
+      },
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 35
+      }
+    ],
+    "priority": 85
+  },
+  {
+    "id": "neg-440",
+    "type": "negative",
+    "title": "挂科太多被降级",
+    "description": "因为挂科太多，学校强制将你编入下一年级重修。看着曾经的同学变成学长，你羞愧得抬不起头。",
+    "conditions": [
+      {
+        "stat": "academicStanding",
+        "operator": "lte",
+        "value": 35
+      }
+    ],
+    "priority": 83
+  },
+  {
+    "id": "neg-441",
+    "type": "negative",
+    "title": "严重的听力损伤",
+    "description": "长期佩戴耳机并开最大音量，导致不可逆的神经性耳聋。你不得不戴上助听器，世界从此变得沉闷。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 30
+      }
+    ],
+    "priority": 69
+  },
+  {
+    "id": "neg-442",
+    "type": "negative",
+    "title": "被兼职中介骗去外地",
+    "description": "被高薪兼职诱惑去了外地，结果被没收身份证关在黑厂。辛苦干了一个月，不仅没工资，连回家的路费都是乞讨来的。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 10
+      }
+    ],
+    "priority": 82
+  },
+  {
+    "id": "neg-443",
+    "type": "negative",
+    "title": "浏览暗网中毒",
+    "description": "由于好奇浏览暗网，电脑被植入勒索病毒。毕业论文和所有资料被锁，黑客索要比特币，你崩溃大哭。",
+    "conditions": [
+      {
+        "stat": "digitalSafety",
+        "operator": "lte",
+        "value": 8
+      }
+    ],
+    "priority": 91
+  },
+  {
+    "id": "neg-444",
+    "type": "negative",
+    "title": "严重社恐",
+    "description": "你害怕与任何人眼神接触，连去食堂打饭都不敢。完全自我封闭的你，最终只能休学回家接受心理治疗。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 10
+      }
+    ],
+    "priority": 89
+  },
+  {
+    "id": "neg-445",
+    "type": "negative",
+    "title": "买二手手机被骗",
+    "description": "贪便宜在闲鱼买手机，收到的是一块板砖。卖家早已注销账号，你省吃俭用存下的钱打了水漂。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 20
+      }
+    ],
+    "priority": 67
+  },
+  {
+    "id": "neg-446",
+    "type": "negative",
+    "title": "毕业即失业",
+    "description": "大学四年混日子，毕业时发现自己没有任何核心竞争力。投了几百份简历全部石沉大海，只能在家里啃老。",
+    "conditions": [
+      {
+        "stat": "academicStanding",
+        "operator": "lte",
+        "value": 48
+      }
+    ],
+    "priority": 75
+  },
+  {
+    "id": "neg-447",
+    "type": "negative",
+    "title": "严重的智齿感染",
+    "description": "智齿发炎不舍得看病，硬扛导致间隙感染扩散。做了切开引流手术，并在ICU住了三天，花光了家里半年的积蓄。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 15
+      }
+    ],
+    "priority": 84
+  },
+  {
+    "id": "neg-448",
+    "type": "negative",
+    "title": "被封杀的UP主",
+    "description": "你做的视频因由于版权和低俗问题被全平台下架封杀。几十万粉丝一夜归零，你的网红梦碎了一地。",
+    "conditions": [
+      {
+        "stat": "digitalSafety",
+        "operator": "lte",
+        "value": 30
+      }
+    ],
+    "priority": 72
+  },
+  {
+    "id": "neg-449",
+    "type": "negative",
+    "title": "沉迷女仆店",
+    "description": "为了体验主人的感觉，你在女仆咖啡店挥金如土。透支信用卡后，你被拉入征信黑名单，父母也被催收电话骚扰。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 8
+      }
+    ],
+    "priority": 78
+  },
+  {
+    "id": "neg-450",
+    "type": "negative",
+    "title": "严重的脊柱侧弯",
+    "description": "长期不良坐姿打游戏，导致脊柱严重侧弯。体态畸形不仅影响外观，还压迫心肺，手术风险极高。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 22
+      }
+    ],
+    "priority": 73
+  },
+  {
+    "id": "neg-451",
+    "type": "negative",
+    "title": "被当做备胎榨干",
+    "description": "你以为是真爱，其实只是对方的提款机。当你没钱买礼物时，对方毫不留情地将你踢开，你人财两空。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 28
+      },
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 15
+      }
+    ],
+    "priority": 86
+  },
+  {
+    "id": "neg-452",
+    "type": "negative",
+    "title": "偷外卖被抓",
+    "description": "因为没钱吃饭，你开始偷别人的外卖。被蹲守的外卖小哥抓住暴打一顿并报警，学校通报批评。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 5
+      }
+    ],
+    "priority": 85
+  },
+  {
+    "id": "neg-453",
+    "type": "negative",
+    "title": "严重的心理变态",
+    "description": "压抑的欲望让你产生了虐杀小动物的念头。被同学发现举报后，你被强制送入精神病院，成为危险人物。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 5
+      }
+    ],
+    "priority": 99
+  },
+  {
+    "id": "neg-454",
+    "type": "negative",
+    "title": "传播谣言被刑拘",
+    "description": "在敏感时期编造政治谣言，被网警跨省抓捕。你因寻衅滋事罪被刑事拘留，人生彻底留下了污点。",
+    "conditions": [
+      {
+        "stat": "digitalSafety",
+        "operator": "lte",
+        "value": 8
+      }
+    ],
+    "priority": 97
+  },
+  {
+    "id": "neg-455",
+    "type": "negative",
+    "title": "严重的糖尿病",
+    "description": "每天把可乐当水喝，年纪轻轻就确诊Ⅱ型糖尿病。终身需要注射胰岛素，并发症的风险时刻威胁着你。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 25
+      }
+    ],
+    "priority": 79
+  },
+  {
+    "id": "neg-456",
+    "type": "negative",
+    "title": "被室友孤立逼疯",
+    "description": "全宿舍联合起来把你当空气，长期的冷暴力让你精神崩溃。你在宿舍大吼大叫，被家长接回家休养。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 15
+      }
+    ],
+    "priority": 88
+  },
+  {
+    "id": "neg-457",
+    "type": "negative",
+    "title": "盗用他人账号",
+    "description": "盗用同学的游戏账号转移装备，被警方立案。虽然价值不高，但盗窃罪的案底让你再也无法考公考编。",
+    "conditions": [
+      {
+        "stat": "digitalSafety",
+        "operator": "lte",
+        "value": 28
+      }
+    ],
+    "priority": 87
+  },
+  {
+    "id": "neg-458",
+    "type": "negative",
+    "title": "严重的过劳肥",
+    "description": "压力大就暴饮暴食，体重飙升至250斤。严重的肥胖引起呼吸暂停综合征，你在睡梦中差点憋死。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 35
+      }
+    ],
+    "priority": 60
+  },
+  {
+    "id": "neg-459",
+    "type": "negative",
+    "title": "被骗做法人",
+    "description": "为了几千块钱好处费，你答应做朋友公司的法人代表。公司欠税跑路，你被列入失信被执行人，限制高消费。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 18
+      }
+    ],
+    "priority": 92
+  },
+  {
+    "id": "neg-460",
+    "type": "negative",
+    "title": "沉迷氪金手游",
+    "description": "为了抽出SSR角色，你花光了学费。面对催缴学费的通知，你不敢接父母电话，选择了逃避。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 8
+      }
+    ],
+    "priority": 81
+  },
+  {
+    "id": "neg-461",
+    "type": "negative",
+    "title": "严重的甲沟炎",
+    "description": "不讲卫生导致严重的甲沟炎，脚趾化脓感染。为了保住脚趾，医生不得不拔掉你的趾甲，痛不欲生。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 40
+      }
+    ],
+    "priority": 50
+  },
+  {
+    "id": "neg-462",
+    "type": "negative",
+    "title": "被挂科黄牛骗",
+    "description": "相信内部改分的谎言，给骗子转了五千块。结果分没改，钱没了，还差点因为试图改分被学校处分。",
+    "conditions": [
+      {
+        "stat": "academicStanding",
+        "operator": "lte",
+        "value": 35
+      },
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 25
+      }
+    ],
+    "priority": 77
+  },
+  {
+    "id": "neg-463",
+    "type": "negative",
+    "title": "严重的痔疮",
+    "description": "长期久坐不动和吃辣，导致重度混合痔。手术后每次上厕所都像在拉玻璃渣，痛苦让你无法正常上课。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 38
+      }
+    ],
+    "priority": 65
+  },
+  {
+    "id": "neg-464",
+    "type": "negative",
+    "title": "被所谓兄弟出卖",
+    "description": "帮兄弟担保借钱，结果兄弟跑路，债主天天堵你。你终于明白，酒肉朋友在利益面前一文不值。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 5
+      }
+    ],
+    "priority": 86
+  },
+  {
+    "id": "neg-465",
+    "type": "negative",
+    "title": "严重的拖延症",
+    "description": "任何事都拖到最后时刻，毕业论文因为错过提交时间而延毕。你的懒惰毁了你的大学生涯。",
+    "conditions": [
+      {
+        "stat": "academicStanding",
+        "operator": "lte",
+        "value": 42
+      }
+    ],
+    "priority": 70
+  },
+  {
+    "id": "neg-466",
+    "type": "negative",
+    "title": "被野猫抓伤",
+    "description": "逗弄流浪猫时被抓伤，因舍不得打疫苗而感染。虽然是虚惊一场，但严重的感染让你住院两周。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 28
+      }
+    ],
+    "priority": 62
+  },
+  {
+    "id": "neg-467",
+    "type": "negative",
+    "title": "严重的强迫症",
+    "description": "必须反复检查门锁几十次才能出门，严重影响生活。你无法集中精力学习，只能休学接受行为认知疗法。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 18
+      }
+    ],
+    "priority": 85
+  },
+  {
+    "id": "neg-468",
+    "type": "negative",
+    "title": "被二手车坑惨",
+    "description": "买了一辆美女一手车想跑网约车赚外快，结果是泡水事故车。修车的钱比买车还贵，你血本无归。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 15
+      }
+    ],
+    "priority": 74
+  },
+  {
+    "id": "neg-469",
+    "type": "negative",
+    "title": "严重的过敏反应",
+    "description": "不知道自己对某种食物过敏，误食后喉头水肿窒息。虽然抢救回来了，但身体免疫系统受损，体弱多病。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 20
+      }
+    ],
+    "priority": 78
+  },
+  {
+    "id": "neg-470",
+    "type": "negative",
+    "title": "被冒名顶替",
+    "description": "因为信息泄露，你的身份被他人冒用办理了巨额贷款。你为了证明我不是我跑断了腿，身心俱疲。",
+    "conditions": [
+      {
+        "stat": "digitalSafety",
+        "operator": "lte",
+        "value": 15
+      }
+    ],
+    "priority": 89
+  },
+  {
+    "id": "neg-471",
+    "type": "negative",
+    "title": "严重的焦虑症",
+    "description": "对未来充满无限的恐惧，每天心慌手抖。无法完成任何学业任务，最终只能办理退学，回家疗养。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 12
+      }
+    ],
+    "priority": 88
+  },
+  {
+    "id": "neg-472",
+    "type": "negative",
+    "title": "被黑客勒索",
+    "description": "你的电脑摄像头被黑客入侵，录下了你的私密视频。对方勒索比特币，你无力支付，只能报警并承受社死。",
+    "conditions": [
+      {
+        "stat": "digitalSafety",
+        "operator": "lte",
+        "value": 10
+      }
+    ],
+    "priority": 94
+  },
+  {
+    "id": "neg-473",
+    "type": "negative",
+    "title": "严重的鼠标手",
+    "description": "高强度的游戏让你的手腕神经受损，连拿筷子都疼。你不得不告别心爱的游戏，生活质量大打折扣。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 32
+      }
+    ],
+    "priority": 66
+  },
+  {
+    "id": "neg-474",
+    "type": "negative",
+    "title": "被传销洗脑",
+    "description": "深信1040阳光工程，你骗光了父母的养老钱。直到梦碎那一刻，你才发现自己一无所有，众叛亲离。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 8
+      }
+    ],
+    "priority": 96
+  },
+  {
+    "id": "neg-475",
+    "type": "negative",
+    "title": "严重的偏头痛",
+    "description": "长期压力导致顽固性偏头痛，发作时头痛欲裂。你无法正常思考和学习，只能长期依赖止痛药。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 28
+      }
+    ],
+    "priority": 71
+  },
+  {
+    "id": "neg-476",
+    "type": "negative",
+    "title": "被杀猪盘骗感情",
+    "description": "以为遇到了真命天子，结果对方只是为了骗你的钱。由于接受不了现实，你患上了重度抑郁。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 10
+      },
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 20
+      }
+    ],
+    "priority": 90
+  },
+  {
+    "id": "neg-477",
+    "type": "negative",
+    "title": "严重的肺结核",
+    "description": "长期网吧通宵，免疫力低下感染肺结核。必须休学隔离治疗，每天大把大把的吃药，身体虚弱不堪。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 15
+      }
+    ],
+    "priority": 85
+  },
+  {
+    "id": "neg-478",
+    "type": "negative",
+    "title": "被网暴人肉",
+    "description": "因在网上发表不当言论，被网友人肉搜索。家庭住址、电话号码全被曝光，你和家人日夜不得安宁。",
+    "conditions": [
+      {
+        "stat": "digitalSafety",
+        "operator": "lte",
+        "value": 5
+      }
+    ],
+    "priority": 98
+  },
+  {
+    "id": "neg-479",
+    "type": "negative",
+    "title": "严重的骨质疏松",
+    "description": "常年喝碳酸饮料不晒太阳，骨密度如六十岁老人。打喷嚏都能骨折，你成了名副其实的脆皮大学生。",
+    "conditions": [
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 25
+      }
+    ],
+    "priority": 73
+  },
+  {
+    "id": "neg-480",
+    "type": "negative",
+    "title": "被假冒老师诈骗",
+    "description": "骗子冒充导师让你转账版面费，你不敢核实直接转账。钱没了，导师知道后狠狠批评了你的愚蠢。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 20
+      }
+    ],
+    "priority": 76
+  }
+]

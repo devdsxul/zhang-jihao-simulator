@@ -1,0 +1,3510 @@
+[
+  {
+    "id": "crisis-001",
+    "category": "crisis-management",
+    "text": "派出所打电话来，说有人用你的身份信息注册了诈骗账号，要你配合调查。",
+    "animation": "arrested",
+    "choices": [
+      {
+        "id": "c1c1",
+        "text": "主动去派出所说明情况",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 15
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "c1c2",
+        "text": "怀疑是诈骗电话，先核实",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "c1c3",
+        "text": "慌了，不知道怎么办",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -15
+          }
+        ]
+      },
+      {
+        "id": "c1c4",
+        "text": "想起之前卖过微信号，心虚",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -15
+          },
+          {
+            "stat": "sanity",
+            "change": -15
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "crisis-002",
+    "category": "crisis-management",
+    "text": "被人发现你在Twitter上发过的敏感内容，有人威胁要举报你。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "c2c1",
+        "text": "立刻删除所有账号",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 15
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "c2c2",
+        "text": "给对方转钱封口",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -20
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "c2c3",
+        "text": "无视威胁，应该没事",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -20
+          }
+        ]
+      },
+      {
+        "id": "c2c4",
+        "text": "反过来威胁对方",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -15
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "crisis-003",
+    "category": "crisis-management",
+    "text": "补考又挂了，辅导员说如果再挂一门就要被劝退了。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "c3c1",
+        "text": "认真复习，拼最后一把",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 15
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "c3c2",
+        "text": "找学长帮忙通融",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "c3c3",
+        "text": "准备退学找工作",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -20
+          },
+          {
+            "stat": "sanity",
+            "change": -15
+          }
+        ]
+      },
+      {
+        "id": "c3c4",
+        "text": "申请休学，明年再战",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "crisis-004",
+    "category": "crisis-management",
+    "text": "家里突然出事，妈妈生病住院了，你需要立刻回老家。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "c4c1",
+        "text": "立刻请假回家",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -15
+          },
+          {
+            "stat": "academicStanding",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "c4c2",
+        "text": "先打电话了解情况",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "c4c3",
+        "text": "借钱买机票回去",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -15
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "c4c4",
+        "text": "一边处理学校事务一边准备回去",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          },
+          {
+            "stat": "academicStanding",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "crisis-005",
+    "category": "crisis-management",
+    "text": "银行卡被冻结了，说涉及非法交易，你想起之前帮人转过钱。",
+    "animation": "arrested",
+    "choices": [
+      {
+        "id": "c5c1",
+        "text": "去银行说明情况解冻",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "c5c2",
+        "text": "找律师咨询",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -15
+          },
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "c5c3",
+        "text": "慌了，删除聊天记录",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -20
+          },
+          {
+            "stat": "sanity",
+            "change": -15
+          }
+        ]
+      },
+      {
+        "id": "c5c4",
+        "text": "联系之前那个人问情况",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "crisis-006",
+    "category": "crisis-management",
+    "text": "网贷平台发来最后通牒，声称如果今晚12点前不还清欠款，就会爆通讯录，并向学校和家长发送催收短信。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "c6c1",
+        "text": "向父母坦白求助",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 20
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "c6c2",
+        "text": "找朋友借钱周转",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "c6c3",
+        "text": "无视威胁，硬扛",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -20
+          },
+          {
+            "stat": "academicStanding",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "c6c4",
+        "text": "以贷养贷",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": -15
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "crisis-007",
+    "category": "crisis-management",
+    "text": "因为在网吧为了抢机器和人发生冲突，对方报警了。警察叔叔正在赶来的路上，而你身上还带着几张没身份证的黑卡。",
+    "animation": "running",
+    "choices": [
+      {
+        "id": "c7c1",
+        "text": "赶紧丢掉黑卡跑路",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "c7c2",
+        "text": "留在原地解释误会",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "c7c3",
+        "text": "试图私了赔钱",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "c7c4",
+        "text": "藏起黑卡装无辜",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "crisis-008",
+    "category": "crisis-management",
+    "text": "辅导员把你叫到办公室，桌上放着一份打印出来的聊天记录，那是你在某个匿名群里吐槽学校领导的言论。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "c8c1",
+        "text": "承认错误写检讨",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "c8c2",
+        "text": "否认是自己发的",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -10
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "c8c3",
+        "text": "声称账号被盗",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "c8c4",
+        "text": "沉默对抗",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -15
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "crisis-009",
+    "category": "crisis-management",
+    "text": "你的某个社交账号突然涌入大量辱骂私信，原来是你之前发表的关于足球的言论被大V挂了，正在遭遇网暴。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "c9c1",
+        "text": "立刻注销账号",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "c9c2",
+        "text": "开启评论防护",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "c9c3",
+        "text": "和网友对喷",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -15
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "c9c4",
+        "text": "发道歉声明",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          },
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "crisis-010",
+    "category": "crisis-management",
+    "text": "派出所打来电话，说你的银行卡流水异常，涉嫌帮信罪，要求你立刻带上身份证和银行卡去说明情况。",
+    "animation": "arrested",
+    "choices": [
+      {
+        "id": "c10c1",
+        "text": "立刻前往配合调查",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "c10c2",
+        "text": "咨询法学系同学",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "academicStanding",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "c10c3",
+        "text": "吓得不敢接电话",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -20
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -15
+          }
+        ]
+      },
+      {
+        "id": "c10c4",
+        "text": "准备跑路回老家",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -20
+          },
+          {
+            "stat": "sanity",
+            "change": -15
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "crisis-011",
+    "category": "crisis-management",
+    "text": "你在校外租房的房东突然说房子要被法院查封，让你三天内搬走，不仅不退押金，还威胁你报警也没用。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "c11c1",
+        "text": "报警维权",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "c11c2",
+        "text": "自认倒霉搬回宿舍",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "c11c3",
+        "text": "赖着不走",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -15
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "c11c4",
+        "text": "找几个兄弟去理论",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "crisis-012",
+    "category": "crisis-management",
+    "text": "由于长期挂科，学院下达了最后通牒，要求你家长来学校签署试读协议，否则直接劝退。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "c12c1",
+        "text": "硬着头皮叫家长",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -20
+          }
+        ]
+      },
+      {
+        "id": "c12c2",
+        "text": "雇人冒充家长",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -15
+          }
+        ]
+      },
+      {
+        "id": "c12c3",
+        "text": "向辅导员求情",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "c12c4",
+        "text": "直接办退学手续",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -100
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "crisis-013",
+    "category": "crisis-management",
+    "text": "你在网上买的“原单”球鞋被鉴定为假货，卖家不仅不退款，还把他手里的你的收货地址发到了骗子群里。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "c13c1",
+        "text": "认栽，换收货地址",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "c13c2",
+        "text": "举报店铺和卖家",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "c13c3",
+        "text": "和卖家对骂",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "c13c4",
+        "text": "报警处理",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "crisis-014",
+    "category": "crisis-management",
+    "text": "你在闲鱼上卖闲置电子产品，买家收到货后谎称坏了，申请“仅退款”，并且平台居然判定他赢了。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "c14c1",
+        "text": "向平台申诉",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          },
+          {
+            "stat": "wealth",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "c14c2",
+        "text": "去互联网法院起诉",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          },
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "c14c3",
+        "text": "发帖曝光骗子",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "c14c4",
+        "text": "算了，当买教训",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "crisis-015",
+    "category": "crisis-management",
+    "text": "你的VPN服务商跑路了，而且有传言说服务商把用户日志交给了警方，你最近刚好用它浏览过一些敏感网站。",
+    "animation": "running",
+    "choices": [
+      {
+        "id": "c15c1",
+        "text": "清理所有浏览记录",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 15
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "c15c2",
+        "text": "格式化电脑硬盘",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 20
+          },
+          {
+            "stat": "academicStanding",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "c15c3",
+        "text": "去派出所自首",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": -20
+          }
+        ]
+      },
+      {
+        "id": "c15c4",
+        "text": "假装无事发生",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -15
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "crisis-016",
+    "category": "crisis-management",
+    "text": "一个自称是“公检法”的人打电话给你，准确报出了你的身份证号和学校，说你涉嫌一起跨国洗钱案。",
+    "animation": "arrested",
+    "choices": [
+      {
+        "id": "c16c1",
+        "text": "挂断电话并拉黑",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "c16c2",
+        "text": "反问对方警号",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "c16c3",
+        "text": "吓得按对方指示操作",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -30
+          },
+          {
+            "stat": "sanity",
+            "change": -20
+          }
+        ]
+      },
+      {
+        "id": "c16c4",
+        "text": "去学校保卫处核实",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "crisis-017",
+    "category": "crisis-management",
+    "text": "你在校外兼职的公司突然倒闭，老板卷款跑路，你不仅没拿到工资，还被客户围堵在公司门口要说法。",
+    "animation": "running",
+    "choices": [
+      {
+        "id": "c17c1",
+        "text": "解释自己也是受害者",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          },
+          {
+            "stat": "wealth",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "c17c2",
+        "text": "趁乱逃跑",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          },
+          {
+            "stat": "billiardsSkill",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "c17c3",
+        "text": "报警求助",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "c17c4",
+        "text": "组织客户维权",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          },
+          {
+            "stat": "academicStanding",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "crisis-018",
+    "category": "crisis-management",
+    "text": "你的电脑中了勒索病毒，所有论文资料和游戏存档都被加密，黑客要求支付0.1个比特币才能解锁。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "c18c1",
+        "text": "支付赎金",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -25
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "c18c2",
+        "text": "格式化重装系统",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -15
+          },
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "c18c3",
+        "text": "找计算机大神求助",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "c18c4",
+        "text": "尝试网上找解密工具",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "crisis-019",
+    "category": "crisis-management",
+    "text": "因为在宿舍违规使用大功率电器煮火锅，被宿管阿姨抓了个现行，还要通报批评并没收锅具。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "c19c1",
+        "text": "诚恳道歉求放过",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "c19c2",
+        "text": "死不承认是我的",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "c19c3",
+        "text": "上交检讨书",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "c19c4",
+        "text": "和阿姨吵架",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "crisis-020",
+    "category": "crisis-management",
+    "text": "债主找到了学校，在教学楼门口拉横幅，上面写着“张继浩欠债还钱”，引发众多同学围观。",
+    "animation": "running",
+    "choices": [
+      {
+        "id": "c20c1",
+        "text": "躲在宿舍不出门",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": -15
+          }
+        ]
+      },
+      {
+        "id": "c20c2",
+        "text": "报警说骚扰",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "c20c3",
+        "text": "出面承诺还款计划",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "c20c4",
+        "text": "从后门溜走",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          },
+          {
+            "stat": "billiardsSkill",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "crisis-021",
+    "category": "crisis-management",
+    "text": "你因为好奇在暗网买了一点“聪明药”，结果包裹被海关扣了，警察正在联系你核实情况。",
+    "animation": "arrested",
+    "choices": [
+      {
+        "id": "c21c1",
+        "text": "坚决否认购买",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "c21c2",
+        "text": "承认错误并配合",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "c21c3",
+        "text": "说是帮同学买的",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -15
+          },
+          {
+            "stat": "academicStanding",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "c21c4",
+        "text": "弃用手机号失联",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": -15
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "crisis-022",
+    "category": "crisis-management",
+    "text": "你的前女友在学校论坛发长文控诉你劈腿且欠钱不还，帖子瞬间成了热帖，大家都在人肉你。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "c22c1",
+        "text": "联系管理员删帖",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "c22c2",
+        "text": "发帖澄清事实",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          },
+          {
+            "stat": "academicStanding",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "c22c3",
+        "text": "私下联系前女友",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "c22c4",
+        "text": "装死冷处理",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          },
+          {
+            "stat": "academicStanding",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "crisis-023",
+    "category": "crisis-management",
+    "text": "在台球厅和混混打赌输了5000块，对方把你堵在厕所里，让你现在就掏钱，不然就留下一根手指。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "c23c1",
+        "text": "打电话找兄弟借钱",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -50
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "c23c2",
+        "text": "趁其不备反抗逃跑",
+        "effects": [
+          {
+            "stat": "billiardsSkill",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "c23c3",
+        "text": "报警（偷偷地）",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "c23c4",
+        "text": "提出再打一局翻盘",
+        "effects": [
+          {
+            "stat": "billiardsSkill",
+            "change": 5
+          },
+          {
+            "stat": "wealth",
+            "change": -10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "crisis-024",
+    "category": "crisis-management",
+    "text": "因为长期旷课，你的名字出现在了学院的“拟退学名单”公示栏上，只剩下三天的申诉期。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "c24c1",
+        "text": "写万言申诉书",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "c24c2",
+        "text": "找导师求情",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "c24c3",
+        "text": "去教务处闹",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": -15
+          }
+        ]
+      },
+      {
+        "id": "c24c4",
+        "text": "接受现实准备复读",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -20
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "crisis-025",
+    "category": "crisis-management",
+    "text": "你在网上兼职刷单，垫付了3000元后，对方把你拉黑了，你意识到自己被骗了生活费。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "c25c1",
+        "text": "报警立案",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "wealth",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "c25c2",
+        "text": "在网上曝光骗子",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "c25c3",
+        "text": "自认倒霉吃泡面",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -30
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "c25c4",
+        "text": "试图反向社工骗子",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 15
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "crisis-026",
+    "category": "crisis-management",
+    "text": "你在推特上转发了一条关于时政的讽刺漫画，第二天辅导员就找你谈话，说网警把名单发到学校了。",
+    "animation": "arrested",
+    "choices": [
+      {
+        "id": "c26c1",
+        "text": "立即删除并写保证书",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "c26c2",
+        "text": "辩解账号被盗",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          },
+          {
+            "stat": "academicStanding",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "c26c3",
+        "text": "坚持言论自由",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -20
+          },
+          {
+            "stat": "sanity",
+            "change": -15
+          }
+        ]
+      },
+      {
+        "id": "c26c4",
+        "text": "沉默不语",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          },
+          {
+            "stat": "academicStanding",
+            "change": -10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "crisis-027",
+    "category": "crisis-management",
+    "text": "你的校园卡和身份证一起丢了，还没来得及挂失，就收到几条消费短信和网贷验证码。",
+    "animation": "running",
+    "choices": [
+      {
+        "id": "c27c1",
+        "text": "立刻挂失并报警",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 15
+          },
+          {
+            "stat": "wealth",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "c27c2",
+        "text": "先去挂失校园卡",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "c27c3",
+        "text": "在校园群发寻物启事",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "c27c4",
+        "text": "不管了，先睡觉",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -20
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -20
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "crisis-028",
+    "category": "crisis-management",
+    "text": "因为通宵打游戏身体不适，去医院检查发现心脏有早搏迹象，医生警告你必须规律作息，否则有猝死风险。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "c28c1",
+        "text": "立刻戒游戏养生",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          },
+          {
+            "stat": "academicStanding",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "c28c2",
+        "text": "不管了，生死有命",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -15
+          },
+          {
+            "stat": "academicStanding",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "c28c3",
+        "text": "减少熬夜频率",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "academicStanding",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "c28c4",
+        "text": "买份保险继续嗨",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "crisis-029",
+    "category": "crisis-management",
+    "text": "你为了省钱买的二手电动车，在路上被交警拦下，查出是盗抢车辆，要扣车并带你回队里调查。",
+    "animation": "arrested",
+    "choices": [
+      {
+        "id": "c29c1",
+        "text": "交出车辆配合调查",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -15
+          },
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "c29c2",
+        "text": "拿出闲鱼购买记录",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          },
+          {
+            "stat": "wealth",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "c29c3",
+        "text": "弃车逃跑",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "c29c4",
+        "text": "跟交警大吵大闹",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -15
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -15
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "crisis-030",
+    "category": "crisis-management",
+    "text": "你的毕业论文查重率高达80%，被判定为严重抄袭，学院要求你参加听证会，否则取消学位。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "c30c1",
+        "text": "连夜降重修改",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": -15
+          }
+        ]
+      },
+      {
+        "id": "c30c2",
+        "text": "找代写（再次冒险）",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -20
+          },
+          {
+            "stat": "academicStanding",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "c30c3",
+        "text": "准备听证会辩解",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "c30c4",
+        "text": "放弃学位证",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -30
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "crisis-031",
+    "category": "crisis-management",
+    "text": "你在校外租房，半夜突然遇到警察查房，怀疑这栋楼里有传销组织，你的身份证还没带在身边。",
+    "animation": "arrested",
+    "choices": [
+      {
+        "id": "c31c1",
+        "text": "报身份证号配合",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "c31c2",
+        "text": "叫房东来作证",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          },
+          {
+            "stat": "wealth",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "c31c3",
+        "text": "紧张得说不出话",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "c31c4",
+        "text": "试图翻窗逃跑",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -20
+          },
+          {
+            "stat": "sanity",
+            "change": -15
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "crisis-032",
+    "category": "crisis-management",
+    "text": "你的手机突然收到大量验证码轰炸，每分钟几百条，根本没法正常使用，这是被“短信轰炸机”盯上了。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "c32c1",
+        "text": "开启飞行模式",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "c32c2",
+        "text": "联系运营商屏蔽",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "c32c3",
+        "text": "下载拦截软件",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "c32c4",
+        "text": "换个手机号",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": 15
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "crisis-033",
+    "category": "crisis-management",
+    "text": "你在网上购买的“考试答案”被证实是诈骗，不仅没收到答案，骗子还威胁说要告诉学校你想作弊。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "c33c1",
+        "text": "自认倒霉拉黑",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "c33c2",
+        "text": "报警（自曝）",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -10
+          },
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "c33c3",
+        "text": "给钱封口",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -20
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "c33c4",
+        "text": "好好复习凭实力",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "crisis-034",
+    "category": "crisis-management",
+    "text": "你的Steam账号被盗，里面有价值数千元的库存，盗号者正在市场上低价抛售你的饰品。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "c34c1",
+        "text": "联系Steam客服找回",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "c34c2",
+        "text": "立刻锁定账号",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 15
+          },
+          {
+            "stat": "wealth",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "c34c3",
+        "text": "在那买回来",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -20
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "c34c4",
+        "text": "弃坑不玩了",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -50
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "crisis-035",
+    "category": "crisis-management",
+    "text": "因为在宿舍养猫被举报，学校保卫处要求你今天之内必须把猫送走，否则给处分。",
+    "animation": "running",
+    "choices": [
+      {
+        "id": "c35c1",
+        "text": "连夜找领养",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          },
+          {
+            "stat": "academicStanding",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "c35c2",
+        "text": "寄养到校外宠物店",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -15
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "c35c3",
+        "text": "藏在衣柜里",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -15
+          },
+          {
+            "stat": "academicStanding",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "c35c4",
+        "text": "和保卫处硬刚",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "crisis-036",
+    "category": "crisis-management",
+    "text": "你的私人照片被恶意P图并做成了表情包在学校群里流传，对你的名誉造成了极大影响。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "c36c1",
+        "text": "追查源头并警告",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "c36c2",
+        "text": "报告辅导员处理",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "c36c3",
+        "text": "自己也发自嘲",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          },
+          {
+            "stat": "academicStanding",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "c36c4",
+        "text": "自闭退群",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -15
+          },
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "crisis-037",
+    "category": "crisis-management",
+    "text": "网贷催收人员PS了你的“涉黄”照片发给你父母，以此威胁他们替你还钱。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "c37c1",
+        "text": "向父母坦白并报警",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 15
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "c37c2",
+        "text": "向父母解释是PS的",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          },
+          {
+            "stat": "wealth",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "c37c3",
+        "text": "赶紧去借钱还上",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -20
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "c37c4",
+        "text": "拉黑父母电话",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -20
+          },
+          {
+            "stat": "wealth",
+            "change": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "crisis-038",
+    "category": "crisis-management",
+    "text": "你为了赚快钱把银行卡借给别人走流水，结果第二天卡就被冻结了，警察还要你去说明资金来源。",
+    "animation": "arrested",
+    "choices": [
+      {
+        "id": "c38c1",
+        "text": "主动自首争取宽大",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "c38c2",
+        "text": "编造理由",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "c38c3",
+        "text": "说是卡丢了",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "c38c4",
+        "text": "立刻跑路",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -20
+          },
+          {
+            "stat": "sanity",
+            "change": -20
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "crisis-039",
+    "category": "crisis-management",
+    "text": "你在考试时把手机夹在大腿中间被巡考老师发现了，现在要带你去教务处签作弊认定书。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "c39c1",
+        "text": "痛哭流涕求情",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          },
+          {
+            "stat": "academicStanding",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "c39c2",
+        "text": "承认错误签字",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -20
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "c39c3",
+        "text": "辩解没开机",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -15
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "c39c4",
+        "text": "当场摔手机",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "academicStanding",
+            "change": -20
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "crisis-040",
+    "category": "crisis-management",
+    "text": "你的一篇期末论文被查出是AI生成的，教授非常生气，要求你重写并在全班面前检讨。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "c40c1",
+        "text": "连夜手写一篇",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": -15
+          }
+        ]
+      },
+      {
+        "id": "c40c2",
+        "text": "公开检讨道歉",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "c40c3",
+        "text": "坚称是自己写的",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -15
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "c40c4",
+        "text": "退选这门课",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "crisis-041",
+    "category": "crisis-management",
+    "text": "你因为心情不好在宿舍喝酒，结果喝多了发酒疯把室友打了，室友现在要去验伤报警。",
+    "animation": "running",
+    "choices": [
+      {
+        "id": "c41c1",
+        "text": "酒醒后立刻道歉赔偿",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -20
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "c41c2",
+        "text": "找辅导员调解",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "c41c3",
+        "text": "让他尽管去报",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -15
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "c41c4",
+        "text": "收拾东西搬出宿舍",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "crisis-042",
+    "category": "crisis-management",
+    "text": "你在网上约的“女朋友”突然说自己未成年，她爸爸拿过电话要告你诱拐，除非你给精神损失费。",
+    "animation": "arrested",
+    "choices": [
+      {
+        "id": "c42c1",
+        "text": "报警处理仙人跳",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "c42c2",
+        "text": "吓得转钱消灾",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -30
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "c42c3",
+        "text": "拉黑所有联系方式",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -15
+          }
+        ]
+      },
+      {
+        "id": "c42c4",
+        "text": "咨询法律援助",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "crisis-043",
+    "category": "crisis-management",
+    "text": "你的网盘账号被封禁，因为里面存了大量违规资源，系统提示你的账号已被移交相关部门。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "c43c1",
+        "text": "注销关联手机号",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "c43c2",
+        "text": "申诉说是被盗号",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "c43c3",
+        "text": "等待警察上门",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -20
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "c43c4",
+        "text": "重新注册个小号",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "crisis-044",
+    "category": "crisis-management",
+    "text": "你在学校食堂吃到异物，拍照发到网上后引发舆情，学校施压要求你删帖并澄清是误会。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "c44c1",
+        "text": "坚持真相不删帖",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "c44c2",
+        "text": "协商赔偿后删帖",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "c44c3",
+        "text": "被迫发道歉信",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -15
+          },
+          {
+            "stat": "academicStanding",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "c44c4",
+        "text": "联系媒体曝光",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -20
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "crisis-045",
+    "category": "crisis-management",
+    "text": "你借了高利贷买新款iPhone，现在利滚利还不上，催收人员把你堵在教室门口。",
+    "animation": "running",
+    "choices": [
+      {
+        "id": "c45c1",
+        "text": "当众卖手机还债",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": -20
+          }
+        ]
+      },
+      {
+        "id": "c45c2",
+        "text": "报警求助",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "c45c3",
+        "text": "逃课躲避",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": -15
+          }
+        ]
+      },
+      {
+        "id": "c45c4",
+        "text": "找辅导员救命",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "crisis-046",
+    "category": "crisis-management",
+    "text": "你因为在游戏里骂人，被对方人肉出真实信息，并在你的学校贴吧里直播“处刑”。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "c46c1",
+        "text": "联系吧主删帖",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "c46c2",
+        "text": "在贴吧公开道歉",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          },
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "c46c3",
+        "text": "开小号反击",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -15
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "c46c4",
+        "text": "卸载贴吧装死",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "crisis-047",
+    "category": "crisis-management",
+    "text": "你的毕业设计数据丢失，备份硬盘也坏了，距离答辩只剩下一周时间。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "c47c1",
+        "text": "通宵重做",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": -20
+          }
+        ]
+      },
+      {
+        "id": "c47c2",
+        "text": "申请延期答辩",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "c47c3",
+        "text": "花钱找数据恢复",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -20
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "c47c4",
+        "text": "编造假数据",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -20
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "crisis-048",
+    "category": "crisis-management",
+    "text": "你因为在宿舍私拉电线给电动车充电，导致跳闸并引发小火灾，消防队和学校领导都来了。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "c48c1",
+        "text": "主动承担责任",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -10
+          },
+          {
+            "stat": "wealth",
+            "change": -20
+          }
+        ]
+      },
+      {
+        "id": "c48c2",
+        "text": "甩锅给室友",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          },
+          {
+            "stat": "academicStanding",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "c48c3",
+        "text": "说是电路老化",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "c48c4",
+        "text": "躲起来不敢见人",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -15
+          },
+          {
+            "stat": "sanity",
+            "change": -15
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "crisis-049",
+    "category": "crisis-management",
+    "text": "你在不知情的情况下帮朋友带了一个包裹，结果里面是违禁品，被警察拦下盘问。",
+    "animation": "arrested",
+    "choices": [
+      {
+        "id": "c49c1",
+        "text": "实话实说是帮带的",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "c49c2",
+        "text": "联系那个朋友",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "c49c3",
+        "text": "慌张得语无伦次",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -15
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "c49c4",
+        "text": "配合警方诱捕朋友",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 15
+          },
+          {
+            "stat": "sanity",
+            "change": -20
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "crisis-050",
+    "category": "crisis-management",
+    "text": "你的身份证被冒用注册了公司，现在公司欠税几十万，税务局找上门来了。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "c50c1",
+        "text": "证明身份被盗用",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 15
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "c50c2",
+        "text": "找律师起诉",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "c50c3",
+        "text": "不知所措哭诉",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -15
+          },
+          {
+            "stat": "wealth",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "c50c4",
+        "text": "联系工商局注销",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "crisis-051",
+    "category": "crisis-management",
+    "text": "因为在网络上发表了过激言论，你的实习公司决定辞退你，并通报了学校。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "c51c1",
+        "text": "接受辞退并道歉",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -5
+          },
+          {
+            "stat": "wealth",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "c51c2",
+        "text": "仲裁公司非法辞退",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "c51c3",
+        "text": "在网上挂公司",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "c51c4",
+        "text": "求学校不要记过",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "crisis-052",
+    "category": "crisis-management",
+    "text": "你在闲鱼上卖出的手机被买家调包退回，里面变成了砖头，钱货两空。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "c52c1",
+        "text": "报警诈骗",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "wealth",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "c52c2",
+        "text": "去闲鱼小法庭撕逼",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          },
+          {
+            "stat": "wealth",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "c52c3",
+        "text": "人肉买家地址",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "c52c4",
+        "text": "当花钱买教训",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -20
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "crisis-053",
+    "category": "crisis-management",
+    "text": "你的微信号因为“涉嫌违规”被永久封禁，里面有你所有的联系人和钱包零钱。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "c53c1",
+        "text": "不断申诉",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          },
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "c53c2",
+        "text": "去腾讯总部拉横幅",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -15
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "c53c3",
+        "text": "换个号重新开始",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "wealth",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "c53c4",
+        "text": "找所谓“解封大师”",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -15
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "crisis-054",
+    "category": "crisis-management",
+    "text": "你在体测替考被抓了，学校要给你记过处分，并取消本学期所有奖学金评选资格。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "c54c1",
+        "text": "写检讨争取从轻",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "c54c2",
+        "text": "找体育老师求情",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 0
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "c54c3",
+        "text": "无所谓，反正没奖学金",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "academicStanding",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "c54c4",
+        "text": "举报其他人也替考",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "crisis-055",
+    "category": "crisis-management",
+    "text": "你的校园网账号流量异常，被网信办监测到你在下载大量敏感政治书籍，要对你进行谈话。",
+    "animation": "arrested",
+    "choices": [
+      {
+        "id": "c55c1",
+        "text": "解释是学术研究",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "c55c2",
+        "text": "承认错误并删除",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "c55c3",
+        "text": "沉默对抗",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          },
+          {
+            "stat": "academicStanding",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "c55c4",
+        "text": "说是账号被盗",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 0
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  }
+]

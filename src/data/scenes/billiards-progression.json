@@ -1,0 +1,3190 @@
+[
+  {
+    "id": "billiards-001",
+    "category": "billiards-progression",
+    "text": "踢球脚受伤了，室友拉你去台球厅消磨时间，你发现自己还挺有天赋。",
+    "animation": "billiards",
+    "choices": [
+      {
+        "id": "b1c1",
+        "text": "开始认真学台球",
+        "effects": [
+          {
+            "stat": "billiardsSkill",
+            "change": 15
+          },
+          {
+            "stat": "wealth",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "b1c2",
+        "text": "就玩玩，不当回事",
+        "effects": [
+          {
+            "stat": "billiardsSkill",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "b1c3",
+        "text": "找教练系统学习",
+        "effects": [
+          {
+            "stat": "billiardsSkill",
+            "change": 20
+          },
+          {
+            "stat": "wealth",
+            "change": -15
+          }
+        ]
+      },
+      {
+        "id": "b1c4",
+        "text": "脚好了还是踢球吧",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "billiards-002",
+    "category": "billiards-progression",
+    "text": "台球厅有个高手向你挑战，赌注是100块，你只有50块。",
+    "animation": "billiards",
+    "choices": [
+      {
+        "id": "b2c1",
+        "text": "接受挑战，借钱凑够赌注",
+        "effects": [
+          {
+            "stat": "billiardsSkill",
+            "change": 10
+          },
+          {
+            "stat": "wealth",
+            "change": -20
+          }
+        ]
+      },
+      {
+        "id": "b2c2",
+        "text": "拒绝，先练练再说",
+        "effects": [
+          {
+            "stat": "billiardsSkill",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "b2c3",
+        "text": "提议赌50块",
+        "effects": [
+          {
+            "stat": "billiardsSkill",
+            "change": 8
+          },
+          {
+            "stat": "wealth",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "b2c4",
+        "text": "免费切磋，不赌钱",
+        "effects": [
+          {
+            "stat": "billiardsSkill",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "billiards-003",
+    "category": "billiards-progression",
+    "text": "打台球追分时，你连续进了5颗球，对手脸色越来越难看。",
+    "animation": "billiards",
+    "choices": [
+      {
+        "id": "b3c1",
+        "text": "继续进攻，争取清台",
+        "effects": [
+          {
+            "stat": "billiardsSkill",
+            "change": 15
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "b3c2",
+        "text": "故意失误，给对手面子",
+        "effects": [
+          {
+            "stat": "billiardsSkill",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "b3c3",
+        "text": "嘴上调侃几句",
+        "effects": [
+          {
+            "stat": "billiardsSkill",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "b3c4",
+        "text": "保持沉默，专注比赛",
+        "effects": [
+          {
+            "stat": "billiardsSkill",
+            "change": 12
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "billiards-004",
+    "category": "billiards-progression",
+    "text": "输了比赛后，对手嘲笑你技术太差，你心里很不爽。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "b4c1",
+        "text": "记住这个耻辱，苦练技术",
+        "effects": [
+          {
+            "stat": "billiardsSkill",
+            "change": 15
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "b4c2",
+        "text": "跟他理论，差点打起来",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -15
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "b4c3",
+        "text": "默默离开，不想惹事",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "b4c4",
+        "text": "约他下次再战",
+        "effects": [
+          {
+            "stat": "billiardsSkill",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "billiards-005",
+    "category": "billiards-progression",
+    "text": "有人邀请你参加台球比赛，冠军奖金500块，但要交100块报名费。",
+    "animation": "billiards",
+    "choices": [
+      {
+        "id": "b5c1",
+        "text": "报名参赛，检验实力",
+        "effects": [
+          {
+            "stat": "billiardsSkill",
+            "change": 15
+          },
+          {
+            "stat": "wealth",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "b5c2",
+        "text": "觉得自己不行，不去丢人",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "b5c3",
+        "text": "先去现场观摩学习",
+        "effects": [
+          {
+            "stat": "billiardsSkill",
+            "change": 8
+          }
+        ]
+      },
+      {
+        "id": "b5c4",
+        "text": "借钱报名，拼一把",
+        "effects": [
+          {
+            "stat": "billiardsSkill",
+            "change": 12
+          },
+          {
+            "stat": "wealth",
+            "change": -15
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "billiards-006",
+    "category": "billiards-progression",
+    "text": "你在台球厅遇到一个穿着花衬衫的社会青年，他手里拿着一沓现金，挑衅地问你敢不敢打把大的，一局两百。",
+    "animation": "billiards",
+    "choices": [
+      {
+        "id": "b6c1",
+        "text": "被激怒了，跟他干",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "billiardsSkill",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "b6c2",
+        "text": "认怂，说没钱",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "b6c3",
+        "text": "提议打五十，小赌怡情",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -50
+          },
+          {
+            "stat": "billiardsSkill",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "b6c4",
+        "text": "假装接电话溜走",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "billiards-007",
+    "category": "billiards-progression",
+    "text": "打追分的时候，你手感火热连赢三局，对手是个纹身大哥，把球杆重重往桌上一拍，眼神凶狠地盯着你。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "b7c1",
+        "text": "不管他，继续赢钱",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "b7c2",
+        "text": "故意输一局缓解气氛",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -20
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "b7c3",
+        "text": "借口有事，见好就收",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 50
+          }
+        ]
+      },
+      {
+        "id": "b7c4",
+        "text": "递根烟，说好话",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "billiards-008",
+    "category": "billiards-progression",
+    "text": "关键的黑八球停在了袋口，你只需要轻轻一推就能赢下这场五百块的赌局，但你的手抖得厉害。",
+    "animation": "billiards",
+    "choices": [
+      {
+        "id": "b8c1",
+        "text": "深呼吸，稳住出杆",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 15
+          },
+          {
+            "stat": "billiardsSkill",
+            "change": 20
+          }
+        ]
+      },
+      {
+        "id": "b8c2",
+        "text": "闭眼胡乱一捅",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -15
+          },
+          {
+            "stat": "billiardsSkill",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "b8c3",
+        "text": "叫暂停喝口水",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "b8c4",
+        "text": "让对手投降减半赌注",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "billiards-009",
+    "category": "billiards-progression",
+    "text": "你赢了钱正准备离开，门口突然堵了几个小混混，说是刚才那人的兄弟，要你把钱吐出来，还要留下一根手指。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "b9c1",
+        "text": "把钱撒出去趁乱跑",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "b9c2",
+        "text": "硬碰硬，跟他们打",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -20
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "b9c3",
+        "text": "报警（如果敢的话）",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "b9c4",
+        "text": "凭口才斡旋",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          },
+          {
+            "stat": "wealth",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "billiards-010",
+    "category": "billiards-progression",
+    "text": "为了练出绝技“低杆斯诺克”，你在台球厅泡了整整三天三夜，眼睛都熬红了，学业完全抛在脑后。",
+    "animation": "billiards",
+    "choices": [
+      {
+        "id": "b10c1",
+        "text": "坚持练成绝技",
+        "effects": [
+          {
+            "stat": "billiardsSkill",
+            "change": 30
+          },
+          {
+            "stat": "academicStanding",
+            "change": -0.5
+          }
+        ]
+      },
+      {
+        "id": "b10c2",
+        "text": "实在太困，回宿舍睡觉",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          },
+          {
+            "stat": "billiardsSkill",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "b10c3",
+        "text": "在球房沙发凑合一宿",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          },
+          {
+            "stat": "wealth",
+            "change": -20
+          }
+        ]
+      },
+      {
+        "id": "b10c4",
+        "text": "叫外卖继续练",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -30
+          },
+          {
+            "stat": "billiardsSkill",
+            "change": 15
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "billiards-011",
+    "category": "billiards-progression",
+    "text": "你发现常去的台球厅老板在球桌上做了手脚，导致台面轻微倾斜，难怪你最近总是输钱。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "b11c1",
+        "text": "大声揭穿老板",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "b11c2",
+        "text": "默默换一家玩",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "b11c3",
+        "text": "利用倾斜反向修正",
+        "effects": [
+          {
+            "stat": "billiardsSkill",
+            "change": 20
+          },
+          {
+            "stat": "wealth",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "b11c4",
+        "text": "告诉其他球友",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "wealth",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "billiards-012",
+    "category": "billiards-progression",
+    "text": "一个漂亮的女生在旁边桌打球，姿势很不专业。她看你打得好，过来请教你握杆姿势。",
+    "animation": "celebrating",
+    "choices": [
+      {
+        "id": "b12c1",
+        "text": "手把手热情教学",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          },
+          {
+            "stat": "billiardsSkill",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "b12c2",
+        "text": "高冷地演示一遍",
+        "effects": [
+          {
+            "stat": "billiardsSkill",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "b12c3",
+        "text": "建议她找教练",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "b12c4",
+        "text": "不仅教球还加微信",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 15
+          },
+          {
+            "stat": "wealth",
+            "change": -20
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "billiards-013",
+    "category": "billiards-progression",
+    "text": "你参加了市里的业余台球公开赛，第一轮就遇到了去年的亚军，对方看你的眼神充满了不屑。",
+    "animation": "billiards",
+    "choices": [
+      {
+        "id": "b13c1",
+        "text": "超水平发挥，爆冷获胜",
+        "effects": [
+          {
+            "stat": "billiardsSkill",
+            "change": 25
+          },
+          {
+            "stat": "sanity",
+            "change": 20
+          }
+        ]
+      },
+      {
+        "id": "b13c2",
+        "text": "紧张失误，惨败",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          },
+          {
+            "stat": "billiardsSkill",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "b13c3",
+        "text": "稳扎稳打，输得体面",
+        "effects": [
+          {
+            "stat": "billiardsSkill",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "b13c4",
+        "text": "用心理战干扰对手",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          },
+          {
+            "stat": "billiardsSkill",
+            "change": 15
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "billiards-014",
+    "category": "billiards-progression",
+    "text": "因为沉迷台球赌球，你不知不觉欠了室友两千块钱，室友开始催债，并在宿舍孤立你。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "b14c1",
+        "text": "去打大赌局想翻本",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -15
+          },
+          {
+            "stat": "sanity",
+            "change": -20
+          }
+        ]
+      },
+      {
+        "id": "b14c2",
+        "text": "打工还钱，暂时封杆",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 5
+          },
+          {
+            "stat": "billiardsSkill",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "b14c3",
+        "text": "厚着脸皮拖延",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -15
+          }
+        ]
+      },
+      {
+        "id": "b14c4",
+        "text": "卖掉心爱的球杆",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 10
+          },
+          {
+            "stat": "billiardsSkill",
+            "change": -20
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "billiards-015",
+    "category": "billiards-progression",
+    "text": "在一次激烈的追分局中，对手突然指责你刚才击球时衣服碰到了球，属于犯规，要求罚分。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "b15c1",
+        "text": "坚决不认，据理力争",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "b15c2",
+        "text": "大度承认，罚就罚",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "wealth",
+            "change": -20
+          }
+        ]
+      },
+      {
+        "id": "b15c3",
+        "text": "调监控（如果有）",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "b15c4",
+        "text": "掀桌子不打了",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          },
+          {
+            "stat": "wealth",
+            "change": -50
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "billiards-016",
+    "category": "billiards-progression",
+    "text": "你在一局定胜负的比赛中打进了一颗极其精彩的翻袋球，全场欢呼，对手也目瞪口呆。",
+    "animation": "celebrating",
+    "choices": [
+      {
+        "id": "b16c1",
+        "text": "得意忘形，庆祝太早",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          },
+          {
+            "stat": "billiardsSkill",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "b16c2",
+        "text": "保持冷静，清台收工",
+        "effects": [
+          {
+            "stat": "billiardsSkill",
+            "change": 20
+          },
+          {
+            "stat": "wealth",
+            "change": 50
+          }
+        ]
+      },
+      {
+        "id": "b16c3",
+        "text": "谦虚表示是运气",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "b16c4",
+        "text": "趁机加注",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "billiards-017",
+    "category": "billiards-progression",
+    "text": "深夜的台球厅烟雾缭绕，你已经连续打了十个小时，感觉天旋地转，但输掉的钱让你无法停手。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "b17c1",
+        "text": "透支身体继续打",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -20
+          },
+          {
+            "stat": "wealth",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "b17c2",
+        "text": "去洗手间冲凉水脸",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "b17c3",
+        "text": "找人借高利贷",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 20
+          },
+          {
+            "stat": "sanity",
+            "change": -50
+          }
+        ]
+      },
+      {
+        "id": "b17c4",
+        "text": "强迫自己离开",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          },
+          {
+            "stat": "wealth",
+            "change": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "billiards-018",
+    "category": "billiards-progression",
+    "text": "你遇到一个自称是职业退役的大叔，他说看你骨骼惊奇，想收你为徒，但学费要交三千。",
+    "animation": "billiards",
+    "choices": [
+      {
+        "id": "b18c1",
+        "text": "相信他，交钱拜师",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -30
+          },
+          {
+            "stat": "billiardsSkill",
+            "change": 50
+          }
+        ]
+      },
+      {
+        "id": "b18c2",
+        "text": "觉得是骗子，拒绝",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "b18c3",
+        "text": "提出先试学一节课",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -5
+          },
+          {
+            "stat": "billiardsSkill",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "b18c4",
+        "text": "挑战他，赢了免费学",
+        "effects": [
+          {
+            "stat": "billiardsSkill",
+            "change": 15
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "billiards-019",
+    "category": "billiards-progression",
+    "text": "你的专属球杆被一个冒失的鬼火少年碰倒踩断了，这可是你攒了三个月生活费买的。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "b19c1",
+        "text": "暴怒，让他赔双倍",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 15
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "b19c2",
+        "text": "动手打他一顿",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -20
+          },
+          {
+            "stat": "sanity",
+            "change": -20
+          }
+        ]
+      },
+      {
+        "id": "b19c3",
+        "text": "自认倒霉",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "b19c4",
+        "text": "让他用他的杆抵债",
+        "effects": [
+          {
+            "stat": "billiardsSkill",
+            "change": -5
+          },
+          {
+            "stat": "wealth",
+            "change": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "billiards-020",
+    "category": "billiards-progression",
+    "text": "在台球厅的厕所里，你听到有人在密谋等会儿比赛结束后堵截赢钱的人，而你就是今晚最大的赢家。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "b20c1",
+        "text": "把钱藏在袜子里",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "b20c2",
+        "text": "打电话叫兄弟来接",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          },
+          {
+            "stat": "wealth",
+            "change": -20
+          }
+        ]
+      },
+      {
+        "id": "b20c3",
+        "text": "故意输回去保平安",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "b20c4",
+        "text": "走后门溜之大吉",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "billiards-021",
+    "category": "billiards-progression",
+    "text": "学校附近新开了一家高端台球会所，环境优雅但价格不菲，你去体验了一把。",
+    "animation": "billiards",
+    "choices": [
+      {
+        "id": "b21c1",
+        "text": "办卡充值装大款",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -15
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "b21c2",
+        "text": "只打一小时体验",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -50
+          },
+          {
+            "stat": "billiardsSkill",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "b21c3",
+        "text": "蹭免费饮料和空调",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 0
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "b21c4",
+        "text": "批评台泥不平",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "billiards-022",
+    "category": "billiards-progression",
+    "text": "你的一杆大力开球直接把白球飞出了球桌，砸坏了隔壁桌客人的啤酒瓶。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "b22c1",
+        "text": "赶紧道歉赔钱",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -20
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "b22c2",
+        "text": "假装不是自己干的",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "b22c3",
+        "text": "帮对方买瓶新的",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "b22c4",
+        "text": "说是球桌弹性问题",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "billiards-023",
+    "category": "billiards-progression",
+    "text": "和一个野路子高手对决，他打球姿势怪异但准度极高，你被打得毫无还手之力。",
+    "animation": "billiards",
+    "choices": [
+      {
+        "id": "b23c1",
+        "text": "虚心请教他的打法",
+        "effects": [
+          {
+            "stat": "billiardsSkill",
+            "change": 15
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "b23c2",
+        "text": "嘲笑他姿势丑",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "b23c3",
+        "text": "心态崩了，乱打一通",
+        "effects": [
+          {
+            "stat": "billiardsSkill",
+            "change": -10
+          },
+          {
+            "stat": "wealth",
+            "change": -50
+          }
+        ]
+      },
+      {
+        "id": "b23c4",
+        "text": "观察他的发力点",
+        "effects": [
+          {
+            "stat": "billiardsSkill",
+            "change": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "billiards-024",
+    "category": "billiards-progression",
+    "text": "期末考试前夕，你本该复习，却鬼使神差地走进了台球厅，一打就是通宵。",
+    "animation": "billiards",
+    "choices": [
+      {
+        "id": "b24c1",
+        "text": "第二天弃考",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -1
+          },
+          {
+            "stat": "billiardsSkill",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "b24c2",
+        "text": "带书去球厅看",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -0.2
+          },
+          {
+            "stat": "billiardsSkill",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "b24c3",
+        "text": "打完通宵去裸考",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -0.8
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "b24c4",
+        "text": "突然醒悟，跑回图书馆",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -0.1
+          },
+          {
+            "stat": "wealth",
+            "change": -10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "billiards-025",
+    "category": "billiards-progression",
+    "text": "你在台球比赛中进入决赛，奖金是两千块，对手私下找你，提议平分奖金打假球。",
+    "animation": "billiards",
+    "choices": [
+      {
+        "id": "b25c1",
+        "text": "拒绝，凭实力争冠军",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 25
+          },
+          {
+            "stat": "billiardsSkill",
+            "change": 20
+          }
+        ]
+      },
+      {
+        "id": "b25c2",
+        "text": "同意，稳赚不赔",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 20
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "b25c3",
+        "text": "假意同意，反手举报",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          },
+          {
+            "stat": "wealth",
+            "change": 15
+          }
+        ]
+      },
+      {
+        "id": "b25c4",
+        "text": "同意后赛场反悔",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 25
+          },
+          {
+            "stat": "sanity",
+            "change": -20
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "billiards-026",
+    "category": "billiards-progression",
+    "text": "为了在女生面前耍帅，你尝试了一个高难度的跳球，结果把台呢戳了个大洞。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "b26c1",
+        "text": "赔偿老板损失",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "b26c2",
+        "text": "趁老板不在偷偷溜走",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -20
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "b26c3",
+        "text": "说是球杆质量问题",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "b26c4",
+        "text": "用粉笔涂抹掩盖",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "billiards-027",
+    "category": "billiards-progression",
+    "text": "你现在的台球水平在学校里已经数一数二，开始有人叫你“校园丁俊晖”。",
+    "animation": "celebrating",
+    "choices": [
+      {
+        "id": "b27c1",
+        "text": "飘飘然，看不起新手",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "billiardsSkill",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "b27c2",
+        "text": "创办台球社团",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 15
+          },
+          {
+            "stat": "wealth",
+            "change": -50
+          }
+        ]
+      },
+      {
+        "id": "b27c3",
+        "text": "更加刻苦训练",
+        "effects": [
+          {
+            "stat": "billiardsSkill",
+            "change": 15
+          },
+          {
+            "stat": "academicStanding",
+            "change": -0.2
+          }
+        ]
+      },
+      {
+        "id": "b27c4",
+        "text": "接赌球单子赚钱",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "billiards-028",
+    "category": "billiards-progression",
+    "text": "一个外校的高手来踢馆，点名要挑战你，输的人要在球房爬一圈。",
+    "animation": "billiards",
+    "choices": [
+      {
+        "id": "b28c1",
+        "text": "接受挑战，捍卫荣誉",
+        "effects": [
+          {
+            "stat": "billiardsSkill",
+            "change": 20
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "b28c2",
+        "text": "避而不战",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "b28c3",
+        "text": "把赌注改成请客吃饭",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -50
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "b28c4",
+        "text": "找理由推脱身体不适",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "billiards-029",
+    "category": "billiards-progression",
+    "text": "打球时遇到了以前的初中班主任，他也是台球爱好者，看着你逃课打球，脸色复杂。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "b29c1",
+        "text": "尴尬打招呼，赶紧跑",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "b29c2",
+        "text": "邀请老师切磋一局",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          },
+          {
+            "stat": "academicStanding",
+            "change": 0.1
+          }
+        ]
+      },
+      {
+        "id": "b29c3",
+        "text": "假装没看见",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "b29c4",
+        "text": "解释是体育选修课",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "billiards-030",
+    "category": "billiards-progression",
+    "text": "你最近沉迷研究加塞和旋转，连走路都在比划出杆动作，被路人当成神经病。",
+    "animation": "billiards",
+    "choices": [
+      {
+        "id": "b30c1",
+        "text": "无视他人眼光，继续练",
+        "effects": [
+          {
+            "stat": "billiardsSkill",
+            "change": 20
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "b30c2",
+        "text": "稍微收敛一点",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "b30c3",
+        "text": "在宿舍对着镜子练",
+        "effects": [
+          {
+            "stat": "billiardsSkill",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "b30c4",
+        "text": "觉得丢人，减少练习",
+        "effects": [
+          {
+            "stat": "billiardsSkill",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "billiards-031",
+    "category": "billiards-progression",
+    "text": "你在台球厅捡到了一块巧粉，用起来摩擦力极好，感觉像是有魔力一样。",
+    "animation": "billiards",
+    "choices": [
+      {
+        "id": "b31c1",
+        "text": "据为己有",
+        "effects": [
+          {
+            "stat": "billiardsSkill",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -2
+          }
+        ]
+      },
+      {
+        "id": "b31c2",
+        "text": "交给前台",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "b31c3",
+        "text": "到处问是谁丢的",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 2
+          }
+        ]
+      },
+      {
+        "id": "b31c4",
+        "text": "买块一样的",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -20
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "billiards-032",
+    "category": "billiards-progression",
+    "text": "连续输了一周的球，你的生活费已经见底，连泡面都吃不起了。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "b32c1",
+        "text": "借钱翻本（危险）",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": -20
+          }
+        ]
+      },
+      {
+        "id": "b32c2",
+        "text": "戒球一个月",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 10
+          },
+          {
+            "stat": "billiardsSkill",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "b32c3",
+        "text": "去球厅当摆球小工",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 50
+          },
+          {
+            "stat": "billiardsSkill",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "b32c4",
+        "text": "蹭室友的饭",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 0
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "billiards-033",
+    "category": "billiards-progression",
+    "text": "你遇到一个喜欢碎碎念的对手，每次你出杆他都在旁边干扰，“这球进不了”、“这球难打”。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "b33c1",
+        "text": "让他闭嘴",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "b33c2",
+        "text": "戴上耳机听歌",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          },
+          {
+            "stat": "billiardsSkill",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "b33c3",
+        "text": "受影响失误频频",
+        "effects": [
+          {
+            "stat": "billiardsSkill",
+            "change": -10
+          },
+          {
+            "stat": "wealth",
+            "change": -50
+          }
+        ]
+      },
+      {
+        "id": "b33c4",
+        "text": "反向嘲讽他",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "billiards-034",
+    "category": "billiards-progression",
+    "text": "你在网吧看了一整晚的斯诺克世锦赛直播，第二天精神恍惚去打球。",
+    "animation": "billiards",
+    "choices": [
+      {
+        "id": "b34c1",
+        "text": "模仿奥沙利文快打",
+        "effects": [
+          {
+            "stat": "billiardsSkill",
+            "change": 10
+          },
+          {
+            "stat": "wealth",
+            "change": -20
+          }
+        ]
+      },
+      {
+        "id": "b34c2",
+        "text": "困得睡在球桌下",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "b34c3",
+        "text": "喝红牛强行提神",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          },
+          {
+            "stat": "wealth",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "b34c4",
+        "text": "回去补觉",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "billiards-035",
+    "category": "billiards-progression",
+    "text": "一个喝醉了的大汉非要拉着你打球，还把赌注提高到一千，他站都站不稳。",
+    "animation": "billiards",
+    "choices": [
+      {
+        "id": "b35c1",
+        "text": "趁机赢他钱",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 20
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "b35c2",
+        "text": "拒绝，怕他赖账",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "b35c3",
+        "text": "敷衍打两杆",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "b35c4",
+        "text": "帮他叫醒酒汤",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          },
+          {
+            "stat": "wealth",
+            "change": -15
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "billiards-036",
+    "category": "billiards-progression",
+    "text": "你在球厅墙上的“英雄榜”上看到了自己的名字，这让你成为了名人。",
+    "animation": "celebrating",
+    "choices": [
+      {
+        "id": "b36c1",
+        "text": "拍照发朋友圈",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "b36c2",
+        "text": "假装不在意",
+        "effects": [
+          {
+            "stat": "billiardsSkill",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "b36c3",
+        "text": "接受新手的膜拜",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "b36c4",
+        "text": "担心枪打出头鸟",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "billiards-037",
+    "category": "billiards-progression",
+    "text": "打球时手指意外抽筋，正值决胜局的关键时刻。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "b37c1",
+        "text": "咬牙坚持打完",
+        "effects": [
+          {
+            "stat": "billiardsSkill",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "b37c2",
+        "text": "申请医疗暂停",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "b37c3",
+        "text": "换左手尝试",
+        "effects": [
+          {
+            "stat": "billiardsSkill",
+            "change": 15
+          },
+          {
+            "stat": "wealth",
+            "change": -50
+          }
+        ]
+      },
+      {
+        "id": "b37c4",
+        "text": "直接认输",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -50
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "billiards-038",
+    "category": "billiards-progression",
+    "text": "你发现自己有了“台球肘”，胳膊酸痛难忍，医生建议休息一个月。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "b38c1",
+        "text": "不听医嘱，带伤上阵",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -20
+          },
+          {
+            "stat": "billiardsSkill",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "b38c2",
+        "text": "乖乖休息",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          },
+          {
+            "stat": "billiardsSkill",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "b38c3",
+        "text": "改练脑力台球（看书）",
+        "effects": [
+          {
+            "stat": "billiardsSkill",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "b38c4",
+        "text": "做理疗康复",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "billiards-039",
+    "category": "billiards-progression",
+    "text": "你和一个穿着校服的高中生打球，结果被他用基本功完虐，让你怀疑人生。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "b39c1",
+        "text": "感叹后生可畏",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "b39c2",
+        "text": "不服气，再来一局",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -50
+          },
+          {
+            "stat": "billiardsSkill",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "b39c3",
+        "text": "请教他在哪学的",
+        "effects": [
+          {
+            "stat": "billiardsSkill",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "b39c4",
+        "text": "借口状态不好",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "billiards-040",
+    "category": "billiards-progression",
+    "text": "赢了一个脾气暴躁的大哥五百块，他把你堵在巷子里，手里拿着砖头。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "b40c1",
+        "text": "钱还你，放我走",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -15
+          },
+          {
+            "stat": "sanity",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "b40c2",
+        "text": "拼命逃跑",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "b40c3",
+        "text": "跟他拼了",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -30
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "b40c4",
+        "text": "大声呼救",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "billiards-041",
+    "category": "billiards-progression",
+    "text": "台球厅举办双打比赛，你和室友组队，但室友技术太烂总是拖后腿。",
+    "animation": "billiards",
+    "choices": [
+      {
+        "id": "b41c1",
+        "text": "责怪室友，吵架",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          },
+          {
+            "stat": "wealth",
+            "change": -50
+          }
+        ]
+      },
+      {
+        "id": "b41c2",
+        "text": "鼓励室友，扛起大梁",
+        "effects": [
+          {
+            "stat": "billiardsSkill",
+            "change": 15
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "b41c3",
+        "text": "消极比赛，早点结束",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -50
+          }
+        ]
+      },
+      {
+        "id": "b41c4",
+        "text": "教室友防守策略",
+        "effects": [
+          {
+            "stat": "billiardsSkill",
+            "change": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "billiards-042",
+    "category": "billiards-progression",
+    "text": "你在台球桌上放了一杯可乐，结果不小心碰倒了，弄脏了台面。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "b42c1",
+        "text": "赶紧擦干，装没事",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "b42c2",
+        "text": "主动找老板赔偿",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "b42c3",
+        "text": "说是别人碰倒的",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "b42c4",
+        "text": "逃离现场",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "billiards-043",
+    "category": "billiards-progression",
+    "text": "一个神秘的老头看你打球，送你一本泛黄的《台球秘以此》，上面画满了几何图形。",
+    "animation": "billiards",
+    "choices": [
+      {
+        "id": "b43c1",
+        "text": "潜心研读",
+        "effects": [
+          {
+            "stat": "billiardsSkill",
+            "change": 30
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "b43c2",
+        "text": "当废纸扔了",
+        "effects": [
+          {
+            "stat": "billiardsSkill",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "b43c3",
+        "text": "挂闲鱼卖了",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 50
+          }
+        ]
+      },
+      {
+        "id": "b43c4",
+        "text": "以为是武功秘籍",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "billiards-044",
+    "category": "billiards-progression",
+    "text": "为了练球，你旷掉了必修课，辅导员打电话问你在哪。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "b44c1",
+        "text": "撒谎说生病了",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          },
+          {
+            "stat": "academicStanding",
+            "change": -0.2
+          }
+        ]
+      },
+      {
+        "id": "b44c2",
+        "text": "实话实说在打球",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -0.5
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "b44c3",
+        "text": "不接电话",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -0.5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "b44c4",
+        "text": "马上赶回学校",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "billiards-045",
+    "category": "billiards-progression",
+    "text": "你在台球厅遇到赌球团伙做局，他们故意先输后赢，引诱你下大注。",
+    "animation": "billiards",
+    "choices": [
+      {
+        "id": "b45c1",
+        "text": "看穿骗局，及时止损",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -50
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "b45c2",
+        "text": "上头了，借钱也要赌",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -20
+          },
+          {
+            "stat": "sanity",
+            "change": -20
+          }
+        ]
+      },
+      {
+        "id": "b45c3",
+        "text": "反向做局坑他们",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 15
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "b45c4",
+        "text": "报警",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "billiards-046",
+    "category": "billiards-progression",
+    "text": "你的一杆大力冲球，白球飞起击中了天花板上的吊灯，玻璃碎了一地。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "b46c1",
+        "text": "赔得倾家荡产",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -15
+          },
+          {
+            "stat": "sanity",
+            "change": -20
+          }
+        ]
+      },
+      {
+        "id": "b46c2",
+        "text": "老板免单（运气好）",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "b46c3",
+        "text": "帮忙打扫卫生抵债",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "b46c4",
+        "text": "指责灯装得太低",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "billiards-047",
+    "category": "billiards-progression",
+    "text": "你打出了一杆传说中的“一杆清台”，周围的人都围过来看，掌声雷动。",
+    "animation": "celebrating",
+    "choices": [
+      {
+        "id": "b47c1",
+        "text": "享受明星般的待遇",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 20
+          },
+          {
+            "stat": "wealth",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "b47c2",
+        "text": "趁机收徒弟赚钱",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "b47c3",
+        "text": "觉得是运气，很心虚",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "b47c4",
+        "text": "再打一局证明实力",
+        "effects": [
+          {
+            "stat": "billiardsSkill",
+            "change": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "billiards-048",
+    "category": "billiards-progression",
+    "text": "因为总是去台球厅，你身上总是一股烟味，女朋友/室友开始嫌弃你。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "b48c1",
+        "text": "戒烟戒球挽回感情",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          },
+          {
+            "stat": "billiardsSkill",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "b48c2",
+        "text": "喷香水掩盖",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -50
+          }
+        ]
+      },
+      {
+        "id": "b48c3",
+        "text": "无所谓，球比人重要",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "billiardsSkill",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "b48c4",
+        "text": "换一家无烟球房",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -20
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "billiards-049",
+    "category": "billiards-progression",
+    "text": "台球厅老板提议你当陪练，每小时给你20块提成，但要负责输给客人。",
+    "animation": "billiards",
+    "choices": [
+      {
+        "id": "b49c1",
+        "text": "为了钱出卖球技",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 5
+          },
+          {
+            "stat": "billiardsSkill",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "b49c2",
+        "text": "拒绝，打球要有尊严",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "b49c3",
+        "text": "只陪练不故意输",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 50
+          },
+          {
+            "stat": "billiardsSkill",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "b49c4",
+        "text": "偷偷赢客人的钱",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "billiards-050",
+    "category": "billiards-progression",
+    "text": "你在梦中都在打台球，梦见自己成为了世界冠军，醒来发现手里抓着室友的脚。",
+    "animation": "celebrating",
+    "choices": [
+      {
+        "id": "b50c1",
+        "text": "尴尬地向室友解释",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "b50c2",
+        "text": "觉得这是好兆头",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "b50c3",
+        "text": "继续睡回笼觉",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -0.1
+          }
+        ]
+      },
+      {
+        "id": "b50c4",
+        "text": "起床去练球",
+        "effects": [
+          {
+            "stat": "billiardsSkill",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "billiards-051",
+    "category": "billiards-progression",
+    "text": "一个戴墨镜的神秘人跟你对赌，他从不说话，球风狠辣，你感觉到了巨大的压迫感。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "b51c1",
+        "text": "顶住压力，险胜",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 10
+          },
+          {
+            "stat": "billiardsSkill",
+            "change": 15
+          }
+        ]
+      },
+      {
+        "id": "b51c2",
+        "text": "心理防线崩溃，惨败",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "b51c3",
+        "text": "试图跟他搭话",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "b51c4",
+        "text": "中途退出",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "billiards-052",
+    "category": "billiards-progression",
+    "text": "你为了练球错过了食堂饭点，只能在路边摊吃不卫生的炒面。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "b52c1",
+        "text": "吃坏肚子，上吐下泻",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -15
+          }
+        ]
+      },
+      {
+        "id": "b52c2",
+        "text": "不仅吃还要打包",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -15
+          }
+        ]
+      },
+      {
+        "id": "b52c3",
+        "text": "饿着肚子继续打",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          },
+          {
+            "stat": "billiardsSkill",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "b52c4",
+        "text": "去便利店买面包",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "billiards-053",
+    "category": "billiards-progression",
+    "text": "台球杆的皮头掉了，你尝试自己用胶水粘，结果把胶水弄得满手都是。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "b53c1",
+        "text": "手忙脚乱弄坏球杆",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "b53c2",
+        "text": "找专业师傅修",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -30
+          }
+        ]
+      },
+      {
+        "id": "b53c3",
+        "text": "凑合着用没皮头的杆",
+        "effects": [
+          {
+            "stat": "billiardsSkill",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "b53c4",
+        "text": "借别人的杆用",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "billiards-054",
+    "category": "billiards-progression",
+    "text": "你赢了钱请兄弟们吃饭，结果饭钱比赢的钱还多，倒贴了。",
+    "animation": "celebrating",
+    "choices": [
+      {
+        "id": "b54c1",
+        "text": "打肿脸充胖子",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "b54c2",
+        "text": "让大家AA",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          },
+          {
+            "stat": "wealth",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "b54c3",
+        "text": "下次一定要赢回来",
+        "effects": [
+          {
+            "stat": "billiardsSkill",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "b54c4",
+        "text": "逃单（不敢）",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "billiards-055",
+    "category": "billiards-progression",
+    "text": "决胜局，黑八就在袋口，你只需要轻轻一推，就能赢得整个学期的生活费。全场寂静，只能听到你的心跳声。",
+    "animation": "billiards",
+    "choices": [
+      {
+        "id": "b55c1",
+        "text": "手起杆落，球进赢钱",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 20
+          },
+          {
+            "stat": "sanity",
+            "change": 20
+          }
+        ]
+      },
+      {
+        "id": "b55c2",
+        "text": "太紧张出现了滑杆",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -15
+          },
+          {
+            "stat": "sanity",
+            "change": -20
+          }
+        ]
+      },
+      {
+        "id": "b55c3",
+        "text": "对手突然咳嗽干扰你",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          },
+          {
+            "stat": "billiardsSkill",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "b55c4",
+        "text": "为了友谊故意打偏",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          },
+          {
+            "stat": "wealth",
+            "change": -10
+          }
+        ]
+      }
+    ]
+  }
+]

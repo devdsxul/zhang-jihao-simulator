@@ -1,0 +1,2878 @@
+[
+  {
+    "id": "hometown-001",
+    "category": "hometown-pressure",
+    "text": "妈妈打电话来问成绩，你不敢说自己挂了好几门课。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "h1c1",
+        "text": "实话实说，接受批评",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -15
+          },
+          {
+            "stat": "academicStanding",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "h1c2",
+        "text": "撒谎说考得还行",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "h1c3",
+        "text": "转移话题，问家里情况",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "h1c4",
+        "text": "说信号不好，挂断电话",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hometown-002",
+    "category": "hometown-pressure",
+    "text": "苍南老家的亲戚问你大学毕业后打算干什么，你根本不知道怎么回答。",
+    "animation": "talking",
+    "choices": [
+      {
+        "id": "h2c1",
+        "text": "说还没想好，先毕业再说",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "h2c2",
+        "text": "编一个体面的职业规划",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "h2c3",
+        "text": "说想继续读研",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "h2c4",
+        "text": "说想自己创业",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "wealth",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hometown-003",
+    "category": "hometown-pressure",
+    "text": "爸爸说家里生意不好，下个月生活费可能要减少一半。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "h3c1",
+        "text": "表示理解，自己想办法赚钱",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -15
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "h3c2",
+        "text": "跟爸爸抱怨，要求维持原来的标准",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          },
+          {
+            "stat": "wealth",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "h3c3",
+        "text": "找兼职补贴生活费",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 5
+          },
+          {
+            "stat": "academicStanding",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "h3c4",
+        "text": "申请学校的助学金",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hometown-004",
+    "category": "hometown-pressure",
+    "text": "过年回家，亲戚们又开始催你找女朋友，你有点烦。",
+    "animation": "talking",
+    "choices": [
+      {
+        "id": "h4c1",
+        "text": "敷衍应付，说在找了",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "h4c2",
+        "text": "直接说不想谈",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "h4c3",
+        "text": "编一个假女友搪塞",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "h4c4",
+        "text": "躲在房间里不出来",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hometown-005",
+    "category": "hometown-pressure",
+    "text": "听说发小已经结婚生子了，你还在为毕业发愁，感觉压力很大。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "h5c1",
+        "text": "告诉自己每个人节奏不同",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "h5c2",
+        "text": "更加焦虑，失眠了",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -15
+          }
+        ]
+      },
+      {
+        "id": "h5c3",
+        "text": "打游戏转移注意力",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "academicStanding",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "h5c4",
+        "text": "跟朋友倾诉压力",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hometown-006",
+    "category": "hometown-pressure",
+    "text": "大姑在家族群里发了表哥考上公务员的喜报，还特意@了你。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "h6c1",
+        "text": "默默点赞，假装没看见",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "h6c2",
+        "text": "发个红包表示祝贺",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "h6c3",
+        "text": "退群保平安",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "h6c4",
+        "text": "跟爸妈吐槽大姑",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "academicStanding",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hometown-007",
+    "category": "hometown-pressure",
+    "text": "过年回家，二姨盯着你的破洞牛仔裤说：“这孩子怎么穿得像个乞丐？”",
+    "animation": "talking",
+    "choices": [
+      {
+        "id": "h7c1",
+        "text": "解释这是时尚",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "h7c2",
+        "text": "尴尬地笑笑，去换裤子",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "h7c3",
+        "text": "说是省钱为了买书",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "h7c4",
+        "text": "反问二姨的广场舞战衣",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "wealth",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hometown-008",
+    "category": "hometown-pressure",
+    "text": "爸爸喝醉了，指着你的鼻子骂你没出息，不如隔壁老王的儿子。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "h8c1",
+        "text": "忍气吞声，扶爸爸回房",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -15
+          }
+        ]
+      },
+      {
+        "id": "h8c2",
+        "text": "摔门而出，去网吧通宵",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "h8c3",
+        "text": "据理力争，大吵一架",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -20
+          }
+        ]
+      },
+      {
+        "id": "h8c4",
+        "text": "戴上耳机，假装听不见",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hometown-009",
+    "category": "hometown-pressure",
+    "text": "妈妈暗示你该找对象了，说隔壁李阿姨都要抱孙子了。",
+    "animation": "talking",
+    "choices": [
+      {
+        "id": "h9c1",
+        "text": "敷衍说学习太忙",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "h9c2",
+        "text": "坦白说没钱谈恋爱",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          },
+          {
+            "stat": "wealth",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "h9c3",
+        "text": "转移话题聊今晚吃什么",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "h9c4",
+        "text": "说不婚主义，气妈妈",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hometown-010",
+    "category": "hometown-pressure",
+    "text": "回家发现你的房间被亲戚家的小孩霸占了，你的手办被弄坏了。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "h10c1",
+        "text": "强颜欢笑，说是送给他的",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -20
+          },
+          {
+            "stat": "wealth",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "h10c2",
+        "text": "当场发飙，把小孩骂哭",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "h10c3",
+        "text": "找爸妈告状",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "h10c4",
+        "text": "默默收拾残局，心在滴血",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -15
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hometown-011",
+    "category": "hometown-pressure",
+    "text": "爷爷语重心长地让你毕业回老家考个编制，安稳过日子。",
+    "animation": "talking",
+    "choices": [
+      {
+        "id": "h11c1",
+        "text": "点头答应，哄爷爷开心",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "h11c2",
+        "text": "坚持要在大城市闯荡",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          },
+          {
+            "stat": "wealth",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "h11c3",
+        "text": "说现在的编制也很难考",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "h11c4",
+        "text": "沉默不语",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hometown-012",
+    "category": "hometown-pressure",
+    "text": "因为挂科的事被爸妈知道了，他们威胁要断你的生活费。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "h12c1",
+        "text": "跪求原谅，保证好好学习",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -15
+          },
+          {
+            "stat": "academicStanding",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "h12c2",
+        "text": "硬气回应，说自己去打工",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -20
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "h12c3",
+        "text": "找爷爷奶奶求情",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          },
+          {
+            "stat": "wealth",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "h12c4",
+        "text": "卖掉游戏账号换钱",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 15
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hometown-013",
+    "category": "hometown-pressure",
+    "text": "过年聚餐，亲戚问你一个月生活费多少，你说不够花。",
+    "animation": "talking",
+    "choices": [
+      {
+        "id": "h13c1",
+        "text": "被亲戚教育要节约",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "h13c2",
+        "text": "被爸妈当众数落",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -15
+          }
+        ]
+      },
+      {
+        "id": "h13c3",
+        "text": "尴尬地低头吃菜",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "h13c4",
+        "text": "借口上厕所溜走",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hometown-014",
+    "category": "hometown-pressure",
+    "text": "老家的朋友叫你出去喝酒，结果全是互相攀比车房。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "h14c1",
+        "text": "硬着头皮听，心里难受",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "h14c2",
+        "text": "借酒消愁，喝得烂醉",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -15
+          },
+          {
+            "stat": "wealth",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "h14c3",
+        "text": "吹嘘自己在学校混得很好",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "h14c4",
+        "text": "提前离场，回家睡觉",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hometown-015",
+    "category": "hometown-pressure",
+    "text": "因为不想去相亲，跟妈妈大吵一架，被赶出了家门。",
+    "animation": "running",
+    "choices": [
+      {
+        "id": "h15c1",
+        "text": "去网吧包夜",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "h15c2",
+        "text": "在公园长椅坐一晚",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -15
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "h15c3",
+        "text": "找发小借宿",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "h15c4",
+        "text": "打电话向爸爸认错回家",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -20
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hometown-016",
+    "category": "hometown-pressure",
+    "text": "表弟要高考了，舅舅让你给他辅导功课，你其实也都忘了。",
+    "animation": "talking",
+    "choices": [
+      {
+        "id": "h16c1",
+        "text": "硬着头皮教，偷偷百度",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          },
+          {
+            "stat": "academicStanding",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "h16c2",
+        "text": "坦白说自己也不会",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          },
+          {
+            "stat": "academicStanding",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "h16c3",
+        "text": "推荐网课给他",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "h16c4",
+        "text": "借口学校有事要忙",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hometown-017",
+    "category": "hometown-pressure",
+    "text": "村里人传闲话，说你在外面混得不好，连过年都不敢回来。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "h17c1",
+        "text": "买张票立刻回家证明自己",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -15
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "h17c2",
+        "text": "在朋友圈发精修生活照",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "h17c3",
+        "text": "无视流言，过好自己的",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "h17c4",
+        "text": "打电话骂传闲话的人",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hometown-018",
+    "category": "hometown-pressure",
+    "text": "爸妈想让你留在身边，反对你考外地的研究生。",
+    "animation": "talking",
+    "choices": [
+      {
+        "id": "h18c1",
+        "text": "妥协，考本省学校",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "h18c2",
+        "text": "坚持己见，冷战",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "h18c3",
+        "text": "耐心沟通，分析利弊",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "h18c4",
+        "text": "先斩后奏，考上再说",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hometown-019",
+    "category": "hometown-pressure",
+    "text": "亲戚来家里借钱，爸妈让你把压岁钱拿出来凑数。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "h19c1",
+        "text": "不情愿地交出压岁钱",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -20
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "h19c2",
+        "text": "谎称压岁钱已经花完了",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "wealth",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "h19c3",
+        "text": "直接拒绝，说那是我的钱",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "h19c4",
+        "text": "借给亲戚但要求打欠条",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -20
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hometown-020",
+    "category": "hometown-pressure",
+    "text": "高中同学聚会，大家都在聊工作和收入，你插不上话。",
+    "animation": "talking",
+    "choices": [
+      {
+        "id": "h20c1",
+        "text": "默默吃菜，当个小透明",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "h20c2",
+        "text": "借口身体不舒服先走",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "h20c3",
+        "text": "跟旁边的服务员聊天",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "h20c4",
+        "text": "硬聊自己玩的游戏",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hometown-021",
+    "category": "hometown-pressure",
+    "text": "回家第一天是宝，第三天是草，妈妈开始嫌弃你懒。",
+    "animation": "running",
+    "choices": [
+      {
+        "id": "h21c1",
+        "text": "主动做家务表现一下",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "h21c2",
+        "text": "躲在房间里不出来",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "h21c3",
+        "text": "跟妈妈顶嘴",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "h21c4",
+        "text": "出去找同学玩",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hometown-022",
+    "category": "hometown-pressure",
+    "text": "三叔问你学什么专业的，你说计算机，他让你帮他修电脑。",
+    "animation": "talking",
+    "choices": [
+      {
+        "id": "h22c1",
+        "text": "帮他修，顺便清理垃圾",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "h22c2",
+        "text": "解释是写代码的不会修",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "h22c3",
+        "text": "装作在忙学校作业",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "h22c4",
+        "text": "随便弄两下说坏了",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hometown-023",
+    "category": "hometown-pressure",
+    "text": "爸妈因为小事吵架，非要拉你评理。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "h23c1",
+        "text": "两边都不得罪，和稀泥",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "h23c2",
+        "text": "帮妈妈说话",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "h23c3",
+        "text": "帮爸爸说话",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "h23c4",
+        "text": "戴上耳机回房间",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hometown-024",
+    "category": "hometown-pressure",
+    "text": "听说家里老房子要拆迁，亲戚们为了分家产吵得不可开交。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "h24c1",
+        "text": "担心家里关系，劝架",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "h24c2",
+        "text": "对此漠不关心，只管自己",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "h24c3",
+        "text": " secretly record the argument",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "h24c4",
+        "text": "支持爸妈争夺权益",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hometown-025",
+    "category": "hometown-pressure",
+    "text": "过年回家，发现小时候常去的网吧倒闭了，心里空落落的。",
+    "animation": "talking",
+    "choices": [
+      {
+        "id": "h25c1",
+        "text": "感叹时光飞逝",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "h25c2",
+        "text": "去新的网咖体验一下",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "h25c3",
+        "text": "回家玩手机",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "h25c4",
+        "text": "约朋友去台球厅",
+        "effects": [
+          {
+            "stat": "billiardsSkill",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hometown-026",
+    "category": "hometown-pressure",
+    "text": "大姨给你介绍了个相亲对象，说是公务员，条件很好。",
+    "animation": "talking",
+    "choices": [
+      {
+        "id": "h26c1",
+        "text": "被迫去见一面",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          },
+          {
+            "stat": "wealth",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "h26c2",
+        "text": "坚决不去，说有喜欢的人",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "h26c3",
+        "text": "加个微信敷衍一下",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "h26c4",
+        "text": "让朋友冒充对象打电话",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hometown-027",
+    "category": "hometown-pressure",
+    "text": "因为在家里打游戏声音太大，被爸爸把网线拔了。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "h27c1",
+        "text": "气得摔键盘",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "h27c2",
+        "text": "用手机热点继续玩",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "h27c3",
+        "text": "睡觉生闷气",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "h27c4",
+        "text": "跟爸爸道歉求连网",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -15
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hometown-028",
+    "category": "hometown-pressure",
+    "text": "亲戚问你在大学有没有入党，有没有当学生干部。",
+    "animation": "talking",
+    "choices": [
+      {
+        "id": "h28c1",
+        "text": "撒谎说正在申请",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "h28c2",
+        "text": "实话实说没兴趣",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "h28c3",
+        "text": "说自己专注于学术",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "h28c4",
+        "text": "转移话题聊别的",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hometown-029",
+    "category": "hometown-pressure",
+    "text": "妈妈给你买了件很土的新衣服，非要你过年穿。",
+    "animation": "talking",
+    "choices": [
+      {
+        "id": "h29c1",
+        "text": "为了妈妈开心穿上",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "h29c2",
+        "text": "坚决不穿，穿自己的",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "h29c3",
+        "text": "偷偷把衣服藏起来",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "h29c4",
+        "text": "说尺码不合适退掉",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hometown-030",
+    "category": "hometown-pressure",
+    "text": "家里网络信号太差，抢红包总是抢不到，还断网。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "h30c1",
+        "text": "爬到屋顶找信号",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "h30c2",
+        "text": "放弃抢红包，看电视",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "h30c3",
+        "text": "抱怨家乡基建差",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "h30c4",
+        "text": "用流量包继续抢",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hometown-031",
+    "category": "hometown-pressure",
+    "text": "亲戚的小孩要把你的手办拿走，爸妈说“你是哥哥让着点”。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "h31c1",
+        "text": "誓死捍卫手办",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "wealth",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "h31c2",
+        "text": "忍痛割爱",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -20
+          }
+        ]
+      },
+      {
+        "id": "h31c3",
+        "text": "拿个便宜的玩具交换",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "h31c4",
+        "text": "假装手办坏了",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hometown-032",
+    "category": "hometown-pressure",
+    "text": "因为生活费的问题跟家里吵翻了，你扬言要自己赚学费。",
+    "animation": "running",
+    "choices": [
+      {
+        "id": "h32c1",
+        "text": "去工地搬砖",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "h32c2",
+        "text": "去网吧当网管",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "h32c3",
+        "text": "后悔了，回家认错",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "h32c4",
+        "text": "找朋友借钱度日",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hometown-033",
+    "category": "hometown-pressure",
+    "text": "过年走亲戚，被七大姑八大姨围攻，问东问西。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "h33c1",
+        "text": "全程假笑点头",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "h33c2",
+        "text": "装傻充愣",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "h33c3",
+        "text": "借口有电话遁走",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "h33c4",
+        "text": "直接怼回去",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          },
+          {
+            "stat": "wealth",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hometown-034",
+    "category": "hometown-pressure",
+    "text": "爸妈看你整天玩手机，说你“废了”，要把手机没收。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "h34c1",
+        "text": "死死护住手机",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "h34c2",
+        "text": "交出手机，用电脑玩",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "h34c3",
+        "text": "跟爸妈讲道理",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "h34c4",
+        "text": "假装学习看书",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hometown-035",
+    "category": "hometown-pressure",
+    "text": "遇见了以前暗恋的女生，她带着男朋友，你感觉自己很挫。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "h35c1",
+        "text": "假装没看见绕道走",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "h35c2",
+        "text": "大方上去打招呼",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "h35c3",
+        "text": "自卑地低下头",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "h35c4",
+        "text": "发誓要混出个人样",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hometown-036",
+    "category": "hometown-pressure",
+    "text": "家里让你去考驾照，你说没时间，被骂懒。",
+    "animation": "talking",
+    "choices": [
+      {
+        "id": "h36c1",
+        "text": "报名去学车",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -15
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "h36c2",
+        "text": "坚持不学",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "h36c3",
+        "text": "说没钱报名",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "h36c4",
+        "text": "答应暑假再去",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hometown-037",
+    "category": "hometown-pressure",
+    "text": "亲戚聚餐，大家都要敬酒，你不会喝酒被嘲笑不像男人。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "h37c1",
+        "text": "硬着头皮喝，吐了",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "h37c2",
+        "text": "坚持以茶代酒",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "h37c3",
+        "text": "假装酒精过敏",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "h37c4",
+        "text": "直接离席",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hometown-038",
+    "category": "hometown-pressure",
+    "text": "爸妈翻看了你的日记本（或者手机聊天记录），你感到隐私被侵犯。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "h38c1",
+        "text": "大发雷霆，锁门绝食",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -20
+          }
+        ]
+      },
+      {
+        "id": "h38c2",
+        "text": "冷处理，不理他们",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "h38c3",
+        "text": "设下手机密码/买锁",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "h38c4",
+        "text": "无奈接受，毫无尊严",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -15
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hometown-039",
+    "category": "hometown-pressure",
+    "text": "亲戚说读书无用，不如早点出去打工赚钱。",
+    "animation": "talking",
+    "choices": [
+      {
+        "id": "h39c1",
+        "text": "反驳读书的意义",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "h39c2",
+        "text": "懒得解释，微笑",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "h39c3",
+        "text": "心里动摇，想辍学",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "h39c4",
+        "text": "讽刺亲戚目光短浅",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hometown-040",
+    "category": "hometown-pressure",
+    "text": "过年想睡个懒觉，早上六点就被鞭炮声和爸妈的大嗓门吵醒。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "h40c1",
+        "text": "蒙头继续睡",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "h40c2",
+        "text": "起床发起床气",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "h40c3",
+        "text": "无奈起床帮忙干活",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "h40c4",
+        "text": "戴耳塞听音乐",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hometown-041",
+    "category": "hometown-pressure",
+    "text": "表姐带了男朋友回来，全家都在夸，你成了背景板。",
+    "animation": "talking",
+    "choices": [
+      {
+        "id": "h41c1",
+        "text": "躲在角落玩手机",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "h41c2",
+        "text": "跟着一起夸",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "h41c3",
+        "text": "挑剔表姐男友的毛病",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "wealth",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "h41c4",
+        "text": "出去透透气",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hometown-042",
+    "category": "hometown-pressure",
+    "text": "爸妈让你去给长辈拜年，若能收到红包还行，结果只有磕头。",
+    "animation": "running",
+    "choices": [
+      {
+        "id": "h42c1",
+        "text": "乖乖磕头",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "h42c2",
+        "text": "鞠躬代替磕头",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "h42c3",
+        "text": "装病不去",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "h42c4",
+        "text": "去了但全程黑脸",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hometown-043",
+    "category": "hometown-pressure",
+    "text": "家里停电了，没有WiFi，没有暖气，手机也快没电了。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "h43c1",
+        "text": "裹着被子睡觉",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "h43c2",
+        "text": "找蜡烛看书",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "h43c3",
+        "text": "去外面蹭网",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "h43c4",
+        "text": "跟家人围坐聊天",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hometown-044",
+    "category": "hometown-pressure",
+    "text": "亲戚问你以后会不会留在老家发展，爸妈希望你回来。",
+    "animation": "talking",
+    "choices": [
+      {
+        "id": "h44c1",
+        "text": "含糊其辞",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "h44c2",
+        "text": "坚定说不回",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "wealth",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "h44c3",
+        "text": "说看工作情况",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "h44c4",
+        "text": "说回来也没关系",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hometown-045",
+    "category": "hometown-pressure",
+    "text": "被逼着去参加村里的红白喜事，感觉像个提线木偶。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "h45c1",
+        "text": "机械地完成仪式",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "h45c2",
+        "text": "偷偷溜走",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "h45c3",
+        "text": "观察民俗风情",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "h45c4",
+        "text": "抱怨封建迷信",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hometown-046",
+    "category": "hometown-pressure",
+    "text": "爸妈嫌弃你在学校乱花钱，要查你的支付宝账单。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "h46c1",
+        "text": "坚决不给看",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "h46c2",
+        "text": "删掉部分记录再给",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "h46c3",
+        "text": "坦然给他们看",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "h46c4",
+        "text": "哭穷博同情",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hometown-047",
+    "category": "hometown-pressure",
+    "text": "亲戚给你推荐了一些莫名其妙的理财产品，说是稳赚不赔。",
+    "animation": "talking",
+    "choices": [
+      {
+        "id": "h47c1",
+        "text": "劝亲戚别信，是骗局",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "h47c2",
+        "text": "敷衍过去",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "h47c3",
+        "text": "跟着投一点试试",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -20
+          }
+        ]
+      },
+      {
+        "id": "h47c4",
+        "text": "嘲笑亲戚没脑子",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hometown-048",
+    "category": "hometown-pressure",
+    "text": "因为头发太长/染发，被全家人轮番教育，让你去剪掉。",
+    "animation": "talking",
+    "choices": [
+      {
+        "id": "h48c1",
+        "text": "妥协去剪短",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "h48c2",
+        "text": "坚决捍卫发型",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "h48c3",
+        "text": "戴帽子遮住",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "h48c4",
+        "text": "说这是艺术",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hometown-049",
+    "category": "hometown-pressure",
+    "text": "爸妈总是拿你跟那个考上清华的远房亲戚比。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "h49c1",
+        "text": "自惭形秽",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -15
+          }
+        ]
+      },
+      {
+        "id": "h49c2",
+        "text": "反驳说人各有志",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "h49c3",
+        "text": "努力学习证明自己",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "h49c4",
+        "text": "屏蔽爸妈的话",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hometown-050",
+    "category": "hometown-pressure",
+    "text": "过年期间生病了，爸妈说你是平时不运动、玩手机害的。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "h50c1",
+        "text": "默默吃药忍受唠叨",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "h50c2",
+        "text": "反驳是流感传染",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "h50c3",
+        "text": "去医院挂号",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "h50c4",
+        "text": "躺在床上装死",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hometown-051",
+    "category": "hometown-pressure",
+    "text": "亲戚问你以后能不能把他们弄到大城市去享福。",
+    "animation": "talking",
+    "choices": [
+      {
+        "id": "h51c1",
+        "text": "苦笑说自己都难保",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "h51c2",
+        "text": "画大饼说没问题",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "h51c3",
+        "text": "劝他们老家挺好的",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "h51c4",
+        "text": "转移话题",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hometown-052",
+    "category": "hometown-pressure",
+    "text": "爸妈让你去给很久不联系的长辈送礼，你觉得很尴尬。",
+    "animation": "running",
+    "choices": [
+      {
+        "id": "h52c1",
+        "text": "硬着头皮去",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "h52c2",
+        "text": "把礼物放下就跑",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "h52c3",
+        "text": "让爸妈自己去",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "h52c4",
+        "text": "叫个同城快递送去",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hometown-053",
+    "category": "hometown-pressure",
+    "text": "发现小时候的日记本被亲戚家小孩拿出来朗读。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "h53c1",
+        "text": "冲上去抢回来撕碎",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "h53c2",
+        "text": "羞愤难当，躲起来",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -20
+          }
+        ]
+      },
+      {
+        "id": "h53c3",
+        "text": "大度一笑，说是黑历史",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "h53c4",
+        "text": "教训小孩不懂礼貌",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hometown-054",
+    "category": "hometown-pressure",
+    "text": "爸妈逼你穿秋裤，说有一种冷叫你妈觉得你冷。",
+    "animation": "talking",
+    "choices": [
+      {
+        "id": "h54c1",
+        "text": "乖乖穿上",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "h54c2",
+        "text": "偷偷脱掉",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "h54c3",
+        "text": "展示自己的腿毛",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "h54c4",
+        "text": "买条时尚的保暖裤",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hometown-055",
+    "category": "hometown-pressure",
+    "text": "临走回学校，爸妈塞给你一后备箱的土特产，虽然重但很暖。",
+    "animation": "talking",
+    "choices": [
+      {
+        "id": "h55c1",
+        "text": "全部带走，感动",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "h55c2",
+        "text": "挑轻的带",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "h55c3",
+        "text": "嫌麻烦不想带",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "h55c4",
+        "text": "发朋友圈晒幸福",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  }
+]

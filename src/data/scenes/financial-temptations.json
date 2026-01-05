@@ -1,0 +1,3022 @@
+[
+  {
+    "id": "finance-001",
+    "category": "financial-temptations",
+    "text": "有人在群里发网赚项目，说投入100块一周能赚500块，看起来很诱人。",
+    "animation": "talking",
+    "choices": [
+      {
+        "id": "fi1c1",
+        "text": "投100块试试水",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -15
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "fi1c2",
+        "text": "肯定是骗子，不理",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "fi1c3",
+        "text": "先观察别人的收益",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "fi1c4",
+        "text": "举报这个群",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "finance-002",
+    "category": "financial-temptations",
+    "text": "花呗额度又涨了，你现在可以透支5000块了，但已经欠了3000块。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "fi2c1",
+        "text": "继续用，以后再还",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -20
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "fi2c2",
+        "text": "先把欠款还清",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "fi2c3",
+        "text": "最低还款，保持消费",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -15
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "fi2c4",
+        "text": "关掉花呗，强制戒掉",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "finance-003",
+    "category": "financial-temptations",
+    "text": "室友说有个校园贷很好批，利息也不高，要不要一起借点钱？",
+    "animation": "talking",
+    "choices": [
+      {
+        "id": "fi3c1",
+        "text": "借5000块，下个月还",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -25
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "fi3c2",
+        "text": "拒绝，校园贷太危险",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "fi3c3",
+        "text": "先了解一下利息和条款",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "fi3c4",
+        "text": "劝室友也别借",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "finance-004",
+    "category": "financial-temptations",
+    "text": "有人找你做代购，说赚差价很容易，先垫2000块货款。",
+    "animation": "talking",
+    "choices": [
+      {
+        "id": "fi4c1",
+        "text": "借钱垫款，开始代购",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -20
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "fi4c2",
+        "text": "拒绝，风险太大",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "fi4c3",
+        "text": "要求对方先垫款",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "fi4c4",
+        "text": "小规模试试，只垫500",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "finance-005",
+    "category": "financial-temptations",
+    "text": "网上有人收购微信号，实名过的300块一个，你有两个闲置的号。",
+    "animation": "scrolling",
+    "choices": [
+      {
+        "id": "fi5c1",
+        "text": "卖掉，反正不用了",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 10
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -30
+          }
+        ]
+      },
+      {
+        "id": "fi5c2",
+        "text": "不卖，这可能涉及犯罪",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 15
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "fi5c3",
+        "text": "只卖一个，留一个备用",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -20
+          }
+        ]
+      },
+      {
+        "id": "fi5c4",
+        "text": "先问清楚用途再决定",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "financial-006",
+    "category": "financial-temptations",
+    "text": "一个陌生的QQ群邀请你加入，群公告写着“提供银行卡号，日赚千元，安全无风险”，群里全是晒收款截图的人。",
+    "animation": "running",
+    "choices": [
+      {
+        "id": "fi6c1",
+        "text": "提供卡号试试",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 10
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -20
+          }
+        ]
+      },
+      {
+        "id": "fi6c2",
+        "text": "询问具体操作",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "fi6c3",
+        "text": "退群并举报",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "fi6c4",
+        "text": "潜水观察几天",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "financial-007",
+    "category": "financial-temptations",
+    "text": "月底生活费花光了，手机突然收到一条“极速贷”短信，声称“大学生秒下款，无视黑白户，利息低至0.01%”。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "fi7c1",
+        "text": "点击链接下载APP",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -15
+          },
+          {
+            "stat": "wealth",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "fi7c2",
+        "text": "删除短信不理会",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "fi7c3",
+        "text": "找朋友借钱周转",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          },
+          {
+            "stat": "wealth",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "fi7c4",
+        "text": "忍着饿肚子",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          },
+          {
+            "stat": "wealth",
+            "change": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "financial-008",
+    "category": "financial-temptations",
+    "text": "你的室友在玩一个网络捕鱼游戏，一晚上赢了三千块，他兴奋地劝你也充值一百块试试运气。",
+    "animation": "celebrating",
+    "choices": [
+      {
+        "id": "fi8c1",
+        "text": "充值100块试水",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "fi8c2",
+        "text": "坚决不碰赌博",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          },
+          {
+            "stat": "wealth",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "fi8c3",
+        "text": "看他玩，不参与",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "fi8c4",
+        "text": "劝室友见好就收",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "financial-009",
+    "category": "financial-temptations",
+    "text": "催收电话打到了你的手机上，虽然你没借钱，但对方说你高中同学填了你的号码作为紧急联系人，现在他跑路了。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "fi9c1",
+        "text": "解释不认识他",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "fi9c2",
+        "text": "直接挂断拉黑",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "fi9c3",
+        "text": "骂回去",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "fi9c4",
+        "text": "帮同学还一点",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -20
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "financial-010",
+    "category": "financial-temptations",
+    "text": "你在网上看到一个“刷单兼职”，对方说只需要垫付几百块购买商品，几分钟后本金和佣金一起返还。",
+    "animation": "running",
+    "choices": [
+      {
+        "id": "fi10c1",
+        "text": "尝试刷一单",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -15
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "fi10c2",
+        "text": "不仅不刷还举报",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "fi10c3",
+        "text": "问问是不是骗局",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "fi10c4",
+        "text": "转发给同学看",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "financial-011",
+    "category": "financial-temptations",
+    "text": "最近手头紧，看到校园厕所门板上贴着“无抵押贷款，凭学生证即可借款，当日放款”，电话号码被涂得很显眼。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "fi11c1",
+        "text": "记下号码咨询",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "fi11c2",
+        "text": "撕掉小广告",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "academicStanding",
+            "change": 2
+          }
+        ]
+      },
+      {
+        "id": "fi11c3",
+        "text": "无视离开",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "fi11c4",
+        "text": "拍照发朋友圈吐槽",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "financial-012",
+    "category": "financial-temptations",
+    "text": "一个自称“老哥”的人加你好友，说带你上岸，只要跟着他买彩票，保证回血，让你先转账500入会。",
+    "animation": "talking",
+    "choices": [
+      {
+        "id": "fi12c1",
+        "text": "转账500求带",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -15
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "fi12c2",
+        "text": "拉黑删除",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "fi12c3",
+        "text": "假装感兴趣套话",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -2
+          }
+        ]
+      },
+      {
+        "id": "fi12c4",
+        "text": "骂他是骗子",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "financial-013",
+    "category": "financial-temptations",
+    "text": "你的游戏账号被看中了，对方出价3000元，但要求走一个陌生的第三方交易平台，需要先交500元保证金。",
+    "animation": "celebrating",
+    "choices": [
+      {
+        "id": "fi13c1",
+        "text": "交保证金交易",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -15
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "fi13c2",
+        "text": "坚持走正规平台",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "fi13c3",
+        "text": "不卖了，太麻烦",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "fi13c4",
+        "text": "揭穿骗局",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "financial-014",
+    "category": "financial-temptations",
+    "text": "负债累累的你看到“招聘出境高薪工作”，月入两万，包机票包食宿，地点在东南亚某国。",
+    "animation": "running",
+    "choices": [
+      {
+        "id": "fi14c1",
+        "text": "联系报名",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -50
+          },
+          {
+            "stat": "sanity",
+            "change": -20
+          }
+        ]
+      },
+      {
+        "id": "fi14c2",
+        "text": "知道是噶腰子，不理",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "fi14c3",
+        "text": "犹豫不决",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "fi14c4",
+        "text": "劝阻想去的朋友",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "financial-015",
+    "category": "financial-temptations",
+    "text": "网贷平台发来最后通牒，今天不还款就爆通讯录，并将你的欠款信息发送给学校辅导员和父母。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "fi15c1",
+        "text": "拆东墙补西墙",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -20
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "fi15c2",
+        "text": "向父母坦白求助",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 20
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "fi15c3",
+        "text": "关机逃避",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -15
+          }
+        ]
+      },
+      {
+        "id": "fi15c4",
+        "text": "报警求助",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "financial-016",
+    "category": "financial-temptations",
+    "text": "有人在食堂门口推销信用卡，送精美行李箱，额度一万起，只要身份证学生证就能办。",
+    "animation": "talking",
+    "choices": [
+      {
+        "id": "fi16c1",
+        "text": "办一张拿礼物",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "fi16c2",
+        "text": "不需要，拒绝",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "fi16c3",
+        "text": "问问年费情况",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "fi16c4",
+        "text": "只要礼物不办卡",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "financial-017",
+    "category": "financial-temptations",
+    "text": "你的支付宝借呗突然开通了，额度有8000元，正好你看中了一台新的游戏笔记本电脑。",
+    "animation": "celebrating",
+    "choices": [
+      {
+        "id": "fi17c1",
+        "text": "借钱买电脑",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -30
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "fi17c2",
+        "text": "忍住不买",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "fi17c3",
+        "text": "分期付款",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "fi17c4",
+        "text": "关闭借呗",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "financial-018",
+    "category": "financial-temptations",
+    "text": "一个很久没联系的小学同学突然找你，说他在做“资金盘”项目，日息3%，投一万每天拿300，随时提现。",
+    "animation": "talking",
+    "choices": [
+      {
+        "id": "fi18c1",
+        "text": "投一万试试",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -30
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "fi18c2",
+        "text": "这是庞氏骗局，拒绝",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "wealth",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "fi18c3",
+        "text": "投一百块玩玩",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "fi18c4",
+        "text": "拉黑同学",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "financial-019",
+    "category": "financial-temptations",
+    "text": "你在网上下载了一个破解版游戏，安装时提示需要获取通讯录和短信权限才能运行，否则无法进入。",
+    "animation": "scrolling",
+    "choices": [
+      {
+        "id": "fi19c1",
+        "text": "允许权限",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -15
+          }
+        ]
+      },
+      {
+        "id": "fi19c2",
+        "text": "拒绝并卸载",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "fi19c3",
+        "text": "找个备用机安装",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "fi19c4",
+        "text": "去买正版",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "financial-020",
+    "category": "financial-temptations",
+    "text": "你捡到一张写着密码的银行卡，去ATM机一查里面有余额20万，但取款需要先转账激活手续费。",
+    "animation": "running",
+    "choices": [
+      {
+        "id": "fi20c1",
+        "text": "转账激活",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -20
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "fi20c2",
+        "text": "把卡扔了",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "fi20c3",
+        "text": "交给警察",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          },
+          {
+            "stat": "academicStanding",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "fi20c4",
+        "text": "在ATM机旁观察",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "financial-021",
+    "category": "financial-temptations",
+    "text": "为了还之前的网贷，你下载了一个新的借款APP，填完资料后对方要求先支付“工本费”500元。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "fi21c1",
+        "text": "支付500元",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -15
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "fi21c2",
+        "text": "卸载APP",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          },
+          {
+            "stat": "wealth",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "fi21c3",
+        "text": "骂客服",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "fi21c4",
+        "text": "举报该APP",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "financial-022",
+    "category": "financial-temptations",
+    "text": "你在直播间看到主播推荐一款理财APP，声称是国企背景，年化收益20%，限时开放注册。",
+    "animation": "scrolling",
+    "choices": [
+      {
+        "id": "fi22c1",
+        "text": "下载注册投资",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -20
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "fi22c2",
+        "text": "查查背景真伪",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "fi22c3",
+        "text": "不信天上掉馅饼",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "fi22c4",
+        "text": "只围观不买",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "financial-023",
+    "category": "financial-temptations",
+    "text": "有人私信你，说可以用你的身份信息注册几个壳公司，不用你经营，每个公司给你2000元好处费。",
+    "animation": "talking",
+    "choices": [
+      {
+        "id": "fi23c1",
+        "text": "同意注册",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 20
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -40
+          }
+        ]
+      },
+      {
+        "id": "fi23c2",
+        "text": "严词拒绝",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "fi23c3",
+        "text": "询问法律风险",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "fi23c4",
+        "text": "报警",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 15
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "financial-024",
+    "category": "financial-temptations",
+    "text": "你欠了花呗没还，现在想买火车票回家，发现因为信用分太低被限制高消费，无法购买高铁票。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "fi24c1",
+        "text": "借钱还花呗",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "fi24c2",
+        "text": "坐绿皮车回家",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          },
+          {
+            "stat": "wealth",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "fi24c3",
+        "text": "找黄牛买票",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -15
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "fi24c4",
+        "text": "不回家了",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -15
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "financial-025",
+    "category": "financial-temptations",
+    "text": "一个“富二代”同学说他有内幕消息，某只股票明天必涨停，让你把生活费都投进去。",
+    "animation": "celebrating",
+    "choices": [
+      {
+        "id": "fi25c1",
+        "text": "全仓买入",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -25
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "fi25c2",
+        "text": "买一点点",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "fi25c3",
+        "text": "不碰股票",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 0
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "fi25c4",
+        "text": "劝他别违规",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "financial-026",
+    "category": "financial-temptations",
+    "text": "你在网上认识的“女朋友”突然说生病了，急需5000元做手术，给你发了一张医院的诊断书照片。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "fi26c1",
+        "text": "立刻转账救急",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -25
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "fi26c2",
+        "text": "视频验证真假",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "fi26c3",
+        "text": "说没钱",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "fi26c4",
+        "text": "怀疑是杀猪盘",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "financial-027",
+    "category": "financial-temptations",
+    "text": "有人在论坛发帖收USDT，价格比市场价高10%，支持线下现金交易，地点在学校附近的小旅馆。",
+    "animation": "running",
+    "choices": [
+      {
+        "id": "fi27c1",
+        "text": "带U去交易",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -30
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "fi27c2",
+        "text": "不去，太危险",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "fi27c3",
+        "text": "线上交易",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "fi27c4",
+        "text": "叫上几个兄弟去",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 0
+          },
+          {
+            "stat": "billiardsSkill",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "financial-028",
+    "category": "financial-temptations",
+    "text": "你发现自己的身份证丢失了，过了一个月突然收到催债短信，说你名下多了好几笔网贷。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "fi28c1",
+        "text": "立刻报警挂失",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "fi28c2",
+        "text": "打电话骂贷款公司",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "fi28c3",
+        "text": "以为是诈骗短信",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "fi28c4",
+        "text": "联系父母解决",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          },
+          {
+            "stat": "wealth",
+            "change": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "financial-029",
+    "category": "financial-temptations",
+    "text": "你的室友开始做“微商”，卖三无减肥药，让你帮忙发朋友圈宣传，每单给你提成50。",
+    "animation": "talking",
+    "choices": [
+      {
+        "id": "fi29c1",
+        "text": "帮忙发朋友圈",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 5
+          },
+          {
+            "stat": "academicStanding",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "fi29c2",
+        "text": "拒绝，怕坑朋友",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "fi29c3",
+        "text": "屏蔽室友朋友圈",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "fi29c4",
+        "text": "劝室友别做了",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "financial-030",
+    "category": "financial-temptations",
+    "text": "你在浏览网页时弹出一个“幸运大转盘”，提示你中了一等奖，奖品是iPhone 15，只需支付98元运费。",
+    "animation": "celebrating",
+    "choices": [
+      {
+        "id": "fi30c1",
+        "text": "支付运费",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "fi30c2",
+        "text": "关闭网页",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "fi30c3",
+        "text": "查询快递单号",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "fi30c4",
+        "text": "填写假地址恶搞",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "financial-031",
+    "category": "financial-temptations",
+    "text": "你急需用钱，看到电线杆上贴着“重金求子”，富婆因为丈夫不育，愿出50万求健康男士圆梦。",
+    "animation": "running",
+    "choices": [
+      {
+        "id": "fi31c1",
+        "text": "拨打电话应聘",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -15
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "fi31c2",
+        "text": "撕掉骗人广告",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "fi31c3",
+        "text": "拍照当笑话发网",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 2
+          }
+        ]
+      },
+      {
+        "id": "fi31c4",
+        "text": "无视走开",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "financial-032",
+    "category": "financial-temptations",
+    "text": "你的游戏好友说如果不玩了可以把号租给他，他用外挂带人刷副本，每天给你100租金。",
+    "animation": "scrolling",
+    "choices": [
+      {
+        "id": "fi32c1",
+        "text": "租给他",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 10
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -20
+          }
+        ]
+      },
+      {
+        "id": "fi32c2",
+        "text": "拒绝，怕封号",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "fi32c3",
+        "text": "自己开挂带人",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "fi32c4",
+        "text": "删除好友",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "financial-033",
+    "category": "financial-temptations",
+    "text": "网贷逾期三天，客服打电话说如果今天不还，就会产生高额罚息，并且会上报征信系统。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "fi33c1",
+        "text": "借遍通讯录还钱",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -20
+          },
+          {
+            "stat": "sanity",
+            "change": -15
+          }
+        ]
+      },
+      {
+        "id": "fi33c2",
+        "text": "不管了，烂命一条",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "fi33c3",
+        "text": "协商延期还款",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "fi33c4",
+        "text": "找兼职赚钱",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 5
+          },
+          {
+            "stat": "academicStanding",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "financial-034",
+    "category": "financial-temptations",
+    "text": "有人在兼职群里发任务，下载注册指定的10个APP，每个给5块钱，需要实名认证。",
+    "animation": "running",
+    "choices": [
+      {
+        "id": "fi34c1",
+        "text": "做任务赚钱",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -15
+          }
+        ]
+      },
+      {
+        "id": "fi34c2",
+        "text": "不做，泄露隐私",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "fi34c3",
+        "text": "只做不需要实名的",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 2
+          }
+        ]
+      },
+      {
+        "id": "fi34c4",
+        "text": "举报发布者",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "financial-035",
+    "category": "financial-temptations",
+    "text": "你在闲鱼上卖二手书，买家发来一个链接说无法付款，需要你点击链接联系“客服”开通商家权限。",
+    "animation": "talking",
+    "choices": [
+      {
+        "id": "fi35c1",
+        "text": "点击链接操作",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -20
+          },
+          {
+            "stat": "wealth",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "fi35c2",
+        "text": "直接在闲鱼内沟通",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "fi35c3",
+        "text": "不卖给他了",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "fi35c4",
+        "text": "举报该用户",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "financial-036",
+    "category": "financial-temptations",
+    "text": "你欠了一屁股债，看到网上有“债务重组”广告，说能帮你协商停息挂账，只需要交2000元服务费。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "fi36c1",
+        "text": "交钱试一试",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -15
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "fi36c2",
+        "text": "自己联系银行协商",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "fi36c3",
+        "text": "怀疑是骗子",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "fi36c4",
+        "text": "继续逃避",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "financial-037",
+    "category": "financial-temptations",
+    "text": "世界杯期间，同学们都在买球，有人推荐一个赔率很高的地下盘口APP，说今晚阿根廷必胜。",
+    "animation": "celebrating",
+    "choices": [
+      {
+        "id": "fi37c1",
+        "text": "下注500元",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -15
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "fi37c2",
+        "text": "坚决不赌",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "fi37c3",
+        "text": "去正规体彩店买",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "fi37c4",
+        "text": "只看球不买",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "financial-038",
+    "category": "financial-temptations",
+    "text": "你的银行卡突然收到一笔5000元的转账，随后一个人打电话说转错了，让你退回到另一个账号。",
+    "animation": "talking",
+    "choices": [
+      {
+        "id": "fi38c1",
+        "text": "好心退回去",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -20
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -15
+          }
+        ]
+      },
+      {
+        "id": "fi38c2",
+        "text": "联系银行处理",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "fi38c3",
+        "text": "让他报警",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "fi38c4",
+        "text": "直接挂断",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "financial-039",
+    "category": "financial-temptations",
+    "text": "有人在校园里推广“培训贷”，说参加他们的IT培训包就业，学费两万可以分期，利息极低。",
+    "animation": "running",
+    "choices": [
+      {
+        "id": "fi39c1",
+        "text": "报名培训",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -30
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "fi39c2",
+        "text": "查查机构口碑",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "fi39c3",
+        "text": "拒绝，自学",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "fi39c4",
+        "text": "询问学长意见",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "financial-040",
+    "category": "financial-temptations",
+    "text": "你的生活费被偷了，正发愁时看到“裸条借贷”的新闻，虽然你是男生，但对方说男生也可以拍视频抵押。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "fi40c1",
+        "text": "绝望中咨询",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -20
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -20
+          }
+        ]
+      },
+      {
+        "id": "fi40c2",
+        "text": "恶心，拒绝",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "fi40c3",
+        "text": "找兼职赚钱",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "fi40c4",
+        "text": "报警备案",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "financial-041",
+    "category": "financial-temptations",
+    "text": "一个自称是淘宝客服的电话，说你买的衣服甲醛超标，要给你双倍理赔，让你开通理赔通道。",
+    "animation": "talking",
+    "choices": [
+      {
+        "id": "fi41c1",
+        "text": "配合操作理赔",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -15
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "fi41c2",
+        "text": "在淘宝APP核实",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "fi41c3",
+        "text": "直接挂断",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "fi41c4",
+        "text": "调戏骗子",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "financial-042",
+    "category": "financial-temptations",
+    "text": "你在网吧上网，旁边的人说他在做“跑分”生意，用银行卡帮人转账，一天能赚两千，问你干不干。",
+    "animation": "running",
+    "choices": [
+      {
+        "id": "fi42c1",
+        "text": "加入跑分",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 15
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -30
+          }
+        ]
+      },
+      {
+        "id": "fi42c2",
+        "text": "拒绝，这是洗钱",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "fi42c3",
+        "text": "假装答应报警",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 15
+          }
+        ]
+      },
+      {
+        "id": "fi42c4",
+        "text": "换个机子上网",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "financial-043",
+    "category": "financial-temptations",
+    "text": "你的电子邮箱收到一封邮件，说你中了xxx节目的场外大奖，有奖金和笔记本电脑，需要填写个人信息领奖。",
+    "animation": "scrolling",
+    "choices": [
+      {
+        "id": "fi43c1",
+        "text": "填写信息",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "fi43c2",
+        "text": "标记为垃圾邮件",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "fi43c3",
+        "text": "回复骂人",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 2
+          }
+        ]
+      },
+      {
+        "id": "fi43c4",
+        "text": "无视",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "financial-044",
+    "category": "financial-temptations",
+    "text": "为了买最新款的球鞋，你办了三张信用卡，现在到了还款日，工资还没发，账单已经堆积如山。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "fi44c1",
+        "text": "办理分期",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "fi44c2",
+        "text": "以卡养卡",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -15
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "fi44c3",
+        "text": "卖掉旧鞋还债",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "fi44c4",
+        "text": "向家里坦白",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 20
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "financial-045",
+    "category": "financial-temptations",
+    "text": "你在社交软件上认识一个“白富美”，聊得很投机，她带你玩一个“博彩投资”网站，说稳赚不赔。",
+    "animation": "celebrating",
+    "choices": [
+      {
+        "id": "fi45c1",
+        "text": "跟着投几千",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -20
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "fi45c2",
+        "text": "这就是杀猪盘",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "fi45c3",
+        "text": "只要照片不谈钱",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "fi45c4",
+        "text": "举报拉黑",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "financial-046",
+    "category": "financial-temptations",
+    "text": "有人在学校群里回收旧手机，价格异常高，但要求必须连同手机卡和ID账号密码一起卖。",
+    "animation": "talking",
+    "choices": [
+      {
+        "id": "fi46c1",
+        "text": "高价卖出",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 10
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -20
+          }
+        ]
+      },
+      {
+        "id": "fi46c2",
+        "text": "只卖裸机",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "fi46c3",
+        "text": "不卖，有猫腻",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "fi46c4",
+        "text": "提醒群友小心",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "financial-047",
+    "category": "financial-temptations",
+    "text": "你的花呗被冻结了，网上有人说可以“强开花呗”，技术破解，只需要提供身份证正反面和手机验证码。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "fi47c1",
+        "text": "尝试强开",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -15
+          },
+          {
+            "stat": "wealth",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "fi47c2",
+        "text": "等待系统恢复",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "fi47c3",
+        "text": "联系官方客服",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "fi47c4",
+        "text": "放弃使用花呗",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "financial-048",
+    "category": "financial-temptations",
+    "text": "你收到一张法院传票的短信，说你涉嫌金融诈骗，如果不把资金转入“安全账户”核查，将立刻逮捕。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "fi48c1",
+        "text": "吓得赶紧转账",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -30
+          },
+          {
+            "stat": "sanity",
+            "change": -15
+          }
+        ]
+      },
+      {
+        "id": "fi48c2",
+        "text": "去派出所核实",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "fi48c3",
+        "text": "回拨电话质问",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "fi48c4",
+        "text": "无视诈骗短信",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "financial-049",
+    "category": "financial-temptations",
+    "text": "你在网上看到“日结兼职，打字员，千字30元”，加了QQ后对方让你先交99元入职费。",
+    "animation": "running",
+    "choices": [
+      {
+        "id": "fi49c1",
+        "text": "交钱入职",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "fi49c2",
+        "text": "骗子，互删",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "fi49c3",
+        "text": "百度一下这个骗局",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "fi49c4",
+        "text": "调侃对方",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "financial-050",
+    "category": "financial-temptations",
+    "text": "你的朋友给你推荐了一个数字货币钱包APP，说存币生息，年化500%，让你赶紧把生活费转进去。",
+    "animation": "celebrating",
+    "choices": [
+      {
+        "id": "fi50c1",
+        "text": "梭哈买入",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -25
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "fi50c2",
+        "text": "谨慎观望",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "fi50c3",
+        "text": "劝朋友别玩",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "fi50c4",
+        "text": "坚决不碰虚拟币",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "financial-051",
+    "category": "financial-temptations",
+    "text": "你在路边扫码送气球，对方让你把手机给他操作一下，说是为了关注公众号，结果他给你注册了网贷。",
+    "animation": "talking",
+    "choices": [
+      {
+        "id": "fi51c1",
+        "text": "把手机给他",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -20
+          },
+          {
+            "stat": "wealth",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "fi51c2",
+        "text": "拒绝交出手机",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "fi51c3",
+        "text": "自己扫码关注",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "fi51c4",
+        "text": "不要气球了",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "financial-052",
+    "category": "financial-temptations",
+    "text": "你急需用钱，有人介绍你去卖血浆，说正规血站，每次给300元营养费，还能免费体检。",
+    "animation": "running",
+    "choices": [
+      {
+        "id": "fi52c1",
+        "text": "去卖血",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "fi52c2",
+        "text": "太伤身体，不去",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "fi52c3",
+        "text": "找正规献血车",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "fi52c4",
+        "text": "借钱也不卖血",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "financial-053",
+    "category": "financial-temptations",
+    "text": "你在宿舍楼道捡到一张“重金求代考”的小广告，英语四级，过关给2000，不过给500辛苦费。",
+    "animation": "running",
+    "choices": [
+      {
+        "id": "fi53c1",
+        "text": "联系代考",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 10
+          },
+          {
+            "stat": "academicStanding",
+            "change": -50
+          }
+        ]
+      },
+      {
+        "id": "fi53c2",
+        "text": "撕掉并举报",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "fi53c3",
+        "text": "不敢做，违法的",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "fi53c4",
+        "text": "发给学霸室友看",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "financial-054",
+    "category": "financial-temptations",
+    "text": "你的游戏账号被盗了，找回需要联系客服，搜索到的“官方客服”让你先转账验证资金流。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "fi54c1",
+        "text": "转账验证",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "fi54c2",
+        "text": "去官网找客服",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "fi54c3",
+        "text": "怀疑是假客服",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "fi54c4",
+        "text": "放弃账号",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "financial-055",
+    "category": "financial-temptations",
+    "text": "有人在网上出售“考试答案”，说是考前一小时发，包过，一科500元，多买有优惠。",
+    "animation": "scrolling",
+    "choices": [
+      {
+        "id": "fi55c1",
+        "text": "买一科试试",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "academicStanding",
+            "change": -20
+          }
+        ]
+      },
+      {
+        "id": "fi55c2",
+        "text": "不信，好好复习",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "fi55c3",
+        "text": "举报卖家",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "fi55c4",
+        "text": "围观评论区",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 0
+          }
+        ]
+      }
+    ]
+  }
+]

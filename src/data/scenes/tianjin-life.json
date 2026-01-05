@@ -1,0 +1,2970 @@
+[
+  {
+    "id": "tianjin-001",
+    "category": "tianjin-life",
+    "text": "天津的煎饼果子太好吃了，但吃多了有点胖了，衣服都紧了。",
+    "animation": "eating",
+    "choices": [
+      {
+        "id": "t1c1",
+        "text": "继续吃，快乐最重要",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          },
+          {
+            "stat": "wealth",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "t1c2",
+        "text": "开始减肥，少吃主食",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "t1c3",
+        "text": "去健身房锻炼",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "wealth",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "t1c4",
+        "text": "改吃沙拉，克制一下",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          },
+          {
+            "stat": "wealth",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tianjin-002",
+    "category": "tianjin-life",
+    "text": "房东说下个月房租要涨200块，你的生活费已经很紧张了。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "t2c1",
+        "text": "接受涨价，省着点花",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -15
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "t2c2",
+        "text": "找室友分摊多一点",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "t2c3",
+        "text": "找便宜的房子搬家",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": -15
+          }
+        ]
+      },
+      {
+        "id": "t2c4",
+        "text": "跟房东协商，能不能不涨",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tianjin-003",
+    "category": "tianjin-life",
+    "text": "天津话太有意思了，你学了几句，结果被室友笑话说不正宗。",
+    "animation": "talking",
+    "choices": [
+      {
+        "id": "t3c1",
+        "text": "继续学，无所谓被笑",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "t3c2",
+        "text": "不学了，用普通话就好",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "t3c3",
+        "text": "找天津本地同学教你",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "t3c4",
+        "text": "回怼室友，你们也不会",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tianjin-004",
+    "category": "tianjin-life",
+    "text": "天气太冷了，暖气不够热，你半夜冻醒了好几次。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "t4c1",
+        "text": "买个电热毯",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "t4c2",
+        "text": "找房东投诉暖气问题",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "t4c3",
+        "text": "多盖几床被子凑合",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "t4c4",
+        "text": "去室友那边挤一挤",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tianjin-005",
+    "category": "tianjin-life",
+    "text": "在天津找到一家便宜的台球厅，环境一般但价格只要10块一小时。",
+    "animation": "billiards",
+    "choices": [
+      {
+        "id": "t5c1",
+        "text": "成为常客，天天来练",
+        "effects": [
+          {
+            "stat": "billiardsSkill",
+            "change": 15
+          },
+          {
+            "stat": "wealth",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "t5c2",
+        "text": "偶尔来放松一下",
+        "effects": [
+          {
+            "stat": "billiardsSkill",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "t5c3",
+        "text": "找更好的球厅，环境重要",
+        "effects": [
+          {
+            "stat": "billiardsSkill",
+            "change": 5
+          },
+          {
+            "stat": "wealth",
+            "change": -15
+          }
+        ]
+      },
+      {
+        "id": "t5c4",
+        "text": "认识球厅的常客，交流技术",
+        "effects": [
+          {
+            "stat": "billiardsSkill",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tianjin-006",
+    "category": "tianjin-life",
+    "text": "早起下楼买煎饼果子，摊主问你要几个鸡蛋。你摸了摸口袋，想起了昨天刚交的房租，心里一阵肉疼。",
+    "animation": "eating",
+    "choices": [
+      {
+        "id": "t6c1",
+        "text": "就要一个鸡蛋，省钱",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "t6c2",
+        "text": "加两个！对自己好点",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "t006c3",
+        "text": "无所谓，随缘吧",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "t006c4",
+        "text": "在心里默默记下",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tianjin-007",
+    "category": "tianjin-life",
+    "text": "合租的室友半夜还在打游戏，大呼小叫的，吵得你根本睡不着，明天还有早八的课。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "t7c1",
+        "text": "敲门让他安静点",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "t7c2",
+        "text": "带上耳塞忍一忍",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "t007c3",
+        "text": "找个地方静静",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "t007c4",
+        "text": "去网吧打游戏发泄",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tianjin-008",
+    "category": "tianjin-life",
+    "text": "天津的风太大了，出门骑车感觉要被吹飞。刚买的新发型瞬间变成了鸡窝。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "t8c1",
+        "text": "打车去学校",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "t8c2",
+        "text": "顶风前行，锻炼身体",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "t008c3",
+        "text": "刷会儿短视频转移注意力",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "academicStanding",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "t008c4",
+        "text": "去跑步消消气",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tianjin-009",
+    "category": "tianjin-life",
+    "text": "在五大道散步，看到很多漂亮的小洋楼，心情突然变好了，但也感叹这里的房价真贵。",
+    "animation": "talking",
+    "choices": [
+      {
+        "id": "t9c1",
+        "text": "拍几张照片发朋友圈",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "t9c2",
+        "text": "暗下决心努力赚钱",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "t009c3",
+        "text": "发个朋友圈吐槽一下",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "t009c4",
+        "text": "打电话给家人诉苦",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "wealth",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tianjin-010",
+    "category": "tianjin-life",
+    "text": "去古文化街逛了逛，被推销了各种泥人张和风筝。差点没忍住剁手。",
+    "animation": "talking",
+    "choices": [
+      {
+        "id": "t10c1",
+        "text": "只看不买，捂紧钱包",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "t10c2",
+        "text": "买个小玩意做纪念",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "t010c3",
+        "text": "无所谓，随缘吧",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "t010c4",
+        "text": "在心里默默记下",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tianjin-011",
+    "category": "tianjin-life",
+    "text": "室友提议周末一起煮火锅，大家AA制。但是你最近手头有点紧。",
+    "animation": "eating",
+    "choices": [
+      {
+        "id": "t11c1",
+        "text": "爽快答应，增进感情",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "t11c2",
+        "text": "找借口推脱",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "t011c3",
+        "text": "找个地方静静",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "t011c4",
+        "text": "去网吧打游戏发泄",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tianjin-012",
+    "category": "tianjin-life",
+    "text": "在海河边夜跑，风景很美，但是空气有点潮湿，跑了一会儿就喘不上气。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "t12c1",
+        "text": "坚持跑完五公里",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "t12c2",
+        "text": "慢走欣赏夜景",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "t012c3",
+        "text": "刷会儿短视频转移注意力",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "academicStanding",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "t012c4",
+        "text": "去跑步消消气",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tianjin-013",
+    "category": "tianjin-life",
+    "text": "房东突然来查房，看到家里有点乱，脸色不太好看，嘟囔了几句。",
+    "animation": "talking",
+    "choices": [
+      {
+        "id": "t13c1",
+        "text": "立刻打扫卫生道歉",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "t13c2",
+        "text": "假装没听见",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "t013c3",
+        "text": "发个朋友圈吐槽一下",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "t013c4",
+        "text": "打电话给家人诉苦",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "wealth",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tianjin-014",
+    "category": "tianjin-life",
+    "text": "想吃嘎巴菜了，特意起了个大早去排队，结果前面还有十几个人。",
+    "animation": "eating",
+    "choices": [
+      {
+        "id": "t14c1",
+        "text": "既来之则安之，排队",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "t14c2",
+        "text": "换一家人少的",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "t014c3",
+        "text": "无所谓，随缘吧",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "t014c4",
+        "text": "在心里默默记下",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tianjin-015",
+    "category": "tianjin-life",
+    "text": "冬天来了，天津的干燥让你皮肤起皮，喉咙也干得冒烟。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "t15c1",
+        "text": "买个加湿器",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "t15c2",
+        "text": "多喝热水",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "t015c3",
+        "text": "找个地方静静",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "t015c4",
+        "text": "去网吧打游戏发泄",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tianjin-016",
+    "category": "tianjin-life",
+    "text": "去滨江道逛街，人山人海，挤得你满头大汗，还差点丢了手机。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "t16c1",
+        "text": "赶紧找个清静地方休息",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "t16c2",
+        "text": "继续挤，热闹",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "t016c3",
+        "text": "刷会儿短视频转移注意力",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "academicStanding",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "t016c4",
+        "text": "去跑步消消气",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tianjin-017",
+    "category": "tianjin-life",
+    "text": "室友带了朋友回来过夜，没有提前跟你打招呼，客厅里乌烟瘴气的。",
+    "animation": "talking",
+    "choices": [
+      {
+        "id": "t17c1",
+        "text": "当面表达不满",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "t17c2",
+        "text": "躲进房间不出来",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "t017c3",
+        "text": "发个朋友圈吐槽一下",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "t017c4",
+        "text": "打电话给家人诉苦",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "wealth",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tianjin-018",
+    "category": "tianjin-life",
+    "text": "路边摊的炸糕太诱人了，你明知道热量爆炸，还是忍不住停下了脚步。",
+    "animation": "eating",
+    "choices": [
+      {
+        "id": "t18c1",
+        "text": "买一个尝尝",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "t18c2",
+        "text": "忍住，为了健康",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "t018c3",
+        "text": "无所谓，随缘吧",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "t018c4",
+        "text": "在心里默默记下",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tianjin-019",
+    "category": "tianjin-life",
+    "text": "房子的隔音效果极差，隔壁情侣吵架的声音听得一清二楚。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "t19c1",
+        "text": "听八卦，津津有味",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "t19c2",
+        "text": "烦死了，敲墙抗议",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "t019c3",
+        "text": "找个地方静静",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "t019c4",
+        "text": "去网吧打游戏发泄",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tianjin-020",
+    "category": "tianjin-life",
+    "text": "在学校附近的网吧通宵，结果第二天早上精神恍惚，差点把手机落在机位上。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "t20c1",
+        "text": "赶紧回去找",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "t20c2",
+        "text": "以后再也不通宵了",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "academicStanding",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "t020c3",
+        "text": "刷会儿短视频转移注意力",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "academicStanding",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "t020c4",
+        "text": "去跑步消消气",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tianjin-021",
+    "category": "tianjin-life",
+    "text": "天津的出租车司机太能侃了，从国际形势聊到家长里短，你都插不上嘴。",
+    "animation": "talking",
+    "choices": [
+      {
+        "id": "t21c1",
+        "text": "附和着聊两句",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "t21c2",
+        "text": "戴上耳机装睡",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "t021c3",
+        "text": "发个朋友圈吐槽一下",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "t021c4",
+        "text": "打电话给家人诉苦",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "wealth",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tianjin-022",
+    "category": "tianjin-life",
+    "text": "月底了，生活费所剩无几，看着外卖软件上的价格，你陷入了沉思。",
+    "animation": "eating",
+    "choices": [
+      {
+        "id": "t22c1",
+        "text": "煮包方便面凑合",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "t22c2",
+        "text": "去食堂吃最便宜的菜",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "t022c3",
+        "text": "无所谓，随缘吧",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "t022c4",
+        "text": "在心里默默记下",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tianjin-023",
+    "category": "tianjin-life",
+    "text": "合租的洗衣机坏了，房东迟迟不来修，堆积的脏衣服成了心病。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "t23c1",
+        "text": "自己动手修",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "t23c2",
+        "text": "送去干洗店",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "t023c3",
+        "text": "找个地方静静",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "t023c4",
+        "text": "去网吧打游戏发泄",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tianjin-024",
+    "category": "tianjin-life",
+    "text": "在西开教堂附近迷路了，手机导航又没信号，只能问路。",
+    "animation": "talking",
+    "choices": [
+      {
+        "id": "t24c1",
+        "text": "向路边大爷求助",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "t24c2",
+        "text": "凭感觉瞎走",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "t024c3",
+        "text": "刷会儿短视频转移注意力",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "academicStanding",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "t024c4",
+        "text": "去跑步消消气",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tianjin-025",
+    "category": "tianjin-life",
+    "text": "室友做饭没关油烟机，满屋子都是呛人的辣椒味，你被呛得直咳嗽。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "t25c1",
+        "text": "打开窗户透气",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "t25c2",
+        "text": "把室友骂一顿",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "t025c3",
+        "text": "发个朋友圈吐槽一下",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "t025c4",
+        "text": "打电话给家人诉苦",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "wealth",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tianjin-026",
+    "category": "tianjin-life",
+    "text": "天津之眼的夜景很美，你想去坐坐，但票价对学生党来说有点奢侈。",
+    "animation": "talking",
+    "choices": [
+      {
+        "id": "t26c1",
+        "text": "咬牙买票，浪漫一把",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -15
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "t26c2",
+        "text": "在下面拍照留念",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "t026c3",
+        "text": "无所谓，随缘吧",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "t026c4",
+        "text": "在心里默默记下",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tianjin-027",
+    "category": "tianjin-life",
+    "text": "在二手市场淘到了一个便宜的显示器，结果拿回家发现有坏点。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "t27c1",
+        "text": "自认倒霉，凑合用",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "t27c2",
+        "text": "回去找卖家理论",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "t027c3",
+        "text": "找个地方静静",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "t027c4",
+        "text": "去网吧打游戏发泄",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tianjin-028",
+    "category": "tianjin-life",
+    "text": "早上去上课，发现共享单车都被骑走了，只能一路狂奔去教室。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "t28c1",
+        "text": "拼命跑，不迟到",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "t28c2",
+        "text": "慢悠悠走，迟到就迟到",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "t028c3",
+        "text": "刷会儿短视频转移注意力",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "academicStanding",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "t028c4",
+        "text": "去跑步消消气",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tianjin-029",
+    "category": "tianjin-life",
+    "text": "室友总是偷吃你放在冰箱里的零食，你已经忍无可忍了。",
+    "animation": "eating",
+    "choices": [
+      {
+        "id": "t29c1",
+        "text": "在零食上贴名字",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "t29c2",
+        "text": "买个带锁的盒子",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "t029c3",
+        "text": "发个朋友圈吐槽一下",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "t029c4",
+        "text": "打电话给家人诉苦",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "wealth",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tianjin-030",
+    "category": "tianjin-life",
+    "text": "听说意大利风情街有活动，你想去凑热闹，但又怕人多太挤。",
+    "animation": "talking",
+    "choices": [
+      {
+        "id": "t30c1",
+        "text": "去看看，感受氛围",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "t30c2",
+        "text": "宅在家里打游戏",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "t030c3",
+        "text": "无所谓，随缘吧",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "t030c4",
+        "text": "在心里默默记下",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tianjin-031",
+    "category": "tianjin-life",
+    "text": "在图书馆占座，出去接个电话回来，发现位置被别人占了。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "t31c1",
+        "text": "据理力争要回位置",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "t31c2",
+        "text": "算了，换个地方",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "t031c3",
+        "text": "找个地方静静",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "t031c4",
+        "text": "去网吧打游戏发泄",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tianjin-032",
+    "category": "tianjin-life",
+    "text": "天津的夏天太热了，没有空调的宿舍简直就是蒸笼。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "t32c1",
+        "text": "去有空调的图书馆避暑",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "t32c2",
+        "text": "买个小风扇对着吹",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "t032c3",
+        "text": "刷会儿短视频转移注意力",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "academicStanding",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "t032c4",
+        "text": "去跑步消消气",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tianjin-033",
+    "category": "tianjin-life",
+    "text": "晚上饿了想吃宵夜，楼下的烧烤摊香味直往鼻子里钻。",
+    "animation": "eating",
+    "choices": [
+      {
+        "id": "t33c1",
+        "text": "大吃一顿",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "t33c2",
+        "text": "喝杯水睡觉",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "t033c3",
+        "text": "发个朋友圈吐槽一下",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "t033c4",
+        "text": "打电话给家人诉苦",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "wealth",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tianjin-034",
+    "category": "tianjin-life",
+    "text": "房东又要来收水电费了，你总觉得电表走得太快，怀疑有问题。",
+    "animation": "talking",
+    "choices": [
+      {
+        "id": "t34c1",
+        "text": "要求查电表",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "t34c2",
+        "text": "乖乖交钱，多一事不如少一事",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "t034c3",
+        "text": "无所谓，随缘吧",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "t034c4",
+        "text": "在心里默默记下",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tianjin-035",
+    "category": "tianjin-life",
+    "text": "周末想去水上公园划船，约了几个朋友，但是只有一个人响应。",
+    "animation": "talking",
+    "choices": [
+      {
+        "id": "t35c1",
+        "text": "两个人也去，享受二人世界",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "t35c2",
+        "text": "取消计划，没劲",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "t035c3",
+        "text": "找个地方静静",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "t035c4",
+        "text": "去网吧打游戏发泄",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tianjin-036",
+    "category": "tianjin-life",
+    "text": "在网吧玩游戏因为操作太菜被队友喷了，心情极度郁闷。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "t36c1",
+        "text": "喷回去，不能怂",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "t36c2",
+        "text": "屏蔽队友，默默打完",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "t036c3",
+        "text": "刷会儿短视频转移注意力",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "academicStanding",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "t036c4",
+        "text": "去跑步消消气",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tianjin-037",
+    "category": "tianjin-life",
+    "text": "煎饼果子摊主今天心情好，多给了你一点薄脆，你觉得赚大了。",
+    "animation": "eating",
+    "choices": [
+      {
+        "id": "t37c1",
+        "text": "开心一整天",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "t37c2",
+        "text": "下次多带个朋友来光顾",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "t037c3",
+        "text": "发个朋友圈吐槽一下",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "t037c4",
+        "text": "打电话给家人诉苦",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "wealth",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tianjin-038",
+    "category": "tianjin-life",
+    "text": "室友养了一只猫，但是不铲屎，整个屋子都是猫砂的味道。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "t38c1",
+        "text": "帮他铲屎，受不了了",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "t38c2",
+        "text": "逼着室友去铲",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "t038c3",
+        "text": "无所谓，随缘吧",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "t038c4",
+        "text": "在心里默默记下",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tianjin-039",
+    "category": "tianjin-life",
+    "text": "去劝业场买衣服，被导购员夸得天花乱坠，试穿了一件很贵的衣服。",
+    "animation": "talking",
+    "choices": [
+      {
+        "id": "t39c1",
+        "text": "保持理智，不买",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "t39c2",
+        "text": "脑子一热买下来",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -20
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "t039c3",
+        "text": "找个地方静静",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "t039c4",
+        "text": "去网吧打游戏发泄",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tianjin-040",
+    "category": "tianjin-life",
+    "text": "在路边看到有人在下象棋，围了一圈人，你也凑过去看了看。",
+    "animation": "talking",
+    "choices": [
+      {
+        "id": "t40c1",
+        "text": "指点江山，多嘴两句",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "t40c2",
+        "text": "默默观棋不语",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "t040c3",
+        "text": "刷会儿短视频转移注意力",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "academicStanding",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "t040c4",
+        "text": "去跑步消消气",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tianjin-041",
+    "category": "tianjin-life",
+    "text": "室友半夜煮螺蛳粉，那味道简直生化武器，你被熏醒了。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "t41c1",
+        "text": "起来蹭一口",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "t41c2",
+        "text": "严厉禁止在屋里煮",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "t041c3",
+        "text": "发个朋友圈吐槽一下",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "t041c4",
+        "text": "打电话给家人诉苦",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "wealth",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tianjin-042",
+    "category": "tianjin-life",
+    "text": "下大雨了，你没带伞，被困在教学楼门口，看着雨发愁。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "t42c1",
+        "text": "冒雨冲回去",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "t42c2",
+        "text": "等雨停，顺便复习",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "t042c3",
+        "text": "无所谓，随缘吧",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "t042c4",
+        "text": "在心里默默记下",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tianjin-043",
+    "category": "tianjin-life",
+    "text": "在茶馆听相声，被台上的包袱逗得哈哈大笑，烦恼都忘光了。",
+    "animation": "talking",
+    "choices": [
+      {
+        "id": "t43c1",
+        "text": "常来听听",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 15
+          },
+          {
+            "stat": "wealth",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "t43c2",
+        "text": "偶尔来一次就行",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "t043c3",
+        "text": "找个地方静静",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "t043c4",
+        "text": "去网吧打游戏发泄",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tianjin-044",
+    "category": "tianjin-life",
+    "text": "合租房的网速慢得像蜗牛，打游戏卡得你想砸键盘。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "t44c1",
+        "text": "自己拉一条宽带",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -15
+          },
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "t44c2",
+        "text": "蹭隔壁的网",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "t044c3",
+        "text": "刷会儿短视频转移注意力",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "academicStanding",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "t044c4",
+        "text": "去跑步消消气",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tianjin-045",
+    "category": "tianjin-life",
+    "text": "在早点摊看到有卖豆腐脑的，你想起老家的咸豆腐脑，决定尝尝天津风味。",
+    "animation": "eating",
+    "choices": [
+      {
+        "id": "t45c1",
+        "text": "就要咸的！",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "t45c2",
+        "text": "尝试加点辣子",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "t045c3",
+        "text": "发个朋友圈吐槽一下",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "t045c4",
+        "text": "打电话给家人诉苦",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "wealth",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tianjin-046",
+    "category": "tianjin-life",
+    "text": "室友突然说要退租，留下你一个人承担房租，或者赶紧找新室友。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "t46c1",
+        "text": "疯狂发帖找室友",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "t46c2",
+        "text": "自己先顶一个月房租",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -20
+          }
+        ]
+      },
+      {
+        "id": "t046c3",
+        "text": "无所谓，随缘吧",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "t046c4",
+        "text": "在心里默默记下",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tianjin-047",
+    "category": "tianjin-life",
+    "text": "在超市买打折鸡蛋，结果排队的时候被大爷大妈插队挤出来了。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "t47c1",
+        "text": "不买了，生气",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "t47c2",
+        "text": "挤回去！",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "t047c3",
+        "text": "找个地方静静",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "t047c4",
+        "text": "去网吧打游戏发泄",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tianjin-048",
+    "category": "tianjin-life",
+    "text": "去民园体育场跑步，看到很多网红在拍照打卡，挡住了跑道。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "t48c1",
+        "text": "绕开他们跑",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "t48c2",
+        "text": "请他们让一让",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "t048c3",
+        "text": "刷会儿短视频转移注意力",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "academicStanding",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "t048c4",
+        "text": "去跑步消消气",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tianjin-049",
+    "category": "tianjin-life",
+    "text": "晚上睡觉听到屋顶有老鼠跑过的声音，吓得你整夜不敢睡。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "t49c1",
+        "text": "第二天买粘鼠板",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "t49c2",
+        "text": "找房东解决",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "t049c3",
+        "text": "发个朋友圈吐槽一下",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "t049c4",
+        "text": "打电话给家人诉苦",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "wealth",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tianjin-050",
+    "category": "tianjin-life",
+    "text": "在路边看到一个卖旧书的摊位，里面好像有你一直在找的绝版书。",
+    "animation": "talking",
+    "choices": [
+      {
+        "id": "t50c1",
+        "text": "淘书！",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -5
+          },
+          {
+            "stat": "academicStanding",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "t50c2",
+        "text": "没时间，路过",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "t050c3",
+        "text": "无所谓，随缘吧",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "t050c4",
+        "text": "在心里默默记下",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tianjin-051",
+    "category": "tianjin-life",
+    "text": "合租的卫生间下水道堵了，污水横流，恶心坏了。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "t51c1",
+        "text": "花钱请疏通师傅",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "t51c2",
+        "text": "自己忍着恶心通",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "t051c3",
+        "text": "找个地方静静",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "t051c4",
+        "text": "去网吧打游戏发泄",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tianjin-052",
+    "category": "tianjin-life",
+    "text": "想去瓷房子参观，但是门票有点贵，你在门口徘徊了很久。",
+    "animation": "talking",
+    "choices": [
+      {
+        "id": "t52c1",
+        "text": "买票进去看看",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "t52c2",
+        "text": "在外面拍张照",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "t052c3",
+        "text": "刷会儿短视频转移注意力",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "academicStanding",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "t052c4",
+        "text": "去跑步消消气",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tianjin-053",
+    "category": "tianjin-life",
+    "text": "室友的女朋友来了，两人在客厅秀恩爱，你感觉自己像个巨大的电灯泡。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "t53c1",
+        "text": "出去避一避",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "t53c2",
+        "text": "戴上耳机无视",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "t053c3",
+        "text": "发个朋友圈吐槽一下",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "t053c4",
+        "text": "打电话给家人诉苦",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "wealth",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tianjin-054",
+    "category": "tianjin-life",
+    "text": "在公交车上睡着了，坐过站了，醒来发现到了一个陌生的地方。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "t54c1",
+        "text": "赶紧打车回去",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "t54c2",
+        "text": "坐反方向公交慢慢回",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "t054c3",
+        "text": "无所谓，随缘吧",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "t054c4",
+        "text": "在心里默默记下",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tianjin-055",
+    "category": "tianjin-life",
+    "text": "终于发生活费了，你决定好好犒劳一下自己，去吃顿好的。",
+    "animation": "eating",
+    "choices": [
+      {
+        "id": "t55c1",
+        "text": "去吃海鲜自助",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -20
+          },
+          {
+            "stat": "sanity",
+            "change": 15
+          }
+        ]
+      },
+      {
+        "id": "t55c2",
+        "text": "买点好吃的自己做",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "t055c3",
+        "text": "找个地方静静",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "t055c4",
+        "text": "去网吧打游戏发泄",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      }
+    ]
+  }
+]

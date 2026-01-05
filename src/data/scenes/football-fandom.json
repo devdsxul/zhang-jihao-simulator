@@ -1,0 +1,3454 @@
+[
+  {
+    "id": "football-001",
+    "category": "football-fandom",
+    "text": "巴萨今晚欧冠比赛，凌晨3点开球。明天早上还有考试，你该怎么办？",
+    "animation": "football",
+    "choices": [
+      {
+        "id": "f1c1",
+        "text": "熬夜看球，考试靠运气",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          },
+          {
+            "stat": "academicStanding",
+            "change": -15
+          }
+        ]
+      },
+      {
+        "id": "f1c2",
+        "text": "忍痛不看，好好复习",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "f1c3",
+        "text": "看上半场就睡，设闹钟",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "academicStanding",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f1c4",
+        "text": "明天看录播，先睡觉",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "football-002",
+    "category": "football-fandom",
+    "text": "室友是皇马球迷，国家德比巴萨输了，他疯狂嘲讽你。",
+    "animation": "talking",
+    "choices": [
+      {
+        "id": "f2c1",
+        "text": "冷静反驳，用数据说话",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f2c2",
+        "text": "怒而动手，给他一拳",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -20
+          },
+          {
+            "stat": "academicStanding",
+            "change": -15
+          }
+        ]
+      },
+      {
+        "id": "f2c3",
+        "text": "默默忍受，心里难受",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -15
+          }
+        ]
+      },
+      {
+        "id": "f2c4",
+        "text": "转移话题，去打台球发泄",
+        "effects": [
+          {
+            "stat": "billiardsSkill",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "football-003",
+    "category": "football-fandom",
+    "text": "梅西发了一条ins，你激动地截图发朋友圈，结果被同学嘲笑舔狗。",
+    "animation": "scrolling",
+    "choices": [
+      {
+        "id": "f3c1",
+        "text": "无视嘲笑，继续做忠实球迷",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f3c2",
+        "text": "删掉朋友圈，有点丢人",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f3c3",
+        "text": "跟他们争论梅西有多伟大",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "f3c4",
+        "text": "拉黑那些嘲笑你的人",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "football-004",
+    "category": "football-fandom",
+    "text": "校队招新，你想去试试，但你的身高不到170cm可能会被嫌弃。",
+    "animation": "football",
+    "choices": [
+      {
+        "id": "f4c1",
+        "text": "自信去试训，用技术说话",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          },
+          {
+            "stat": "academicStanding",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f4c2",
+        "text": "算了，身高是硬伤",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "f4c3",
+        "text": "去当队医或者记录员",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "academicStanding",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f4c4",
+        "text": "组建自己的野球队",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "wealth",
+            "change": -10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "football-005",
+    "category": "football-fandom",
+    "text": "踢野球时，对方一个大脚直接踢到你蛋上，疼得你在地上打滚。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "f5c1",
+        "text": "忍着疼继续踢",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -15
+          }
+        ]
+      },
+      {
+        "id": "f5c2",
+        "text": "下场休息，让室友替你",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f5c3",
+        "text": "去医院检查一下",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "f5c4",
+        "text": "找对方理论，要求赔偿",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          },
+          {
+            "stat": "wealth",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "football-006",
+    "category": "football-fandom",
+    "text": "世界杯决赛阿根廷夺冠，你激动得在宿舍狂吼，隔壁学霸还在复习期末考，过来敲门抗议。",
+    "animation": "celebrating",
+    "choices": [
+      {
+        "id": "f6c1",
+        "text": "不管他，继续庆祝梅西封神",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 20
+          },
+          {
+            "stat": "academicStanding",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "f6c2",
+        "text": "立马道歉，小声看颁奖典礼",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          },
+          {
+            "stat": "academicStanding",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f6c3",
+        "text": "邀请学霸一起看，试图感化",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "academicStanding",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f6c4",
+        "text": "戴上耳机，自己偷偷哭",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          },
+          {
+            "stat": "academicStanding",
+            "change": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "football-007",
+    "category": "football-fandom",
+    "text": "踢球时为了模仿梅西的沉肩虚晃，结果自己脚踝扭伤，肿得像个馒头。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "f7c1",
+        "text": "坚持不去医院，喷点云南白药",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          },
+          {
+            "stat": "wealth",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f7c2",
+        "text": "去校医院，花钱买个安心",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f7c3",
+        "text": "发朋友圈卖惨，求安慰",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f7c4",
+        "text": "从此决定转型踢养生球",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 0
+          },
+          {
+            "stat": "billiardsSkill",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "football-008",
+    "category": "football-fandom",
+    "text": "巴萨惨败拜仁，8比2的比分让你彻夜难眠，第二天早八课完全听不进去。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "f8c1",
+        "text": "翘课在宿舍emo",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f8c2",
+        "text": "强撑着去上课，虽然在发呆",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "f8c3",
+        "text": "在网上和拜仁球迷对线",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f8c4",
+        "text": "卸载足球APP，眼不见为净",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "football-009",
+    "category": "football-fandom",
+    "text": "梅西离开巴萨的新闻发布会，你看着直播眼泪止不住地流，室友问你怎么了。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "f9c1",
+        "text": "如实相告，痛哭流涕",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "academicStanding",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f9c2",
+        "text": "谎称失恋了，不想解释",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f9c3",
+        "text": "沉默不语，关掉手机",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          },
+          {
+            "stat": "academicStanding",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f9c4",
+        "text": "化悲愤为食欲，去吃顿好的",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "football-010",
+    "category": "football-fandom",
+    "text": "系队比赛关键点球，你自告奋勇去罚，结果踢了个冲天炮，球队被淘汰。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "f10c1",
+        "text": "当场崩溃，觉得自己是罪人",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -20
+          },
+          {
+            "stat": "academicStanding",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f10c2",
+        "text": "强装镇定，鼓励队友",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          },
+          {
+            "stat": "academicStanding",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f10c3",
+        "text": "赛后请全队吃饭赔罪",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -20
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "f10c4",
+        "text": "发誓苦练点球，每天加练",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "academicStanding",
+            "change": -10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "football-011",
+    "category": "football-fandom",
+    "text": "为了买一件梅西亲笔签名的球衣，你省吃俭用一个月，现在有人出高价想买。",
+    "animation": "football",
+    "choices": [
+      {
+        "id": "f11c1",
+        "text": "坚决不卖，信仰无价",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 15
+          },
+          {
+            "stat": "wealth",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f11c2",
+        "text": "卖了它，换台新电脑",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 30
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "f11c3",
+        "text": "犹豫不决，先挂着看看",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f11c4",
+        "text": "只展示不卖，纯炫耀",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "football-012",
+    "category": "football-fandom",
+    "text": "你在网上看到有人恶意剪辑梅西的视频，评论区全是黑子，你气得手抖。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "f12c1",
+        "text": "通宵写长文反驳",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          },
+          {
+            "stat": "academicStanding",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "f12c2",
+        "text": "举报视频和评论",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f12c3",
+        "text": "直接开骂，祖安模式",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -15
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f12c4",
+        "text": "关掉网页，不与傻瓜论短长",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          },
+          {
+            "stat": "academicStanding",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "football-013",
+    "category": "football-fandom",
+    "text": "学校组织五人制足球赛，你们班缺个守门员，大家想让你顶上。",
+    "animation": "football",
+    "choices": [
+      {
+        "id": "f13c1",
+        "text": "勉强答应，虽然想踢前锋",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          },
+          {
+            "stat": "academicStanding",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f13c2",
+        "text": "坚决不干，只踢梅西的位置",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "academicStanding",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f13c3",
+        "text": "推荐另一个同学去",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 0
+          },
+          {
+            "stat": "academicStanding",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f13c4",
+        "text": "假装受伤，逃避比赛",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "football-014",
+    "category": "football-fandom",
+    "text": "你熬夜看完欧冠半决赛，第二天早上的实验课操作失误，打碎了仪器。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "f14c1",
+        "text": "诚恳道歉，赔偿损失",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -15
+          },
+          {
+            "stat": "academicStanding",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f14c2",
+        "text": "试图甩锅给设备老化",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -10
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f14c3",
+        "text": "装傻充愣，不说话",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -15
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f14c4",
+        "text": "心里暗骂该死的加时赛",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "football-015",
+    "category": "football-fandom",
+    "text": "在食堂吃饭时，电视正在重播巴萨的经典比赛，你端着盘子看入迷了。",
+    "animation": "football",
+    "choices": [
+      {
+        "id": "f15c1",
+        "text": "站着看完，饭都凉了",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          },
+          {
+            "stat": "wealth",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "f15c2",
+        "text": "坐下边吃边看，津津有味",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "academicStanding",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "f15c3",
+        "text": "跟旁边不认识的同学解说",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f15c4",
+        "text": "赶紧吃完回宿舍复习",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "football-016",
+    "category": "football-fandom",
+    "text": "你的女友（如果有的话）抱怨你爱梅西胜过爱她，要你在足球和她之间选一个。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "f16c1",
+        "text": "毫不犹豫选梅西",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          },
+          {
+            "stat": "wealth",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f16c2",
+        "text": "哄她说最爱她，心里想梅西",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f16c3",
+        "text": "试图向她安利梅西",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 0
+          },
+          {
+            "stat": "academicStanding",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f16c4",
+        "text": "承诺以后少看球",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          },
+          {
+            "stat": "academicStanding",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "football-017",
+    "category": "football-fandom",
+    "text": "踢球时被铲倒，膝盖擦破一大块皮，血流不止，队友让你去医务室。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "f17c1",
+        "text": "简单冲洗，继续战斗",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "wealth",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f17c2",
+        "text": "乖乖去包扎，不再上场",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 0
+          },
+          {
+            "stat": "wealth",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f17c3",
+        "text": "大喊犯规，要求对方吃牌",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "f17c4",
+        "text": "趁机下场休息，正好累了",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "academicStanding",
+            "change": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "football-018",
+    "category": "football-fandom",
+    "text": "期末考试周，正好赶上美洲杯决赛，你想看直播但怕挂科。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "f18c1",
+        "text": "在图书馆偷偷看文字直播",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f18c2",
+        "text": "完全不看，考完再说",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 15
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "f18c3",
+        "text": "看直播，挂科大不了重修",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -20
+          },
+          {
+            "stat": "sanity",
+            "change": 15
+          }
+        ]
+      },
+      {
+        "id": "f18c4",
+        "text": "只看最后十分钟",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 0
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "football-019",
+    "category": "football-fandom",
+    "text": "你在球场上模仿内马尔彩虹过人，结果球没过人也没过，还摔了个狗吃屎。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "f19c1",
+        "text": "尴尬大笑，自我解嘲",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f19c2",
+        "text": "爬起来装作无事发生",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          },
+          {
+            "stat": "academicStanding",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "f19c3",
+        "text": "抱怨场地太滑",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f19c4",
+        "text": "从此不再尝试花哨动作",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 0
+          },
+          {
+            "stat": "billiardsSkill",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "football-020",
+    "category": "football-fandom",
+    "text": "你发现室友偷穿你珍藏的梅西球衣去打篮球，还弄脏了。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "f20c1",
+        "text": "大发雷霆，要求他赔",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          },
+          {
+            "stat": "wealth",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "f20c2",
+        "text": "心疼地洗球衣，生闷气",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -15
+          },
+          {
+            "stat": "wealth",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f20c3",
+        "text": "把他的篮球鞋扔出去",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "f20c4",
+        "text": "严肃警告，下不为例",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 0
+          },
+          {
+            "stat": "academicStanding",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "football-021",
+    "category": "football-fandom",
+    "text": "世界杯期间，你想去酒吧看球感受气氛，但那里的消费对学生来说有点高。",
+    "animation": "celebrating",
+    "choices": [
+      {
+        "id": "f21c1",
+        "text": "咬牙去一次，体验生活",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -20
+          },
+          {
+            "stat": "sanity",
+            "change": 15
+          }
+        ]
+      },
+      {
+        "id": "f21c2",
+        "text": "在宿舍看，买点啤酒",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f21c3",
+        "text": "去学校食堂看大屏幕",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 0
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f21c4",
+        "text": "蹭土豪同学的局",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "football-022",
+    "category": "football-fandom",
+    "text": "你在网上花重金买了一双顶级球鞋，结果收到货发现是高仿。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "f22c1",
+        "text": "找卖家理论，申请退款",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f22c2",
+        "text": "自认倒霉，当训练鞋穿",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -15
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "f22c3",
+        "text": "发帖曝光黑店",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f22c4",
+        "text": "转手卖给不知情的学弟",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": -15
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "football-023",
+    "category": "football-fandom",
+    "text": "踢球时对面动作很大，一直针对你，裁判视而不见。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "f23c1",
+        "text": "以暴制暴，脏回去",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f23c2",
+        "text": "跟裁判抗议，据理力争",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          },
+          {
+            "stat": "academicStanding",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "f23c3",
+        "text": "用技术过掉他，羞辱他",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 15
+          },
+          {
+            "stat": "academicStanding",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f23c4",
+        "text": "为了安全，提前下场",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "wealth",
+            "change": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "football-024",
+    "category": "football-fandom",
+    "text": "你熬夜看球导致第二天上课睡着，被老师点名回答问题。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "f24c1",
+        "text": "迷迷糊糊胡说八道",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f24c2",
+        "text": "站起来道歉，说身体不适",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "f24c3",
+        "text": "求助同桌，小声提示",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 0
+          },
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f24c4",
+        "text": "直接说昨晚看球了",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -15
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "football-025",
+    "category": "football-fandom",
+    "text": "巴萨夺得西甲冠军，你想买件纪念T恤，但是生活费捉襟见肘。",
+    "animation": "celebrating",
+    "choices": [
+      {
+        "id": "f25c1",
+        "text": "借钱买，下个月吃土",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -15
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "f25c2",
+        "text": "忍住不买，看看图片就好",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 0
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f25c3",
+        "text": "买件盗版的凑合",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "f25c4",
+        "text": "去做兼职赚钱买",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 5
+          },
+          {
+            "stat": "academicStanding",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "football-026",
+    "category": "football-fandom",
+    "text": "你在图书馆复习，旁边的人在用手机看球赛外放，声音很吵。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "f26c1",
+        "text": "过去提醒他戴耳机",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "academicStanding",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "f26c2",
+        "text": "忍了，自己戴耳塞",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          },
+          {
+            "stat": "academicStanding",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "f26c3",
+        "text": "跟他一起看，聊球",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "academicStanding",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "f26c4",
+        "text": "向管理员举报",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "football-027",
+    "category": "football-fandom",
+    "text": "你的电脑壁纸是梅西，被同学看到说你这么大了还追星。",
+    "animation": "scrolling",
+    "choices": [
+      {
+        "id": "f27c1",
+        "text": "反驳这是信仰，你不懂",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f27c2",
+        "text": "尴尬地换成风景画",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f27c3",
+        "text": "无视他，继续用",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "f27c4",
+        "text": "嘲笑他的壁纸更土",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "football-028",
+    "category": "football-fandom",
+    "text": "踢球时大腿肌肉拉伤，医生建议静养一个月，但下周有重要比赛。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "f28c1",
+        "text": "带伤上阵，打封闭",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -20
+          }
+        ]
+      },
+      {
+        "id": "f28c2",
+        "text": "听医生的话，放弃比赛",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "f28c3",
+        "text": "只踢半场，小心翼翼",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 0
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "f28c4",
+        "text": "在场边做战术指导",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "academicStanding",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "football-029",
+    "category": "football-fandom",
+    "text": "你在网上加入了巴萨球迷群，群里每天几千条消息，影响你学习。",
+    "animation": "scrolling",
+    "choices": [
+      {
+        "id": "f29c1",
+        "text": "屏蔽群消息，偶尔看",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "f29c2",
+        "text": "退群保平安",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f29c3",
+        "text": "忍不住一直刷，参与讨论",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -15
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "f29c4",
+        "text": "设置免打扰，晚上再看",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 0
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "football-030",
+    "category": "football-fandom",
+    "text": "梅西获得金球奖，你发朋友圈庆祝，有人评论说全是水分。",
+    "animation": "scrolling",
+    "choices": [
+      {
+        "id": "f30c1",
+        "text": "在评论区大战三百回合",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f30c2",
+        "text": "直接拉黑删除",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "f30c3",
+        "text": "阴阳怪气回复他",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 0
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f30c4",
+        "text": "不理会，懂的都懂",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "football-031",
+    "category": "football-fandom",
+    "text": "因为看球，你错过了奖学金申请的截止日期。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "f31c1",
+        "text": "懊悔不已，发誓不再熬夜",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -20
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "f31c2",
+        "text": "去找辅导员求情补交",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -5
+          },
+          {
+            "stat": "wealth",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "f31c3",
+        "text": "算了，反正也不一定能拿",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "wealth",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "f31c4",
+        "text": "怪网站系统不好用",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 0
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "football-032",
+    "category": "football-fandom",
+    "text": "你穿着巴萨球衣走在路上，遇到一群皇马球迷挑衅地看着你。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "f32c1",
+        "text": "低头快速走过",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f32c2",
+        "text": "昂首挺胸，瞪回去",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "f32c3",
+        "text": "主动打招呼，化解尴尬",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "academicStanding",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f32c4",
+        "text": "假装打电话，无视他们",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "football-033",
+    "category": "football-fandom",
+    "text": "踢球时眼镜被球砸碎了，镜片差点划伤眼睛。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "f33c1",
+        "text": "庆幸没瞎，赶紧去配镜",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -15
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f33c2",
+        "text": "决定以后戴隐形眼镜",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "billiardsSkill",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f33c3",
+        "text": "找踢球的人赔偿",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f33c4",
+        "text": "做了近视手术，一劳永逸",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -30
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "football-034",
+    "category": "football-fandom",
+    "text": "你试图模仿梅西的发型，结果理发师剪成了锅盖头。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "f34c1",
+        "text": "戴帽子出门，直到头发长长",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f34c2",
+        "text": "剃光头，从头再来",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "academicStanding",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f34c3",
+        "text": "自信展示，只要我不尴尬",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          },
+          {
+            "stat": "academicStanding",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f34c4",
+        "text": "投诉理发师，要求退钱",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "football-035",
+    "category": "football-fandom",
+    "text": "欧冠决赛，你支持的球队输了，你心情低落，室友却在庆祝。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "f35c1",
+        "text": "默默戴上耳机，不听",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f35c2",
+        "text": "借口出去散步，躲开",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 0
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f35c3",
+        "text": "忍不住发火，大吵一架",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -15
+          },
+          {
+            "stat": "academicStanding",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f35c4",
+        "text": "大度祝贺，虽然心在滴血",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          },
+          {
+            "stat": "academicStanding",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "football-036",
+    "category": "football-fandom",
+    "text": "你在咸鱼上看到一件绝版球衣，价格很低，但卖家信誉一般。",
+    "animation": "scrolling",
+    "choices": [
+      {
+        "id": "f36c1",
+        "text": "贪便宜买下，赌一把",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "f36c2",
+        "text": "谨慎询问，要更多细节图",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "f36c3",
+        "text": "不买，便宜没好货",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 0
+          },
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f36c4",
+        "text": "举报卖家疑似售假",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "football-037",
+    "category": "football-fandom",
+    "text": "踢球时正好遇到心仪的女生在场边经过，你想表现一下。",
+    "animation": "football",
+    "choices": [
+      {
+        "id": "f37c1",
+        "text": "尝试高难度射门，踢飞了",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          },
+          {
+            "stat": "academicStanding",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f37c2",
+        "text": "稳扎稳打，传出好球",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "academicStanding",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f37c3",
+        "text": "故意摔倒，博取同情",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f37c4",
+        "text": "装作没看见，专心踢球",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 0
+          },
+          {
+            "stat": "billiardsSkill",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "football-038",
+    "category": "football-fandom",
+    "text": "为了看世界杯，你想买个投影仪在宿舍看，室友意见不一。",
+    "animation": "talking",
+    "choices": [
+      {
+        "id": "f38c1",
+        "text": "自己出钱买，邀请他们看",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -20
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "f38c2",
+        "text": "说服大家AA买",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f38c3",
+        "text": "不买了，用电脑凑合",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 0
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f38c4",
+        "text": "去租一个用一个月",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "football-039",
+    "category": "football-fandom",
+    "text": "你在球场上遇到一个技术很好的大叔，他邀请你加入他们的业余俱乐部。",
+    "animation": "football",
+    "choices": [
+      {
+        "id": "f39c1",
+        "text": "欣然加入，拓展人脉",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          },
+          {
+            "stat": "academicStanding",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f39c2",
+        "text": "婉拒，怕耽误学习",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f39c3",
+        "text": "去看看，但保持警惕",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "f39c4",
+        "text": "只要不收费就去",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 0
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "football-040",
+    "category": "football-fandom",
+    "text": "梅西过生日，你想在社交媒体上写一段祝福，但不知道怎么写。",
+    "animation": "scrolling",
+    "choices": [
+      {
+        "id": "f40c1",
+        "text": "复制粘贴别人的文案",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "f40c2",
+        "text": "自己用心写，哪怕文笔差",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          },
+          {
+            "stat": "academicStanding",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f40c3",
+        "text": "发张图片，配个蛋糕表情",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f40c4",
+        "text": "不发了，心里默默祝福",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "football-041",
+    "category": "football-fandom",
+    "text": "因为踢球太晚回宿舍，被宿管阿姨锁在门外。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "f41c1",
+        "text": "敲门求阿姨开门",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          },
+          {
+            "stat": "academicStanding",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f41c2",
+        "text": "翻墙进去（危险动作）",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f41c3",
+        "text": "去网吧包夜",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f41c4",
+        "text": "在楼道里坐一晚",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "football-042",
+    "category": "football-fandom",
+    "text": "你发现你的足球不仅没气了，还裂了个口子，这是你最喜欢的一个球。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "f42c1",
+        "text": "买个新的，旧的不去新的不来",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f42c2",
+        "text": "试图修补，用胶带缠",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -2
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f42c3",
+        "text": "把球留着做纪念",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f42c4",
+        "text": "以后蹭别人的球踢",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 0
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "football-043",
+    "category": "football-fandom",
+    "text": "学校举办足球知识竞赛，一等奖是正版球衣。",
+    "animation": "football",
+    "choices": [
+      {
+        "id": "f43c1",
+        "text": "疯狂刷题，志在必得",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f43c2",
+        "text": "裸考，重在参与",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "academicStanding",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "f43c3",
+        "text": "找高手组队抱大腿",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "academicStanding",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f43c4",
+        "text": "不参加，觉得是内定",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "football-044",
+    "category": "football-fandom",
+    "text": "你在看球时太激动，打翻了桌上的水杯，把电脑键盘浇了。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "f44c1",
+        "text": "赶紧关机，倒置晾干",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f44c2",
+        "text": "惊慌失措，乱按一通",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          },
+          {
+            "stat": "wealth",
+            "change": -20
+          }
+        ]
+      },
+      {
+        "id": "f44c3",
+        "text": "用吹风机热风吹（错误操作）",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -15
+          },
+          {
+            "stat": "wealth",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "f44c4",
+        "text": "直接送修，花钱消灾",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -15
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "football-045",
+    "category": "football-fandom",
+    "text": "你的足球偶像涉嫌逃税被起诉，网上舆论哗然。",
+    "animation": "scrolling",
+    "choices": [
+      {
+        "id": "f45c1",
+        "text": "坚信他是清白的，是阴谋",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f45c2",
+        "text": "承认偶像也有缺点，理性看待",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 0
+          },
+          {
+            "stat": "academicStanding",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f45c3",
+        "text": "脱粉，无法接受污点",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          },
+          {
+            "stat": "academicStanding",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "f45c4",
+        "text": "不关注场外新闻，只看球",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "football-046",
+    "category": "football-fandom",
+    "text": "为了看球赛，你推掉了小组作业的讨论会，组员很不满。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "f46c1",
+        "text": "撒谎说家里有急事",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          },
+          {
+            "stat": "academicStanding",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "f46c2",
+        "text": "坦白是为了看球，请求原谅",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f46c3",
+        "text": "熬夜把自己的部分做完发群里",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "f46c4",
+        "text": "请大家喝奶茶赔罪",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "academicStanding",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "football-047",
+    "category": "football-fandom",
+    "text": "你在球场上遇到一个只会大脚解围的队友，球全被踢飞了。",
+    "animation": "football",
+    "choices": [
+      {
+        "id": "f47c1",
+        "text": "耐心地教他短传",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "academicStanding",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f47c2",
+        "text": "对他大吼大叫",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          },
+          {
+            "stat": "academicStanding",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f47c3",
+        "text": "不传球给他了",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 0
+          },
+          {
+            "stat": "academicStanding",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "f47c4",
+        "text": "换个队伍踢",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "academicStanding",
+            "change": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "football-048",
+    "category": "football-fandom",
+    "text": "你买彩票赌球，结果爆冷输了五百块，这可是半个月的生活费。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "f48c1",
+        "text": "发誓再也不赌了",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 0
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f48c2",
+        "text": "想办法翻本（危险想法）",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -20
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "f48c3",
+        "text": "找家里要钱，撒谎买资料",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 10
+          },
+          {
+            "stat": "academicStanding",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "f48c4",
+        "text": "吃泡面度日，惩罚自己",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "football-049",
+    "category": "football-fandom",
+    "text": "你在网上看到梅西中国行的消息，票价被炒到了天价。",
+    "animation": "scrolling",
+    "choices": [
+      {
+        "id": "f49c1",
+        "text": "无论如何也要去，借贷买票",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -50
+          },
+          {
+            "stat": "sanity",
+            "change": 20
+          }
+        ]
+      },
+      {
+        "id": "f49c2",
+        "text": "理智放弃，看直播就好",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 0
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f49c3",
+        "text": "去场馆外面碰运气，蹲守",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f49c4",
+        "text": "参加抽奖活动，万一中了呢",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "football-050",
+    "category": "football-fandom",
+    "text": "踢球时天气突变下起暴雨，大家都在犹豫要不要继续。",
+    "animation": "football",
+    "choices": [
+      {
+        "id": "f50c1",
+        "text": "雨战更爽，继续踢",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "f50c2",
+        "text": "赶紧撤，怕感冒",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "f50c3",
+        "text": "去旁边的室内馆（要钱）",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f50c4",
+        "text": "在雨中大喊大叫发泄",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 15
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "football-051",
+    "category": "football-fandom",
+    "text": "你的室友把你的球衣洗缩水了，变成童装了。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "f51c1",
+        "text": "哭笑不得，挂起来当装饰",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "wealth",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f51c2",
+        "text": "让他赔一件新的",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f51c3",
+        "text": "送给亲戚家小孩",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "academicStanding",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f51c4",
+        "text": "试图拉伸复原（失败）",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          },
+          {
+            "stat": "wealth",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "football-052",
+    "category": "football-fandom",
+    "text": "你在看球时大叫一声“好球”，把正在睡觉的舍友吓醒了。",
+    "animation": "celebrating",
+    "choices": [
+      {
+        "id": "f52c1",
+        "text": "连连道歉，请吃早饭",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "f52c2",
+        "text": "装睡，假装是梦话",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          },
+          {
+            "stat": "academicStanding",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f52c3",
+        "text": "理直气壮，谁让他睡那么早",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          },
+          {
+            "stat": "academicStanding",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "f52c4",
+        "text": "拉着他一起看回放",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "academicStanding",
+            "change": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "football-053",
+    "category": "football-fandom",
+    "text": "你为了看球买了视频会员，结果发现想看的场次还需要额外付费。",
+    "animation": "scrolling",
+    "choices": [
+      {
+        "id": "f53c1",
+        "text": "痛骂平台吃相难看，找盗版",
+        "effects": [
+          {
+            "stat": "digitalSafety",
+            "change": -10
+          },
+          {
+            "stat": "wealth",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f53c2",
+        "text": "含泪付费，为了信仰",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f53c3",
+        "text": "不看了，看文字直播",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 0
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f53c4",
+        "text": "借别人的账号看",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 0
+          },
+          {
+            "stat": "digitalSafety",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "football-054",
+    "category": "football-fandom",
+    "text": "踢球时你被对方故意犯规激怒，想报复回去。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "f54c1",
+        "text": "忍住怒火，用进球回击",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          },
+          {
+            "stat": "academicStanding",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f54c2",
+        "text": "背后放铲（红牌动作）",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -20
+          },
+          {
+            "stat": "academicStanding",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "f54c3",
+        "text": "找裁判申诉",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 0
+          },
+          {
+            "stat": "academicStanding",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "f54c4",
+        "text": "下场冷静一下",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "football-055",
+    "category": "football-fandom",
+    "text": "梅西在世界杯决赛打进关键进球，你激动得从椅子上摔下来，摔坏了手机屏幕。",
+    "animation": "celebrating",
+    "choices": [
+      {
+        "id": "f55c1",
+        "text": "不管手机，继续庆祝",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -20
+          },
+          {
+            "stat": "sanity",
+            "change": 20
+          }
+        ]
+      },
+      {
+        "id": "f55c2",
+        "text": "心疼手机，瞬间没心情了",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -20
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "f55c3",
+        "text": "发朋友圈调侃自己",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "digitalSafety",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "f55c4",
+        "text": "凑合用碎屏手机",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 0
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,3390 @@
+[
+  {
+    "id": "health-001",
+    "category": "health-physique",
+    "text": "连续熬夜一周，感觉身体被掏空，眼睛布满血丝。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "he1c1",
+        "text": "今晚早点睡，调整作息",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 15
+          },
+          {
+            "stat": "academicStanding",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "he1c2",
+        "text": "喝红牛继续肝",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -15
+          },
+          {
+            "stat": "wealth",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "he1c3",
+        "text": "去医院检查一下",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          },
+          {
+            "stat": "wealth",
+            "change": -15
+          }
+        ]
+      },
+      {
+        "id": "he1c4",
+        "text": "买点保健品补一补",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "wealth",
+            "change": -10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "health-002",
+    "category": "health-physique",
+    "text": "踢球的时候扭伤了脚踝，肿得很厉害，但明天还有比赛。",
+    "animation": "running",
+    "choices": [
+      {
+        "id": "he2c1",
+        "text": "忍痛上场，队伍需要我",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -20
+          }
+        ]
+      },
+      {
+        "id": "he2c2",
+        "text": "老老实实休息，不冒险",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          },
+          {
+            "stat": "billiardsSkill",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "he2c3",
+        "text": "去医院拍片子",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -15
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "he2c4",
+        "text": "冰敷一晚看看情况",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "health-003",
+    "category": "health-physique",
+    "text": "最近心情很差，什么都不想做，可能是抑郁了。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "he3c1",
+        "text": "去学校心理咨询中心",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 15
+          },
+          {
+            "stat": "academicStanding",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "he3c2",
+        "text": "自己扛着，过段时间就好",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -15
+          }
+        ]
+      },
+      {
+        "id": "he3c3",
+        "text": "跟好朋友聊聊",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "he3c4",
+        "text": "打游戏转移注意力",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          },
+          {
+            "stat": "academicStanding",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "health-004",
+    "category": "health-physique",
+    "text": "体检报告出来了，好几项指标不正常，医生建议你改善生活习惯。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "he4c1",
+        "text": "认真对待，开始健康生活",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 15
+          }
+        ]
+      },
+      {
+        "id": "he4c2",
+        "text": "不当回事，年轻人没问题",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "he4c3",
+        "text": "开始锻炼身体",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          },
+          {
+            "stat": "academicStanding",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "he4c4",
+        "text": "复查一下看是不是误诊",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "health-005",
+    "category": "health-physique",
+    "text": "室友叫你一起去跑步，但你躺在床上实在不想动。",
+    "animation": "running",
+    "choices": [
+      {
+        "id": "he5c1",
+        "text": "强迫自己起来，锻炼一下",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "he5c2",
+        "text": "拒绝，继续躺着",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "he5c3",
+        "text": "约改天再去",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "he5c4",
+        "text": "建议去打台球代替跑步",
+        "effects": [
+          {
+            "stat": "billiardsSkill",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "health-006",
+    "category": "health-physique",
+    "text": "在一场激烈的球赛中，对手一次凶狠的铲球直接铲到了你的小腿。剧痛袭来，你抱着腿在草地上打滚，队友们都围了上来，你感觉这次伤得不轻。",
+    "animation": "running",
+    "choices": [
+      {
+        "id": "he6c1",
+        "text": "强忍疼痛站起来继续踢",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -20
+          },
+          {
+            "stat": "sanity",
+            "change": -20
+          }
+        ]
+      },
+      {
+        "id": "he6c2",
+        "text": "立刻下场冰敷处理",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "he6c3",
+        "text": "去校医院检查骨头",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "he6c4",
+        "text": "跟对手理论，发生冲突",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          },
+          {
+            "stat": "academicStanding",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "health-007",
+    "category": "health-physique",
+    "text": "又是凌晨三点，宿舍里只有键盘敲击声和你翻来覆去的叹气声。失眠已经持续了一周，只要一闭眼，脑子里就全是未完成的作业和还不上的账单。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "he7c1",
+        "text": "吃片褪黑素强制关机",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "he7c2",
+        "text": "起来打两把游戏麻痹自己",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "he7c3",
+        "text": "看枯燥的专业书催眠",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "he7c4",
+        "text": "在阳台抽烟到天亮",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -15
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "health-008",
+    "category": "health-physique",
+    "text": "长期不吃早饭加上作息不规律，你的胃病又犯了。胃里像有火在烧，疼得直不起腰，额头上全是冷汗，室友问你要不要帮忙。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "he8c1",
+        "text": "喝点热水硬扛过去",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "he8c2",
+        "text": "叫室友帮忙买胃药",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "he8c3",
+        "text": "去医院挂急诊",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -20
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "he8c4",
+        "text": "点个热粥外卖养养胃",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "health-009",
+    "category": "health-physique",
+    "text": "期末考试临近，巨大的压力让你感到窒息。你发现自己开始莫名其妙地心悸，手抖，甚至在图书馆坐着都会突然想哭。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "he9c1",
+        "text": "去操场跑步发泄压力",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "he9c2",
+        "text": "暴饮暴食来缓解焦虑",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -15
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "he9c3",
+        "text": "找心理老师聊聊",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 15
+          },
+          {
+            "stat": "academicStanding",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "he9c4",
+        "text": "逃避复习，睡大觉",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -15
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "health-010",
+    "category": "health-physique",
+    "text": "为了攒钱买新球杆，你连续吃了一个月的泡面。现在看到方便面就想吐，脸色蜡黄，走路都感觉轻飘飘的，身体在抗议了。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "he10c1",
+        "text": "去食堂吃顿好的补补",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -15
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "he10c2",
+        "text": "坚持到底，球杆最重要",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -15
+          },
+          {
+            "stat": "billiardsSkill",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "he10c3",
+        "text": "向家里要点生活费",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": 20
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "he10c4",
+        "text": "买点维生素片凑合吃",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "health-011",
+    "category": "health-physique",
+    "text": "踢球时一次争顶，你和对方后卫撞在一起，头重重地磕在地上。起身时感觉天旋地转，恶心想吐，可能是轻微脑震荡。",
+    "animation": "running",
+    "choices": [
+      {
+        "id": "he11c1",
+        "text": "不管了，继续比赛",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -25
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "he11c2",
+        "text": "立刻下场休息",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "he11c3",
+        "text": "去医院做CT检查",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -30
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "he11c4",
+        "text": "喝点葡萄糖缓缓",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "health-012",
+    "category": "health-physique",
+    "text": "连续几天的阴雨天让你浑身难受，旧伤隐隐作痛，心情也跟着跌入谷底。你躺在床上，感觉整个人都要发霉了。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "he12c1",
+        "text": "逼自己去健身房出汗",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "he12c2",
+        "text": "继续躺着刷手机",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "he12c3",
+        "text": "约朋友去打室内台球",
+        "effects": [
+          {
+            "stat": "billiardsSkill",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "he12c4",
+        "text": "看个喜剧电影调节心情",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "health-013",
+    "category": "health-physique",
+    "text": "因为沉迷代码，你已经在电脑前坐了十个小时。站起来的时候腰椎一阵刺痛，脖子僵硬得像块石头，眼睛也干涩得睁不开。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "he13c1",
+        "text": "做一套颈椎操放松",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "he13c2",
+        "text": "贴个膏药继续写代码",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          },
+          {
+            "stat": "academicStanding",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "he13c3",
+        "text": "去按摩店推拿一下",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -20
+          },
+          {
+            "stat": "sanity",
+            "change": 15
+          }
+        ]
+      },
+      {
+        "id": "he13c4",
+        "text": "关电脑睡觉",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "health-014",
+    "category": "health-physique",
+    "text": "最近总是感觉胸闷气短，时不时还会心慌。上网查了一下症状，越看越觉得自己得了绝症，焦虑得整晚睡不着。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "he14c1",
+        "text": "立刻去大医院全身体检",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -50
+          },
+          {
+            "stat": "sanity",
+            "change": 20
+          }
+        ]
+      },
+      {
+        "id": "he14c2",
+        "text": "不管百度，早睡早起",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "he14c3",
+        "text": "找学医的同学咨询",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "he14c4",
+        "text": "继续百度吓自己",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -20
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "health-015",
+    "category": "health-physique",
+    "text": "为了准备体测，你决定突击训练。结果用力过猛，第二天大腿肌肉酸痛得下不了楼梯，走路姿势像个丧尸。",
+    "animation": "running",
+    "choices": [
+      {
+        "id": "he15c1",
+        "text": "坚持继续跑，以毒攻毒",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "he15c2",
+        "text": "彻底休息几天",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "he15c3",
+        "text": "去做个足疗放松",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -15
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "he15c4",
+        "text": "涂点红花油揉揉",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "health-016",
+    "category": "health-physique",
+    "text": "感冒发烧39度，头重脚轻，喉咙像吞了刀片。室友都不在，你一个人蜷缩在被子里，感觉在这个城市特别孤单。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "he16c1",
+        "text": "给家里打电话求安慰",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "he16c2",
+        "text": "点个外卖送药上门",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "he16c3",
+        "text": "硬扛，多喝热水",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "he16c4",
+        "text": "叫个网约车去医院",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -30
+          },
+          {
+            "stat": "sanity",
+            "change": 15
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "health-017",
+    "category": "health-physique",
+    "text": "为了省钱，你买了路边摊的“特价盒饭”。吃完没多久就开始肚子剧痛，上吐下泻，整个人虚脱在厕所里。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "he17c1",
+        "text": "去校医院打吊瓶",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -20
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "he17c2",
+        "text": "吃点止泻药躺着",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "he17c3",
+        "text": "投诉摊贩维权",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          },
+          {
+            "stat": "wealth",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "he17c4",
+        "text": "发誓再也不乱吃东西",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "health-018",
+    "category": "health-physique",
+    "text": "长时间戴耳机听大音量摇滚乐，最近感觉耳朵里总是嗡嗡响，听别人说话也费劲，似乎出现了耳鸣症状。",
+    "animation": "celebrating",
+    "choices": [
+      {
+        "id": "he18c1",
+        "text": "摘掉耳机，静养几天",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "he18c2",
+        "text": "去看耳鼻喉科医生",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -15
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "he18c3",
+        "text": "换个降噪耳机继续听",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -20
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "he18c4",
+        "text": "不以为意，过几天就好",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "health-019",
+    "category": "health-physique",
+    "text": "最近总是做噩梦，梦见自己挂科、破产、被辅导员谈话。醒来后一身冷汗，心跳加速，白天精神恍惚。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "he19c1",
+        "text": "睡前喝杯热牛奶",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "he19c2",
+        "text": "白天加大运动量",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "he19c3",
+        "text": "看心理医生",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -30
+          },
+          {
+            "stat": "sanity",
+            "change": 20
+          }
+        ]
+      },
+      {
+        "id": "he19c4",
+        "text": "熬夜到极困再睡",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "health-020",
+    "category": "health-physique",
+    "text": "跟朋友去踢球，没做热身就大力抽射，结果大腿后侧肌肉“崩”的一声，像是断了一样剧痛，你直接瘫倒在地。",
+    "animation": "running",
+    "choices": [
+      {
+        "id": "he20c1",
+        "text": "立刻停止运动冰敷",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "he20c2",
+        "text": "强忍着走回宿舍",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "he20c3",
+        "text": "叫救护车",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -50
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "he20c4",
+        "text": "找校医喷点药",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "health-021",
+    "category": "health-physique",
+    "text": "因为牙疼拖了很久没看，今天半边脸都肿了起来，疼得根本无法集中精力做任何事，连饭都吃不下。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "he21c1",
+        "text": "立刻去口腔医院拔牙",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -40
+          },
+          {
+            "stat": "sanity",
+            "change": 15
+          }
+        ]
+      },
+      {
+        "id": "he21c2",
+        "text": "吃止痛片硬扛",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "he21c3",
+        "text": "用冰块敷脸消肿",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "he21c4",
+        "text": "喝中药调理",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -20
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "health-022",
+    "category": "health-physique",
+    "text": "最近沉迷网络小说，每天躺床上看到凌晨四点。视力急剧下降，看东西模糊重影，眼睛干涩刺痛。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "he22c1",
+        "text": "戒掉小说，早睡早起",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "he22c2",
+        "text": "配一副防蓝光眼镜",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -15
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "he22c3",
+        "text": "滴眼药水继续看",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "he22c4",
+        "text": "去医院查视力",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "health-023",
+    "category": "health-physique",
+    "text": "因为很久没有运动，爬个六楼宿舍都气喘吁吁，心跳快得要跳出嗓子眼，腿也软得发抖。你意识到身体素质太差了。",
+    "animation": "running",
+    "choices": [
+      {
+        "id": "he23c1",
+        "text": "制定跑步计划",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "he23c2",
+        "text": "以后多坐电梯",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "he23c3",
+        "text": "办张健身卡",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -30
+          },
+          {
+            "stat": "sanity",
+            "change": 15
+          }
+        ]
+      },
+      {
+        "id": "he23c4",
+        "text": "买个哑铃在宿舍练",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "health-024",
+    "category": "health-physique",
+    "text": "最近总是莫名其妙地发火，看谁都不顺眼，一点小事就想摔东西。室友都躲着你，你自己也觉得控制不住情绪。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "he24c1",
+        "text": "去KTV吼两嗓子发泄",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -15
+          },
+          {
+            "stat": "sanity",
+            "change": 15
+          }
+        ]
+      },
+      {
+        "id": "he24c2",
+        "text": "一个人去公园散心",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "he24c3",
+        "text": "找人打一架",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -20
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "he24c4",
+        "text": "看心理医生咨询",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -30
+          },
+          {
+            "stat": "sanity",
+            "change": 20
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "health-025",
+    "category": "health-physique",
+    "text": "踢球时被对方铲伤了膝盖，可能是半月板损伤。医生建议手术，但手术费和康复期让你犹豫不决。",
+    "animation": "running",
+    "choices": [
+      {
+        "id": "he25c1",
+        "text": "做手术，彻底治好",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -60
+          },
+          {
+            "stat": "sanity",
+            "change": 20
+          }
+        ]
+      },
+      {
+        "id": "he25c2",
+        "text": "保守治疗，养养看",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "he25c3",
+        "text": "以后告别足球",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -15
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "he25c4",
+        "text": "带伤坚持运动",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -30
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "health-026",
+    "category": "health-physique",
+    "text": "为了赶论文，你连续喝了五杯美式咖啡。现在心跳极快，手抖得拿不住笔，感觉心脏随时会骤停。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "he26c1",
+        "text": "大量喝水代谢咖啡因",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "he26c2",
+        "text": "立刻躺平休息",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "academicStanding",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "he26c3",
+        "text": "去医院吸氧",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -20
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "he26c4",
+        "text": "继续写，不能停",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -20
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "health-027",
+    "category": "health-physique",
+    "text": "最近皮肤状态极差，满脸爆痘，油光满面。不仅影响颜值，还又痛又痒，让你不敢照镜子，自信心受挫。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "he27c1",
+        "text": "去医院看皮肤科",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -20
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "he27c2",
+        "text": "买大牌护肤品",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -30
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "he27c3",
+        "text": "早睡早起戒糖戒辣",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "he27c4",
+        "text": "戴口罩遮住",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "health-028",
+    "category": "health-physique",
+    "text": "因为长期姿势不正确，你的腰椎间盘有点突出。坐久了腿就发麻，腰疼得像断了一样，医生警告你必须注意。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "he28c1",
+        "text": "买个人体工学椅",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -40
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "he28c2",
+        "text": "每天坚持做理疗",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -20
+          },
+          {
+            "stat": "sanity",
+            "change": 15
+          }
+        ]
+      },
+      {
+        "id": "he28c3",
+        "text": "站着写代码",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "he28c4",
+        "text": "不当回事继续坐",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -15
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "health-029",
+    "category": "health-physique",
+    "text": "最近总是感觉疲劳，睡多久都睡不醒，浑身没劲，记忆力也下降了。可能是慢性疲劳综合症的前兆。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "he29c1",
+        "text": "请假回家休养一周",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 15
+          }
+        ]
+      },
+      {
+        "id": "he29c2",
+        "text": "吃各种补品",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -20
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "he29c3",
+        "text": "坚持运动激活身体",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "he29c4",
+        "text": "喝功能饮料提神",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          },
+          {
+            "stat": "wealth",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "health-030",
+    "category": "health-physique",
+    "text": "踢球时踩到了坑里，脚踝咔嚓一声。虽然没有骨折，但韧带严重拉伤，脚肿得像个馒头，走路都困难。",
+    "animation": "running",
+    "choices": [
+      {
+        "id": "he30c1",
+        "text": "借个拐杖坚持上课",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "he30c2",
+        "text": "在宿舍躺平养伤",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "academicStanding",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "he30c3",
+        "text": "找中医针灸推拿",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -15
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "he30c4",
+        "text": "自己买药酒擦擦",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "health-031",
+    "category": "health-physique",
+    "text": "由于饮食不规律，你得了急性肠胃炎。半夜疼得满地打滚，脸色惨白，感觉肠子都要断了。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "he31c1",
+        "text": "叫救护车去急诊",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -40
+          },
+          {
+            "stat": "sanity",
+            "change": 15
+          }
+        ]
+      },
+      {
+        "id": "he31c2",
+        "text": "吃止痛药硬扛",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "he31c3",
+        "text": "喝热水捂肚子",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 0
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "he31c4",
+        "text": "打电话给父母哭诉",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "health-032",
+    "category": "health-physique",
+    "text": "最近头发掉得特别厉害，发际线肉眼可见地后移。洗澡时一抓一大把，你开始担心自己会秃顶。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "he32c1",
+        "text": "买防脱洗发水",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -15
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "he32c2",
+        "text": "吃黑芝麻核桃",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "he32c3",
+        "text": "早睡早起少熬夜",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "he32c4",
+        "text": "剃个光头算了",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          },
+          {
+            "stat": "wealth",
+            "change": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "health-033",
+    "category": "health-physique",
+    "text": "因为长时间盯着电脑屏幕，你的眼睛得了干眼症。眼睛里像有沙子磨，红肿流泪，根本看不了屏幕。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "he33c1",
+        "text": "去医院做眼部熏蒸",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -20
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "he33c2",
+        "text": "滴人工泪液缓解",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "he33c3",
+        "text": "减少用眼，听广播",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "he33c4",
+        "text": "戴墨镜继续用电脑",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "health-034",
+    "category": "health-physique",
+    "text": "最近总是感觉喉咙有异物感，吞咽困难。上网一查说是“梅核气”，可能是情绪压力太大导致的。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "he34c1",
+        "text": "去医院做喉镜检查",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -25
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "he34c2",
+        "text": "找心理医生疏导",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -30
+          },
+          {
+            "stat": "sanity",
+            "change": 15
+          }
+        ]
+      },
+      {
+        "id": "he34c3",
+        "text": "喝中药调理",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -15
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "he34c4",
+        "text": "去KTV吼出来",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "health-035",
+    "category": "health-physique",
+    "text": "踢球时被球闷到了胸口，当时就喘不上气。虽然缓过来了，但这两天胸口一直隐隐作痛，深呼吸都疼。",
+    "animation": "running",
+    "choices": [
+      {
+        "id": "he35c1",
+        "text": "去医院拍胸片",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -20
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "he35c2",
+        "text": "贴个膏药养养",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "he35c3",
+        "text": "不当回事继续运动",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -15
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "he35c4",
+        "text": "告诉辅导员请假",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "health-036",
+    "category": "health-physique",
+    "text": "最近总是拉肚子，吃什么都拉，整个人瘦了一圈，浑身无力。可能是肠易激综合征犯了。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "he36c1",
+        "text": "去消化科看专家",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -30
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "he36c2",
+        "text": "只吃白粥咸菜",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "he36c3",
+        "text": "吃益生菌调理",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "he36c4",
+        "text": "不管它，随便吃",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -20
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "health-037",
+    "category": "health-physique",
+    "text": "长时间低头玩手机，你的颈椎反弓了。脖子僵硬疼痛，还会引起头晕手麻，医生说如果不注意会很严重。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "he37c1",
+        "text": "买个颈椎牵引器",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -20
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "he37c2",
+        "text": "戒掉手机，抬头做人",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "he37c3",
+        "text": "去按摩店正骨",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -25
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "he37c4",
+        "text": "贴膏药继续玩",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "health-038",
+    "category": "health-physique",
+    "text": "最近压力大到开始磨牙，室友说你晚上磨牙声音像电锯一样，你自己早上起来腮帮子也酸痛。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "he38c1",
+        "text": "买个防磨牙牙套",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "he38c2",
+        "text": "睡前冥想放松",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "he38c3",
+        "text": "去看牙医",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -30
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "he38c4",
+        "text": "给室友买耳塞",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "health-039",
+    "category": "health-physique",
+    "text": "踢球时被钉鞋踩到了脚背，破了个大口子，血流不止。虽然不是什么大伤，但看着挺吓人的。",
+    "animation": "running",
+    "choices": [
+      {
+        "id": "he39c1",
+        "text": "去校医院缝针",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -20
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "he39c2",
+        "text": "自己消毒包扎",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": 0
+          }
+        ]
+      },
+      {
+        "id": "he39c3",
+        "text": "贴个创可贴继续踢",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "he39c4",
+        "text": "拍照发朋友圈卖惨",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "health-040",
+    "category": "health-physique",
+    "text": "最近总是感觉心慌，做噩梦，还会突然一身冷汗。医生说是植物神经紊乱，需要调节情绪和作息。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "he40c1",
+        "text": "吃谷维素调节",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "he40c2",
+        "text": "开始练习瑜伽",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "he40c3",
+        "text": "找朋友倾诉压力",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "he40c4",
+        "text": "不管它，继续熬夜",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -15
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "health-041",
+    "category": "health-physique",
+    "text": "因为贪凉，你吹了一整晚空调。早上起来面瘫了，嘴歪眼斜，刷牙都漏水。你吓坏了，赶紧去医院。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "he41c1",
+        "text": "做针灸治疗",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -30
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "he41c2",
+        "text": "吃激素药消肿",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -20
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "he41c3",
+        "text": "请假回家休养",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "he41c4",
+        "text": "戴口罩坚持上课",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "health-042",
+    "category": "health-physique",
+    "text": "最近体重暴涨，原来的裤子都穿不下了。看着镜子里臃肿的自己，你感到深深的自卑和焦虑。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "he42c1",
+        "text": "开始节食减肥",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "he42c2",
+        "text": "制定科学健身计划",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "he42c3",
+        "text": "吃减肥药",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -20
+          },
+          {
+            "stat": "sanity",
+            "change": -15
+          }
+        ]
+      },
+      {
+        "id": "he42c4",
+        "text": "放弃治疗，胖就胖吧",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "health-043",
+    "category": "health-physique",
+    "text": "踢球时为了救球，肩膀重重地撞在门柱上。现在胳膊抬不起来，肩膀肿得老高，可能是锁骨骨折。",
+    "animation": "running",
+    "choices": [
+      {
+        "id": "he43c1",
+        "text": "去医院拍片固定",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -40
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "he43c2",
+        "text": "找接骨师傅看看",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -15
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "he43c3",
+        "text": "硬扛，吊个胳膊",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "he43c4",
+        "text": "从此退役不踢球",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -15
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "health-044",
+    "category": "health-physique",
+    "text": "最近总是感觉手脚冰凉，畏寒怕冷，脸色苍白。中医说是气血不足，需要好好调理。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "he44c1",
+        "text": "喝中药调理",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -25
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "he44c2",
+        "text": "多吃红枣枸杞",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "he44c3",
+        "text": "加强运动促进循环",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "he44c4",
+        "text": "多穿衣服捂着",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "health-045",
+    "category": "health-physique",
+    "text": "因为长期熬夜，你的免疫力直线下降。稍微吹点风就感冒，动不动就发烧，身体成了药罐子。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "he45c1",
+        "text": "强制调整作息",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": 15
+          }
+        ]
+      },
+      {
+        "id": "he45c2",
+        "text": "打增强免疫力的针",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -30
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "he45c3",
+        "text": "坚持晨跑",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "he45c4",
+        "text": "继续熬夜，生死有命",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -20
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "health-046",
+    "category": "health-physique",
+    "text": "最近总是感觉头痛欲裂，像是有东西在钻太阳穴。吃了止痛药也不管用，严重影响了学习和生活。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "he46c1",
+        "text": "去医院做脑部核磁",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -50
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "he46c2",
+        "text": "找中医针灸",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -20
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "he46c3",
+        "text": "按摩头部缓解",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "he46c4",
+        "text": "睡觉，睡着就不疼了",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 0
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "health-047",
+    "category": "health-physique",
+    "text": "踢球时被球击中了要害部位，那种痛楚让你瞬间失去了语言能力，蜷缩在地上像只虾米。",
+    "animation": "running",
+    "choices": [
+      {
+        "id": "he47c1",
+        "text": "去医院检查一下",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -20
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "he47c2",
+        "text": "缓一缓，跳两下",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "he47c3",
+        "text": "立刻回家冷敷",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "he47c4",
+        "text": "发誓再也不踢球了",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "health-048",
+    "category": "health-physique",
+    "text": "最近总是感觉肛门疼痛，便血。去医院检查，医生说是痔疮，需要手术或者保守治疗。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "he48c1",
+        "text": "做手术割以永治",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -40
+          },
+          {
+            "stat": "sanity",
+            "change": 15
+          }
+        ]
+      },
+      {
+        "id": "he48c2",
+        "text": "用药膏保守治疗",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "he48c3",
+        "text": "买个坐垫缓解",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "he48c4",
+        "text": "忍着，多吃蔬菜",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "health-049",
+    "category": "health-physique",
+    "text": "因为压力大，你开始暴饮暴食，尤其喜欢吃甜食和油炸食品。体重飙升的同时，血糖也开始报警。",
+    "animation": "eating",
+    "choices": [
+      {
+        "id": "he49c1",
+        "text": "戒糖戒油腻",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "he49c2",
+        "text": "去健身房燃脂",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -30
+          },
+          {
+            "stat": "sanity",
+            "change": 15
+          }
+        ]
+      },
+      {
+        "id": "he49c3",
+        "text": "吃降糖药",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -20
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "he49c4",
+        "text": "继续吃，开心就好",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -20
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "health-050",
+    "category": "health-physique",
+    "text": "最近总是感觉手指关节僵硬疼痛，键盘敲多了就疼得受不了。医生说是腱鞘炎，需要休息。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "he50c1",
+        "text": "减少打字，多休息",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "he50c2",
+        "text": "戴护腕坚持",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "he50c3",
+        "text": "去做理疗",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -20
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "he50c4",
+        "text": "换个机械键盘",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -30
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "health-051",
+    "category": "health-physique",
+    "text": "踢球时大腿抽筋，疼得你在地上打滚。虽然只是抽筋，但这提醒你身体极度缺钙或者过度疲劳。",
+    "animation": "running",
+    "choices": [
+      {
+        "id": "he51c1",
+        "text": "补充钙片和镁",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "he51c2",
+        "text": "多喝牛奶晒太阳",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "he51c3",
+        "text": "休息几天不踢球",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "he51c4",
+        "text": "拉伸一下继续踢",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "health-052",
+    "category": "health-physique",
+    "text": "最近总是感觉胸闷，像是胸口压了块大石头。去医院做了心电图，医生说是心肌缺血，要避免劳累。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "he52c1",
+        "text": "遵医嘱，好好休息",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 15
+          },
+          {
+            "stat": "academicStanding",
+            "change": -5
+          }
+        ]
+      },
+      {
+        "id": "he52c2",
+        "text": "吃药维持，继续卷",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -20
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      },
+      {
+        "id": "he52c3",
+        "text": "去做个心脏彩超",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -30
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "he52c4",
+        "text": "不信邪，去跑步",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -30
+          },
+          {
+            "stat": "sanity",
+            "change": -10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "health-053",
+    "category": "health-physique",
+    "text": "因为长期精神紧张，你患上了神经衰弱。一点声音都能吓你一跳，注意力无法集中，记忆力像金鱼一样。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "he53c1",
+        "text": "进行专业的心理治疗",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -50
+          },
+          {
+            "stat": "sanity",
+            "change": 20
+          }
+        ]
+      },
+      {
+        "id": "he53c2",
+        "text": "自我调节，冥想瑜伽",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 10
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "he53c3",
+        "text": "吃安神补脑液",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "he53c4",
+        "text": "彻底摆烂，啥也不想",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "academicStanding",
+            "change": -15
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "health-054",
+    "category": "health-physique",
+    "text": "最近总是感觉脚后跟疼，走路像踩在针尖上。医生说是足底筋膜炎，可能跟这双穿烂了的球鞋有关。",
+    "animation": "running",
+    "choices": [
+      {
+        "id": "he54c1",
+        "text": "买双好的运动鞋",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -40
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "he54c2",
+        "text": "踩网球按摩足底",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      },
+      {
+        "id": "he54c3",
+        "text": "去医院做冲击波治疗",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -30
+          },
+          {
+            "stat": "sanity",
+            "change": 15
+          }
+        ]
+      },
+      {
+        "id": "he54c4",
+        "text": "垫个鞋垫凑合穿",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -5
+          },
+          {
+            "stat": "sanity",
+            "change": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "health-055",
+    "category": "health-physique",
+    "text": "期末周加上感冒，你发着高烧在图书馆通宵复习。突然眼前一黑，晕倒在书桌上，醒来时已经在校医院的病床上。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "he55c1",
+        "text": "给父母打电话求安慰",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": 5
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "he55c2",
+        "text": "打完吊瓶回去继续背",
+        "effects": [
+          {
+            "stat": "sanity",
+            "change": -20
+          },
+          {
+            "stat": "academicStanding",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "he55c3",
+        "text": "彻底放弃这门课",
+        "effects": [
+          {
+            "stat": "academicStanding",
+            "change": -20
+          },
+          {
+            "stat": "sanity",
+            "change": 10
+          }
+        ]
+      },
+      {
+        "id": "he55c4",
+        "text": "叫室友帮忙带饭",
+        "effects": [
+          {
+            "stat": "wealth",
+            "change": -10
+          },
+          {
+            "stat": "sanity",
+            "change": 5
+          }
+        ]
+      }
+    ]
+  }
+]
