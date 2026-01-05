@@ -88,7 +88,7 @@ export default function EndingsCollection({ isOpen, onClose }: EndingsCollection
 
   return (
     <div
-      className="fixed inset-0 z-50 apple-modal-backdrop animate-fade-in"
+      className="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm animate-fade-in"
       onClick={(e) => {
         if (e.target === e.currentTarget) onClose();
       }}
@@ -98,22 +98,20 @@ export default function EndingsCollection({ isOpen, onClose }: EndingsCollection
     >
       <div
         ref={modalRef}
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[95%] max-w-4xl max-h-[90vh] apple-modal overflow-hidden animate-scale-in"
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[95%] max-w-4xl max-h-[90vh] glassmorphism-dark overflow-hidden animate-slide-in rounded-2xl"
       >
         {/* Header */}
-        <div className="sticky top-0 bg-white z-10 px-6 py-5 border-b border-[var(--color-border)]">
+        <div className="sticky top-0 z-10 px-6 py-5 border-b border-barca-primary/30 bg-barca-dark/90 backdrop-blur-sm">
           <div className="flex items-center justify-between mb-4">
             <h2
               id="collection-title"
-              className="text-2xl font-bold"
-              style={{ color: "var(--color-text-primary)" }}
+              className="text-2xl font-bold text-gradient"
             >
               🏆 结局收集
             </h2>
             <button
               onClick={onClose}
-              className="w-10 h-10 rounded-full flex items-center justify-center hover:bg-[var(--color-bg-tertiary)] transition-colors"
-              style={{ color: "var(--color-text-secondary)" }}
+              className="w-10 h-10 rounded-full flex items-center justify-center hover:bg-foreground/10 transition-colors text-foreground/60 hover:text-foreground"
               aria-label="关闭"
             >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -125,14 +123,14 @@ export default function EndingsCollection({ isOpen, onClose }: EndingsCollection
           {/* Progress Bar */}
           <div className="mb-4">
             <div className="flex justify-between text-sm mb-2">
-              <span style={{ color: "var(--color-text-secondary)" }}>收集进度</span>
-              <span style={{ color: "var(--color-text-primary)" }} className="font-semibold">
+              <span className="text-foreground/70">收集进度</span>
+              <span className="text-foreground font-semibold">
                 {stats.total} / {TOTAL_ENDINGS} ({progressPercent}%)
               </span>
             </div>
-            <div className="apple-progress">
+            <div className="h-3 rounded-full bg-barca-dark/50 overflow-hidden border border-barca-primary/30">
               <div
-                className="apple-progress-fill"
+                className="h-full rounded-full bg-gradient-to-r from-barca-primary via-barca-secondary to-barca-accent transition-all duration-500"
                 style={{ width: `${progressPercent}%` }}
               />
             </div>
@@ -145,7 +143,7 @@ export default function EndingsCollection({ isOpen, onClose }: EndingsCollection
                 key={rarity}
                 onClick={() => setFilterRarity(filterRarity === rarity ? "all" : rarity)}
                 className={`rarity-badge rarity-${rarity} cursor-pointer transition-all ${
-                  filterRarity === rarity ? "ring-2 ring-offset-2" : "opacity-70 hover:opacity-100"
+                  filterRarity === rarity ? "ring-2 ring-offset-2 ring-offset-barca-dark" : "opacity-70 hover:opacity-100"
                 }`}
               >
                 <span>{RARITY_ICONS[rarity]}</span>
@@ -161,8 +159,8 @@ export default function EndingsCollection({ isOpen, onClose }: EndingsCollection
               onClick={() => setFilterType("all")}
               className={`px-4 py-1.5 rounded-full text-sm font-medium transition-all ${
                 filterType === "all"
-                  ? "bg-[var(--barca-primary)] text-white"
-                  : "bg-[var(--color-bg-tertiary)] text-[var(--color-text-secondary)] hover:bg-[var(--color-border)]"
+                  ? "bg-barca-primary text-white"
+                  : "bg-foreground/10 text-foreground/70 hover:bg-foreground/20"
               }`}
             >
               全部
@@ -171,8 +169,8 @@ export default function EndingsCollection({ isOpen, onClose }: EndingsCollection
               onClick={() => setFilterType("positive")}
               className={`px-4 py-1.5 rounded-full text-sm font-medium transition-all ${
                 filterType === "positive"
-                  ? "bg-[var(--success)] text-white"
-                  : "bg-[var(--color-bg-tertiary)] text-[var(--color-text-secondary)] hover:bg-[var(--color-border)]"
+                  ? "bg-green-500 text-white"
+                  : "bg-foreground/10 text-foreground/70 hover:bg-foreground/20"
               }`}
             >
               🌟 正面 {stats.positive}
@@ -181,8 +179,8 @@ export default function EndingsCollection({ isOpen, onClose }: EndingsCollection
               onClick={() => setFilterType("negative")}
               className={`px-4 py-1.5 rounded-full text-sm font-medium transition-all ${
                 filterType === "negative"
-                  ? "bg-[var(--danger)] text-white"
-                  : "bg-[var(--color-bg-tertiary)] text-[var(--color-text-secondary)] hover:bg-[var(--color-border)]"
+                  ? "bg-barca-secondary text-white"
+                  : "bg-foreground/10 text-foreground/70 hover:bg-foreground/20"
               }`}
             >
               💀 悲剧 {stats.negative}
@@ -193,7 +191,7 @@ export default function EndingsCollection({ isOpen, onClose }: EndingsCollection
         {/* Content */}
         <div className="p-6 overflow-y-auto" style={{ maxHeight: "calc(90vh - 280px)" }}>
           {sortedEndings.length === 0 ? (
-            <div className="text-center py-12" style={{ color: "var(--color-text-secondary)" }}>
+            <div className="text-center py-12 text-foreground/60">
               <div className="text-4xl mb-4">🔍</div>
               <p>暂无符合条件的结局</p>
               {filterRarity !== "all" || filterType !== "all" ? (
@@ -202,7 +200,7 @@ export default function EndingsCollection({ isOpen, onClose }: EndingsCollection
                     setFilterRarity("all");
                     setFilterType("all");
                   }}
-                  className="mt-4 text-[var(--barca-primary)] underline"
+                  className="mt-4 text-barca-accent underline"
                 >
                   清除筛选
                 </button>
@@ -216,27 +214,21 @@ export default function EndingsCollection({ isOpen, onClose }: EndingsCollection
                 <button
                   key={ending.id}
                   onClick={() => setSelectedEnding(ending)}
-                  className={`apple-card p-4 text-left transition-all hover:scale-[1.02] cursor-pointer ${
-                    ending.rarity === "legendary" ? "animate-glow" : ""
-                  } ${ending.rarity === "secret" ? "border-[var(--rarity-secret)]" : ""}`}
+                  className={`glassmorphism p-4 text-left transition-all hover:scale-[1.02] cursor-pointer ${
+                    ending.rarity === "legendary" ? "border-barca-accent/50" : ""
+                  } ${ending.rarity === "secret" ? "border-barca-secondary/50" : ""}`}
                 >
                   <div className="flex items-start justify-between gap-2 mb-2">
                     <span className="text-lg">{typeEmoji(ending.type)}</span>
                     <RarityBadge rarity={ending.rarity} size="sm" />
                   </div>
-                  <h3
-                    className="font-semibold mb-1 line-clamp-2"
-                    style={{ color: "var(--color-text-primary)" }}
-                  >
+                  <h3 className="font-semibold mb-1 line-clamp-2 text-foreground">
                     {ending.title}
                   </h3>
-                  <p
-                    className="text-xs line-clamp-2"
-                    style={{ color: "var(--color-text-secondary)" }}
-                  >
+                  <p className="text-xs line-clamp-2 text-foreground/60">
                     {ending.description || "点击查看详情"}
                   </p>
-                  <div className="mt-3 text-xs" style={{ color: "var(--color-text-secondary)" }}>
+                  <div className="mt-3 text-xs text-foreground/50">
                     {new Date(ending.unlockedAt).toLocaleDateString("zh-CN")}
                   </div>
                 </button>
@@ -249,19 +241,17 @@ export default function EndingsCollection({ isOpen, onClose }: EndingsCollection
       {/* Detail Modal */}
       {selectedEnding && (
         <div
-          className="fixed inset-0 z-60 flex items-center justify-center p-4"
-          style={{ background: "rgba(0, 0, 0, 0.5)" }}
+          className="fixed inset-0 z-60 flex items-center justify-center p-4 bg-black/50"
           onClick={(e) => {
             if (e.target === e.currentTarget) setSelectedEnding(null);
           }}
         >
-          <div className="apple-modal max-w-md w-full p-6 animate-scale-in">
+          <div className="glassmorphism max-w-md w-full p-6 animate-slide-in rounded-2xl">
             <div className="flex items-center justify-between mb-4">
               <RarityBadge rarity={selectedEnding.rarity} size="lg" />
               <button
                 onClick={() => setSelectedEnding(null)}
-                className="w-8 h-8 rounded-full flex items-center justify-center hover:bg-[var(--color-bg-tertiary)] transition-colors"
-                style={{ color: "var(--color-text-secondary)" }}
+                className="w-8 h-8 rounded-full flex items-center justify-center hover:bg-foreground/10 transition-colors text-foreground/60"
               >
                 ✕
               </button>
@@ -273,37 +263,25 @@ export default function EndingsCollection({ isOpen, onClose }: EndingsCollection
               </span>
             </div>
 
-            <h3
-              className="text-xl font-bold text-center mb-3"
-              style={{ color: "var(--color-text-primary)" }}
-            >
+            <h3 className="text-xl font-bold text-center mb-3 text-foreground">
               {selectedEnding.title}
             </h3>
 
-            <div
-              className="p-4 rounded-xl mb-4"
-              style={{ background: "var(--color-bg-tertiary)" }}
-            >
-              <p
-                className="text-sm leading-relaxed"
-                style={{ color: "var(--color-text-primary)" }}
-              >
+            <div className="p-4 rounded-xl mb-4 bg-barca-dark/50 border border-barca-primary/20">
+              <p className="text-sm leading-relaxed text-foreground/90">
                 {selectedEnding.description || "这个结局的详细描述尚未记录。"}
               </p>
             </div>
 
             <div className="text-center">
-              <span
-                className="text-xs"
-                style={{ color: "var(--color-text-secondary)" }}
-              >
+              <span className="text-xs text-foreground/50">
                 解锁于 {new Date(selectedEnding.unlockedAt).toLocaleString("zh-CN")}
               </span>
             </div>
 
             <button
               onClick={() => setSelectedEnding(null)}
-              className="apple-btn-primary w-full mt-4"
+              className="btn-barca w-full mt-4 py-3 text-foreground font-semibold"
             >
               关闭
             </button>

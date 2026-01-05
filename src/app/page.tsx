@@ -37,106 +37,77 @@ export default function Home() {
 
   return (
     <>
-      <main className="min-h-screen flex flex-col relative overflow-hidden" style={{ background: "var(--color-bg-primary)" }}>
-        {/* Apple-style Header */}
-        <header className="apple-header fixed top-0 left-0 right-0 z-40 px-6 py-4">
-          <div className="max-w-6xl mx-auto flex items-center justify-between">
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[var(--barca-primary)] to-[var(--barca-secondary)] flex items-center justify-center text-xl">
-                ⚽
-              </div>
-              <span className="font-semibold text-lg" style={{ color: "var(--color-text-primary)" }}>
-                章吉豪模拟器
-              </span>
-            </div>
-            {stats.total > 0 && (
-              <button
-                onClick={() => setShowCollection(true)}
-                className="apple-btn-ghost flex items-center gap-2"
-              >
-                <span>🏆</span>
-                <span className="hidden sm:inline">结局收集</span>
-                <span className="px-2 py-0.5 rounded-full text-xs font-bold" style={{ background: "var(--barca-primary)", color: "white" }}>
-                  {stats.total}
-                </span>
-              </button>
-            )}
-          </div>
-        </header>
+      <main className="min-h-screen flex flex-col items-center justify-center p-4 sm:p-8 relative overflow-hidden">
+        {/* Background Effects - Barça colors */}
+        <div className="absolute inset-0 bg-gradient-to-br from-barca-primary/20 via-background to-barca-secondary/20" />
+        <div className="absolute top-0 left-0 w-96 h-96 bg-barca-primary/30 rounded-full blur-3xl animate-pulse-slow" />
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-barca-secondary/30 rounded-full blur-3xl animate-pulse-slow" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-barca-accent/10 rounded-full blur-3xl" />
 
-        {/* Hero Section */}
-        <section className="flex-1 flex flex-col items-center justify-center px-6 pt-24 pb-12">
-          {/* Barcelona Accent Lines */}
-          <div className="absolute top-0 left-0 right-0 h-1 barca-stripes opacity-80" />
+        {/* Barça Stripes Decorative Elements */}
+        <div className="absolute top-0 left-0 right-0 h-2 barca-stripes opacity-80" />
+        <div className="absolute bottom-0 left-0 right-0 h-2 barca-stripes opacity-80" />
 
-          {/* Logo Badge */}
-          <div className="mb-8 animate-float">
-            <div className="w-32 h-32 sm:w-44 sm:h-44 mx-auto relative">
-              {/* Outer gold ring */}
-              <div className="absolute inset-0 rounded-full bg-gradient-to-br from-[var(--barca-accent)] via-[var(--barca-gold)] to-[var(--barca-accent)] p-1 animate-pulse-slow">
-                <div className="w-full h-full rounded-full bg-gradient-to-br from-[var(--barca-primary)] to-[var(--barca-secondary)] p-1">
-                  <div className="w-full h-full rounded-full bg-[var(--barca-dark)] flex items-center justify-center relative overflow-hidden">
+        {/* Content */}
+        <div className="relative z-10 text-center max-w-2xl mx-auto w-full">
+          {/* Logo/Title with FCB Badge Style */}
+          <div className="mb-6 sm:mb-8 animate-float">
+            <div className="w-28 h-28 sm:w-44 sm:h-44 mx-auto mb-4 sm:mb-6 relative">
+              {/* Outer ring with gold accent */}
+              <div className="absolute inset-0 rounded-full bg-gradient-to-br from-barca-accent via-barca-gold to-barca-accent p-1 animate-pulse-slow">
+                <div className="w-full h-full rounded-full bg-gradient-to-br from-barca-primary to-barca-secondary p-1">
+                  <div className="w-full h-full rounded-full bg-barca-dark flex items-center justify-center relative overflow-hidden">
+                    {/* Barça stripes inside badge */}
                     <div className="absolute inset-0 barca-stripes-subtle opacity-50" />
-                    <span className="text-5xl sm:text-7xl relative z-10">⚽</span>
+                    <span className="text-4xl sm:text-6xl relative z-10">⚽</span>
                   </div>
                 </div>
               </div>
               {/* Decorative stars */}
-              <div className="absolute -top-2 -right-2 text-[var(--barca-accent)] text-xl animate-pulse-slow">✦</div>
-              <div className="absolute -bottom-2 -left-2 text-[var(--barca-accent)] text-lg animate-pulse-slow">✦</div>
+              <div className="absolute -top-2 -right-2 text-barca-accent text-xl">✦</div>
+              <div className="absolute -bottom-2 -left-2 text-barca-accent text-lg">✦</div>
             </div>
+            <h1 className="text-4xl sm:text-7xl font-display font-bold text-gradient mb-2 sm:mb-4 drop-shadow-lg">
+              章吉豪模拟器
+            </h1>
+            <p className="text-lg sm:text-xl text-foreground/80 font-medium tracking-wider">
+              Zhang Jihao Simulator
+            </p>
+            <p className="text-sm text-barca-accent mt-2">Més que un joc ⚽</p>
           </div>
 
-          {/* Title */}
-          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold text-center mb-4 bg-gradient-to-r from-[var(--barca-primary)] via-[var(--barca-secondary)] to-[var(--barca-primary)] bg-clip-text text-transparent">
-            章吉豪模拟器
-          </h1>
-          <p className="text-lg sm:text-xl mb-2" style={{ color: "var(--color-text-secondary)" }}>
-            Zhang Jihao Simulator
-          </p>
-          <p className="text-sm mb-8" style={{ color: "var(--barca-accent)" }}>
-            Més que un joc ⚽
-          </p>
-
-          {/* Game Info Cards */}
-          <div className="grid grid-cols-3 gap-4 max-w-md w-full mb-8">
-            <div className="apple-card p-4 text-center">
-              <div className="text-2xl sm:text-3xl font-bold" style={{ color: "var(--barca-accent)" }}>
-                ∞
+          {/* Game Info with Barça styling */}
+          <div className="glassmorphism p-4 sm:p-5 mb-6 sm:mb-8 relative overflow-hidden">
+            {/* Subtle stripes overlay */}
+            <div className="absolute inset-0 barca-stripes-subtle opacity-30" />
+            <div className="relative z-10 grid grid-cols-3 gap-2 sm:gap-4 text-center">
+              <div className="p-2 rounded-lg bg-barca-primary/20">
+                <div className="text-2xl sm:text-3xl font-bold text-barca-accent drop-shadow-md">∞</div>
+                <div className="text-xs sm:text-sm text-foreground/70 font-medium">无限模式</div>
               </div>
-              <div className="text-xs sm:text-sm mt-1" style={{ color: "var(--color-text-secondary)" }}>
-                无限模式
+              <div className="p-2 rounded-lg bg-barca-secondary/20">
+                <div className="text-2xl sm:text-3xl font-bold text-barca-primary drop-shadow-md">{TOTAL_ENDINGS}</div>
+                <div className="text-xs sm:text-sm text-foreground/70 font-medium">结局</div>
               </div>
-            </div>
-            <div className="apple-card p-4 text-center">
-              <div className="text-2xl sm:text-3xl font-bold" style={{ color: "var(--barca-primary)" }}>
-                {TOTAL_ENDINGS}
-              </div>
-              <div className="text-xs sm:text-sm mt-1" style={{ color: "var(--color-text-secondary)" }}>
-                结局
-              </div>
-            </div>
-            <div className="apple-card p-4 text-center">
-              <div className="text-2xl sm:text-3xl font-bold" style={{ color: "var(--success)" }}>
-                {stats.total}
-              </div>
-              <div className="text-xs sm:text-sm mt-1" style={{ color: "var(--color-text-secondary)" }}>
-                已解锁
+              <div className="p-2 rounded-lg bg-barca-accent/20">
+                <div className="text-2xl sm:text-3xl font-bold text-green-400 drop-shadow-md">{stats.total}</div>
+                <div className="text-xs sm:text-sm text-foreground/70 font-medium">已解锁</div>
               </div>
             </div>
           </div>
 
           {/* Collection Progress */}
           {stats.total > 0 && (
-            <div className="w-full max-w-md mb-8">
+            <div className="glassmorphism p-4 mb-6 sm:mb-8">
               <div className="flex justify-between text-sm mb-2">
-                <span style={{ color: "var(--color-text-secondary)" }}>收集进度</span>
-                <span style={{ color: "var(--color-text-primary)" }} className="font-medium">
-                  {progressPercent}%
-                </span>
+                <span className="text-foreground/70">收集进度</span>
+                <span className="text-foreground font-semibold">{stats.total} / {TOTAL_ENDINGS} ({progressPercent}%)</span>
               </div>
-              <div className="apple-progress">
-                <div className="apple-progress-fill" style={{ width: `${progressPercent}%` }} />
+              <div className="h-3 rounded-full bg-barca-dark/50 overflow-hidden border border-barca-primary/30">
+                <div
+                  className="h-full rounded-full bg-gradient-to-r from-barca-primary via-barca-secondary to-barca-accent transition-all duration-500"
+                  style={{ width: `${progressPercent}%` }}
+                />
               </div>
               <div className="flex flex-wrap gap-2 mt-3 justify-center">
                 {RARITY_ORDER.map((rarity) => (
@@ -152,59 +123,42 @@ export default function Home() {
             </div>
           )}
 
-          {/* Start Button */}
-          <Link href="/game" className="apple-btn-primary text-lg px-12 py-4 mb-6">
+          {/* Start Button with enhanced Barça gradient */}
+          <Link
+            href="/game"
+            className="btn-barca text-foreground text-lg sm:text-xl px-10 sm:px-14 py-4 sm:py-5 w-full inline-block text-center font-bold tracking-wide shadow-glow"
+          >
             🎮 开始游戏
           </Link>
 
-          {/* View Collection Button (if no endings yet, show as text) */}
-          {stats.total === 0 ? (
-            <p className="text-sm" style={{ color: "var(--color-text-secondary)" }}>
-              开始游戏解锁你的第一个结局！
-            </p>
-          ) : (
+          {/* Collection Button */}
+          {stats.total > 0 && (
             <button
               onClick={() => setShowCollection(true)}
-              className="apple-btn-secondary text-sm"
+              className="mt-4 text-sm text-foreground/60 hover:text-foreground transition-colors underline"
             >
-              查看结局收集
+              查看已解锁结局 ({stats.total})
             </button>
           )}
-        </section>
 
-        {/* Initial Stats Preview */}
-        <section className="px-6 pb-12">
-          <div className="max-w-md mx-auto">
-            <h3 className="text-center text-sm font-medium mb-4" style={{ color: "var(--color-text-secondary)" }}>
-              初始属性
-            </h3>
-            <div className="grid grid-cols-5 gap-2">
-              {(Object.keys(INITIAL_STATS) as (keyof typeof INITIAL_STATS)[]).map((statKey) => (
-                <div key={statKey} className="apple-card p-3 text-center" style={{ borderTop: `3px solid ${STAT_COLORS[statKey]}` }}>
-                  <div className="text-xs mb-1" style={{ color: "var(--color-text-secondary)" }}>
-                    {STAT_NAMES[statKey]}
-                  </div>
-                  <div className="text-lg font-bold" style={{ color: STAT_COLORS[statKey] }}>
-                    {INITIAL_STATS[statKey]}
-                  </div>
-                </div>
-              ))}
-            </div>
+          {/* Stats Preview with Barça colors */}
+          <div className="mt-6 sm:mt-8 grid grid-cols-5 gap-1.5 sm:gap-3 text-center">
+            {(Object.keys(INITIAL_STATS) as (keyof typeof INITIAL_STATS)[]).map((statKey) => (
+              <div key={statKey} className="glassmorphism p-2 sm:p-3 rounded-xl" style={{ borderTop: `2px solid ${STAT_COLORS[statKey]}` }}>
+                <div className="text-xs sm:text-sm text-foreground/70 mb-1">{STAT_NAMES[statKey]}</div>
+                <div className="text-base sm:text-lg font-bold" style={{ color: STAT_COLORS[statKey] }}>{INITIAL_STATS[statKey]}</div>
+              </div>
+            ))}
           </div>
-        </section>
 
-        {/* Footer */}
-        <footer className="px-6 py-8 text-center border-t" style={{ borderColor: "var(--color-border)" }}>
-          <p className="text-xs mb-2" style={{ color: "var(--color-text-secondary)" }}>
+          {/* Footer with FCB motto */}
+          <p className="mt-8 sm:mt-12 text-xs text-foreground/50">
             本游戏纯属虚构，如有雷同纯属巧合
           </p>
-          <p className="text-xs" style={{ color: "var(--barca-accent)" }}>
+          <p className="mt-2 text-xs text-barca-accent/60">
             🔵🔴 Força Barça! 🔴🔵
           </p>
-        </footer>
-
-        {/* Barcelona Accent Bottom Line */}
-        <div className="absolute bottom-0 left-0 right-0 h-1 barca-stripes opacity-80" />
+        </div>
       </main>
 
       {/* Endings Collection Modal */}
