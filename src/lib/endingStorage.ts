@@ -1,9 +1,13 @@
 "use client";
 
+import { EndingRarity, EndingType } from "@/types/game";
+
 export interface UnlockedEnding {
   id: string;
   title: string;
-  type: "positive" | "negative" | "rare";
+  description?: string;          // New: store description for detail view
+  type: EndingType;
+  rarity: EndingRarity;          // New: rarity tier
   unlockedAt: number;
 }
 
@@ -13,13 +17,28 @@ export function getUnlockedEndings(): UnlockedEnding[] {
   if (typeof window === "undefined") return [];
   try {
     const data = localStorage.getItem(STORAGE_KEY);
-    return data ? JSON.parse(data) : [];
+    if (!data) return [];
+
+    // Parse and migrate old data format
+    const endings = JSON.parse(data) as UnlockedEnding[];
+    return endings.map(e => ({
+      ...e,
+      // Migrate old 'rare' type to new structure
+      type: e.type === "rare" as unknown ? "positive" : e.type,
+      rarity: e.rarity || (e.type === "rare" as unknown ? "secret" : "common"),
+    }));
   } catch {
     return [];
   }
 }
 
-export function saveUnlockedEnding(ending: { id: string; title: string; type: string }): void {
+export function saveUnlockedEnding(ending: {
+  id: string;
+  title: string;
+  description?: string;
+  type: EndingType;
+  rarity: EndingRarity;
+}): void {
   if (typeof window === "undefined") return;
   try {
     const endings = getUnlockedEndings();
@@ -27,7 +46,9 @@ export function saveUnlockedEnding(ending: { id: string; title: string; type: st
       endings.push({
         id: ending.id,
         title: ending.title,
-        type: ending.type as "positive" | "negative" | "rare",
+        description: ending.description,
+        type: ending.type,
+        rarity: ending.rarity,
         unlockedAt: Date.now(),
       });
       localStorage.setItem(STORAGE_KEY, JSON.stringify(endings));
@@ -37,14 +58,35 @@ export function saveUnlockedEnding(ending: { id: string; title: string; type: st
   }
 }
 
-export function getEndingStats(): { total: number; positive: number; negative: number; rare: number } {
+export interface EndingStats {
+  total: number;
+  positive: number;
+  negative: number;
+  // Rarity counts
+  common: number;
+  uncommon: number;
+  rare: number;
+  legendary: number;
+  secret: number;
+}
+
+export function getEndingStats(): EndingStats {
   const endings = getUnlockedEndings();
   return {
     total: endings.length,
     positive: endings.filter((e) => e.type === "positive").length,
     negative: endings.filter((e) => e.type === "negative").length,
-    rare: endings.filter((e) => e.type === "rare").length,
+    // Rarity counts
+    common: endings.filter((e) => e.rarity === "common").length,
+    uncommon: endings.filter((e) => e.rarity === "uncommon").length,
+    rare: endings.filter((e) => e.rarity === "rare").length,
+    legendary: endings.filter((e) => e.rarity === "legendary").length,
+    secret: endings.filter((e) => e.rarity === "secret").length,
   };
+}
+
+export function getEndingsByRarity(rarity: EndingRarity): UnlockedEnding[] {
+  return getUnlockedEndings().filter((e) => e.rarity === rarity);
 }
 
 export function clearUnlockedEndings(): void {

@@ -1,12 +1,161 @@
-import { GameStats, Ending, EndingCondition } from "@/types/game";
-import { checkCondition } from "./gameEngine";
+import {
+  GameStats,
+  GameState,
+  Ending,
+  EndingCondition,
+  EndingRarity,
+  THRESHOLDS,
+} from "@/types/game";
+import { checkCondition, hasCriticalStat, hasDangerStat, hasBalancedMastery } from "./gameEngine";
 
 // Check if all conditions for an ending are met
 function checkAllConditions(stats: GameStats, conditions: EndingCondition[], flags: string[] = []): boolean {
   return conditions.every((condition) => checkCondition(stats, condition, flags));
 }
 
-// Calculate the best matching ending based on final stats and flags
+// Check if choice path matches a secret ending's required sequence
+function checkPathSequence(choicePath: string[], pathSequence: string[]): boolean {
+  if (pathSequence.length === 0) return false;
+
+  // Check if the choice path ends with the required sequence
+  if (choicePath.length < pathSequence.length) return false;
+
+  const recentChoices = choicePath.slice(-pathSequence.length);
+  return pathSequence.every((id, index) => recentChoices[index] === id);
+}
+
+// Termination check result
+export interface TerminationResult {
+  shouldTerminate: boolean;
+  reason?: "critical_stat" | "low_score" | "victory" | "balanced_mastery" | "survival" | "secret_path" | "flag_triggered";
+  ending?: Ending;
+}
+
+// Check if game should terminate based on current state
+export function checkTermination(state: GameState, allEndings: Ending[]): TerminationResult {
+  const { stats, flags, compositeScore, consecutiveHighScore, turnCount, choicePath } = state;
+
+  // 1. Check for secret endings first (highest priority)
+  const secretEndings = allEndings
+    .filter(e => e.rarity === "secret" && e.pathSequence && e.pathSequence.length > 0)
+    .sort((a, b) => b.priority - a.priority);
+
+  for (const ending of secretEndings) {
+    if (ending.pathSequence && checkPathSequence(choicePath, ending.pathSequence)) {
+      if (checkAllConditions(stats, ending.conditions, flags)) {
+        return { shouldTerminate: true, reason: "secret_path", ending };
+      }
+    }
+  }
+
+  // 2. Check for critical stat (immediate game over)
+  const criticalCheck = hasCriticalStat(stats);
+  if (criticalCheck.critical) {
+    const negativeEndings = allEndings
+      .filter(e => e.type === "negative")
+      .sort((a, b) => b.priority - a.priority);
+
+    const matchingEnding = negativeEndings.find(e => checkAllConditions(stats, e.conditions, flags));
+    return {
+      shouldTerminate: true,
+      reason: "critical_stat",
+      ending: matchingEnding || getGenericEnding(stats, allEndings, "negative"),
+    };
+  }
+
+  // 3. Check for low composite score
+  if (compositeScore < THRESHOLDS.NEGATIVE_SCORE) {
+    const negativeEndings = allEndings
+      .filter(e => e.type === "negative")
+      .sort((a, b) => b.priority - a.priority);
+
+    const matchingEnding = negativeEndings.find(e => checkAllConditions(stats, e.conditions, flags));
+    return {
+      shouldTerminate: true,
+      reason: "low_score",
+      ending: matchingEnding || getGenericEnding(stats, allEndings, "negative"),
+    };
+  }
+
+  // 4. Check danger zone - find matching negative ending but don't terminate unless conditions met
+  const dangerCheck = hasDangerStat(stats);
+  if (dangerCheck.danger) {
+    const negativeEndings = allEndings
+      .filter(e => e.type === "negative")
+      .sort((a, b) => b.priority - a.priority);
+
+    const matchingEnding = negativeEndings.find(e => checkAllConditions(stats, e.conditions, flags));
+    if (matchingEnding) {
+      return { shouldTerminate: true, reason: "critical_stat", ending: matchingEnding };
+    }
+  }
+
+  // 5. Check for victory (high score for consecutive turns)
+  if (consecutiveHighScore >= THRESHOLDS.CONSECUTIVE_VICTORY) {
+    const positiveEndings = allEndings
+      .filter(e => e.type === "positive")
+      .sort((a, b) => b.priority - a.priority);
+
+    const matchingEnding = positiveEndings.find(e => checkAllConditions(stats, e.conditions, flags));
+    return {
+      shouldTerminate: true,
+      reason: "victory",
+      ending: matchingEnding || getGenericEnding(stats, allEndings, "positive"),
+    };
+  }
+
+  // 6. Check for balanced mastery
+  if (hasBalancedMastery(stats)) {
+    const legendaryEndings = allEndings
+      .filter(e => e.rarity === "legendary" && e.type === "positive")
+      .sort((a, b) => b.priority - a.priority);
+
+    const matchingEnding = legendaryEndings.find(e => checkAllConditions(stats, e.conditions, flags));
+    if (matchingEnding) {
+      return { shouldTerminate: true, reason: "balanced_mastery", ending: matchingEnding };
+    }
+  }
+
+  // 7. Check for survival ending (survived many turns)
+  if (turnCount >= THRESHOLDS.SURVIVAL_TURNS && compositeScore >= THRESHOLDS.SURVIVAL_MIN_SCORE) {
+    const positiveEndings = allEndings
+      .filter(e => e.type === "positive")
+      .sort((a, b) => b.priority - a.priority);
+
+    const matchingEnding = positiveEndings.find(e => checkAllConditions(stats, e.conditions, flags));
+    return {
+      shouldTerminate: true,
+      reason: "survival",
+      ending: matchingEnding || getGenericEnding(stats, allEndings, "positive"),
+    };
+  }
+
+  // 8. Check for any matching ending conditions
+  const sortedEndings = [...allEndings].sort((a, b) => {
+    // Sort by rarity priority first (secret > legendary > rare > uncommon > common)
+    const rarityOrder: Record<EndingRarity, number> = {
+      secret: 5,
+      legendary: 4,
+      rare: 3,
+      uncommon: 2,
+      common: 1,
+    };
+    const rarityDiff = rarityOrder[b.rarity] - rarityOrder[a.rarity];
+    if (rarityDiff !== 0) return rarityDiff;
+    return b.priority - a.priority;
+  });
+
+  for (const ending of sortedEndings) {
+    if (checkAllConditions(stats, ending.conditions, flags)) {
+      return { shouldTerminate: true, reason: "flag_triggered", ending };
+    }
+  }
+
+  // No termination
+  return { shouldTerminate: false };
+}
+
+// Calculate the best matching ending based on final stats and flags (legacy support)
 export function calculateEnding(stats: GameStats, allEndings: Ending[], flags: string[] = []): Ending {
   // Sort endings by priority (higher priority first)
   const sortedEndings = [...allEndings].sort((a, b) => b.priority - a.priority);
@@ -23,7 +172,7 @@ export function calculateEnding(stats: GameStats, allEndings: Ending[], flags: s
 }
 
 // Get a generic ending based on stat totals
-function getGenericEnding(stats: GameStats, allEndings: Ending[]): Ending {
+function getGenericEnding(stats: GameStats, allEndings: Ending[], preferType?: "positive" | "negative"): Ending {
   const total =
     stats.academicStanding +
     stats.digitalSafety +
@@ -36,16 +185,28 @@ function getGenericEnding(stats: GameStats, allEndings: Ending[]): Ending {
   // Find endings by type
   const negativeEndings = allEndings.filter((e) => e.type === "negative");
   const positiveEndings = allEndings.filter((e) => e.type === "positive");
-  const rareEndings = allEndings.filter((e) => e.type === "rare");
+
+  // If preferred type specified, use it
+  if (preferType === "negative" && negativeEndings.length > 0) {
+    // Get a common negative ending
+    const commonNegative = negativeEndings.filter(e => e.rarity === "common");
+    if (commonNegative.length > 0) {
+      return commonNegative[Math.floor(Math.random() * commonNegative.length)];
+    }
+    return negativeEndings[Math.floor(Math.random() * negativeEndings.length)];
+  }
+
+  if (preferType === "positive" && positiveEndings.length > 0) {
+    // Get a common positive ending
+    const commonPositive = positiveEndings.filter(e => e.rarity === "common");
+    if (commonPositive.length > 0) {
+      return commonPositive[Math.floor(Math.random() * commonPositive.length)];
+    }
+    return positiveEndings[Math.floor(Math.random() * positiveEndings.length)];
+  }
 
   // Determine ending type based on average stat
-  if (average >= 70 && rareEndings.length > 0) {
-    // High stats: chance for rare ending
-    if (Math.random() < 0.1) {
-      return rareEndings[Math.floor(Math.random() * rareEndings.length)];
-    }
-    return positiveEndings[Math.floor(Math.random() * positiveEndings.length)] || negativeEndings[0];
-  } else if (average >= 50 && positiveEndings.length > 0) {
+  if (average >= 50 && positiveEndings.length > 0) {
     return positiveEndings[Math.floor(Math.random() * positiveEndings.length)];
   } else {
     return negativeEndings[Math.floor(Math.random() * negativeEndings.length)] || allEndings[0];
@@ -64,15 +225,22 @@ export function calculateEndingScore(stats: GameStats): number {
   return Math.round(total / 5);
 }
 
-// Get ending flavor text based on type
+// Get ending flavor text based on type and rarity
 export function getEndingFlavorText(ending: Ending): string {
+  // Rarity-specific flavor
+  if (ending.rarity === "secret") {
+    return "✦ 你发现了一个隐藏的命运分支...";
+  }
+  if (ending.rarity === "legendary") {
+    return "★★★★ 传奇的人生轨迹就此展开...";
+  }
+
+  // Type-based flavor
   switch (ending.type) {
     case "negative":
       return "章吉豪的命运在这一刻急转直下...";
     case "positive":
       return "尽管经历坎坷，章吉豪最终找到了出路...";
-    case "rare":
-      return "命运的齿轮开始以不可思议的方式转动...";
     default:
       return "";
   }

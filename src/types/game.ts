@@ -17,7 +17,39 @@ export const INITIAL_STATS: GameStats = {
 };
 
 // Game configuration constants
-export const TOTAL_SCENES = 10;
+export const TOTAL_SCENES = 10; // Legacy: only used for compatibility
+export const INFINITE_MODE = true; // Enable infinite mode
+
+// Composite score weights for each stat
+export const STAT_WEIGHTS: Record<keyof GameStats, number> = {
+  academicStanding: 0.25,
+  sanity: 0.25,
+  wealth: 0.20,
+  digitalSafety: 0.20,
+  billiardsSkill: 0.10,
+};
+
+// Game termination thresholds
+export const THRESHOLDS = {
+  CRITICAL_STAT: 0,           // Any stat at 0 = immediate game over
+  DANGER_STAT: 10,            // Any stat below 10 = ending check
+  NEGATIVE_SCORE: 25,         // Composite score < 25 = negative ending
+  WARNING_SCORE: 35,          // Warning zone
+  POSITIVE_SCORE: 65,         // Positive zone
+  VICTORY_SCORE: 85,          // Victory zone
+  CONSECUTIVE_VICTORY: 3,     // Consecutive high score turns needed
+  BALANCED_MASTERY: 70,       // All stats >= 70 = balanced ending
+  SURVIVAL_TURNS: 30,         // Survive 30+ turns for survival ending
+  SURVIVAL_MIN_SCORE: 60,     // Minimum score for survival ending
+};
+
+// Difficulty scaling per turn range
+export const DIFFICULTY_CURVE = {
+  NORMAL: { minTurn: 1, maxTurn: 10, minChange: -5, maxChange: 10 },
+  MODERATE: { minTurn: 11, maxTurn: 20, minChange: -8, maxChange: 8 },
+  HARD: { minTurn: 21, maxTurn: 30, minChange: -12, maxChange: 6 },
+  EXPERT: { minTurn: 31, maxTurn: Infinity, minChange: -15, maxChange: 5 },
+};
 
 // Valid stat keys for runtime validation
 export const VALID_STAT_KEYS: (keyof GameStats)[] = [
@@ -114,8 +146,38 @@ export interface Scene {
   minigame?: MinigameConfig;
 }
 
-// Ending types
-export type EndingType = "negative" | "positive" | "rare";
+// Ending types - simplified to outcome type
+export type EndingType = "negative" | "positive";
+
+// Ending rarity tiers
+export type EndingRarity = "common" | "uncommon" | "rare" | "legendary" | "secret";
+
+// Rarity display names (Chinese)
+export const RARITY_NAMES: Record<EndingRarity, string> = {
+  common: "普通",
+  uncommon: "稀有",
+  rare: "史诗",
+  legendary: "传说",
+  secret: "隐藏",
+};
+
+// Rarity colors for UI
+export const RARITY_COLORS: Record<EndingRarity, { primary: string; bg: string }> = {
+  common: { primary: "#86868B", bg: "#86868B1A" },
+  uncommon: { primary: "#34C759", bg: "#34C7591A" },
+  rare: { primary: "#5856D6", bg: "#5856D61A" },
+  legendary: { primary: "#EDBB00", bg: "#EDBB001A" },
+  secret: { primary: "#A50044", bg: "#A500441A" },
+};
+
+// Rarity icons
+export const RARITY_ICONS: Record<EndingRarity, string> = {
+  common: "☆",
+  uncommon: "★",
+  rare: "★★",
+  legendary: "★★★★",
+  secret: "✦",
+};
 
 // Ending condition - supports both stat checks and flag checks
 export type EndingCondition = StatCondition | FlagCondition;
@@ -147,16 +209,19 @@ export function isFlagCondition(condition: EndingCondition): condition is FlagCo
 export interface Ending {
   id: string;
   type: EndingType;
+  rarity: EndingRarity;           // New: rarity tier
   title: string;
   description: string;
   conditions: EndingCondition[];
   priority: number; // Higher priority endings are checked first
+  pathSequence?: string[];        // New: for secret endings - required choice path
 }
 
 // Extended scene history entry for game review
 export interface SceneHistoryEntry {
   sceneId: string;
   sceneText: string;
+  sceneCategory?: SceneCategory;  // New: track category for variety
   choiceId: string;
   choiceText: string;
   effects: StatEffect[];
@@ -167,13 +232,18 @@ export interface SceneHistoryEntry {
 // Game state
 export interface GameState {
   currentScene: number;
-  totalScenes: number;
+  totalScenes: number;           // Legacy, ignored in infinite mode
   stats: GameStats;
-  flags: string[];  // Active flags for conditional endings
+  flags: string[];               // Active flags for conditional endings
   selectedScenes: Scene[];
   isGameOver: boolean;
   currentEnding: Ending | null;
   sceneHistory: SceneHistoryEntry[];
+  // Infinite mode additions
+  turnCount: number;             // Current turn number
+  compositeScore: number;        // Calculated composite score
+  choicePath: string[];          // Choice ID path for secret endings
+  consecutiveHighScore: number;  // Consecutive turns with high score
 }
 
 // Category display names (Chinese)

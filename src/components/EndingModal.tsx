@@ -1,7 +1,7 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { Ending, GameStats, STAT_NAMES, VALID_STAT_KEYS, SceneHistoryEntry } from "@/types/game";
+import { Ending, GameStats, STAT_NAMES, VALID_STAT_KEYS, SceneHistoryEntry, RARITY_NAMES, RARITY_ICONS } from "@/types/game";
 import { getEndingFlavorText, getStatSummary, calculateEndingScore } from "@/lib/endingCalculator";
 import { saveUnlockedEnding } from "@/lib/endingStorage";
 import { useEffect, useRef, useCallback, useState } from "react";
@@ -29,7 +29,9 @@ export default function EndingModal({ ending, stats, onRestart, sceneHistory = [
     saveUnlockedEnding({
       id: ending.id,
       title: ending.title,
+      description: ending.description,
       type: ending.type,
+      rarity: ending.rarity,
     });
   }, [ending]);
 
@@ -96,6 +98,8 @@ export default function EndingModal({ ending, stats, onRestart, sceneHistory = [
       ? "🌟 正面结局"
       : "✨ 隐藏结局";
 
+  const rarityLabel = `${RARITY_ICONS[ending.rarity]} ${RARITY_NAMES[ending.rarity]}`;
+
   return (
     <div
       className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 animate-fade-in overflow-y-auto"
@@ -112,8 +116,8 @@ export default function EndingModal({ ending, stats, onRestart, sceneHistory = [
           animate-slide-in
         `}
       >
-        {/* Ending Type Badge */}
-        <div className="flex justify-center mb-3 sm:mb-4">
+        {/* Ending Type & Rarity Badges */}
+        <div className="flex justify-center gap-2 mb-3 sm:mb-4 flex-wrap">
           <span
             className={`
               px-3 sm:px-4 py-1 rounded-full text-xs sm:text-sm font-medium
@@ -127,6 +131,9 @@ export default function EndingModal({ ending, stats, onRestart, sceneHistory = [
             `}
           >
             {typeLabel}
+          </span>
+          <span className={`rarity-badge rarity-${ending.rarity} text-xs sm:text-sm`}>
+            {rarityLabel}
           </span>
         </div>
 

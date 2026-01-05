@@ -1,10 +1,20 @@
 "use client";
 
 import React, { createContext, useContext, useReducer, ReactNode, useEffect } from "react";
-import { GameState, GameStats, Scene, Choice, Ending, INITIAL_STATS, TOTAL_SCENES, StatEffect, isStatEffect } from "@/types/game";
-import { initGame, applyChoice, getCurrentScene } from "@/lib/gameEngine";
-import { selectScenesForGame } from "@/lib/sceneSelector";
-import { calculateEnding } from "@/lib/endingCalculator";
+import {
+  GameState,
+  GameStats,
+  Scene,
+  Choice,
+  Ending,
+  INITIAL_STATS,
+  TOTAL_SCENES,
+  StatEffect,
+  isStatEffect,
+} from "@/types/game";
+import { initGame, applyChoice, getCurrentScene, calculateCompositeScore } from "@/lib/gameEngine";
+import { selectScenesForGame, selectNextSceneForInfiniteMode } from "@/lib/sceneSelector";
+import { checkTermination } from "@/lib/endingCalculator";
 import { saveGame, loadGame, clearSave } from "@/lib/saveManager";
 
 interface ExtendedGameState extends GameState {
@@ -13,11 +23,12 @@ interface ExtendedGameState extends GameState {
 
 type GameAction =
   | { type: "START_GAME"; scenes: Scene[]; endings: Ending[] }
-  | { type: "MAKE_CHOICE"; choice: Choice; endings: Ending[] }
+  | { type: "MAKE_CHOICE"; choice: Choice; scene: Scene; endings: Ending[]; allScenes: Scene[] }
   | { type: "APPLY_STAT_CHANGE"; stat: keyof GameStats; change: number }
   | { type: "RESET_GAME" }
   | { type: "CLEAR_RECENT_CHANGES" }
-  | { type: "RESTORE_SAVE"; savedState: GameState };
+  | { type: "RESTORE_SAVE"; savedState: GameState }
+  | { type: "ADD_NEXT_SCENE"; scene: Scene };
 
 interface GameContextType {
   state: ExtendedGameState;
@@ -43,32 +54,75 @@ const initialState: ExtendedGameState = {
   currentEnding: null,
   sceneHistory: [],
   recentChanges: [],
+  // Infinite mode fields
+  turnCount: 0,
+  compositeScore: calculateCompositeScore(INITIAL_STATS),
+  choicePath: [],
+  consecutiveHighScore: 0,
 };
 
 function gameReducer(state: ExtendedGameState, action: GameAction): ExtendedGameState {
   switch (action.type) {
     case "START_GAME": {
+      // Start with initial batch of scenes
       const selectedScenes = selectScenesForGame(action.scenes, TOTAL_SCENES);
       return { ...initGame(selectedScenes), recentChanges: [] };
     }
     case "MAKE_CHOICE": {
-      const newState = applyChoice(state, action.choice);
-      // Filter to get only stat effects for recentChanges display
+      // Apply choice with the current scene
+      const newState = applyChoice(state, action.choice, action.scene);
       const recentChanges = (action.choice.effects || []).filter(isStatEffect);
-      if (newState.isGameOver) {
-        const ending = calculateEnding(newState.stats, action.endings, newState.flags);
-        return { ...newState, currentEnding: ending, recentChanges };
+
+      // Check for termination conditions (infinite mode)
+      const termination = checkTermination(newState, action.endings);
+
+      if (termination.shouldTerminate && termination.ending) {
+        return {
+          ...newState,
+          isGameOver: true,
+          currentEnding: termination.ending,
+          recentChanges,
+        };
       }
-      return { ...newState, recentChanges };
+
+      // If we're running low on scenes, add more dynamically
+      let updatedScenes = [...newState.selectedScenes];
+      if (newState.currentScene >= updatedScenes.length - 2) {
+        // Add next scene dynamically
+        const nextScene = selectNextSceneForInfiniteMode(newState, action.allScenes);
+        if (!updatedScenes.some(s => s.id === nextScene.id)) {
+          updatedScenes = [...updatedScenes, nextScene];
+        }
+      }
+
+      return {
+        ...newState,
+        selectedScenes: updatedScenes,
+        totalScenes: updatedScenes.length,
+        recentChanges,
+      };
+    }
+    case "ADD_NEXT_SCENE": {
+      if (state.selectedScenes.some(s => s.id === action.scene.id)) {
+        return state;
+      }
+      const newScenes = [...state.selectedScenes, action.scene];
+      return {
+        ...state,
+        selectedScenes: newScenes,
+        totalScenes: newScenes.length,
+      };
     }
     case "APPLY_STAT_CHANGE": {
       const newValue = Math.max(0, Math.min(100, state.stats[action.stat] + action.change));
+      const newStats = {
+        ...state.stats,
+        [action.stat]: newValue,
+      };
       return {
         ...state,
-        stats: {
-          ...state.stats,
-          [action.stat]: newValue,
-        },
+        stats: newStats,
+        compositeScore: calculateCompositeScore(newStats, state.flags),
         recentChanges: [{ stat: action.stat, change: action.change }],
       };
     }
@@ -80,7 +134,15 @@ function gameReducer(state: ExtendedGameState, action: GameAction): ExtendedGame
       return { ...initialState };
     }
     case "RESTORE_SAVE": {
-      return { ...action.savedState, recentChanges: [] };
+      return {
+        ...action.savedState,
+        recentChanges: [],
+        // Ensure infinite mode fields are present
+        turnCount: action.savedState.turnCount || 0,
+        compositeScore: action.savedState.compositeScore || calculateCompositeScore(action.savedState.stats, action.savedState.flags),
+        choicePath: action.savedState.choicePath || [],
+        consecutiveHighScore: action.savedState.consecutiveHighScore || 0,
+      };
     }
     default:
       return state;
@@ -118,7 +180,16 @@ export function GameProvider({ children, scenes, endings }: GameProviderProps) {
   };
 
   const makeChoice = (choice: Choice) => {
-    dispatch({ type: "MAKE_CHOICE", choice, endings });
+    const currentScene = getCurrentScene(state);
+    if (currentScene) {
+      dispatch({
+        type: "MAKE_CHOICE",
+        choice,
+        scene: currentScene,
+        endings,
+        allScenes: scenes,
+      });
+    }
   };
 
   const resetGame = () => {

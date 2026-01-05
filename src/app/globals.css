@@ -3,8 +3,15 @@
 @tailwind utilities;
 
 :root {
-  --background: #1a1a2e;
-  --foreground: #F5F5F5;
+  /* Apple-style Base Colors */
+  --color-bg-primary: #FFFFFF;
+  --color-bg-secondary: #FAFAFA;
+  --color-bg-tertiary: #F5F5F7;
+  --color-border: #E8E8ED;
+  --color-text-primary: #1D1D1F;
+  --color-text-secondary: #86868B;
+
+  /* Barcelona Accent Colors (preserved) */
   --barca-primary: #004D98;
   --barca-secondary: #A50044;
   --barca-accent: #EDBB00;
@@ -13,10 +20,24 @@
   --barca-blue: #0056A6;
   --barca-gold: #FFD700;
   --barca-crimson: #C8102E;
+
+  /* Rarity Colors */
+  --rarity-common: #86868B;
+  --rarity-uncommon: #34C759;
+  --rarity-rare: #5856D6;
+  --rarity-legendary: #EDBB00;
+  --rarity-secret: #A50044;
+
+  /* Status Colors */
+  --success: #34C759;
+  --danger: #FF3B30;
+  --warning: #FF9500;
+
+  /* Legacy colors for game components */
+  --background: #1a1a2e;
+  --foreground: #F5F5F5;
   --neon-blue: #00D4FF;
   --neon-gold: #FFD700;
-  --success: #22C55E;
-  --danger: #EF4444;
 }
 
 * {
@@ -38,6 +59,127 @@ body {
 }
 
 @layer components {
+  /* Apple-style Components */
+  .apple-card {
+    background: var(--color-bg-secondary);
+    border-radius: 16px;
+    border: 1px solid var(--color-border);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+    transition: all 0.2s ease;
+  }
+
+  .apple-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+
+  .apple-btn-primary {
+    @apply px-6 py-3 rounded-full font-medium transition-all duration-200;
+    background: var(--barca-primary);
+    color: white;
+    box-shadow: 0 4px 14px rgba(0, 77, 152, 0.25);
+  }
+
+  .apple-btn-primary:hover {
+    background: #003d7a;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(0, 77, 152, 0.35);
+  }
+
+  .apple-btn-primary:active {
+    transform: scale(0.98);
+  }
+
+  .apple-btn-secondary {
+    @apply px-6 py-3 rounded-full font-medium transition-all duration-200;
+    background: transparent;
+    color: var(--barca-primary);
+    border: 2px solid var(--barca-primary);
+  }
+
+  .apple-btn-secondary:hover {
+    background: rgba(0, 77, 152, 0.05);
+  }
+
+  .apple-btn-ghost {
+    @apply px-6 py-3 rounded-full font-medium transition-all duration-200;
+    background: var(--color-bg-tertiary);
+    color: var(--color-text-primary);
+  }
+
+  .apple-btn-ghost:hover {
+    background: var(--color-border);
+  }
+
+  /* Rarity Badge Styles */
+  .rarity-badge {
+    @apply inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-sm font-semibold;
+  }
+
+  .rarity-common {
+    background: rgba(134, 134, 139, 0.1);
+    color: var(--rarity-common);
+    border: 1px solid rgba(134, 134, 139, 0.2);
+  }
+
+  .rarity-uncommon {
+    background: rgba(52, 199, 89, 0.1);
+    color: var(--rarity-uncommon);
+    border: 1px solid rgba(52, 199, 89, 0.2);
+  }
+
+  .rarity-rare {
+    background: rgba(88, 86, 214, 0.1);
+    color: var(--rarity-rare);
+    border: 1px solid rgba(88, 86, 214, 0.2);
+  }
+
+  .rarity-legendary {
+    background: linear-gradient(135deg, rgba(237, 187, 0, 0.15), rgba(255, 159, 10, 0.15));
+    color: var(--rarity-legendary);
+    border: 1px solid rgba(237, 187, 0, 0.3);
+    animation: shimmer 2s linear infinite;
+  }
+
+  .rarity-secret {
+    background: linear-gradient(135deg, rgba(165, 0, 68, 0.15), rgba(255, 55, 95, 0.15));
+    color: var(--rarity-secret);
+    border: 1px solid rgba(165, 0, 68, 0.3);
+    animation: pulse-slow 3s ease-in-out infinite;
+  }
+
+  /* Progress Bar Apple Style */
+  .apple-progress {
+    @apply h-2 rounded-full overflow-hidden;
+    background: var(--color-bg-tertiary);
+  }
+
+  .apple-progress-fill {
+    @apply h-full rounded-full transition-all duration-500;
+    background: linear-gradient(90deg, var(--barca-primary), var(--barca-secondary));
+  }
+
+  /* Modal Apple Style */
+  .apple-modal-backdrop {
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+
+  .apple-modal {
+    background: var(--color-bg-primary);
+    border-radius: 24px;
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.16);
+  }
+
+  /* Header Apple Style */
+  .apple-header {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  /* Legacy components (preserved for game screens) */
   .glassmorphism {
     background: rgba(40, 55, 90, 0.75);
     backdrop-filter: blur(12px);
@@ -360,6 +502,64 @@ body {
   50% {
     box-shadow: 0 0 80px rgba(0, 77, 152, 0.8), 0 0 100px rgba(237, 187, 0, 0.4);
   }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes pulse-slow {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes glow {
+  0% { box-shadow: 0 0 20px rgba(237, 187, 0, 0.1); }
+  100% { box-shadow: 0 0 30px rgba(237, 187, 0, 0.3); }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.3s ease-out;
+}
+
+.animate-slide-up {
+  animation: slide-up 0.4s ease-out;
+}
+
+.animate-scale-in {
+  animation: scale-in 0.2s ease-out;
+}
+
+.animate-glow {
+  animation: glow 2s ease-in-out infinite alternate;
 }
 
 /* Custom Scrollbar */
