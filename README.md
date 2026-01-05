@@ -1,36 +1,198 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 张继豪模拟器 🎮
 
-## Getting Started
+一款基于真实大学生活的人生模拟器游戏，体验天津大学生"张继豪"的校园生活抉择与命运走向。
 
-First, run the development server:
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/devdsxul/zhang-jihao-simulator)
+
+## 🎯 游戏简介
+
+在这款游戏中，你将扮演一位天津某大学的学生，面对学业、社交、财务、健康等各种挑战。每一个选择都会影响你的五维属性，最终决定你的人生结局。
+
+### 游戏特色
+
+- 🎲 **555+ 随机场景** - 涵盖大学生活的方方面面
+- 🏆 **440+ 多样结局** - 从人生赢家到身陷囹圄
+- 🎮 **3 个互动小游戏** - 台球、金钱跑酷、诺坎普守护者
+- ⚽ **巴萨主题 UI** - 致敬 FC Barcelona 的视觉设计
+- 💾 **自动存档** - 随时继续你的人生旅程
+- 📊 **结局收集** - 解锁并收集所有结局
+
+## 📊 五维属性系统
+
+| 属性 | 说明 | 初始值 |
+|------|------|--------|
+| 📚 **学业** | 学业表现与学术声誉 | 50 |
+| 🎱 **台球** | 台球技能等级 | 30 |
+| 🔒 **网络安全** | 网络行为的安全程度 | 70 |
+| 🧠 **理智** | 心理健康状态 | 60 |
+| 💰 **财富** | 经济状况 | 40 |
+
+## 🎬 场景分类
+
+- 🎓 学业困境 - 考试、论文、挂科危机
+- 🎱 台球进阶 - 从新手到职业选手
+- ⚠️ 危机处理 - 突发事件应对
+- 💻 数字生存 - 网络世界的陷阱与机遇
+- 💸 金钱诱惑 - 理财、兼职、投资风险
+- ⚽ 足球狂热 - 巴萨球迷的日常
+- 🔥 网络长城 - 翻墙与网络安全
+- 💪 健康体质 - 身体与心理健康
+- 🏠 家乡压力 - 家庭期望与现实
+- 🌆 天津生活 - 本地文化与生活
+
+## 🛠️ 技术栈
+
+| 技术 | 版本 | 用途 |
+|------|------|------|
+| Next.js | 14 | React 框架 |
+| React | 18 | UI 库 |
+| TypeScript | 5 | 类型安全 |
+| Tailwind CSS | 3.4 | 样式框架 |
+| Jest | 30 | 测试框架 |
+
+## 🚀 快速开始
+
+### 环境要求
+
+- Node.js 18+
+- npm 9+
+
+### 安装与运行
 
 ```bash
+# 克隆项目
+git clone https://github.com/devdsxul/zhang-jihao-simulator.git
+cd zhang-jihao-simulator
+
+# 安装依赖
+npm install
+
+# 启动开发服务器
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+访问 [http://localhost:3000](http://localhost:3000) 开始游戏。
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 其他命令
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+# 生产构建
+npm run build
 
-## Learn More
+# 运行测试
+npm run test
 
-To learn more about Next.js, take a look at the following resources:
+# 测试覆盖率
+npm run test -- --coverage
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# 代码检查
+npm run lint
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+# 验证游戏数据
+npm run validate:data
 
-## Deploy on Vercel
+# 结局覆盖率统计
+npm run stats:coverage
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📁 项目结构
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```
+zhang-jihao-simulator/
+├── src/
+│   ├── app/                 # Next.js App Router
+│   │   ├── page.tsx        # 首页
+│   │   └── game/page.tsx   # 游戏主页面
+│   ├── components/          # React 组件
+│   │   ├── SceneCard.tsx   # 场景卡片
+│   │   ├── StatsBar.tsx    # 属性状态栏
+│   │   ├── ChoiceButton.tsx# 选项按钮
+│   │   ├── EndingModal.tsx # 结局弹窗
+│   │   └── minigames/      # 小游戏组件
+│   ├── contexts/            # React Context
+│   │   └── GameContext.tsx # 游戏状态管理
+│   ├── data/                # 游戏数据
+│   │   ├── endings.json    # 结局定义
+│   │   └── scenes/         # 场景数据
+│   ├── lib/                 # 核心逻辑
+│   │   ├── gameEngine.ts   # 游戏引擎
+│   │   ├── sceneSelector.ts# 场景选择
+│   │   ├── endingCalculator.ts # 结局计算
+│   │   └── saveManager.ts  # 存档管理
+│   └── types/               # TypeScript 类型
+│       └── game.ts
+├── scripts/                 # 工具脚本
+├── vercel.json             # Vercel 部署配置
+└── package.json
+```
+
+## 🧪 测试
+
+项目包含完整的单元测试，覆盖率达 **86%**：
+
+```bash
+# 运行所有测试
+npm run test
+
+# 监视模式
+npm run test:watch
+
+# 查看覆盖率报告
+npm run test -- --coverage
+```
+
+| 模块 | 覆盖率 |
+|------|--------|
+| gameEngine.ts | 93% |
+| sceneSelector.ts | 98% |
+| saveManager.ts | 91% |
+| endingStorage.ts | 89% |
+| GameContext.tsx | 88% |
+
+## 🎨 UI 设计
+
+采用 **FC Barcelona** 巴萨足球俱乐部主题配色：
+
+- 🔵 主蓝 `#004D98`
+- 🔴 酒红 `#A50044`
+- 🟡 金色 `#EDBB00`
+
+支持 **Glassmorphism** 玻璃态设计风格。
+
+## 📝 结局类型
+
+| 类型 | 数量 | 说明 |
+|------|------|------|
+| 😢 **负面结局** | 330+ | 入狱、退学、破产等 |
+| 😊 **正面结局** | 80+ | 创业成功、学业有成等 |
+| ✨ **稀有结局** | 30 | 被巴萨录取、诺贝尔奖等 |
+
+## 🤝 贡献
+
+欢迎提交 Issue 和 Pull Request！
+
+1. Fork 本仓库
+2. 创建特性分支 (`git checkout -b feature/AmazingFeature`)
+3. 提交更改 (`git commit -m 'Add some AmazingFeature'`)
+4. 推送到分支 (`git push origin feature/AmazingFeature`)
+5. 打开 Pull Request
+
+## 📄 许可证
+
+MIT License - 详见 [LICENSE](LICENSE) 文件
+
+## 🙏 致谢
+
+- [Next.js](https://nextjs.org/) - React 框架
+- [Tailwind CSS](https://tailwindcss.com/) - CSS 框架
+- [FC Barcelona](https://www.fcbarcelona.com/) - UI 设计灵感
+
+---
+
+<p align="center">
+  <strong>⚽ Visca el Barça! ⚽</strong>
+</p>
+
+<p align="center">
+  Made with ❤️ by devdsxul
+</p>
