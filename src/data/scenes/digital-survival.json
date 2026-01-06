@@ -3518,5 +3518,171 @@
         ]
       }
     ]
+  },
+  {
+    "id": "gray-001",
+    "category": "digital-survival",
+    "text": "QQ群里有个\"京东白富美\"加你好友，说自己做代购很轻松月入过万，问你要不要一起做。她的朋友圈全是转账截图和名牌包包。",
+    "animation": "scrolling",
+    "choices": [
+      {
+        "id": "gray001c1",
+        "text": "太好了！立刻拜师学艺",
+        "effects": [
+          { "stat": "wealth", "change": -30 },
+          { "stat": "digitalSafety", "change": -25 },
+          { "type": "setFlag", "flag": "scammed_by_shuadan" }
+        ]
+      },
+      {
+        "id": "gray001c2",
+        "text": "先做几单试试水",
+        "effects": [
+          { "stat": "wealth", "change": -15 },
+          { "stat": "digitalSafety", "change": -10 },
+          { "type": "setFlag", "flag": "scammed_by_shuadan" }
+        ]
+      },
+      {
+        "id": "gray001c3",
+        "text": "这不就是刷单诈骗吗？直接拉黑",
+        "effects": [
+          { "stat": "digitalSafety", "change": 15 },
+          { "stat": "sanity", "change": 5 }
+        ]
+      },
+      {
+        "id": "gray001c4",
+        "text": "举报这个骗子账号",
+        "effects": [
+          { "stat": "digitalSafety", "change": 20 },
+          { "stat": "sanity", "change": 10 }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "gray-002",
+    "category": "digital-survival",
+    "text": "刷短视频时看到\"元宇宙贷\"广告，声称\"秒批10万，无需征信，只要有呼吸就能贷\"。评论区全是\"太及时了，刚救了我急\"。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "gray002c1",
+        "text": "正好缺钱，试试这个新平台",
+        "effects": [
+          { "stat": "wealth", "change": -40 },
+          { "stat": "digitalSafety", "change": -30 },
+          { "type": "setFlag", "flag": "online_loan_trap" }
+        ]
+      },
+      {
+        "id": "gray002c2",
+        "text": "先填资料看看能贷多少",
+        "effects": [
+          { "stat": "digitalSafety", "change": -20 },
+          { "type": "setFlag", "flag": "online_loan_trap" }
+        ]
+      },
+      {
+        "id": "gray002c3",
+        "text": "这广告漏洞百出，划走",
+        "effects": [
+          { "stat": "digitalSafety", "change": 10 },
+          { "stat": "sanity", "change": 5 }
+        ]
+      },
+      {
+        "id": "gray002c4",
+        "text": "截图发群里让大家看看这智商税",
+        "effects": [
+          { "stat": "digitalSafety", "change": 15 },
+          { "stat": "sanity", "change": 10 }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "gray-003",
+    "category": "digital-survival",
+    "text": "同学拉你进一个\"财富密码群\"，群主自称是从币圈退休的大佬，正在私募一个叫\"AirCoin空气币\"的项目，保证一个月翻10倍。",
+    "animation": "scrolling",
+    "choices": [
+      {
+        "id": "gray003c1",
+        "text": "All in！梭哈这波财富密码",
+        "effects": [
+          { "stat": "wealth", "change": -50 },
+          { "stat": "sanity", "change": -20 },
+          { "type": "setFlag", "flag": "bought_aircoin" }
+        ]
+      },
+      {
+        "id": "gray003c2",
+        "text": "小投一点，万一真涨了呢",
+        "effects": [
+          { "stat": "wealth", "change": -20 },
+          { "stat": "sanity", "change": -5 },
+          { "type": "setFlag", "flag": "bought_aircoin" }
+        ]
+      },
+      {
+        "id": "gray003c3",
+        "text": "这就是资金盘啊，退群保平安",
+        "effects": [
+          { "stat": "digitalSafety", "change": 15 },
+          { "stat": "sanity", "change": 10 }
+        ]
+      },
+      {
+        "id": "gray003c4",
+        "text": "暗中观察，记录证据准备举报",
+        "effects": [
+          { "stat": "digitalSafety", "change": 20 },
+          { "stat": "sanity", "change": 5 }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "gray-004",
+    "category": "digital-survival",
+    "text": "网吧认识的\"好大哥\"说有个轻松赚钱的法子：只要借你的银行卡\"过一下账\"，每过一笔给你200块，完全合法。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "gray004c1",
+        "text": "大哥说没事就没事，借！",
+        "effects": [
+          { "stat": "wealth", "change": -10 },
+          { "stat": "digitalSafety", "change": -40 },
+          { "type": "setFlag", "flag": "money_mule" }
+        ]
+      },
+      {
+        "id": "gray004c2",
+        "text": "办张新卡专门给他用",
+        "effects": [
+          { "stat": "digitalSafety", "change": -35 },
+          { "type": "setFlag", "flag": "money_mule" }
+        ]
+      },
+      {
+        "id": "gray004c3",
+        "text": "这是帮信罪啊！赶紧跑",
+        "effects": [
+          { "stat": "digitalSafety", "change": 20 },
+          { "stat": "sanity", "change": 10 }
+        ]
+      },
+      {
+        "id": "gray004c4",
+        "text": "假装答应，偷偷报警",
+        "effects": [
+          { "stat": "digitalSafety", "change": 25 },
+          { "stat": "sanity", "change": 15 }
+        ]
+      }
+    ]
   }
 ]

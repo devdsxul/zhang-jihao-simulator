@@ -5584,10 +5584,14 @@
       {
         "stat": "wealth",
         "operator": "lte",
-        "value": 1
+        "value": 5
+      },
+      {
+        "flag": "stock_trading",
+        "operator": "hasFlag"
       }
     ],
-    "priority": 97
+    "priority": 75
   },
   {
     "id": "neg-369",
@@ -7423,5 +7427,129 @@
       }
     ],
     "priority": 76
+  },
+  {
+    "id": "neg-gray-001",
+    "type": "negative",
+    "rarity": "legendary",
+    "title": "刷单翻车",
+    "description": "你被京东白富美骗去刷单，从小额做起越陷越深。当你把生活费全垫进去等待返款时，对方消失了，钱也没了。你连饭都吃不起，只能天天吃馒头蘸老干妈度日。最惨的是，你还得瞒着家里人，承受巨大的心理压力。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 8
+      },
+      {
+        "flag": "scammed_by_shuadan",
+        "operator": "hasFlag"
+      }
+    ],
+    "priority": 92
+  },
+  {
+    "id": "neg-gray-002",
+    "type": "negative",
+    "rarity": "legendary",
+    "title": "网贷深渊",
+    "description": "元宇宙贷的利息像滚雪球一样越滚越大。你用新网贷还旧网贷，以贷养贷，最终债台高筑。催收电话打爆了你的手机，还打给了你的辅导员、同学甚至父母。你的社会性死亡比财务破产来得更快。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 5
+      },
+      {
+        "flag": "online_loan_trap",
+        "operator": "hasFlag"
+      }
+    ],
+    "priority": 94
+  },
+  {
+    "id": "neg-gray-003",
+    "type": "negative",
+    "rarity": "legendary",
+    "title": "空气币归零",
+    "description": "你重仓的AirCoin在创始人跑路后归零了。所有的生活费、奖学金甚至找同学借的钱，全部打了水漂。你在币圈群里哭诉，换来的只有其他韭菜的嘲笑。你明白了一个道理：在币圈，你永远不知道谁才是韭菜。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 3
+      },
+      {
+        "flag": "bought_aircoin",
+        "operator": "hasFlag"
+      }
+    ],
+    "priority": 95
+  },
+  {
+    "id": "neg-gray-004",
+    "type": "negative",
+    "rarity": "legendary",
+    "title": "帮信罪",
+    "description": "你以为只是出借银行卡赚点跑腿费，结果警察找上门了。你的卡过了几百万赃款，虽然你分文未得，但已经涉嫌帮助信息网络犯罪活动罪。被拘留、审讯、开除学籍，你的大学生涯就这么毁了。",
+    "conditions": [
+      {
+        "stat": "digitalSafety",
+        "operator": "lte",
+        "value": 10
+      },
+      {
+        "flag": "money_mule",
+        "operator": "hasFlag"
+      }
+    ],
+    "priority": 97
+  },
+  {
+    "id": "neg-gray-005",
+    "type": "negative",
+    "rarity": "legendary",
+    "title": "杀猪盘受害者",
+    "description": "茶叶西施的温柔让你沉沦，你为她买茶叶、投资理财平台。当你终于想见面时，发现对方是个抠脚大汉团队。你被骗了几万块，感情也碎了一地。你甚至不敢报警，怕被人笑话太好骗。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 8
+      },
+      {
+        "stat": "sanity",
+        "operator": "lte",
+        "value": 25
+      },
+      {
+        "flag": "romance_scam",
+        "operator": "hasFlag"
+      }
+    ],
+    "priority": 93
+  },
+  {
+    "id": "neg-gray-006",
+    "type": "negative",
+    "rarity": "legendary",
+    "title": "电诈受害者",
+    "description": "假公安的安全防护APP让你把银行卡绑了进去，验证码也乖乖交出。等你反应过来时，卡里的钱已经被转走了。报警后才知道，这种冒充公检法的诈骗你根本不是第一个受害者。钱追不回来，你只能认栽。",
+    "conditions": [
+      {
+        "stat": "wealth",
+        "operator": "lte",
+        "value": 5
+      },
+      {
+        "stat": "digitalSafety",
+        "operator": "lte",
+        "value": 15
+      },
+      {
+        "flag": "police_impersonation_scam",
+        "operator": "hasFlag"
+      }
+    ],
+    "priority": 96
   }
 ]

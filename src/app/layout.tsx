@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter, Bebas_Neue, Barlow_Condensed } from "next/font/google";
 import "./globals.css";
+import DynamicBackground from "@/components/DynamicBackground";
+import ClickFeedback from "@/components/ClickFeedback";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -43,6 +45,8 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${bebasNeue.variable} ${barlowCondensed.variable} antialiased`}
       >
+        <DynamicBackground />
+        <ClickFeedback />
         {children}
       </body>
     </html>

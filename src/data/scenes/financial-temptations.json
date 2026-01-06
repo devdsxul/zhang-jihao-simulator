@@ -3018,5 +3018,88 @@
         ]
       }
     ]
+  },
+  {
+    "id": "gray-005",
+    "category": "financial-temptations",
+    "text": "一个自称\"茶叶女\"的美女在陌陌上加你，聊了一周后说家里茶园滞销，希望你支持一下。她每天给你发早安晚安，还说等疫情结束要来看你。",
+    "animation": "scrolling",
+    "choices": [
+      {
+        "id": "gray005c1",
+        "text": "真爱无价！买10斤支持她",
+        "effects": [
+          { "stat": "wealth", "change": -35 },
+          { "stat": "sanity", "change": -15 },
+          { "type": "setFlag", "flag": "romance_scam" }
+        ]
+      },
+      {
+        "id": "gray005c2",
+        "text": "先买2斤试试，毕竟有感情了",
+        "effects": [
+          { "stat": "wealth", "change": -15 },
+          { "stat": "sanity", "change": -5 },
+          { "type": "setFlag", "flag": "romance_scam" }
+        ]
+      },
+      {
+        "id": "gray005c3",
+        "text": "这套路我看过！直接拉黑",
+        "effects": [
+          { "stat": "digitalSafety", "change": 15 },
+          { "stat": "sanity", "change": 10 }
+        ]
+      },
+      {
+        "id": "gray005c4",
+        "text": "反向钓鱼，看看她能骗多久",
+        "effects": [
+          { "stat": "digitalSafety", "change": 10 },
+          { "stat": "sanity", "change": 15 }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "gray-006",
+    "category": "financial-temptations",
+    "text": "接到一个电话，对方自称是\"北京市公安局\"的警官，说你涉嫌一起洗钱案件，需要下载一个\"安全防护APP\"配合调查，否则会立即拘留。",
+    "animation": "stressed",
+    "choices": [
+      {
+        "id": "gray006c1",
+        "text": "太可怕了！立刻下载配合",
+        "effects": [
+          { "stat": "wealth", "change": -60 },
+          { "stat": "digitalSafety", "change": -40 },
+          { "type": "setFlag", "flag": "police_impersonation_scam" }
+        ]
+      },
+      {
+        "id": "gray006c2",
+        "text": "先下载看看，万一是真的呢",
+        "effects": [
+          { "stat": "digitalSafety", "change": -30 },
+          { "type": "setFlag", "flag": "police_impersonation_scam" }
+        ]
+      },
+      {
+        "id": "gray006c3",
+        "text": "公安办案还用下APP？骗子！挂断",
+        "effects": [
+          { "stat": "digitalSafety", "change": 20 },
+          { "stat": "sanity", "change": 10 }
+        ]
+      },
+      {
+        "id": "gray006c4",
+        "text": "故意拖时间，同时拨打110核实",
+        "effects": [
+          { "stat": "digitalSafety", "change": 25 },
+          { "stat": "sanity", "change": 15 }
+        ]
+      }
+    ]
   }
 ]

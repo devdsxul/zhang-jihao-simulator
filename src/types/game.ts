@@ -9,11 +9,11 @@ export interface GameStats {
 
 // Initial stats for Zhang Jihao
 export const INITIAL_STATS: GameStats = {
-  academicStanding: 20,
-  digitalSafety: 40,
-  wealth: 30,
-  billiardsSkill: 50,
-  sanity: 60,
+  academicStanding: 40,
+  digitalSafety: 50,
+  wealth: 35,
+  billiardsSkill: 40,
+  sanity: 55,
 };
 
 // Game configuration constants
@@ -32,14 +32,14 @@ export const STAT_WEIGHTS: Record<keyof GameStats, number> = {
 // Game termination thresholds
 export const THRESHOLDS = {
   CRITICAL_STAT: 0,           // Any stat at 0 = immediate game over
-  DANGER_STAT: 10,            // Any stat below 10 = ending check
+  DANGER_STAT: 8,             // Any stat below 8 = ending check (was 10)
   NEGATIVE_SCORE: 25,         // Composite score < 25 = negative ending
   WARNING_SCORE: 35,          // Warning zone
   POSITIVE_SCORE: 65,         // Positive zone
   VICTORY_SCORE: 85,          // Victory zone
   CONSECUTIVE_VICTORY: 3,     // Consecutive high score turns needed
-  BALANCED_MASTERY: 70,       // All stats >= 70 = balanced ending
-  SURVIVAL_TURNS: 30,         // Survive 30+ turns for survival ending
+  BALANCED_MASTERY: 65,       // All stats >= 65 = balanced ending (was 70)
+  SURVIVAL_TURNS: 20,         // Survive 20+ turns for survival ending (was 30)
   SURVIVAL_MIN_SCORE: 60,     // Minimum score for survival ending
 };
 

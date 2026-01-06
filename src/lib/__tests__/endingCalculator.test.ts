@@ -40,6 +40,25 @@ const mockEndings: Ending[] = [
     ],
     priority: 90,
   },
+  {
+    id: 'neg-368',
+    type: 'negative',
+    title: '炒股爆仓',
+    description: '炒股爆仓结局',
+    conditions: [
+      { stat: 'wealth', operator: 'lte', value: 5 },
+      { flag: 'stock_trading', operator: 'hasFlag' },
+    ],
+    priority: 75,
+  },
+  {
+    id: 'ending-poor',
+    type: 'negative',
+    title: 'Generic Poor Ending',
+    description: 'Generic ending for low wealth',
+    conditions: [{ stat: 'wealth', operator: 'lte', value: 5 }],
+    priority: 30,
+  },
 ];
 
 describe('endingCalculator', () => {
@@ -102,6 +121,24 @@ describe('endingCalculator', () => {
       // With flag
       const endingWithFlag = calculateEnding(stats, mockEndings, ['special_choice']);
       expect(endingWithFlag.id).toBe('ending-flag');
+    });
+
+    it('should require stock_trading flag for 炒股爆仓 ending', () => {
+      const stats: GameStats = {
+        academicStanding: 30,
+        digitalSafety: 30,
+        wealth: 3,
+        billiardsSkill: 30,
+        sanity: 50, // Changed to 50 so positive ending (sanity >= 60) doesn't match
+      };
+
+      // Without flag - should get generic poor ending
+      const endingNoFlag = calculateEnding(stats, mockEndings, []);
+      expect(endingNoFlag.id).toBe('ending-poor');
+
+      // With stock_trading flag - should get 炒股爆仓
+      const endingWithFlag = calculateEnding(stats, mockEndings, ['stock_trading']);
+      expect(endingWithFlag.id).toBe('neg-368');
     });
   });
 

@@ -14,6 +14,7 @@ import {
   STAT_WEIGHTS,
   THRESHOLDS,
 } from "@/types/game";
+import { applyBalancedEffect } from "./balanceConfig";
 
 // Calculate composite score from stats
 export function calculateCompositeScore(stats: GameStats, flags: string[] = []): number {
@@ -100,7 +101,8 @@ export function applyChoice(state: GameState, choice: Choice, currentScene: Scen
   for (const effect of choice.effects) {
     if (isStatEffect(effect)) {
       if (isValidStatKey(effect.stat)) {
-        newStats[effect.stat] = Math.max(0, Math.min(100, newStats[effect.stat] + effect.change));
+        const balancedChange = applyBalancedEffect(newStats[effect.stat], effect.change);
+        newStats[effect.stat] = Math.max(0, Math.min(100, newStats[effect.stat] + balancedChange));
       }
     } else if (isFlagEffect(effect)) {
       if (effect.type === "setFlag") {

@@ -172,29 +172,25 @@ function GameContent() {
   }
 
   return (
-    <div className="min-h-screen bg-background relative">
-      {/* Background - Brighter with Barça elements */}
-      <div className="fixed inset-0 bg-gradient-to-br from-barca-primary/15 via-background to-barca-secondary/15 -z-10" />
-      <div className="fixed top-0 right-0 w-80 h-80 bg-barca-primary/20 rounded-full blur-3xl -z-10" />
-      <div className="fixed bottom-0 left-0 w-80 h-80 bg-barca-secondary/20 rounded-full blur-3xl -z-10" />
-      <div className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-barca-accent/5 rounded-full blur-3xl -z-10" />
+    <div className="min-h-screen relative">
+      {/* Background is now provided by DynamicBackground in layout.tsx */}
 
       {/* Barça Stripes Top Accent */}
       <div className="fixed top-0 left-0 right-0 h-1 barca-stripes opacity-70 z-50" />
 
-      {/* Header */}
-      <header className="fixed top-1 left-0 right-0 z-40 glassmorphism py-3 px-4 mx-2 mt-2 rounded-xl">
+      {/* Header - Apple-style light glassmorphism */}
+      <header className="fixed top-1 left-0 right-0 z-40 bg-white/80 backdrop-blur-xl border border-gray-200/50 shadow-sm py-3 px-4 mx-2 mt-2 rounded-xl">
         <div className="max-w-4xl mx-auto flex items-center justify-between">
           <button
             onClick={handleBackHome}
-            className="text-foreground/70 hover:text-foreground transition-colors flex items-center gap-1"
+            className="text-gray-500 hover:text-gray-900 transition-colors flex items-center gap-1"
           >
             <span>←</span> <span className="hidden sm:inline">返回首页</span>
           </button>
-          <h1 className="text-lg font-semibold text-gradient flex items-center gap-2">
+          <h1 className="text-lg font-semibold text-gray-900 flex items-center gap-2">
             <span className="text-sm">⚽</span> 章吉豪模拟器
           </h1>
-          <div className="text-sm text-foreground/70 font-medium bg-barca-primary/20 px-3 py-1 rounded-full">
+          <div className="text-sm text-gray-600 font-medium bg-barca-primary/10 px-3 py-1 rounded-full">
             {state.currentScene + 1}/{state.totalScenes}
           </div>
         </div>
@@ -236,14 +232,14 @@ function GameContent() {
                 <StatsBar stats={state.stats} recentChanges={state.recentChanges} />
 
                 {/* Progress Bar */}
-                <div className="mt-4 glassmorphism p-4 rounded-xl">
-                  <div className="flex justify-between text-xs text-foreground/70 mb-2">
+                <div className="mt-4 bg-white/80 backdrop-blur-xl border border-gray-200/50 shadow-sm p-4 rounded-xl">
+                  <div className="flex justify-between text-xs text-gray-500 mb-2">
                     <span className="flex items-center gap-1">⚽ 游戏进度</span>
-                    <span className="font-bold text-barca-accent">{Math.round(((state.currentScene + 1) / state.totalScenes) * 100)}%</span>
+                    <span className="font-bold text-barca-primary">{Math.round(((state.currentScene + 1) / state.totalScenes) * 100)}%</span>
                   </div>
-                  <div className="h-3 rounded-full bg-barca-dark/50 overflow-hidden border border-barca-primary/30">
+                  <div className="h-3 rounded-full bg-gray-100 overflow-hidden border border-gray-200">
                     <div
-                      className="h-full rounded-full bg-gradient-to-r from-barca-primary via-barca-secondary to-barca-accent transition-all duration-500 shadow-glow"
+                      className="h-full rounded-full bg-gradient-to-r from-barca-primary via-barca-secondary to-barca-accent transition-all duration-500"
                       style={{ width: `${((state.currentScene + 1) / state.totalScenes) * 100}%` }}
                     />
                   </div>
