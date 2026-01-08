@@ -1,10 +1,43 @@
-import { GameState } from "@/types/game";
+import { GameState, VALID_STAT_KEYS } from "@/types/game";
 
 const SAVE_KEY = "zhang-jihao-game-save";
 
 export interface SavedGame {
   state: GameState;
   timestamp: number;
+}
+
+function isValidGameStats(stats: unknown): boolean {
+  if (!stats || typeof stats !== "object") return false;
+  const s = stats as Record<string, unknown>;
+  return VALID_STAT_KEYS.every(
+    (key) => typeof s[key] === "number" && s[key] >= 0 && s[key] <= 100
+  );
+}
+
+function isValidGameState(state: unknown): state is GameState {
+  if (!state || typeof state !== "object") return false;
+  const s = state as Record<string, unknown>;
+
+  // Check required fields
+  if (typeof s.currentScene !== "number") return false;
+  if (!isValidGameStats(s.stats)) return false;
+  if (!Array.isArray(s.flags)) return false;
+  if (!Array.isArray(s.selectedScenes)) return false;
+  if (typeof s.isGameOver !== "boolean") return false;
+  if (!Array.isArray(s.sceneHistory)) return false;
+
+  return true;
+}
+
+function validateSavedGame(data: unknown): SavedGame | null {
+  if (!data || typeof data !== "object") return null;
+  const d = data as Record<string, unknown>;
+
+  if (typeof d.timestamp !== "number") return null;
+  if (!isValidGameState(d.state)) return null;
+
+  return { state: d.state as GameState, timestamp: d.timestamp };
 }
 
 export function saveGame(state: GameState): void {
@@ -29,10 +62,11 @@ export function loadGame(): SavedGame | null {
     const saved = localStorage.getItem(SAVE_KEY);
     if (!saved) return null;
 
-    const data = JSON.parse(saved) as SavedGame;
+    const parsed = JSON.parse(saved);
+    const data = validateSavedGame(parsed);
 
-    // Validate save data
-    if (!data.state || typeof data.timestamp !== "number") {
+    if (!data) {
+      clearSave();
       return null;
     }
 
@@ -46,6 +80,7 @@ export function loadGame(): SavedGame | null {
     return data;
   } catch (e) {
     console.error("Failed to load game:", e);
+    clearSave();
     return null;
   }
 }

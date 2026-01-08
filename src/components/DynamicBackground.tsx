@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState, useRef } from 'react';
+import { useEffect, useState, useRef, useCallback } from 'react';
 
 interface DynamicBackgroundProps {
   className?: string;
@@ -10,15 +10,26 @@ export default function DynamicBackground({ className = '' }: DynamicBackgroundP
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [scrollY, setScrollY] = useState(0);
   const containerRef = useRef<HTMLDivElement>(null);
+  const rafIdRef = useRef<number>(0);
+  const lastMouseRef = useRef({ x: 0, y: 0 });
+
+  const updateMousePosition = useCallback(() => {
+    setMousePosition(lastMouseRef.current);
+    rafIdRef.current = 0;
+  }, []);
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
       if (containerRef.current) {
         const rect = containerRef.current.getBoundingClientRect();
-        setMousePosition({
+        lastMouseRef.current = {
           x: (e.clientX - rect.left) / rect.width,
           y: (e.clientY - rect.top) / rect.height,
-        });
+        };
+        // Throttle updates using requestAnimationFrame
+        if (!rafIdRef.current) {
+          rafIdRef.current = requestAnimationFrame(updateMousePosition);
+        }
       }
     };
 
@@ -32,8 +43,11 @@ export default function DynamicBackground({ className = '' }: DynamicBackgroundP
     return () => {
       window.removeEventListener('mousemove', handleMouseMove);
       window.removeEventListener('scroll', handleScroll);
+      if (rafIdRef.current) {
+        cancelAnimationFrame(rafIdRef.current);
+      }
     };
-  }, []);
+  }, [updateMousePosition]);
 
   const parallaxOffset = scrollY * 0.3;
 

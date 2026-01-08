@@ -22,8 +22,8 @@ interface ExtendedGameState extends GameState {
 }
 
 type GameAction =
-  | { type: "START_GAME"; scenes: Scene[]; endings: Ending[] }
-  | { type: "MAKE_CHOICE"; choice: Choice; scene: Scene; endings: Ending[]; allScenes: Scene[] }
+  | { type: "START_GAME"; selectedScenes: Scene[] }
+  | { type: "MAKE_CHOICE"; choice: Choice; scene: Scene; endings: Ending[]; nextScene?: Scene }
   | { type: "APPLY_STAT_CHANGE"; stat: keyof GameStats; change: number }
   | { type: "RESET_GAME" }
   | { type: "CLEAR_RECENT_CHANGES" }
@@ -64,9 +64,8 @@ const initialState: ExtendedGameState = {
 function gameReducer(state: ExtendedGameState, action: GameAction): ExtendedGameState {
   switch (action.type) {
     case "START_GAME": {
-      // Start with initial batch of scenes
-      const selectedScenes = selectScenesForGame(action.scenes, TOTAL_SCENES);
-      return { ...initGame(selectedScenes), recentChanges: [] };
+      // Pure state initialization - scene selection done outside reducer
+      return { ...initGame(action.selectedScenes), recentChanges: [] };
     }
     case "MAKE_CHOICE": {
       // Apply choice with the current scene
@@ -85,14 +84,12 @@ function gameReducer(state: ExtendedGameState, action: GameAction): ExtendedGame
         };
       }
 
-      // If we're running low on scenes, add more dynamically
+      // Add next scene if provided (scene selection uses sliding window in selector)
       let updatedScenes = [...newState.selectedScenes];
-      if (newState.currentScene >= updatedScenes.length - 2) {
-        // Add next scene dynamically
-        const nextScene = selectNextSceneForInfiniteMode(newState, action.allScenes);
-        if (!updatedScenes.some(s => s.id === nextScene.id)) {
-          updatedScenes = [...updatedScenes, nextScene];
-        }
+      if (action.nextScene) {
+        // Allow adding even if scene was played before (infinite mode reuse)
+        // Selector's sliding window prevents immediate repeats
+        updatedScenes = [...updatedScenes, action.nextScene];
       }
 
       return {
@@ -130,18 +127,18 @@ function gameReducer(state: ExtendedGameState, action: GameAction): ExtendedGame
       return { ...state, recentChanges: [] };
     }
     case "RESET_GAME": {
-      clearSave();
-      return { ...initialState };
+      // Pure state reset using initGame as single source of truth
+      return { ...initGame([]), recentChanges: [] };
     }
     case "RESTORE_SAVE": {
       return {
         ...action.savedState,
         recentChanges: [],
         // Ensure infinite mode fields are present
-        turnCount: action.savedState.turnCount || 0,
-        compositeScore: action.savedState.compositeScore || calculateCompositeScore(action.savedState.stats, action.savedState.flags),
-        choicePath: action.savedState.choicePath || [],
-        consecutiveHighScore: action.savedState.consecutiveHighScore || 0,
+        turnCount: action.savedState.turnCount ?? 0,
+        compositeScore: action.savedState.compositeScore ?? calculateCompositeScore(action.savedState.stats, action.savedState.flags),
+        choicePath: action.savedState.choicePath ?? [],
+        consecutiveHighScore: action.savedState.consecutiveHighScore ?? 0,
       };
     }
     default:
@@ -176,23 +173,32 @@ export function GameProvider({ children, scenes, endings }: GameProviderProps) {
 
   const startGame = () => {
     clearSave();
-    dispatch({ type: "START_GAME", scenes, endings });
+    const selectedScenes = selectScenesForGame(scenes, TOTAL_SCENES);
+    dispatch({ type: "START_GAME", selectedScenes });
   };
 
   const makeChoice = (choice: Choice) => {
-    const currentScene = getCurrentScene(state);
-    if (currentScene) {
+    const currentSceneData = getCurrentScene(state);
+    if (currentSceneData) {
+      // Pre-select next scene outside reducer if needed
+      let nextScene: Scene | undefined;
+      if (state.currentScene >= state.selectedScenes.length - 2) {
+        nextScene = selectNextSceneForInfiniteMode(state, scenes);
+        // Allow scene reuse in infinite mode - only avoid if in recent window
+        // selectNextSceneForInfiniteMode already uses sliding window (last 5)
+      }
       dispatch({
         type: "MAKE_CHOICE",
         choice,
-        scene: currentScene,
+        scene: currentSceneData,
         endings,
-        allScenes: scenes,
+        nextScene,
       });
     }
   };
 
   const resetGame = () => {
+    clearSave();
     dispatch({ type: "RESET_GAME" });
   };
 

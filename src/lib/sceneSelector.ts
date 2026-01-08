@@ -150,7 +150,10 @@ export function selectNextSceneForInfiniteMode(
   const candidates = allScenes.filter(s => !recentSceneIds.includes(s.id));
 
   if (candidates.length === 0) {
-    // If all scenes played recently, just pick randomly from all
+    // If all scenes played recently, pick randomly from all (if available)
+    if (allScenes.length === 0) {
+      throw new Error("No scenes available: allScenes array is empty");
+    }
     return allScenes[Math.floor(Math.random() * allScenes.length)];
   }
 

@@ -9,6 +9,30 @@ interface StatsBarProps {
   recentChanges?: StatEffect[];
 }
 
+interface StatBarStyle {
+  background: string;
+  boxShadow: string;
+}
+
+function getStatBarStyle(value: number, color: string): StatBarStyle {
+  if (value <= 20) {
+    return {
+      background: "linear-gradient(90deg, #A50044, #FF4757)",
+      boxShadow: "0 0 8px rgba(165, 0, 68, 0.5)",
+    };
+  }
+  if (value <= 40) {
+    return {
+      background: "linear-gradient(90deg, #EDBB00, #FFA502)",
+      boxShadow: `0 0 8px ${color}60`,
+    };
+  }
+  return {
+    background: `linear-gradient(90deg, ${color}, ${color}CC)`,
+    boxShadow: `0 0 8px ${color}60`,
+  };
+}
+
 export default function StatsBar({ stats, recentChanges = [] }: StatsBarProps) {
   const overallScore = calculateEndingScore(stats);
   const [displayedChanges, setDisplayedChanges] = useState<StatEffect[]>([]);
@@ -74,13 +98,7 @@ export default function StatsBar({ stats, recentChanges = [] }: StatsBarProps) {
                   className="stat-bar-fill transition-all duration-500 rounded-full"
                   style={{
                     width: `${value}%`,
-                    background:
-                      value <= 20
-                        ? "linear-gradient(90deg, #A50044, #FF4757)"
-                        : value <= 40
-                        ? "linear-gradient(90deg, #EDBB00, #FFA502)"
-                        : `linear-gradient(90deg, ${color}, ${color}CC)`,
-                    boxShadow: value > 20 ? `0 0 8px ${color}60` : "0 0 8px rgba(165, 0, 68, 0.5)",
+                    ...getStatBarStyle(value, color),
                   }}
                 />
               </div>

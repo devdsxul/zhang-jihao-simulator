@@ -64,7 +64,7 @@ describe('gameEngine', () => {
         effects: [{ stat: 'wealth', change: 20 }],
       };
 
-      const newState = applyChoice(state, choice);
+      const newState = applyChoice(state, choice, mockScene);
 
       expect(newState.stats.wealth).toBe(INITIAL_STATS.wealth + 20);
       expect(newState.currentScene).toBe(1);
@@ -79,17 +79,17 @@ describe('gameEngine', () => {
         text: 'High',
         effects: [{ stat: 'wealth', change: 200 }],
       };
-      const newStateHigh = applyChoice(state, choiceHigh);
+      const newStateHigh = applyChoice(state, choiceHigh, mockScene);
       expect(newStateHigh.stats.wealth).toBe(100);
 
-      // Test lower bound
+      // Test lower bound (with SAFETY_FLOOR = 5 from balance system)
       const choiceLow: Choice = {
         id: 'low',
         text: 'Low',
         effects: [{ stat: 'sanity', change: -200 }],
       };
-      const newStateLow = applyChoice(state, choiceLow);
-      expect(newStateLow.stats.sanity).toBe(0);
+      const newStateLow = applyChoice(state, choiceLow, mockScene);
+      expect(newStateLow.stats.sanity).toBe(5); // SAFETY_FLOOR prevents going below 5
     });
 
     it('should set flags correctly', () => {
@@ -100,7 +100,7 @@ describe('gameEngine', () => {
         effects: [{ type: 'setFlag', flag: 'important_decision' }],
       };
 
-      const newState = applyChoice(state, choice);
+      const newState = applyChoice(state, choice, mockSceneWithFlag);
 
       expect(newState.flags).toContain('important_decision');
     });
@@ -116,7 +116,7 @@ describe('gameEngine', () => {
         effects: [{ type: 'clearFlag', flag: 'existing_flag' }],
       };
 
-      const newState = applyChoice(stateWithFlag, choice);
+      const newState = applyChoice(stateWithFlag, choice, mockScene);
 
       expect(newState.flags).not.toContain('existing_flag');
       expect(newState.flags).toContain('another_flag');
@@ -126,20 +126,21 @@ describe('gameEngine', () => {
       const state = initGame([mockScene, mockSceneWithFlag]);
       const choice = mockScene.choices[0];
 
-      const newState = applyChoice(state, choice);
+      const newState = applyChoice(state, choice, mockScene);
 
       expect(newState.sceneHistory.length).toBe(1);
       expect(newState.sceneHistory[0].sceneId).toBe(mockScene.id);
       expect(newState.sceneHistory[0].choiceId).toBe(choice.id);
     });
 
-    it('should set isGameOver when reaching last scene', () => {
+    it('should not set isGameOver when reaching last scene in infinite mode', () => {
       const state = initGame([mockScene]);
       const choice = mockScene.choices[0];
 
-      const newState = applyChoice(state, choice);
+      const newState = applyChoice(state, choice, mockScene);
 
-      expect(newState.isGameOver).toBe(true);
+      // In infinite mode, isGameOver is always false (determined by endingCalculator)
+      expect(newState.isGameOver).toBe(false);
     });
   });
 

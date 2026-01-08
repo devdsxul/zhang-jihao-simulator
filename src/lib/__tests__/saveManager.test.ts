@@ -12,6 +12,10 @@ const mockGameState: GameState = {
   selectedScenes: [],
   isGameOver: false,
   currentEnding: null,
+  turnCount: 3,
+  compositeScore: 50,
+  choicePath: [],
+  consecutiveHighScore: 0,
 };
 
 describe('saveManager', () => {

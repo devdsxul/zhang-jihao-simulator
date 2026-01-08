@@ -55,7 +55,8 @@ export function hasCriticalStat(stats: GameStats): { critical: boolean; stat?: k
 // Check if any stat is in danger zone
 export function hasDangerStat(stats: GameStats): { danger: boolean; stat?: keyof GameStats } {
   for (const key of VALID_STAT_KEYS) {
-    if (key === "billiardsSkill") continue; // billiards has no critical threshold
+    // Skip billiards - low skill is not life-threatening, only affects gameplay variety
+    if (key === "billiardsSkill") continue;
     if (stats[key] <= THRESHOLDS.DANGER_STAT) {
       return { danger: true, stat: key };
     }

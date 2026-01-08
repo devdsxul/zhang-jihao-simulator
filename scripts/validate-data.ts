@@ -38,7 +38,9 @@ const VALID_STATS = [
 ];
 
 const VALID_OPERATORS = ['lt', 'lte', 'gt', 'gte', 'eq'];
-const VALID_ENDING_TYPES = ['negative', 'positive', 'rare'];
+const VALID_FLAG_OPERATORS = ['hasFlag', 'notFlag'];
+const VALID_ENDING_TYPES = ['negative', 'positive'];
+const VALID_EFFECT_TYPES = ['setFlag', 'clearFlag'];
 
 interface ValidationError {
   file: string;
@@ -78,11 +80,27 @@ function validateScene(scene: any, file: string): void {
       }
       if (Array.isArray(choice.effects)) {
         choice.effects.forEach((effect: any, j: number) => {
-          if (!VALID_STATS.includes(effect.stat)) {
-            errors.push({ file, id: scene.id, field: `choices[${i}].effects[${j}].stat`, message: `Invalid stat: ${effect.stat}` });
+          // Check if it's a StatEffect
+          if ('stat' in effect && 'change' in effect) {
+            if (!VALID_STATS.includes(effect.stat)) {
+              errors.push({ file, id: scene.id, field: `choices[${i}].effects[${j}].stat`, message: `Invalid stat: ${effect.stat}` });
+            }
+            if (typeof effect.change !== 'number') {
+              errors.push({ file, id: scene.id, field: `choices[${i}].effects[${j}].change`, message: 'change must be a number' });
+            }
           }
-          if (typeof effect.change !== 'number') {
-            errors.push({ file, id: scene.id, field: `choices[${i}].effects[${j}].change`, message: 'change must be a number' });
+          // Check if it's a FlagEffect
+          else if ('type' in effect && 'flag' in effect) {
+            if (!VALID_EFFECT_TYPES.includes(effect.type)) {
+              errors.push({ file, id: scene.id, field: `choices[${i}].effects[${j}].type`, message: `Invalid effect type: ${effect.type}` });
+            }
+            if (typeof effect.flag !== 'string') {
+              errors.push({ file, id: scene.id, field: `choices[${i}].effects[${j}].flag`, message: 'flag must be a string' });
+            }
+          }
+          // Unknown effect structure
+          else {
+            errors.push({ file, id: scene.id, field: `choices[${i}].effects[${j}]`, message: 'Unknown effect structure' });
           }
         });
       }
@@ -115,14 +133,30 @@ function validateEnding(ending: any, file: string): void {
     errors.push({ file, id: ending.id, field: 'conditions', message: 'Missing conditions array' });
   } else {
     ending.conditions.forEach((cond: any, i: number) => {
-      if (!VALID_STATS.includes(cond.stat)) {
-        errors.push({ file, id: ending.id, field: `conditions[${i}].stat`, message: `Invalid stat: ${cond.stat}` });
+      // Check if it's a StatCondition
+      if ('stat' in cond && 'value' in cond) {
+        if (!VALID_STATS.includes(cond.stat)) {
+          errors.push({ file, id: ending.id, field: `conditions[${i}].stat`, message: `Invalid stat: ${cond.stat}` });
+        }
+        if (!VALID_OPERATORS.includes(cond.operator)) {
+          errors.push({ file, id: ending.id, field: `conditions[${i}].operator`, message: `Invalid operator: ${cond.operator}` });
+        }
+        if (typeof cond.value !== 'number') {
+          errors.push({ file, id: ending.id, field: `conditions[${i}].value`, message: 'value must be a number' });
+        }
       }
-      if (!VALID_OPERATORS.includes(cond.operator)) {
-        errors.push({ file, id: ending.id, field: `conditions[${i}].operator`, message: `Invalid operator: ${cond.operator}` });
+      // Check if it's a FlagCondition
+      else if ('flag' in cond && 'operator' in cond) {
+        if (!VALID_FLAG_OPERATORS.includes(cond.operator)) {
+          errors.push({ file, id: ending.id, field: `conditions[${i}].operator`, message: `Invalid flag operator: ${cond.operator}` });
+        }
+        if (typeof cond.flag !== 'string') {
+          errors.push({ file, id: ending.id, field: `conditions[${i}].flag`, message: 'flag must be a string' });
+        }
       }
-      if (typeof cond.value !== 'number') {
-        errors.push({ file, id: ending.id, field: `conditions[${i}].value`, message: 'value must be a number' });
+      // Unknown condition structure
+      else {
+        errors.push({ file, id: ending.id, field: `conditions[${i}]`, message: 'Unknown condition structure' });
       }
     });
   }

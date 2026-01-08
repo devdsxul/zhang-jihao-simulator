@@ -12,18 +12,21 @@ const mockEnding = {
   id: 'neg-001',
   title: '测试结局',
   type: 'negative' as const,
+  rarity: 'common' as const,
 };
 
 const mockPositiveEnding = {
   id: 'pos-001',
   title: '好结局',
   type: 'positive' as const,
+  rarity: 'common' as const,
 };
 
-const mockRareEnding = {
-  id: 'rare-001',
-  title: '稀有结局',
-  type: 'rare' as const,
+const mockLegendaryEnding = {
+  id: 'legendary-001',
+  title: '传说结局',
+  type: 'positive' as const,
+  rarity: 'legendary' as const,
 };
 
 describe('endingStorage', () => {
@@ -39,7 +42,7 @@ describe('endingStorage', () => {
 
     it('should return stored endings', () => {
       const endings: UnlockedEnding[] = [
-        { id: 'neg-001', title: '结局1', type: 'negative', unlockedAt: Date.now() },
+        { id: 'neg-001', title: '结局1', type: 'negative', rarity: 'common', unlockedAt: Date.now() },
       ];
       localStorage.setItem(STORAGE_KEY, JSON.stringify(endings));
 
@@ -82,7 +85,7 @@ describe('endingStorage', () => {
     it('should save multiple different endings', () => {
       saveUnlockedEnding(mockEnding);
       saveUnlockedEnding(mockPositiveEnding);
-      saveUnlockedEnding(mockRareEnding);
+      saveUnlockedEnding(mockLegendaryEnding);
 
       const stored = localStorage.getItem(STORAGE_KEY);
       const parsed = JSON.parse(stored!) as UnlockedEnding[];
@@ -97,22 +100,30 @@ describe('endingStorage', () => {
         total: 0,
         positive: 0,
         negative: 0,
+        common: 0,
+        uncommon: 0,
         rare: 0,
+        legendary: 0,
+        secret: 0,
       });
     });
 
-    it('should count endings by type correctly', () => {
+    it('should count endings by type and rarity correctly', () => {
       saveUnlockedEnding(mockEnding);
       saveUnlockedEnding(mockPositiveEnding);
-      saveUnlockedEnding(mockRareEnding);
-      saveUnlockedEnding({ id: 'neg-002', title: '结局2', type: 'negative' });
+      saveUnlockedEnding(mockLegendaryEnding);
+      saveUnlockedEnding({ id: 'neg-002', title: '结局2', type: 'negative', rarity: 'common' });
 
       const stats = getEndingStats();
       expect(stats).toEqual({
         total: 4,
-        positive: 1,
+        positive: 2,
         negative: 2,
-        rare: 1,
+        common: 3,
+        uncommon: 0,
+        rare: 0,
+        legendary: 1,
+        secret: 0,
       });
     });
   });

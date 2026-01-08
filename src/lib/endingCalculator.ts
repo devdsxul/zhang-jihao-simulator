@@ -26,7 +26,7 @@ function checkPathSequence(choicePath: string[], pathSequence: string[]): boolea
 // Termination check result
 export interface TerminationResult {
   shouldTerminate: boolean;
-  reason?: "critical_stat" | "low_score" | "victory" | "balanced_mastery" | "survival" | "secret_path" | "flag_triggered";
+  reason?: "critical_stat" | "low_score" | "victory" | "balanced_mastery" | "survival" | "secret_path" | "flag_triggered" | "danger_zone";
   ending?: Ending;
 }
 
@@ -87,7 +87,7 @@ export function checkTermination(state: GameState, allEndings: Ending[]): Termin
 
     const matchingEnding = negativeEndings.find(e => checkAllConditions(stats, e.conditions, flags));
     if (matchingEnding) {
-      return { shouldTerminate: true, reason: "critical_stat", ending: matchingEnding };
+      return { shouldTerminate: true, reason: "danger_zone", ending: matchingEnding };
     }
   }
 

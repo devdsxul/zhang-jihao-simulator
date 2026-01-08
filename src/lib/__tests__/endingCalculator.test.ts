@@ -3,10 +3,11 @@ import { Ending, GameStats } from '@/types/game';
 
 const mockEndings: Ending[] = [
   {
-    id: 'ending-rare',
-    type: 'rare',
-    title: 'Rare Ending',
-    description: 'A rare ending',
+    id: 'ending-legendary',
+    type: 'positive',
+    rarity: 'legendary',
+    title: 'Legendary Ending',
+    description: 'A legendary ending',
     conditions: [
       { stat: 'billiardsSkill', operator: 'gte', value: 90 },
       { stat: 'wealth', operator: 'gte', value: 80 },
@@ -16,6 +17,7 @@ const mockEndings: Ending[] = [
   {
     id: 'ending-positive',
     type: 'positive',
+    rarity: 'common',
     title: 'Positive Ending',
     description: 'A positive ending',
     conditions: [{ stat: 'sanity', operator: 'gte', value: 60 }],
@@ -24,6 +26,7 @@ const mockEndings: Ending[] = [
   {
     id: 'ending-negative',
     type: 'negative',
+    rarity: 'common',
     title: 'Negative Ending',
     description: 'A negative ending',
     conditions: [{ stat: 'sanity', operator: 'lt', value: 20 }],
@@ -31,7 +34,8 @@ const mockEndings: Ending[] = [
   },
   {
     id: 'ending-flag',
-    type: 'rare',
+    type: 'positive',
+    rarity: 'rare',
     title: 'Flag Ending',
     description: 'Ending requires flag',
     conditions: [
@@ -43,6 +47,7 @@ const mockEndings: Ending[] = [
   {
     id: 'neg-368',
     type: 'negative',
+    rarity: 'uncommon',
     title: '炒股爆仓',
     description: '炒股爆仓结局',
     conditions: [
@@ -54,6 +59,7 @@ const mockEndings: Ending[] = [
   {
     id: 'ending-poor',
     type: 'negative',
+    rarity: 'common',
     title: 'Generic Poor Ending',
     description: 'Generic ending for low wealth',
     conditions: [{ stat: 'wealth', operator: 'lte', value: 5 }],
@@ -74,7 +80,7 @@ describe('endingCalculator', () => {
 
       const ending = calculateEnding(stats, mockEndings);
 
-      expect(ending.id).toBe('ending-rare');
+      expect(ending.id).toBe('ending-legendary');
     });
 
     it('should respect priority order', () => {
@@ -173,6 +179,7 @@ describe('endingCalculator', () => {
       const ending: Ending = {
         id: 'test',
         type: 'negative',
+        rarity: 'common',
         title: 'Test',
         description: 'Test',
         conditions: [],
@@ -186,6 +193,7 @@ describe('endingCalculator', () => {
       const ending: Ending = {
         id: 'test',
         type: 'positive',
+        rarity: 'common',
         title: 'Test',
         description: 'Test',
         conditions: [],
@@ -195,17 +203,18 @@ describe('endingCalculator', () => {
       expect(getEndingFlavorText(ending)).toContain('找到了出路');
     });
 
-    it('should return correct text for rare ending', () => {
+    it('should return correct text for legendary ending', () => {
       const ending: Ending = {
         id: 'test',
-        type: 'rare',
+        type: 'positive',
+        rarity: 'legendary',
         title: 'Test',
         description: 'Test',
         conditions: [],
         priority: 1,
       };
 
-      expect(getEndingFlavorText(ending)).toContain('不可思议');
+      expect(getEndingFlavorText(ending)).toContain('传奇');
     });
   });
 

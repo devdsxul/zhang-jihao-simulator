@@ -17,6 +17,7 @@ const mockScene: Scene = {
 const mockEnding: Ending = {
   id: 'test-ending',
   type: 'negative',
+  rarity: 'common',
   title: 'Test Ending',
   description: 'Test ending description',
   conditions: [{ stat: 'wealth', operator: 'lte', value: 10 }],
